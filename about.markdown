@@ -1,7 +1,8 @@
 ---
 layout: default
-title: About
-permalink: /about/
+title: Über mich
+permalink: /ueber-mich/
+nav_order: 2
 ---
 
 Placeholder about page. Replace freely.

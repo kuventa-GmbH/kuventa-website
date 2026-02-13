@@ -1,0 +1,27 @@
+<section class="section section-alt">
+  <div class="container process">
+
+    <!-- Illustration -->
+    <div class="process-art">
+      <img src="{{ site.data.home.process.image | relative_url }}" alt="" loading="lazy">
+    </div>
+
+    <!-- Content -->
+    <div class="process-content">
+      <h2>{{ site.data.home.process.heading }}</h2>
+      <p>{{ site.data.home.process.text }}</p>
+      <h3>{{ site.data.home.process.sub-heading  }}</h3>
+      {% for s in site.data.home.process.sub-text1 %}
+          <p> {{ s }} </p>
+      {% endfor %}      
+      <p>{{ site.data.home.process.sub-text2  }}</p>
+
+      <a href="{{ site.data.home.process.primary_btn_link | relative_url }}"
+         class="btn btn-primary">
+         {{ site.data.home.process.primary_btn }}
+      </a>
+    </div>
+
+
+  </div>
+</section>

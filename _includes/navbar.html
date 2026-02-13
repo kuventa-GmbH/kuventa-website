@@ -1,0 +1,19 @@
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="brand" href="{{ '/' | relative_url }}">
+      <!-- If you have SVG/PNG logo -->
+      <img class="brand-logo" src="{{ '/assets/img/logo.png' | relative_url }}" alt="{{ site.title }}">
+      <!-- <span class="brand-text">{{ site.title }}</span> -->
+    </a>
+
+    <nav class="nav-links" aria-label="Primary">
+      {% assign nav_pages = site.pages | where_exp: "p", "p.nav_order" | sort: "nav_order" %}
+      {% for p in nav_pages %}
+        <a class="nav-link {% if page.url == p.url %}is-active{% endif %}"
+           href="{{ p.url | relative_url }}">
+          {{ p.title }}
+        </a>
+      {% endfor %}
+    </nav>
+  </div>
+</header>

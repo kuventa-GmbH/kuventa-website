@@ -1,0 +1,20 @@
+<section class="section">
+  <div class="container climate">
+    <div class="climate-art">
+      <img src="{{ site.data.home.climate.image | relative_url }}" alt="" loading="lazy">
+    </div>
+
+    <div class="climate-content">
+      <h2>{{ site.data.home.climate.heading }}</h2>
+      <p>{{ site.data.home.climate.text }}</p>
+
+      {%- if site.data.home.climate.points -%}
+      <ul class="list">
+        {% for p in site.data.home.climate.points %}
+          <li>{{ p }}</li>
+        {% endfor %}
+      </ul>
+      {%- endif -%}
+    </div>
+  </div>
+</section>

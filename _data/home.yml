@@ -1,0 +1,80 @@
+hero:
+  kicker: "Ihr Partner für maßgeschneiderte"
+  title_emphasis: "IAM- & Security-Lösungen"
+  text: "Sicherheit und Identitätsmanagement sind essenzielle Bausteine moderner IT-Landschaften. kuventa steht für innovative und skalierbare Lösungen im Bereich <b>Identity & Access Management (IAM)</b> sowie <b>Security Engineering.</b> Mit fundierter Erfahrung aus zahlreichen Projekten für führende Unternehmen sorgen wir für eine effiziente, sichere und zukunftssichere Verwaltung von Identitäten und Zugriffsrechten."
+  primary_btn: "Jetzt kontaktieren"
+  primary_btn_link: "/kontakt/"
+
+why:
+  image: "/assets/img/home/thumb.svg"
+  heading: "Warum kuventa?"
+  items:
+    - title: "Langjährige Erfahrung"
+      text: "Mehr als ein 5 Jahre IAM-Expertise in führenden Unternehmen wie Versicherungskonzern, IT Dienstleistungsunternehmen, Bankensektor und der Bauindustrie"
+      icon: "/assets/img/home/bulb.svg"
+    - title: "Technisches Know-how"
+      text: "Von One Identity (OneIM) über Active Directory, SAP S/4HANA bis hin zu modernen CI/CD Pipelines und Microservices – wir beherrschen die Werkzeuge, die Ihr Unternehmen weiterbringen."
+      icon: "/assets/img/home/cap.svg"
+    - title: "Kreative & lösungsorientierte Ansätze"
+      text: "Keine Herausforderung ist zu komplex – wir entwickeln maßgeschneiderte Konzepte, um Ihre IT-Sicherheit effizient und nachhaltig zu verbessern."
+      icon: "/assets/img/home/creative.svg"
+    - title: "End-to-End Umsetzung"
+      text: "Von Konzeption & Architektur über Implementierung & Automatisierung bis hin zur Optimierung & Wartung – alles aus einer Hand."
+      icon: "/assets/img/home/circle.svg"
+
+services:
+  heading: "Unsere Services"
+  blocks:
+    - title: "Identity & Access Management (IAM)"
+      points: ["Implementierung und Optimierung von One Identity-Lösungen", "Entwicklung und Anpassung von Schnittstellen (z. B. SuccessFactors, HR-Systeme)", "Automatisierung und Testmanagement mit Intragen, Pester & PowerShell", "Rezertifizierung & Attestierungsprozesse für Compliance"]
+      icon: "/assets/img/home/circle.svg"
+    - title: "IT-Security & Automatisierung"
+      points: ["Sichere Integration von Identitäten in Cloud- & On-Premise-Umgebungen", "Entwicklung von Microservices für Identitätsmanagement & Security-Anwendungen", "CI/CD-Pipelines mit GitLab, Jenkins, Octopus & Ansible", "Performance-Optimierung bestehender Sicherheitsarchitekturen"]
+      icon: "/assets/img/home/circle.svg"
+    - title: "Softwareentwicklung & Beratung"
+      points: ["Maßgeschneiderte C#- und VB .NET-Entwicklung für IAM- und Security-Anwendungen", "Webbasierte IAM-Portale für Self-Service & Verwaltung von Berechtigungen", "Planung, Design & Umsetzung technischer Identitätsmanagementsysteme"]
+      icon: "/assets/img/home/circle.svg"
+
+process:
+  heading: "Projekterfolg mit kuventa"
+  text: "Wir haben bereits erfolgreich Projekte für Finanzdienstleister, Industrieunternehmen und Versicherungen umgesetzt. Von Datenmigrationen und Schnittstellen-Optimierung über die Entwicklung maßgeschneiderter IAM-Portale bis hin zur automatisierten Testimplementierung."
+  sub-heading: "Sicher, skalierbar, performant"
+  sub-text1: ["Sie wollen Ihre Identitäts- und Sicherheitsstrategie modernisieren?", "Sie benötigen einen Experten für One Identity oder Active Directory?", "Sie suchen eine maßgeschneiderte IAM-Lösung für Ihr Unternehmen?"]
+  sub-text2: "Lassen Sie uns gemeinsam Ihre zukunftssichere IT-Landschaft gestalten"
+  image: "/assets/img/home/grow.svg"
+  primary_btn: "Jetzt kontaktieren"
+  primary_btn_link: "/kontakt/"
+
+
+
+benefits:
+  heading: "Welche Vorteile haben Sie mit uns?"
+  cards:
+    - title: "Mehr Kontrolle"
+      text: "Transparenz über Zugriffe und Rollen."
+      image: "/assets/img/home/benefit1.png"
+    - title: "Schnellere Prozesse"
+      text: "Automatisierte Workflows, weniger Tickets."
+      image: "/assets/img/home/benefit2.png"
+    - title: "Bessere Security"
+      text: "Least Privilege & Governance Standards."
+      image: "/assets/img/home/benefit3.png"
+    - title: "Compliance"
+      text: "Audit-ready Dokumentation & Kontrollen."
+      image: "/assets/img/home/benefit4.png"
+    - title: "Skalierbarkeit"
+      text: "IAM, das mitwächst."
+      image: "/assets/img/home/benefit5.png"
+    - title: "Kosten senken"
+      text: "Weniger manuelle Arbeit, weniger Risiken."
+      image: "/assets/img/home/benefit6.png"
+
+climate:
+  heading: "Unser Engagement für den Klimaschutz"
+  text: "Wir unterstützen nachhaltige Initiativen und arbeiten remote-first."
+  image: "/assets/img/home/climate.png"
+
+contact:
+  heading: "Sie wollen Ihr IAM-System optimieren, automatisieren oder modernisieren?"
+  form_action: "https://formspree.io/f/xxxxxx"   # replace
+  submit_text: "Kostenloses Erstgespräch anfragen"
