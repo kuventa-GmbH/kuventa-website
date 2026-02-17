@@ -1,4 +1,4 @@
-<section class="section">
+<section class="section benefits-sec">
   <div class="container">
     <h2 class="center">{{ site.data.home.benefits.heading }}</h2>
 
@@ -8,6 +8,11 @@
         <img class="benefit-img" src="{{ c.image | relative_url }}" alt="" loading="lazy">
         <div>
           <h3>{{ c.title }}</h3>
+          <ul class="list">
+            {% for p in c.points %}
+              <li>{{ p }}</li>
+            {% endfor %}
+          </ul>
           <p>{{ c.text }}</p>
         </div>
       </div>

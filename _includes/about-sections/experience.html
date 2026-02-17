@@ -1,0 +1,24 @@
+<section class="section">
+  <div class="container">
+    <h2 class="center">{{ site.data.about.experience.heading }}</h2>
+
+    <div class="experience">
+      {% for job in site.data.about.experience.items %}
+      <div class="exp-row {% if job.highlight %}is-highlight{% endif %}">
+        <div class="exp-left">
+          <div class="exp-company">{{ job.company }}</div>
+          <div class="exp-role">{{ job.role }}</div>
+        </div>
+        <div class="exp-right">
+          <div class="exp-date">{{ job.date }}</div>
+          <ul class="bullets">
+            {% for b in job.bullets %}
+              <li>{{ b }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

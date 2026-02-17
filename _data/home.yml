@@ -26,14 +26,14 @@ services:
   heading: "Unsere Services"
   blocks:
     - title: "Identity & Access Management (IAM)"
-      points: ["Implementierung und Optimierung von One Identity-Lösungen", "Entwicklung und Anpassung von Schnittstellen (z. B. SuccessFactors, HR-Systeme)", "Automatisierung und Testmanagement mit Intragen, Pester & PowerShell", "Rezertifizierung & Attestierungsprozesse für Compliance"]
-      icon: "/assets/img/home/circle.svg"
+      points: ["Implementierung und Optimierung von <span>One Identity</span>-Lösungen", "Entwicklung und Anpassung von <span>Schnittstellen</span> (z. B. SuccessFactors, HR-Systeme)", "Automatisierung und Testmanagement mit <span>Intragen, Pester & PowerShell</span>", "Rezertifizierung & Attestierungsprozesse für Compliance"]
+      icon: "/assets/img/home/bulb.svg"
     - title: "IT-Security & Automatisierung"
-      points: ["Sichere Integration von Identitäten in Cloud- & On-Premise-Umgebungen", "Entwicklung von Microservices für Identitätsmanagement & Security-Anwendungen", "CI/CD-Pipelines mit GitLab, Jenkins, Octopus & Ansible", "Performance-Optimierung bestehender Sicherheitsarchitekturen"]
-      icon: "/assets/img/home/circle.svg"
+      points: ["Sichere Integration von Identitäten in <span>Cloud- & On-Premise-Umgebungen</span>", "Entwicklung von <span>Microservices</span> für Identitätsmanagement & Security-Anwendungen", "CI/CD-Pipelines mit <span>GitLab, Jenkins, Octopus & Ansible</span>", "Performance-Optimierung bestehender Sicherheitsarchitekturen"]
+      icon: "/assets/img/home/cap.svg"
     - title: "Softwareentwicklung & Beratung"
-      points: ["Maßgeschneiderte C#- und VB .NET-Entwicklung für IAM- und Security-Anwendungen", "Webbasierte IAM-Portale für Self-Service & Verwaltung von Berechtigungen", "Planung, Design & Umsetzung technischer Identitätsmanagementsysteme"]
-      icon: "/assets/img/home/circle.svg"
+      points: ["Maßgeschneiderte <span>C#- und VB .NET-Entwicklung</span> für IAM- und Security-Anwendungen", "Webbasierte IAM-Portale für Self-Service & Verwaltung von Berechtigungen", "Planung, Design & Umsetzung <span>technischer Identitätsmanagementsysteme</span>"]
+      icon: "/assets/img/home/creative.svg"
 
 process:
   heading: "Projekterfolg mit kuventa"
@@ -50,31 +50,48 @@ process:
 benefits:
   heading: "Welche Vorteile haben Sie mit uns?"
   cards:
-    - title: "Mehr Kontrolle"
-      text: "Transparenz über Zugriffe und Rollen."
-      image: "/assets/img/home/benefit1.png"
-    - title: "Schnellere Prozesse"
-      text: "Automatisierte Workflows, weniger Tickets."
-      image: "/assets/img/home/benefit2.png"
-    - title: "Bessere Security"
-      text: "Least Privilege & Governance Standards."
-      image: "/assets/img/home/benefit3.png"
-    - title: "Compliance"
-      text: "Audit-ready Dokumentation & Kontrollen."
-      image: "/assets/img/home/benefit4.png"
-    - title: "Skalierbarkeit"
-      text: "IAM, das mitwächst."
-      image: "/assets/img/home/benefit5.png"
-    - title: "Kosten senken"
-      text: "Weniger manuelle Arbeit, weniger Risiken."
-      image: "/assets/img/home/benefit6.png"
+    - title: "Nachgewiesene Erfahrung mit großen Unternehmen und kritischen Systemen"
+      points: []
+      text: "Wir arbeiten für namhafte Unternehmen wie Allianz, Munich Re, Computacenter und dmTECH und sind erfahren in sicherheitskritischen und komplexen IT-Umgebungen.<br><br>Unsere Arbeit umfasst IAM-Lösungen für Finanzdienstleister, Versicherungen und Industrieunternehmen, die besonders hohe Sicherheitsanforderungen haben."
+      image: "/assets/img/home/folders.svg"
+    - title: "Starke Automatisierungs- und DevOps-Skills"
+      points: ["CI/CD-Pipelines mit GitLab, Jenkins, Octopus & Ansible", "Testautomatisierung mit PowerShell & Pester", "Microservices & Webentwicklung mit .NET, MongoDB und Microsoft SQL"]
+      text: "Viele Unternehmen haben manuelle und ineffiziente IAM-Prozesse. Unsere Erfahrung in Automatisierung und DevOps kann Kosten reduzieren, Prozesse beschleunigen und Fehler minimieren."
+      image: "/assets/img/home/userlaptop.svg"
+    - title: "Breites technologisches Wissen und Schnittstellenkompetenz"
+      text: "Viele Unternehmen kämpfen mit der Integration von IAM-Systemen in bestehende HR-, ERP- oder Cloud-Plattformen. Unsere Erfahrung mit Datenmigration, Schnittstellenanpassung und Systemintegration zeigt, dass wir diese Herausforderungen effizient lösen können."
+      points: ["One Identity (OneIM) – Spezialist für Sync Editor, Designer, Web Designer", "Active Directory & SAP S/4HANA – Erfahrung mit Kernsystemen vieler Unternehmen", "Datenmigration & Anbindung von SuccessFactors an IAM-Systeme", "HR-Schnittstellenentwicklung für One Identity"]
+      image: "/assets/img/home/process.svg"
+    - title: "Fokus auf Compliance und Sicherheitsrichtlinien"
+      text: "Regulierte Branchen (Banken, Versicherungen, Gesundheitswesen) müssen strenge Sicherheits- und Compliance-Anforderungen erfüllen. Unser Wissen hilft Unternehmen, Regulatorik effizient umzusetzen, um Audits zu bestehen."
+      points: ["Segregation of Duties (SoD) & Risikobewertung", "Rezertifizierungs- und Attestierungsprozesse für Compliance", "Umsetzung von IAM-Sicherheitsstandards für Banken & Versicherungen"]
+      image: "/assets/img/home/security.svg"
+    - title: "Lösungsorientierter und kreativer Ansatz für technische Herausforderungen"
+      text: "Viele Unternehmen suchen keine Standardlösungen, sondern individuell angepasste, skalierbare Konzepte. Wir entwickeln Ihnen maßgeschneiderte und innovative Lösungen."
+      points: ["Entwicklung eines Support-Ticket-Moduls mit .NET 8 & MongoDB", "Konzeption & Umsetzung eines Microservices für Identitätsmanagement", "Erfolgreiche Umstellung von Legacy-Importsystemen auf moderne Schnittstellen"]
+      image: "/assets/img/home/path.svg"
+    - title: "Kundenorientierte und praxisnahe Umsetzung"
+      text: "Viele IAM-Projekte scheitern, weil sie nicht anwenderfreundlich sind. Unser Fokus auf Usability und Kundenanforderungen hilft, effiziente und akzeptierte Lösungen zu entwickeln."
+      points: ["Anpassung bestehender IAM-Web-Frontends für bessere Benutzerfreundlichkeit", "Kundenspezifische Anforderungsanalyse & agile Umsetzung in Projekten", "Erstellung von Konzepten, die auf die Bedürfnisse der Nutzer zugeschnitten sind"]
+      image: "/assets/img/home/config.svg"
 
 climate:
   heading: "Unser Engagement für den Klimaschutz"
-  text: "Wir unterstützen nachhaltige Initiativen und arbeiten remote-first."
-  image: "/assets/img/home/climate.png"
+  text: "Bei der kuventa GmbH nehmen wir unsere Verantwortung für den Klimaschutz ernst. <br><br>Wir haben uns verpflichtet, unsere Geschäftstätigkeit im Einklang mit der 1,5-Grad-Grenze des Pariser Klimaabkommens zu gestalten. Das bedeutet, dass wir unseren CO₂-Ausstoß kontinuierlich überwachen und reduzieren."
+  image: "/assets/img/home/userengagement.svg"
+  items:
+    - title: "Energieeffizienz"
+      text: "Wir setzen auf energieeffiziente Geräte und achten auf einen verantwortungsvollen Energieverbrauch im HomeOffice."
+      icon: "/assets/img/home/leaf.svg"
+    - title: "Nachhaltige Mobilität"
+      text: "Geschäftsreisen erfolgen überwiegend mit nachhaltigen Verkehrsmitteln wie der Deutschen Bahn. Unsere drei Mitarbeitenden arbeiten vollständig im HomeOffice, und insgesamt finden nur vier Fernreisen pro Jahr mit der Bahn statt."
+      icon: "/assets/img/home/train.svg"
+    - title: "Transparenz"
+      text: "Unsere aktuell getrackte Klimabilanz liegt bei nur 136 kg CO₂ pro Jahr und Mitarbeitenden. Damit sind wir weit unter dem Durchschnitt und auf einem klaren 1,5-Grad-Pfad."
+      icon: "/assets/img/home/search.svg"
 
 contact:
+  image: "/assets/img/home/blue-bulb.svg"
   heading: "Sie wollen Ihr IAM-System optimieren, automatisieren oder modernisieren?"
   form_action: "https://formspree.io/f/xxxxxx"   # replace
   submit_text: "Kostenloses Erstgespräch anfragen"

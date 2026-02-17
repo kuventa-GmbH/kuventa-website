@@ -1,0 +1,47 @@
+<section class="section section-alt contact-section">
+  <div class="container">
+    <div class="heading-img"><img src="{{ site.data.home.contact.image }}"></div>
+    <h2 class="sec-heading center">{{ site.data.home.contact.heading }}</h2>
+
+    <form class="contact-form" action="{{ site.data.home.contact.form_action }}" method="POST">
+      <div class="grid-2">
+        <div class="field">
+          <label for="first_name">Vorname</label>
+          <input id="first_name" name="first_name" type="text" placeholder="Bitte eingeben" required>
+        </div>
+
+        <div class="field">
+          <label for="last_name">Nachname</label>
+          <input id="last_name" name="last_name" type="text" placeholder="Bitte eingeben" required>
+        </div>
+
+        <div class="field">
+          <label for="email">E-Mail</label>
+          <input id="email" name="email" type="email" placeholder="beispiel@beispiel.de" required>
+        </div>
+
+        <div class="field">
+          <label for="phone">Telefon</label>
+          <input id="phone" name="phone" type="tel" placeholder="+49..." inputmode="tel">
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="message">Ihre Nachricht</label>
+        <textarea id="message" name="message" rows="7" placeholder="Hier tippen..." required></textarea>
+      </div>
+
+      <div class="consent">
+        <label class="checkbox">
+          <input type="checkbox" name="consent" required>
+          <span>
+            Ich habe die <a href="/datenschutz/">Datenschutzerklärung</a> zur Kenntnis genommen.
+          </span>
+        </label>
+      </div>
+
+      <button class="submit-btn" type="submit">{{ site.data.home.contact.submit_text }}</button>
+    </form>
+
+  </div>
+</section>

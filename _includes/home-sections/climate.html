@@ -1,0 +1,22 @@
+<section class="section">
+  <div class="climate">
+    <div class="climate-art">
+      <img src="{{ site.data.home.climate.image | relative_url }}" alt="" loading="lazy">
+    </div>
+
+    <div class="climate-content">
+      <h2 class="sec-heading">{{ site.data.home.climate.heading }}</h2>
+      <p>{{ site.data.home.climate.text }}</p>
+    </div>
+  </div>
+
+    <div class="climate-cards cards cards-3">
+      {% for item in site.data.home.climate.items %}
+      <div class="card">
+        <div class="card-icon"><img src="{{ item.icon }}"></div>
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.text }}</p>
+      </div>
+      {% endfor %}
+    </div>
+</section>

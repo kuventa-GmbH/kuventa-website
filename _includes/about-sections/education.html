@@ -1,0 +1,16 @@
+<section class="section">
+  <div class="container center">
+    <h2>{{ site.data.about.education.heading }}</h2>
+
+    <div class="edu-cards">
+      {% for c in site.data.about.education.cards %}
+      <div class="edu-card">
+        <div class="edu-icon">★</div>
+        {% if c.date != "" %}<div class="edu-date">{{ c.date }}</div>{% endif %}
+        <div class="edu-title">{{ c.title }}</div>
+        <div class="edu-org">{{ c.org }}</div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
