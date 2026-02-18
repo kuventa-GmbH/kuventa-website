@@ -10,7 +10,7 @@ intro:
 
 focus:
   heading: "Fachliche Schwerpunkte"
-  image: "/assets/img/about/focus.png"
+  image: "/assets/img/about/user.svg"
   columns:
     - title: "Identity & Access Management (IAM)"
       points:
@@ -62,9 +62,11 @@ education:
   heading: "Ausbildung & Zertifikate"
   cards:
     - date: "08/2016 bis 07/2019"
+      icon: "/assets/img/about/star.svg"
       title: "Fachinformatiker für Anwendungsentwicklung"
       org: "GDI Hesse Unternehmerverband GmbH"
     - date: ""
+      icon: "/assets/img/about/star.svg"
       title: "Certified Scrum Master (CSM)"
       org: "Scrum Alliance"
 
@@ -72,13 +74,13 @@ skills:
   heading: "Technische Skills & Tools"
   blocks:
     - title: "Programmiersprachen"
-      icon: "/assets/img/about/skill1.png"
+      icon: "/assets/img/about/code.svg"
       points: ["C#", ".NET", "PowerShell", "SQL", "JavaScript"]
     - title: "IAM & Security Tools"
-      icon: "/assets/img/about/skill2.png"
+      icon: "/assets/img/about/security.svg"
       points: ["Entra ID", "Active Directory", "SAP", "IGA Tools", "SIEM Basics"]
     - title: "DevOps & Cloud"
-      icon: "/assets/img/about/skill3.png"
+      icon: "/assets/img/about/cicd.svg"
       points: ["Git", "Azure DevOps", "CI/CD", "Docker Basics"]
 
 languages:
@@ -92,8 +94,9 @@ languages:
       level: "Grundkenntnisse"
 
 cta:
-  image: "/assets/img/about/cta.jpg"
+  image: "/assets/img/about/dennis.webp"
+  icon: "/assets/img/about/handshake.png"
   title: "Lassen Sie uns zusammenarbeiten!"
-  text: "Benötigen Sie Unterstützung bei IAM, Security oder Compliance? Schreiben Sie mir, ich melde mich schnell zurück."
-  button_text: "Kontakt aufnehmen"
+  text: "Benötigen Sie Unterstützung bei der Optimierung Ihrer IAM-Sicherheit, der Entwicklung einer maßgeschneiderten IAM-Lösung oder einer sicheren Identitätsverwaltung? Ich bin Ihr Ansprechpartner für technisch anspruchsvolle und innovative Security-Projekte."
+  button_text: "Jetzt kontaktieren"
   button_link: "/kontakt/"

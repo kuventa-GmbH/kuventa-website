@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Über mich
-permalink: /about/
+permalink: /ueber-mich/
 nav_order: 2
 ---
 

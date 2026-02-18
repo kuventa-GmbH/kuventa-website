@@ -1,6 +1,6 @@
 <section class="section">
   <div class="container">
-    <h2 class="center">{{ site.data.about.focus.heading }}</h2>
+   
 
     <div class="focus-grid">
       <div class="focus-art">
@@ -8,6 +8,7 @@
       </div>
 
       <div class="focus-cols">
+         <h2 class="sec-heading">{{ site.data.about.focus.heading }}</h2>
         {% for col in site.data.about.focus.columns %}
         <div class="focus-col">
           <h3 class="linkish">{{ col.title }}</h3>
