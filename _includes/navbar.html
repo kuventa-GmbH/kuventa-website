@@ -1,7 +1,7 @@
 <header class="site-header">
   <div class="nav-wrap">
-    <a class="brand"   href="{{ '/' | relative_url }}">
-      <!-- If you have SVG/PNG logo data-anim="animate__fadeInLeft" data-once="true" -->
+    <a class="brand js-anim" data-anim="animate__fadeInDown" data-once="true"  href="{{ '/' | relative_url }}">
+      <!-- If you have SVG/PNG logo  -->
       <img class="brand-logo" src="{{ '/assets/img/logo.png' | relative_url }}" alt="{{ site.title }}">
       <!-- <span class="brand-text">{{ site.title }}</span> -->
     </a>
@@ -13,7 +13,7 @@
       <span></span>
     </button>
 
-    <nav class="nav-links" id="primary-nav" aria-label="Primary">
+    <nav class="nav-links js-anim" id="primary-nav" data-anim="animate__fadeInDown" data-once="true"  aria-label="Primary">
       {% assign nav_pages = site.pages | where_exp: "p", "p.nav_order" | sort: "nav_order" %}
       {% for p in nav_pages %}
         <a class="nav-link {% if page.url == p.url %}is-active{% endif %}"

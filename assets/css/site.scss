@@ -3,6 +3,9 @@
 *::after {
   box-sizing: border-box;
 }
+:root {
+    --animate-duration: 1s;
+}
 html {
   scroll-behavior: smooth;
 }
