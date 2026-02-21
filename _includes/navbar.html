@@ -16,7 +16,17 @@
     <nav class="nav-links js-anim" id="primary-nav" data-anim="animate__fadeInDown" data-once="true"  aria-label="Primary">
       {% assign nav_pages = site.pages | where_exp: "p", "p.nav_order" | sort: "nav_order" %}
       {% for p in nav_pages %}
-        <a class="nav-link {% if page.url == p.url %}is-active{% endif %}"
+        {% assign is_active = false %}
+        {% if p.url == '/' %}
+          {% if page.url == p.url %}
+            {% assign is_active = true %}
+          {% endif %}
+        {% else %}
+          {% if page.url contains p.url %}
+            {% assign is_active = true %}
+          {% endif %}
+        {% endif %}
+        <a class="nav-link {% if is_active %}is-active{% endif %}"
           href="{{ p.url | relative_url }}">
           {{ p.title }}
         </a>

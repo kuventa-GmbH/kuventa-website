@@ -2,7 +2,7 @@
 layout: default
 title: Kontakt
 permalink: /kontakt/
-nav_order: 3
+nav_order: 4
 ---
 <div class="contact-page">
     <h1 class="center sec-heading js-anim" data-anim="animate__fadeInLeft" data-once="true">Kontakt</h1>

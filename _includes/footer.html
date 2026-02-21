@@ -34,6 +34,7 @@
     <nav class="footer-nav" aria-label="Footer">
       <a href="{{ '/' | relative_url }}" class="footer-link {% if page.url == '/' %}is-active{% endif %}">Home</a>
       <a href="{{ '/ueber-mich/' | relative_url }}" class="footer-link {% if page.url contains 'ueber-mich' %}is-active{% endif %}">Über mich</a>
+      <a href="{{ '/blog/' | relative_url }}" class="footer-link {% if page.url contains '/blog/' %}is-active{% endif %}">Blog</a>
       <a href="{{ '/cv/' | relative_url }}" class="footer-link {% if page.url contains '/cv' %}is-active{% endif %}">CV</a>
       <a href="{{ '/kontakt/' | relative_url }}" class="footer-link {% if page.url contains 'kontakt' %}is-active{% endif %}">Kontakt</a>
     </nav>
@@ -153,4 +154,3 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 </script>
-
