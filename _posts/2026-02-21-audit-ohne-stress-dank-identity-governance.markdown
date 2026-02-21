@@ -2,7 +2,7 @@
 layout: post
 title: "Audit ohne Stress: Wie Identity Governance Compliance planbar macht"
 permalink: /blog/audit-ohne-stress-dank-identity-governance/
-hero_image: /assets/img/blog/4-professionals-discussing-access-management-and-o.png
+hero_image: /assets/img/blog/4-professionals-discussing-access-management-and.png
 hero_alt: "Team bespricht Zugriffsrechte und Audit-Vorbereitung"
 ---
 

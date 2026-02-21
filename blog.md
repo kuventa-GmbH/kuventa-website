@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Blog
+title: Insights
 permalink: /blog/
 nav_order: 3
 ---
@@ -9,7 +9,7 @@ nav_order: 3
   <div class="container">
     <header class="blog-header">
       <p class="blog-kicker">Wissensbeiträge</p>
-      <h1 class="sec-heading">Blog</h1>
+      <h1 class="sec-heading">Insights</h1>
       <p>Praxisnahe Beiträge zu Identity Governance, IAM und Security Engineering.</p>
     </header>
 
