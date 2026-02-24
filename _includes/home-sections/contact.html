@@ -1,6 +1,6 @@
 <section class="section section-alt contact-section">
   <div class="container">
-    <div class="heading-img js-anim" data-anim="animate__fadeInUp" data-once="true"><img src="{{ site.data.home.contact.image }}"></div>
+    <div class="heading-img js-anim" data-anim="animate__fadeInUp" data-once="true"><img src="{{ site.data.home.contact.image | relative_url }}"></div>
     <h2 class="sec-heading center js-anim" data-anim="animate__fadeInUp" data-once="true">{{ site.data.home.contact.heading }}</h2>
 
     <form class="contact-form" action="{{ site.data.home.contact.form_action }}" method="POST">
@@ -35,7 +35,7 @@
         <label class="checkbox">
           <input type="checkbox" name="consent" required>
           <span>
-            Ich habe die <a href="/datenschutz/">Datenschutzerklärung</a> zur Kenntnis genommen.
+            Ich habe die <a href="{{ '/datenschutz/' | relative_url }}">Datenschutzerklärung</a> zur Kenntnis genommen.
           </span>
         </label>
       </div>
