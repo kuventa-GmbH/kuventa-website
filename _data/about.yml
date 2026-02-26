@@ -7,6 +7,8 @@ intro:
   text2: "Mit langjähriger Erfahrung in Identity & Access Management (IAM), IT-Security, Automatisierung und Softwareentwicklung unterstütze ich Unternehmen bei der sicheren Verwaltung von Identitäten und Zugriffsrechten."
   button_text: "Download CV"
   button_link: "/assets/files/cv.pdf"
+  button_download: true
+  button_download_filename: "Dennis-Kuerschner-CV.pdf"
 
 focus:
   heading: "Fachliche Schwerpunkte"
