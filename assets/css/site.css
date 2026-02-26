@@ -847,6 +847,148 @@ textarea:focus {
   font-size: 0;
 }
 
+.contact-direct {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+  margin-top: 30px;
+}
+
+.contact-direct__item {
+  display: block;
+  text-decoration: none;
+  background: linear-gradient(160deg, #f7fcff 0%, #eaf6ff 100%);
+  border: 1px solid #c7e5ff;
+  border-radius: 20px;
+  padding: 24px 26px;
+  box-shadow: 0 1px 1px rgba(12, 11, 32, 0.04), 0 12px 28px rgba(56, 160, 237, 0.12);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+  position: relative;
+  overflow: hidden;
+  min-height: 152px;
+}
+
+.contact-direct__item:hover {
+  border-color: #8dcbf7;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 2px rgba(12, 11, 32, 0.06), 0 18px 34px rgba(56, 160, 237, 0.18);
+}
+
+.contact-direct__actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 18px;
+  flex-wrap: wrap;
+}
+
+.contact-direct__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  padding: 0 14px;
+  border-radius: 10px;
+  border: 1px solid #b4daf8;
+  background: #fff;
+  color: #0c0b20;
+  text-decoration: none;
+  font-family: "Satoshi Medium";
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.18s ease;
+}
+
+.contact-direct__btn:hover {
+  border-color: #8dcbf7;
+  background: #f5fbff;
+}
+
+.contact-direct__btn--primary {
+  background: #38a0ed;
+  border-color: #38a0ed;
+  color: #fff;
+}
+
+.contact-direct__btn--primary:hover {
+  background: #2f87c9;
+  border-color: #2f87c9;
+}
+
+.contact-direct__btn.is-copied {
+  border-color: #86ca9d;
+  background: #f0fff5;
+}
+
+.contact-direct__item:before {
+  content: "";
+  position: absolute;
+  top: -52px;
+  right: -52px;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: rgba(56, 160, 237, 0.12);
+}
+
+.contact-direct__label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  min-width: 86px;
+  height: 30px;
+  padding: 0 12px;
+  border-radius: 999px;
+  background: #fff;
+  border: 1px solid rgba(56, 160, 237, 0.26);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #0f4f83;
+  margin-bottom: 12px;
+  font-family: "Satoshi Bold";
+}
+
+.contact-direct__value {
+  display: block;
+  font-family: "Satoshi Bold";
+  font-size: clamp(28px, 2.2vw, 36px);
+  line-height: 1.18;
+  color: #0c0b20;
+  max-width: 100%;
+  word-break: break-word;
+}
+
+.contact-booking {
+  background: #f7fcff;
+}
+
+.contact-booking__wrap {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.contact-booking__wrap .sec-heading {
+  margin-bottom: 10px;
+}
+
+.contact-booking__wrap p {
+  margin-bottom: 24px;
+}
+
+.contact-booking__embed {
+  border: 1px solid rgba(12, 11, 32, 0.15);
+  border-radius: 16px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
+}
+
+.contact-booking__fallback {
+  margin-top: 18px;
+}
+
 .site-footer {
   background: #fff;
   padding: 80px 0 40px;
@@ -1229,8 +1371,21 @@ textarea:focus {
   .contact-page {
     padding: 40px 0;
   }
+  .contact-direct {
+    gap: 16px;
+  }
+  .contact-direct__item {
+    padding: 20px;
+    min-height: 138px;
+  }
+  .contact-direct__value {
+    font-size: 30px;
+  }
   .contact-section .contact-form {
     margin: 40px auto;
+  }
+  .contact-booking__embed iframe {
+    height: 720px;
   }
   .legal-page {
     padding: 80px 16px;
@@ -1409,8 +1564,31 @@ textarea:focus {
   .contact-page .sec-heading {
     font-size: 32px;
   }
-  .contact-section .contact-form {
-    margin: 20px auto;
+  .contact-direct {
+    grid-template-columns: 1fr;
+  }
+  .contact-direct__item {
+    padding: 16px;
+    min-height: auto;
+  }
+  .contact-direct__actions {
+    gap: 8px;
+    margin-top: 14px;
+  }
+  .contact-direct__btn {
+    height: 38px;
+    font-size: 14px;
+    padding: 0 12px;
+  }
+  .contact-direct__value {
+    font-size: 24px;
+    line-height: 1.22;
+  }
+  .contact-booking__wrap p {
+    margin-bottom: 18px;
+  }
+  .contact-booking__embed iframe {
+    height: 660px;
   }
   .blog-post-content {
     font-size: 18px;
