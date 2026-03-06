@@ -3,45 +3,23 @@
     <div class="heading-img js-anim" data-anim="animate__fadeInUp" data-once="true"><img src="{{ site.data.home.contact.image | relative_url }}"></div>
     <h2 class="sec-heading center js-anim" data-anim="animate__fadeInUp" data-once="true">{{ site.data.home.contact.heading }}</h2>
 
-    <form class="contact-form" action="{{ site.data.home.contact.form_action }}" method="POST">
-      <div class="grid-2">
-        <div class="field">
-          <label for="first_name">Vorname</label>
-          <input id="first_name" name="first_name" type="text" placeholder="Bitte eingeben" required>
-        </div>
-
-        <div class="field">
-          <label for="last_name">Nachname</label>
-          <input id="last_name" name="last_name" type="text" placeholder="Bitte eingeben" required>
-        </div>
-
-        <div class="field">
-          <label for="email">E-Mail</label>
-          <input id="email" name="email" type="email" placeholder="beispiel@beispiel.de" required>
-        </div>
-
-        <div class="field">
-          <label for="phone">Telefon</label>
-          <input id="phone" name="phone" type="tel" placeholder="+49..." inputmode="tel">
-        </div>
+    <div class="contact-widget js-anim" data-anim="animate__fadeInUp" data-once="true">
+      <div class="contact-direct">
+        <article class="contact-direct__item">
+          <span class="contact-direct__label">E-Mail</span>
+          <span class="contact-direct__value">dennis.kuerschner@kuventa.de</span>
+          <div class="contact-direct__actions">
+            <a class="contact-direct__btn contact-direct__btn--primary" href="mailto:dennis.kuerschner@kuventa.de">E-Mail senden</a>
+          </div>
+        </article>
+        <article class="contact-direct__item">
+          <span class="contact-direct__label">Telefon</span>
+          <span class="contact-direct__value">+49 151 75 03 26 56</span>
+          <div class="contact-direct__actions">
+            <a class="contact-direct__btn contact-direct__btn--primary" href="tel:+4915175032656">Anrufen</a>
+          </div>
+        </article>
       </div>
-
-      <div class="field">
-        <label for="message">Ihre Nachricht</label>
-        <textarea id="message" name="message" rows="7" placeholder="Hier tippen..." required></textarea>
-      </div>
-
-      <div class="consent">
-        <label class="checkbox">
-          <input type="checkbox" name="consent" required>
-          <span>
-            Ich habe die <a href="{{ '/datenschutz/' | relative_url }}">Datenschutzerklärung</a> zur Kenntnis genommen.
-          </span>
-        </label>
-      </div>
-
-      <button class="submit-btn" type="submit">{{ site.data.home.contact.submit_text }}</button>
-    </form>
-
+    </div>
   </div>
 </section>
