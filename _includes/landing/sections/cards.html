@@ -5,6 +5,15 @@
       {% if include.section.intro %}
         <p>{{ include.section.intro }}</p>
       {% endif %}
+      {% if include.section.paragraph_links %}
+        {% for paragraph_link in include.section.paragraph_links %}
+          <p>
+            {{ paragraph_link.prefix }}
+            <a class="blog-entry-link" href="{{ paragraph_link.link | relative_url }}">{{ paragraph_link.link_text }}</a>
+            {{ paragraph_link.suffix }}
+          </p>
+        {% endfor %}
+      {% endif %}
     </div>
 
     <div class="cards cards-3">
@@ -23,7 +32,11 @@
             </ul>
           {% endif %}
           {% if item.link %}
-            <a class="blog-entry-link" href="{{ item.link | relative_url }}">{{ item.link_text | default: "Mehr erfahren" }}</a>
+            {% if item.link_as_button %}
+              <a class="btn btn-secondary" href="{{ item.link | relative_url }}">{{ item.link_text | default: "Mehr erfahren" }}</a>
+            {% else %}
+              <a class="blog-entry-link" href="{{ item.link | relative_url }}">{{ item.link_text | default: "Mehr erfahren" }}</a>
+            {% endif %}
           {% endif %}
         </div>
       {% endfor %}

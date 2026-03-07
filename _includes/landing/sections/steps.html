@@ -5,6 +5,15 @@
       {% if include.section.text %}
         <p class="js-anim" data-anim="animate__fadeInUp" data-once="true">{{ include.section.text }}</p>
       {% endif %}
+      {% if include.section.paragraph_links %}
+        {% for paragraph_link in include.section.paragraph_links %}
+          <p class="js-anim" data-anim="animate__fadeInUp" data-once="true">
+            {{ paragraph_link.prefix }}
+            <a class="blog-entry-link" href="{{ paragraph_link.link | relative_url }}">{{ paragraph_link.link_text }}</a>
+            {{ paragraph_link.suffix }}
+          </p>
+        {% endfor %}
+      {% endif %}
     </div>
 
     <div class="process-steps js-anim" data-anim="animate__fadeInUp" data-once="true">

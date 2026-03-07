@@ -21,5 +21,9 @@
     {% endif %}
   {% endfor %}
 
+  {% if landing.more_solutions %}
+    {% include landing/sections/cards.html section=landing.more_solutions %}
+  {% endif %}
+
   {% include landing/final-cta.html final=landing.final_cta shared=shared %}
 {% endif %}

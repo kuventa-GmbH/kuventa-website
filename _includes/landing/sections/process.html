@@ -9,6 +9,15 @@
       {% if include.section.text %}
         <p>{{ include.section.text }}</p>
       {% endif %}
+      {% if include.section.paragraph_links %}
+        {% for paragraph_link in include.section.paragraph_links %}
+          <p>
+            {{ paragraph_link.prefix }}
+            <a class="blog-entry-link" href="{{ paragraph_link.link | relative_url }}">{{ paragraph_link.link_text }}</a>
+            {{ paragraph_link.suffix }}
+          </p>
+        {% endfor %}
+      {% endif %}
       {% if include.section.subheading %}
         <h3>{{ include.section.subheading }}</h3>
       {% endif %}

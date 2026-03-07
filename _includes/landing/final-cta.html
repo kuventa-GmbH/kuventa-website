@@ -8,7 +8,9 @@
       <h2>{{ include.final.title }}</h2>
       <p>{{ include.final.text }}</p>
       <a class="btn btn-primary" href="{{ include.shared.booking_link }}">{{ include.shared.cta_text }}</a>
-      <p>{{ include.shared.cta_note }}</p>
+      {% if include.final.show_note_below %}
+        <p>{{ include.shared.cta_note }}</p>
+      {% endif %}
     </div>
   </div>
 </section>
