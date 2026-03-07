@@ -2,7 +2,7 @@
 layout: default
 title: Kontakt
 permalink: /kontakt/
-nav_order: 4
+nav_order: 5
 ---
 <section class="section hero">
   <div class="container">

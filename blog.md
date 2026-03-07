@@ -2,6 +2,7 @@
 layout: default
 title: Insights
 permalink: /blog/
+nav_order: 4
 ---
 
 <section class="blog-page section">
