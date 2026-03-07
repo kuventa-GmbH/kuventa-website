@@ -1,0 +1,15 @@
+<section class="section hero">
+  <div class="container">
+    <div class="blog-header">
+      {% if include.hero.kicker %}
+        <p class="blog-kicker js-anim" data-anim="animate__fadeInUp" data-once="true">{{ include.hero.kicker }}</p>
+      {% endif %}
+      <h1 class="hero-title js-anim" data-anim="animate__fadeInLeft" data-once="true">{{ include.hero.title }}</h1>
+      <p class="hero-text js-anim" data-anim="animate__fadeIn" data-once="true">{{ include.hero.text }}</p>
+      <div class="hero-actions center js-anim" data-anim="animate__fadeInUp" data-once="true">
+        <a class="btn btn-primary" href="{{ include.shared.booking_link }}">{{ include.shared.cta_text }}</a>
+        <p>{{ include.shared.cta_note }}</p>
+      </div>
+    </div>
+  </div>
+</section>

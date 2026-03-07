@@ -1,0 +1,22 @@
+<section class="section{% if include.section.alt %} section-alt{% endif %}">
+  <div class="container">
+    <div class="blog-header">
+      <h2 class="sec-heading js-anim" data-anim="animate__fadeInUp" data-once="true">{{ include.section.heading }}</h2>
+      {% if include.section.text %}
+        <p class="js-anim" data-anim="animate__fadeInUp" data-once="true">{{ include.section.text }}</p>
+      {% endif %}
+    </div>
+
+    <div class="process-steps js-anim" data-anim="animate__fadeInUp" data-once="true">
+      {% for step in include.section.steps %}
+        <div class="process-step">
+          <div class="step-number">{{ forloop.index }}</div>
+          <div>
+            <p class="edu-title">{{ step.title }}</p>
+            <p>{{ step.text }}</p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
