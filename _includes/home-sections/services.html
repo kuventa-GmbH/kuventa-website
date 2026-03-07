@@ -12,6 +12,9 @@
           <li>{{ p }}</li>
           {% endfor %}
         </ul>
+        {% if s.link %}
+          <a class="btn btn-secondary" href="{{ s.link | relative_url }}">{{ s.link_text | default: "Mehr erfahren" }}</a>
+        {% endif %}
       </div>
       {% endfor %}
     </div>

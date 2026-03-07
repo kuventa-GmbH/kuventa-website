@@ -33,11 +33,12 @@
 
     <!-- Right: nav links -->
     <nav class="footer-nav" aria-label="Footer">
-      <a href="{{ '/' | relative_url }}" class="footer-link {% if page.url == '/' %}is-active{% endif %}">Home</a>
-      <a href="{{ '/ueber-mich/' | relative_url }}" class="footer-link {% if page.url contains 'ueber-mich' %}is-active{% endif %}">Über mich</a>
-      <a href="{{ '/blog/' | relative_url }}" class="footer-link {% if page.url contains '/blog/' %}is-active{% endif %}">Insights</a>
-      <a href="{{ '/cv/' | relative_url }}" class="footer-link {% if page.url contains '/cv' %}is-active{% endif %}">CV</a>
+      <a href="{{ '/' | relative_url }}" class="footer-link {% if page.url == '/' %}is-active{% endif %}">Start</a>
+      <a href="{{ '/leistungen/' | relative_url }}" class="footer-link {% if page.url contains '/leistungen/' %}is-active{% endif %}">Leistungen</a>
+      <a href="{{ '/ueber-uns/' | relative_url }}" class="footer-link {% if page.url contains '/ueber-uns/' %}is-active{% endif %}">Über uns</a>
+      <a href="{{ '/beraterprofil/' | relative_url }}" class="footer-link {% if page.url contains '/beraterprofil/' %}is-active{% endif %}">Beraterprofil</a>
       <a href="{{ '/kontakt/' | relative_url }}" class="footer-link {% if page.url contains 'kontakt' %}is-active{% endif %}">Kontakt</a>
+      <a href="{{ '/blog/' | relative_url }}" class="footer-link {% if page.url contains '/blog/' %}is-active{% endif %}">Insights</a>
     </nav>
 
     <nav class="footer-nav" aria-label="Identity Lösungen">
@@ -46,7 +47,7 @@
       <a href="{{ '/identity-assessment/' | relative_url }}" class="footer-link {% if page.url contains 'identity-assessment' %}is-active{% endif %}">Identity Assessment</a>
       <a href="{{ '/sso-plattform/' | relative_url }}" class="footer-link {% if page.url contains 'sso-plattform' %}is-active{% endif %}">SSO Plattform</a>
       <a href="{{ '/customer-identity-plattform/' | relative_url }}" class="footer-link {% if page.url contains 'customer-identity-plattform' %}is-active{% endif %}">Customer Identity Plattform</a>
-      <a href="{{ shared.booking_link }}" class="footer-link">Termin buchen</a>
+      <a href="{{ shared.booking_link | relative_url }}" class="footer-link">Termin buchen</a>
     </nav>
   </div>
 

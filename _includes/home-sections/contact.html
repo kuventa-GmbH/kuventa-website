@@ -1,7 +1,17 @@
 <section class="section section-alt contact-section">
   <div class="container">
+    {% assign primary_link = site.data.home.contact.primary_btn_link %}
     <div class="heading-img js-anim" data-anim="animate__fadeInUp" data-once="true"><img src="{{ site.data.home.contact.image | relative_url }}"></div>
     <h2 class="sec-heading center js-anim" data-anim="animate__fadeInUp" data-once="true">{{ site.data.home.contact.heading }}</h2>
+    {% if site.data.home.contact.text %}
+      <p class="center js-anim" data-anim="animate__fadeInUp" data-once="true">{{ site.data.home.contact.text }}</p>
+    {% endif %}
+    <div class="hero-actions center js-anim" data-anim="animate__fadeInUp" data-once="true">
+      <a class="btn btn-primary" href="{{ primary_link | relative_url }}">{{ site.data.home.contact.primary_btn }}</a>
+      {% if site.data.home.contact.note %}
+        <p>{{ site.data.home.contact.note }}</p>
+      {% endif %}
+    </div>
 
     <div class="contact-widget js-anim" data-anim="animate__fadeInUp" data-once="true">
       <div class="contact-direct">

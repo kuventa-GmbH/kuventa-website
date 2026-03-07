@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Home
+title: Start
 permalink: /
 nav_order: 1
 ---

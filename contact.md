@@ -4,8 +4,49 @@ title: Kontakt
 permalink: /kontakt/
 nav_order: 4
 ---
-<div class="contact-page">
-  <h1 class="center sec-heading js-anim" data-anim="animate__fadeInLeft" data-once="true">Kontakt</h1>
+<section class="section hero">
+  <div class="container">
+    <div class="blog-header">
+      <p class="blog-kicker js-anim" data-anim="animate__fadeInUp" data-once="true">Microsoft Bookings</p>
+      <h1 class="hero-title js-anim" data-anim="animate__fadeInLeft" data-once="true">Jetzt Termin buchen</h1>
+      <p class="hero-text js-anim" data-anim="animate__fadeIn" data-once="true">Kostenloses Erstgespräch • 30 Minuten • unverbindlich. Im Termin besprechen wir Ihre aktuelle Identity-Landschaft, den Modernisierungsbedarf und mögliche nächste Schritte.</p>
+      <div class="hero-actions center js-anim" data-anim="animate__fadeInUp" data-once="true">
+        <a class="btn btn-primary" href="https://outlook.office.com/bookwithme/user/1536062ad5714a80976ffe478fb68e3c@kuventa.de/meetingtype/0Sv5L6jWt0ekIZy9r6D1Ug2?bookingcode=5cfeb36b-0bba-4165-bdfe-8f636d8a11f7&amp;anonymous&amp;ismsaljsauthenabled&amp;ep=mlink" target="_blank" rel="noopener noreferrer">
+          Jetzt Termin buchen
+        </a>
+        <p>Öffnet Microsoft Bookings in neuem Tab. Die Terminbuchung funktioniert als Gast, ohne Microsoft-Anmeldung.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact-booking section section-alt">
+  <div class="container">
+    <div class="contact-booking__wrap js-anim" data-anim="animate__fadeInUp" data-once="true">
+      <h2 class="sec-heading center">Termin direkt im Kalender auswählen</h2>
+      <p class="center">Wählen Sie einen freien Slot für ein erstes Gespräch zur Identity-Modernisierung, SSO, MFA oder Keycloak-Architektur.</p>
+
+      <div class="contact-booking__embed">
+        <iframe
+          src="https://outlook.office.com/bookwithme/user/1536062ad5714a80976ffe478fb68e3c@kuventa.de/meetingtype/0Sv5L6jWt0ekIZy9r6D1Ug2?bookingcode=5cfeb36b-0bba-4165-bdfe-8f636d8a11f7&anonymous&ismsaljsauthenabled&ep=mlink"
+          title="Microsoft Bookings Terminbuchung"
+          width="100%"
+          height="780"
+          style="border:0;"
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen="">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section contact-page">
+  <div class="container">
+    <h2 class="center sec-heading js-anim" data-anim="animate__fadeInLeft" data-once="true">Direkter Kontakt</h2>
+    <p class="center js-anim" data-anim="animate__fadeInUp" data-once="true">Wenn Sie vorab Unterlagen senden oder eine konkrete Fragestellung abstimmen möchten, erreichen Sie uns auch direkt.</p>
+  </div>
 
   <div class="contact-direct container js-anim" data-anim="animate__fadeInUp" data-once="true">
     <article class="contact-direct__item">
@@ -24,34 +65,6 @@ nav_order: 4
         <a class="contact-direct__btn contact-direct__btn--primary" href="tel:+4915175032656">Anrufen</a>
       </div>
     </article>
-  </div>
-</div>
-
-<section class="contact-booking section">
-  <div class="container">
-    <div class="contact-booking__wrap js-anim" data-anim="animate__fadeInUp" data-once="true">
-      <h2 class="sec-heading center">Alternativ direkt Termin buchen</h2>
-      <p class="center">Wählen Sie direkt einen freien Slot. Die Buchung funktioniert als Gast, ohne Microsoft-Anmeldung.</p>
-
-      <div class="contact-booking__embed">
-        <iframe
-          src="https://outlook.office.com/bookwithme/user/1536062ad5714a80976ffe478fb68e3c@kuventa.de/meetingtype/0Sv5L6jWt0ekIZy9r6D1Ug2?bookingcode=5cfeb36b-0bba-4165-bdfe-8f636d8a11f7&anonymous&ismsaljsauthenabled&ep=mlink"
-          title="Microsoft Bookings Terminbuchung"
-          width="100%"
-          height="780"
-          style="border:0;"
-          loading="lazy"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen="">
-        </iframe>
-      </div>
-
-      <div class="contact-booking__fallback center">
-        <a class="btn btn-secondary" href="https://outlook.office.com/bookwithme/user/1536062ad5714a80976ffe478fb68e3c@kuventa.de/meetingtype/0Sv5L6jWt0ekIZy9r6D1Ug2?bookingcode=5cfeb36b-0bba-4165-bdfe-8f636d8a11f7&amp;anonymous&amp;ismsaljsauthenabled&amp;ep=mlink" target="_blank" rel="noopener noreferrer">
-          Bookings in neuem Tab öffnen
-        </a>
-      </div>
-    </div>
   </div>
 </section>
 
