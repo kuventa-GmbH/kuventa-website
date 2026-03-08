@@ -1,0 +1,10 @@
+{%- assign target = include.path | default: "/" -%}
+{%- assign first_char = target | slice: 0, 1 -%}
+{%- if target == "" -%}
+{%- elsif target contains "://" or target contains "mailto:" or target contains "tel:" or first_char == "#" -%}
+  {{- target -}}
+{%- elsif jekyll.environment == "production" -%}
+  {{- site.url -}}{{- site.baseurl -}}{{- target -}}
+{%- else -%}
+  {{- target | relative_url -}}
+{%- endif -%}
