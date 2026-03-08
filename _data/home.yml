@@ -69,9 +69,9 @@ process:
     - "Neue Portale oder APIs, die moderne Authentifizierungsstandards benötigen"
   sub-text2: "Ziel ist eine zentrale Identity-Plattform, die Betrieb vereinfacht und künftige Architekturentscheidungen unterstützt."
   image: "/assets/img/illustrations/home/path.svg"
-  primary_btn: "Jetzt Termin buchen"
+  primary_btn: "Projekt besprechen"
   primary_btn_link: "/kontakt/"
-  primary_note: "Kostenloses Erstgespräch • 30 Minuten • unverbindlich"
+  primary_note: "Kurz schildern reicht. Ich melde mich persönlich zurück."
 
 benefits:
   heading: "Vertrauen für komplexe IT-Umgebungen"
@@ -122,8 +122,8 @@ climate:
 
 contact:
   image: "/assets/img/icons/blue-bulb.svg"
-  heading: "Jetzt Termin buchen"
-  text: "In einem kostenlosen Erstgespräch besprechen wir Ihre Ausgangslage, den Modernisierungsbedarf und mögliche nächste Schritte."
-  primary_btn: "Jetzt Termin buchen"
+  heading: "Projekt unverbindlich besprechen"
+  text: "Wenn Sie ein Vorhaben einordnen oder eine konkrete Frage klären möchten, schreiben Sie mir gern kurz. Ich melde mich persönlich mit einem sinnvollen nächsten Schritt zurück."
+  primary_btn: "Unverbindlich anfragen"
   primary_btn_link: "/kontakt/"
-  note: "Kostenloses Erstgespräch • 30 Minuten • unverbindlich"
+  note: "Kurz schildern reicht. Ich melde mich persönlich zurück."

@@ -7,14 +7,14 @@ nav_order: 5
 <section class="section hero">
   <div class="container">
     <div class="blog-header">
-      <p class="blog-kicker js-anim" data-anim="animate__fadeInUp" data-once="true">Microsoft Bookings</p>
-      <h1 class="hero-title js-anim" data-anim="animate__fadeInLeft" data-once="true">Jetzt Termin buchen</h1>
-      <p class="hero-text js-anim" data-anim="animate__fadeIn" data-once="true">Kostenloses Erstgespräch • 30 Minuten • unverbindlich. Im Termin besprechen wir Ihre aktuelle Identity-Landschaft, den Modernisierungsbedarf und mögliche nächste Schritte.</p>
+      <p class="blog-kicker js-anim" data-anim="animate__fadeInUp" data-once="true">Kontakt</p>
+      <h1 class="hero-title js-anim" data-anim="animate__fadeInLeft" data-once="true">Projekt besprechen</h1>
+      <p class="hero-text js-anim" data-anim="animate__fadeIn" data-once="true">Sie können mir Ihr Vorhaben kurz schildern oder direkt einen passenden Gesprächstermin auswählen. Beides ist unverbindlich, und ich melde mich persönlich zurück.</p>
       <div class="hero-actions center js-anim" data-anim="animate__fadeInUp" data-once="true">
-        <a class="btn btn-primary" href="https://outlook.office.com/bookwithme/user/1536062ad5714a80976ffe478fb68e3c@kuventa.de/meetingtype/0Sv5L6jWt0ekIZy9r6D1Ug2?bookingcode=5cfeb36b-0bba-4165-bdfe-8f636d8a11f7&amp;anonymous&amp;ismsaljsauthenabled&amp;ep=mlink" target="_blank" rel="noopener noreferrer">
-          Jetzt Termin buchen
+        <a class="btn btn-soft" href="https://outlook.office.com/bookwithme/user/1536062ad5714a80976ffe478fb68e3c@kuventa.de/meetingtype/0Sv5L6jWt0ekIZy9r6D1Ug2?bookingcode=5cfeb36b-0bba-4165-bdfe-8f636d8a11f7&amp;anonymous&amp;ismsaljsauthenabled&amp;ep=mlink" target="_blank" rel="noopener noreferrer">
+          Gespräch direkt auswählen
         </a>
-        <p>Öffnet Microsoft Bookings in neuem Tab. Die Terminbuchung funktioniert als Gast, ohne Microsoft-Anmeldung.</p>
+        <p class="cta-note">Öffnet Microsoft Bookings in neuem Tab. Die Buchung funktioniert ohne Microsoft-Anmeldung.</p>
       </div>
     </div>
   </div>
@@ -23,8 +23,8 @@ nav_order: 5
 <section class="contact-booking section section-alt">
   <div class="container">
     <div class="contact-booking__wrap js-anim" data-anim="animate__fadeInUp" data-once="true">
-      <h2 class="sec-heading center">Termin direkt im Kalender auswählen</h2>
-      <p class="center">Wählen Sie einen freien Slot für ein erstes Gespräch zur Identity-Modernisierung, SSO, MFA oder Keycloak-Architektur.</p>
+      <h2 class="sec-heading center">Falls ein kurzes Gespräch einfacher ist</h2>
+      <p class="center">Wählen Sie einfach einen passenden Slot. Alternativ können Sie mir jederzeit direkt schreiben.</p>
 
       <div class="contact-booking__embed">
         <iframe
@@ -45,7 +45,7 @@ nav_order: 5
 <section class="section contact-page">
   <div class="container">
     <h2 class="center sec-heading js-anim" data-anim="animate__fadeInLeft" data-once="true">Direkter Kontakt</h2>
-    <p class="center js-anim" data-anim="animate__fadeInUp" data-once="true">Wenn Sie vorab Unterlagen senden oder eine konkrete Fragestellung abstimmen möchten, erreichen Sie uns auch direkt.</p>
+    <p class="center js-anim" data-anim="animate__fadeInUp" data-once="true">Wenn Sie lieber direkt schreiben oder Unterlagen vorab senden möchten, erreichen Sie mich hier unkompliziert.</p>
   </div>
 
   <div class="contact-direct container js-anim" data-anim="animate__fadeInUp" data-once="true">

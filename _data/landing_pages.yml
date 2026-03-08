@@ -1,7 +1,7 @@
 shared:
   booking_link: "/kontakt/"
-  cta_text: "Jetzt Termin buchen"
-  cta_note: "Kostenloses Erstgespräch • 30 Minuten • unverbindlich"
+  cta_text: "Projekt besprechen"
+  cta_note: "Kurz schildern reicht. Ich melde mich persönlich zurück."
 
 identity-modernisierung:
   hero:
@@ -115,8 +115,8 @@ identity-modernisierung:
     alt: true
     image: "/assets/img/photos/about/dennis.webp"
     icon: "/assets/img/icons/handshake.png"
-    title: "Jetzt Termin für ein Erstgespräch buchen"
-    text: "Kostenloses Erstgespräch • 30 Minuten • unverbindlich"
+    title: "Lassen Sie uns Ihr Vorhaben kurz besprechen"
+    text: "Schildern Sie kurz die Ausgangslage. Ich melde mich persönlich zurück oder wir finden direkt einen passenden Termin."
 
 identity-assessment:
   hero:
@@ -222,8 +222,8 @@ identity-assessment:
   final_cta:
     image: "/assets/img/illustrations/home/grow.svg"
     icon: "/assets/img/icons/handshake.png"
-    title: "Jetzt Termin für ein Erstgespräch buchen"
-    text: "Kostenloses Erstgespräch • 30 Minuten • unverbindlich"
+    title: "Lassen Sie uns Ihr Vorhaben kurz besprechen"
+    text: "Schildern Sie kurz die Ausgangslage. Ich melde mich persönlich zurück oder wir finden direkt einen passenden Termin."
   more_solutions:
     alt: true
     heading: "Weitere Lösungen"
@@ -337,8 +337,8 @@ sso-plattform:
   final_cta:
     image: "/assets/img/illustrations/home/userlaptop.svg"
     icon: "/assets/img/icons/handshake.png"
-    title: "Jetzt Termin für ein Erstgespräch buchen"
-    text: "Kostenloses Erstgespräch • 30 Minuten • unverbindlich"
+    title: "Lassen Sie uns Ihr Vorhaben kurz besprechen"
+    text: "Schildern Sie kurz die Ausgangslage. Ich melde mich persönlich zurück oder wir finden direkt einen passenden Termin."
   more_solutions:
     alt: true
     heading: "Weitere Lösungen"
@@ -458,8 +458,8 @@ customer-identity-plattform:
     alt: true
     image: "/assets/img/illustrations/home/userengagement.svg"
     icon: "/assets/img/icons/handshake.png"
-    title: "Jetzt Termin für ein Erstgespräch buchen"
-    text: "Kostenloses Erstgespräch • 30 Minuten • unverbindlich"
+    title: "Lassen Sie uns Ihr Vorhaben kurz besprechen"
+    text: "Schildern Sie kurz die Ausgangslage. Ich melde mich persönlich zurück oder wir finden direkt einen passenden Termin."
   more_solutions:
     alt: true
     heading: "Weitere Lösungen"

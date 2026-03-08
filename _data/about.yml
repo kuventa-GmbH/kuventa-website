@@ -98,7 +98,7 @@ languages:
 cta:
   image: "/assets/img/photos/about/dennis.webp"
   icon: "/assets/img/icons/handshake.png"
-  title: "Lassen Sie uns zusammenarbeiten!"
-  text: "Benötigen Sie Unterstützung bei der Optimierung Ihrer IAM-Sicherheit, der Entwicklung einer maßgeschneiderten IAM-Lösung oder einer sicheren Identitätsverwaltung? Ich bin Ihr Ansprechpartner für technisch anspruchsvolle und innovative Security-Projekte."
-  button_text: "Jetzt kontaktieren"
+  title: "Lassen Sie uns Ihr Vorhaben kurz einordnen"
+  text: "Wenn Sie eine zweite Meinung zu Identity-Architektur, Keycloak oder einem laufenden Vorhaben möchten, schreiben Sie mir einfach ein paar Zeilen. Ich antworte persönlich und unverbindlich."
+  button_text: "Kurze Nachricht senden"
   button_link: "/kontakt/"

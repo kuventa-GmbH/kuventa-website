@@ -7,9 +7,9 @@
       <p class="center js-anim" data-anim="animate__fadeInUp" data-once="true">{{ site.data.home.contact.text }}</p>
     {% endif %}
     <div class="hero-actions center js-anim" data-anim="animate__fadeInUp" data-once="true">
-      <a class="btn btn-primary" href="{{ primary_link | relative_url }}">{{ site.data.home.contact.primary_btn }}</a>
+      <a class="btn btn-soft" href="{{ primary_link | relative_url }}">{{ site.data.home.contact.primary_btn }}</a>
       {% if site.data.home.contact.note %}
-        <p>{{ site.data.home.contact.note }}</p>
+        <p class="cta-note">{{ site.data.home.contact.note }}</p>
       {% endif %}
     </div>
 

@@ -8,9 +8,9 @@
       <img src="{{ include.final.icon | relative_url }}" alt="" loading="lazy">
       <h2>{{ include.final.title }}</h2>
       <p>{{ include.final.text }}</p>
-      <a class="btn btn-primary" href="{{ booking_href }}">{{ include.shared.cta_text }}</a>
+      <a class="btn btn-soft" href="{{ booking_href }}">{{ include.shared.cta_text }}</a>
       {% if include.final.show_note_below %}
-        <p>{{ include.shared.cta_note }}</p>
+        <p class="cta-note">{{ include.shared.cta_note }}</p>
       {% endif %}
     </div>
   </div>
