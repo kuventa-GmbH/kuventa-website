@@ -7,10 +7,7 @@
       <img src="{{ include.final.icon | relative_url }}" alt="" loading="lazy">
       <h2>{{ include.final.title }}</h2>
       <p>{{ include.final.text }}</p>
-      <a class="btn btn-soft" href="{% include helpers/internal-href.html path=include.shared.booking_link %}">{{ include.shared.cta_text }}</a>
-      {% if include.final.show_note_below %}
-        <p class="cta-note">{{ include.shared.cta_note }}</p>
-      {% endif %}
+      <a class="btn btn-primary" href="{% include helpers/internal-href.html path=include.shared.booking_link %}">{{ include.shared.cta_text }}</a>
     </div>
   </div>
 </section>

@@ -6,10 +6,7 @@
       <p class="center js-anim" data-anim="animate__fadeInUp" data-once="true">{{ site.data.home.contact.text }}</p>
     {% endif %}
     <div class="hero-actions center js-anim" data-anim="animate__fadeInUp" data-once="true">
-      <a class="btn btn-soft" href="{% include helpers/internal-href.html path=site.data.home.contact.primary_btn_link %}">{{ site.data.home.contact.primary_btn }}</a>
-      {% if site.data.home.contact.note %}
-        <p class="cta-note">{{ site.data.home.contact.note }}</p>
-      {% endif %}
+      <a class="btn btn-primary" href="{% include helpers/internal-href.html path=site.data.home.contact.primary_btn_link %}">{{ site.data.home.contact.primary_btn }}</a>
     </div>
 
     <div class="contact-widget js-anim" data-anim="animate__fadeInUp" data-once="true">

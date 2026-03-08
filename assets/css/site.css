@@ -183,19 +183,6 @@ ul li:before {
   transform: translateY(2px);
 }
 
-.btn-soft {
-  background: linear-gradient(180deg, #f8fbff 0%, #edf6fd 100%);
-  color: #0f4f83;
-  border-color: rgba(56, 160, 237, 0.26);
-  box-shadow: 0 14px 26px rgba(12, 11, 32, 0.08);
-  transition: 0.3s ease-in-out;
-}
-.btn-soft:hover {
-  background: #e5f2fc;
-  color: #0c3c63;
-  transform: translateY(1px);
-}
-
 .btn-secondary {
   background: #e8f5ff;
   color: #0c0b20;
@@ -218,25 +205,6 @@ ul li:before {
 .btn-ghost:hover {
   border-color: var(--blue);
   color: var(--blue);
-}
-
-.cta-note {
-  margin: 12px 0 0;
-  max-width: 38ch;
-  font-size: 16px;
-  line-height: 26px;
-  color: #5e6877;
-}
-
-.hero-actions .cta-note,
-.contact-booking__wrap .cta-note,
-.cta-content .cta-note {
-  margin-bottom: 0;
-}
-
-.hero-actions .cta-note,
-.contact-booking__wrap.center .cta-note {
-  margin-inline: auto;
 }
 
 .sec-heading {

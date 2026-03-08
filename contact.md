@@ -11,10 +11,9 @@ nav_order: 5
       <h1 class="hero-title js-anim" data-anim="animate__fadeInLeft" data-once="true">Projekt besprechen</h1>
       <p class="hero-text js-anim" data-anim="animate__fadeIn" data-once="true">Sie können mir Ihr Vorhaben kurz schildern oder direkt einen passenden Gesprächstermin auswählen. Beides ist unverbindlich, und ich melde mich persönlich zurück.</p>
       <div class="hero-actions center js-anim" data-anim="animate__fadeInUp" data-once="true">
-        <a class="btn btn-soft" href="https://outlook.office.com/bookwithme/user/1536062ad5714a80976ffe478fb68e3c@kuventa.de/meetingtype/0Sv5L6jWt0ekIZy9r6D1Ug2?bookingcode=5cfeb36b-0bba-4165-bdfe-8f636d8a11f7&amp;anonymous&amp;ismsaljsauthenabled&amp;ep=mlink" target="_blank" rel="noopener noreferrer">
+        <a class="btn btn-primary" href="https://outlook.office.com/bookwithme/user/1536062ad5714a80976ffe478fb68e3c@kuventa.de/meetingtype/0Sv5L6jWt0ekIZy9r6D1Ug2?bookingcode=5cfeb36b-0bba-4165-bdfe-8f636d8a11f7&amp;anonymous&amp;ismsaljsauthenabled&amp;ep=mlink" target="_blank" rel="noopener noreferrer">
           Gespräch direkt auswählen
         </a>
-        <p class="cta-note">Öffnet Microsoft Bookings in neuem Tab. Die Buchung funktioniert ohne Microsoft-Anmeldung.</p>
       </div>
     </div>
   </div>

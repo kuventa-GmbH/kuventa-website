@@ -14,8 +14,7 @@ nav_order: 2
         <h1 class="hero-title js-anim" data-anim="animate__fadeInLeft" data-once="true">Leistungen für moderne Identity-Infrastrukturen</h1>
         <p class="hero-text js-anim" data-anim="animate__fadeIn" data-once="true">kuventa unterstützt Unternehmen von der Analyse bis zur Umsetzung. Alle Leistungen sind auf die Modernisierung bestehender On-Premise-Landschaften und die Vorbereitung auf cloudfähige Architekturen ausgerichtet.</p>
         <div class="hero-actions js-anim" data-anim="animate__fadeInUp" data-once="true">
-          <a class="btn btn-soft" href="{% include helpers/internal-href.html path=shared.booking_link %}">{{ shared.cta_text }}</a>
-          <p class="cta-note">{{ shared.cta_note }}</p>
+          <a class="btn btn-primary" href="{% include helpers/internal-href.html path=shared.booking_link %}">{{ shared.cta_text }}</a>
         </div>
       </div>
 
