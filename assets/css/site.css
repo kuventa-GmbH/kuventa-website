@@ -795,6 +795,15 @@ textarea:focus {
   margin-top: 30px;
 }
 
+.contact-direct--hero {
+  max-width: 980px;
+  margin: 48px auto 0;
+}
+
+.contact-hero-actions {
+  margin-top: 28px;
+}
+
 .contact-direct__item {
   display: block;
   text-decoration: none;

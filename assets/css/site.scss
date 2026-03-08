@@ -761,6 +761,16 @@ textarea:focus {
   gap: 22px;
   margin-top: 30px;
 }
+.contact-direct--hero {
+  max-width: 980px;
+  margin: 48px auto 0;
+}
+.contact-direct--hero .contact-direct__value {
+  font-size: clamp(24px, 1.8vw, 31px);
+}
+.contact-hero-actions {
+  margin-top: 28px;
+}
 .contact-direct__item {
   display: block;
   text-decoration: none;
@@ -1284,6 +1294,9 @@ textarea:focus {
   .contact-direct__value {
     font-size: 30px;
   }
+  .contact-direct--hero .contact-direct__value {
+    font-size: 26px;
+  }
   .contact-section .contact-widget {
     margin: 40px auto;
   }
@@ -1493,6 +1506,9 @@ textarea:focus {
   .contact-direct__value {
     font-size: 24px;
     line-height: 1.22;
+  }
+  .contact-direct--hero .contact-direct__value {
+    font-size: 22px;
   }
   .contact-booking__wrap p {
     margin-bottom: 18px;

@@ -7,63 +7,47 @@ nav_order: 5
 <section class="section hero">
   <div class="container">
     <div class="blog-header">
-      <p class="blog-kicker js-anim" data-anim="animate__fadeInUp" data-once="true">Kontakt</p>
-      <h1 class="hero-title js-anim" data-anim="animate__fadeInLeft" data-once="true">Projekt besprechen</h1>
-      <p class="hero-text js-anim" data-anim="animate__fadeIn" data-once="true">Sie können mir Ihr Vorhaben kurz schildern oder direkt einen passenden Gesprächstermin auswählen. Beides ist unverbindlich, und ich melde mich persönlich zurück.</p>
-      <div class="hero-actions center js-anim" data-anim="animate__fadeInUp" data-once="true">
-        <a class="btn btn-primary" href="https://outlook.office.com/bookwithme/user/1536062ad5714a80976ffe478fb68e3c@kuventa.de/meetingtype/0Sv5L6jWt0ekIZy9r6D1Ug2?bookingcode=5cfeb36b-0bba-4165-bdfe-8f636d8a11f7&amp;anonymous&amp;ismsaljsauthenabled&amp;ep=mlink" target="_blank" rel="noopener noreferrer">
-          Gespräch direkt auswählen
-        </a>
-      </div>
+      <h1 class="hero-title js-anim" data-anim="animate__fadeInLeft" data-once="true">Kontakt</h1>
+      <p class="hero-text js-anim" data-anim="animate__fadeIn" data-once="true">Sie erreichen mich direkt per E-Mail oder Telefon. Wenn ein kurzer Austausch einfacher ist, können Sie alternativ direkt einen Termin buchen.</p>
     </div>
+
+    <div class="contact-direct contact-direct--hero js-anim" data-anim="animate__fadeInUp" data-once="true">
+      <article class="contact-direct__item">
+        <span class="contact-direct__label">E-Mail</span>
+        <span class="contact-direct__value" id="contact-email-value">dennis.kuerschner@kuventa.de</span>
+        <div class="contact-direct__actions">
+          <button class="contact-direct__btn" type="button" data-copy="dennis.kuerschner@kuventa.de" data-copy-label="E-Mail">Kopieren</button>
+          <a class="contact-direct__btn contact-direct__btn--primary" href="mailto:dennis.kuerschner@kuventa.de">E-Mail senden</a>
+        </div>
+      </article>
+      <article class="contact-direct__item">
+        <span class="contact-direct__label">Telefon</span>
+        <span class="contact-direct__value" id="contact-phone-value">+49 151 75 03 26 56</span>
+        <div class="contact-direct__actions">
+          <button class="contact-direct__btn" type="button" data-copy="+49 151 75 03 26 56" data-copy-label="Telefonnummer">Kopieren</button>
+          <a class="contact-direct__btn contact-direct__btn--primary" href="tel:+4915175032656">Anrufen</a>
+        </div>
+      </article>
+    </div>
+
   </div>
 </section>
 
-<section class="contact-booking section section-alt">
+<section class="section section-alt contact-booking">
   <div class="container">
-    <div class="contact-booking__wrap js-anim" data-anim="animate__fadeInUp" data-once="true">
-      <h2 class="sec-heading center">Falls ein kurzes Gespräch einfacher ist</h2>
-      <p class="center">Wählen Sie einfach einen passenden Slot. Alternativ können Sie mir jederzeit direkt schreiben.</p>
-
+    <div class="contact-booking__wrap center js-anim" data-anim="animate__fadeInUp" data-once="true">
+      <h2 class="sec-heading">Termin direkt buchen</h2>
+      <p>Sie können hier direkt einen freien Termin in Microsoft Bookings auswählen.</p>
       <div class="contact-booking__embed">
         <iframe
-          src="https://outlook.office.com/bookwithme/user/1536062ad5714a80976ffe478fb68e3c@kuventa.de/meetingtype/0Sv5L6jWt0ekIZy9r6D1Ug2?bookingcode=5cfeb36b-0bba-4165-bdfe-8f636d8a11f7&anonymous&ismsaljsauthenabled&ep=mlink"
-          title="Microsoft Bookings Terminbuchung"
+          src="https://outlook.office.com/bookwithme/user/1536062ad5714a80976ffe478fb68e3c@kuventa.de/meetingtype/0Sv5L6jWt0ekIZy9r6D1Ug2?bookingcode=5cfeb36b-0bba-4165-bdfe-8f636d8a11f7&amp;anonymous&amp;ismsaljsauthenabled&amp;ep=mlink"
           width="100%"
-          height="780"
-          style="border:0;"
-          loading="lazy"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen="">
-        </iframe>
+          height="760"
+          frameborder="0"
+          title="Microsoft Bookings"
+          loading="lazy"></iframe>
       </div>
     </div>
-  </div>
-</section>
-
-<section class="section contact-page">
-  <div class="container">
-    <h2 class="center sec-heading js-anim" data-anim="animate__fadeInLeft" data-once="true">Direkter Kontakt</h2>
-    <p class="center js-anim" data-anim="animate__fadeInUp" data-once="true">Wenn Sie lieber direkt schreiben oder Unterlagen vorab senden möchten, erreichen Sie mich hier unkompliziert.</p>
-  </div>
-
-  <div class="contact-direct container js-anim" data-anim="animate__fadeInUp" data-once="true">
-    <article class="contact-direct__item">
-      <span class="contact-direct__label">E-Mail</span>
-      <span class="contact-direct__value" id="contact-email-value">dennis.kuerschner@kuventa.de</span>
-      <div class="contact-direct__actions">
-        <button class="contact-direct__btn" type="button" data-copy="dennis.kuerschner@kuventa.de" data-copy-label="E-Mail">Kopieren</button>
-        <a class="contact-direct__btn contact-direct__btn--primary" href="mailto:dennis.kuerschner@kuventa.de">E-Mail senden</a>
-      </div>
-    </article>
-    <article class="contact-direct__item">
-      <span class="contact-direct__label">Telefon</span>
-      <span class="contact-direct__value" id="contact-phone-value">+49 151 75 03 26 56</span>
-      <div class="contact-direct__actions">
-        <button class="contact-direct__btn" type="button" data-copy="+49 151 75 03 26 56" data-copy-label="Telefonnummer">Kopieren</button>
-        <a class="contact-direct__btn contact-direct__btn--primary" href="tel:+4915175032656">Anrufen</a>
-      </div>
-    </article>
   </div>
 </section>
 
