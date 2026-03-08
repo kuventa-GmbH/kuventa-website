@@ -6,14 +6,14 @@ permalink: /loesungen/
 <html lang="de">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="refresh" content="0; url={{ '/leistungen/' | relative_url }}">
-    <link rel="canonical" href="{{ '/leistungen/' | absolute_url }}">
+    <meta http-equiv="refresh" content="0; url={% include helpers/internal-href.html path='/leistungen/' %}">
+    <link rel="canonical" href="{% include helpers/internal-href.html path='/leistungen/' %}">
     <title>Weiterleitung</title>
     <script>
-      window.location.replace("{{ '/leistungen/' | relative_url }}");
+      window.location.replace("{% include helpers/internal-href.html path='/leistungen/' %}");
     </script>
   </head>
   <body>
-    <p><a href="{{ '/leistungen/' | relative_url }}">Weiter zu Leistungen</a></p>
+    <p><a href="{% include helpers/internal-href.html path='/leistungen/' %}">Weiter zu Leistungen</a></p>
   </body>
 </html>

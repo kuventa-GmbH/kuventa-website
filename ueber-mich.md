@@ -5,14 +5,14 @@ permalink: /ueber-mich/
 <html lang="de">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="refresh" content="0; url={{ '/ueber-uns/' | relative_url }}">
-    <link rel="canonical" href="{{ '/ueber-uns/' | absolute_url }}">
+    <meta http-equiv="refresh" content="0; url={% include helpers/internal-href.html path='/ueber-uns/' %}">
+    <link rel="canonical" href="{% include helpers/internal-href.html path='/ueber-uns/' %}">
     <title>Weiterleitung</title>
     <script>
-      window.location.replace("{{ '/ueber-uns/' | relative_url }}");
+      window.location.replace("{% include helpers/internal-href.html path='/ueber-uns/' %}");
     </script>
   </head>
   <body>
-    <p><a href="{{ '/ueber-uns/' | relative_url }}">Weiter zu Über uns</a></p>
+    <p><a href="{% include helpers/internal-href.html path='/ueber-uns/' %}">Weiter zu Über uns</a></p>
   </body>
 </html>

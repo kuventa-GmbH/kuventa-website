@@ -1,6 +1,6 @@
 <header class="site-header">
   <div class="nav-wrap">
-    <a class="brand js-anim" data-anim="animate__fadeInDown" data-once="true"  href="{{ '/' | relative_url }}">
+    <a class="brand js-anim" data-anim="animate__fadeInDown" data-once="true"  href="{% include helpers/internal-href.html path='/' %}">
       <!-- If you have SVG/PNG logo  -->
       <img class="brand-logo" src="{{ '/assets/img/brand/logo.png' | relative_url }}" alt="{{ site.title }}">
       <!-- <span class="brand-text">{{ site.title }}</span> -->
@@ -27,7 +27,7 @@
           {% endif %}
         {% endif %}
         <a class="nav-link {% if is_active %}is-active{% endif %}"
-          href="{{ p.url | relative_url }}">
+          href="{% include helpers/internal-href.html path=p.url %}">
           {{ p.title }}
         </a>
       {% endfor %}

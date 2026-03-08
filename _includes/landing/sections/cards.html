@@ -9,7 +9,7 @@
         {% for paragraph_link in include.section.paragraph_links %}
           <p>
             {{ paragraph_link.prefix }}
-            <a class="blog-entry-link" href="{{ paragraph_link.link | relative_url }}">{{ paragraph_link.link_text }}</a>
+            <a class="blog-entry-link" href="{% include helpers/internal-href.html path=paragraph_link.link %}">{{ paragraph_link.link_text }}</a>
             {{ paragraph_link.suffix }}
           </p>
         {% endfor %}
@@ -33,9 +33,9 @@
           {% endif %}
           {% if item.link %}
             {% if item.link_as_button %}
-              <a class="btn btn-secondary" href="{{ item.link | relative_url }}">{{ item.link_text | default: "Mehr erfahren" }}</a>
+              <a class="btn btn-secondary" href="{% include helpers/internal-href.html path=item.link %}">{{ item.link_text | default: "Mehr erfahren" }}</a>
             {% else %}
-              <a class="blog-entry-link" href="{{ item.link | relative_url }}">{{ item.link_text | default: "Mehr erfahren" }}</a>
+              <a class="blog-entry-link" href="{% include helpers/internal-href.html path=item.link %}">{{ item.link_text | default: "Mehr erfahren" }}</a>
             {% endif %}
           {% endif %}
         </div>

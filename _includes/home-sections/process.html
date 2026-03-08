@@ -1,7 +1,5 @@
 <section class="section section-alt">
   <div class="container process">
-    {% assign primary_link = site.data.home.process.primary_btn_link %}
-
     <!-- Illustration -->
     <div class="process-art js-anim" data-anim="animate__fadeInLeft">
       <img src="{{ site.data.home.process.image | relative_url }}" alt="" loading="lazy">
@@ -19,7 +17,7 @@
       </ul>
       <h5>{{ site.data.home.process.sub-text2  }}</h5>
 
-      <a href="{{ primary_link | relative_url }}"
+      <a href="{% include helpers/internal-href.html path=site.data.home.process.primary_btn_link %}"
          class="btn btn-soft">
          {{ site.data.home.process.primary_btn }}
       </a>

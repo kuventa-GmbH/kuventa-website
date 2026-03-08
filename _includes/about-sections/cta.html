@@ -7,7 +7,7 @@
       <img src="{{ site.data.about.cta.icon | relative_url }}" alt="" loading="lazy">
       <h2>{{ site.data.about.cta.title }}</h2>
       <p>{{ site.data.about.cta.text }}</p>
-      <a class="btn btn-soft" href="{{ site.data.about.cta.button_link | relative_url }}">
+      <a class="btn btn-soft" href="{% include helpers/internal-href.html path=site.data.about.cta.button_link %}">
         {{ site.data.about.cta.button_text }}
       </a>
     </div>

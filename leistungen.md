@@ -14,7 +14,7 @@ nav_order: 2
         <h1 class="hero-title js-anim" data-anim="animate__fadeInLeft" data-once="true">Leistungen für moderne Identity-Infrastrukturen</h1>
         <p class="hero-text js-anim" data-anim="animate__fadeIn" data-once="true">kuventa unterstützt Unternehmen von der Analyse bis zur Umsetzung. Alle Leistungen sind auf die Modernisierung bestehender On-Premise-Landschaften und die Vorbereitung auf cloudfähige Architekturen ausgerichtet.</p>
         <div class="hero-actions js-anim" data-anim="animate__fadeInUp" data-once="true">
-          <a class="btn btn-soft" href="{{ shared.booking_link | relative_url }}">{{ shared.cta_text }}</a>
+          <a class="btn btn-soft" href="{% include helpers/internal-href.html path=shared.booking_link %}">{{ shared.cta_text }}</a>
           <p class="cta-note">{{ shared.cta_note }}</p>
         </div>
       </div>
@@ -111,7 +111,7 @@ nav_order: 2
               <li>Priorisierung nach Nutzen und Umsetzbarkeit</li>
             </ul>
             <div class="contact-direct__actions">
-              <a class="contact-direct__btn contact-direct__btn--primary" href="{{ '/identity-modernisierung/' | relative_url }}">Mehr erfahren</a>
+              <a class="contact-direct__btn contact-direct__btn--primary" href="{% include helpers/internal-href.html path='/identity-modernisierung/' %}">Mehr erfahren</a>
             </div>
           </div>
         </article>
@@ -127,7 +127,7 @@ nav_order: 2
               <li>Priorisierte Entscheidungsgrundlage für Folgeprojekte</li>
             </ul>
             <div class="contact-direct__actions">
-              <a class="contact-direct__btn contact-direct__btn--primary" href="{{ '/identity-assessment/' | relative_url }}">Mehr erfahren</a>
+              <a class="contact-direct__btn contact-direct__btn--primary" href="{% include helpers/internal-href.html path='/identity-assessment/' %}">Mehr erfahren</a>
             </div>
           </div>
         </article>
@@ -143,7 +143,7 @@ nav_order: 2
               <li>Zentrale Policies und moderne Login-Standards</li>
             </ul>
             <div class="contact-direct__actions">
-              <a class="contact-direct__btn contact-direct__btn--primary" href="{{ '/sso-plattform/' | relative_url }}">Mehr erfahren</a>
+              <a class="contact-direct__btn contact-direct__btn--primary" href="{% include helpers/internal-href.html path='/sso-plattform/' %}">Mehr erfahren</a>
             </div>
           </div>
         </article>
@@ -159,7 +159,7 @@ nav_order: 2
               <li>Trennung interner und externer Identitäten</li>
             </ul>
             <div class="contact-direct__actions">
-              <a class="contact-direct__btn contact-direct__btn--primary" href="{{ '/customer-identity-plattform/' | relative_url }}">Mehr erfahren</a>
+              <a class="contact-direct__btn contact-direct__btn--primary" href="{% include helpers/internal-href.html path='/customer-identity-plattform/' %}">Mehr erfahren</a>
             </div>
           </div>
         </article>

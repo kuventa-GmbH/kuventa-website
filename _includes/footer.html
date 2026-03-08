@@ -3,7 +3,7 @@
   <div class="container footer-top">
     <!-- Left: brand + address + contacts -->
     <div class="footer-left">
-      <a class="footer-brand" href="{{ '/' | relative_url }}">
+      <a class="footer-brand" href="{% include helpers/internal-href.html path='/' %}">
         <img class="footer-logo" src="{{ '/assets/img/brand/logo.png' | relative_url }}" alt="{{ site.title }}">
       </a>
 
@@ -33,28 +33,28 @@
 
     <!-- Right: nav links -->
     <nav class="footer-nav" aria-label="Footer">
-      <a href="{{ '/' | relative_url }}" class="footer-link {% if page.url == '/' %}is-active{% endif %}">Start</a>
-      <a href="{{ '/leistungen/' | relative_url }}" class="footer-link {% if page.url contains '/leistungen/' %}is-active{% endif %}">Leistungen</a>
-      <a href="{{ '/ueber-uns/' | relative_url }}" class="footer-link {% if page.url contains '/ueber-uns/' %}is-active{% endif %}">Über uns</a>
-      <a href="{{ '/beraterprofil/' | relative_url }}" class="footer-link {% if page.url contains '/beraterprofil/' %}is-active{% endif %}">Beraterprofil</a>
-      <a href="{{ '/kontakt/' | relative_url }}" class="footer-link {% if page.url contains 'kontakt' %}is-active{% endif %}">Kontakt</a>
-      <a href="{{ '/blog/' | relative_url }}" class="footer-link {% if page.url contains '/blog/' %}is-active{% endif %}">Insights</a>
+      <a href="{% include helpers/internal-href.html path='/' %}" class="footer-link {% if page.url == '/' %}is-active{% endif %}">Start</a>
+      <a href="{% include helpers/internal-href.html path='/leistungen/' %}" class="footer-link {% if page.url contains '/leistungen/' %}is-active{% endif %}">Leistungen</a>
+      <a href="{% include helpers/internal-href.html path='/ueber-uns/' %}" class="footer-link {% if page.url contains '/ueber-uns/' %}is-active{% endif %}">Über uns</a>
+      <a href="{% include helpers/internal-href.html path='/beraterprofil/' %}" class="footer-link {% if page.url contains '/beraterprofil/' %}is-active{% endif %}">Beraterprofil</a>
+      <a href="{% include helpers/internal-href.html path='/kontakt/' %}" class="footer-link {% if page.url contains 'kontakt' %}is-active{% endif %}">Kontakt</a>
+      <a href="{% include helpers/internal-href.html path='/blog/' %}" class="footer-link {% if page.url contains '/blog/' %}is-active{% endif %}">Insights</a>
     </nav>
 
     <nav class="footer-nav" aria-label="Identity Lösungen">
       <p class="footer-link">Identity Lösungen</p>
-      <a href="{{ '/identity-modernisierung/' | relative_url }}" class="footer-link {% if page.url contains 'identity-modernisierung' %}is-active{% endif %}">Identity Modernisierung</a>
-      <a href="{{ '/identity-assessment/' | relative_url }}" class="footer-link {% if page.url contains 'identity-assessment' %}is-active{% endif %}">Identity Assessment</a>
-      <a href="{{ '/sso-plattform/' | relative_url }}" class="footer-link {% if page.url contains 'sso-plattform' %}is-active{% endif %}">SSO Plattform</a>
-      <a href="{{ '/customer-identity-plattform/' | relative_url }}" class="footer-link {% if page.url contains 'customer-identity-plattform' %}is-active{% endif %}">Customer Identity Plattform</a>
-      <a href="{{ shared.booking_link | relative_url }}" class="footer-link">Termin buchen</a>
+      <a href="{% include helpers/internal-href.html path='/identity-modernisierung/' %}" class="footer-link {% if page.url contains 'identity-modernisierung' %}is-active{% endif %}">Identity Modernisierung</a>
+      <a href="{% include helpers/internal-href.html path='/identity-assessment/' %}" class="footer-link {% if page.url contains 'identity-assessment' %}is-active{% endif %}">Identity Assessment</a>
+      <a href="{% include helpers/internal-href.html path='/sso-plattform/' %}" class="footer-link {% if page.url contains 'sso-plattform' %}is-active{% endif %}">SSO Plattform</a>
+      <a href="{% include helpers/internal-href.html path='/customer-identity-plattform/' %}" class="footer-link {% if page.url contains 'customer-identity-plattform' %}is-active{% endif %}">Customer Identity Plattform</a>
+      <a href="{% include helpers/internal-href.html path=shared.booking_link %}" class="footer-link">Termin buchen</a>
     </nav>
   </div>
 
   <div class="container footer-bottom">
     <div class="footer-legal">
-      <a href="{{ '/impressum/' | relative_url }}">Impressum</a>
-      <a href="{{ '/datenschutz/' | relative_url }}">Datenschutzerklärung</a>
+      <a href="{% include helpers/internal-href.html path='/impressum/' %}">Impressum</a>
+      <a href="{% include helpers/internal-href.html path='/datenschutz/' %}">Datenschutzerklärung</a>
     </div>
 
     <div class="footer-copy">

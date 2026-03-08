@@ -1,13 +1,12 @@
 <section class="section section-alt contact-section">
   <div class="container">
-    {% assign primary_link = site.data.home.contact.primary_btn_link %}
     <div class="heading-img js-anim" data-anim="animate__fadeInUp" data-once="true"><img src="{{ site.data.home.contact.image | relative_url }}"></div>
     <h2 class="sec-heading center js-anim" data-anim="animate__fadeInUp" data-once="true">{{ site.data.home.contact.heading }}</h2>
     {% if site.data.home.contact.text %}
       <p class="center js-anim" data-anim="animate__fadeInUp" data-once="true">{{ site.data.home.contact.text }}</p>
     {% endif %}
     <div class="hero-actions center js-anim" data-anim="animate__fadeInUp" data-once="true">
-      <a class="btn btn-soft" href="{{ primary_link | relative_url }}">{{ site.data.home.contact.primary_btn }}</a>
+      <a class="btn btn-soft" href="{% include helpers/internal-href.html path=site.data.home.contact.primary_btn_link %}">{{ site.data.home.contact.primary_btn }}</a>
       {% if site.data.home.contact.note %}
         <p class="cta-note">{{ site.data.home.contact.note }}</p>
       {% endif %}

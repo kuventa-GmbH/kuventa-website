@@ -13,7 +13,7 @@
           {% endfor %}
         </ul>
         {% if s.link %}
-          <a class="btn btn-secondary" href="{{ s.link | relative_url }}">{{ s.link_text | default: "Mehr erfahren" }}</a>
+          <a class="btn btn-secondary" href="{% include helpers/internal-href.html path=s.link %}">{{ s.link_text | default: "Mehr erfahren" }}</a>
         {% endif %}
       </div>
       {% endfor %}
