@@ -10,16 +10,16 @@ nav_order: 2
   <div class="container">
     <div class="process">
       <div class="process-content">
-        <p class="blog-kicker js-anim" data-anim="animate__fadeInUp" data-once="true">Beratung und Implementierung</p>
-        <h1 class="hero-title js-anim" data-anim="animate__fadeInLeft" data-once="true">Leistungen für moderne Identity-Infrastrukturen</h1>
-        <p class="hero-text js-anim" data-anim="animate__fadeIn" data-once="true">kuventa unterstützt Unternehmen von der Analyse bis zur Umsetzung. Alle Leistungen sind auf die Modernisierung bestehender On-Premise-Landschaften und die Vorbereitung auf cloudfähige Architekturen ausgerichtet.</p>
+        <p class="blog-kicker js-anim" data-anim="animate__fadeInUp" data-once="true">Strategische Beratung und Umsetzung</p>
+        <h1 class="hero-title js-anim" data-anim="animate__fadeInLeft" data-once="true">Identity modernisieren, ohne das Tagesgeschäft zu destabilisieren</h1>
+        <p class="hero-text js-anim" data-anim="animate__fadeIn" data-once="true">kuventa unterstützt Unternehmen dabei, gewachsene Zugriffs- und Authentifizierungsstrukturen zu ordnen, Risiken zu reduzieren und einen realistischen Weg für sichere, skalierbare digitale Prozesse zu definieren.</p>
         <div class="hero-actions js-anim" data-anim="animate__fadeInUp" data-once="true">
           <a class="btn btn-primary" href="{% include helpers/internal-href.html path=shared.booking_link %}">{{ shared.cta_text }}</a>
         </div>
       </div>
 
       <div class="process-art js-anim" data-anim="animate__fadeInRight" data-once="true">
-        <img src="{{ '/assets/img/illustrations/home/grow.svg' | relative_url }}" alt="Illustration zu Identity-Leistungen" loading="eager">
+        <img src="{{ '/assets/img/illustrations/home/grow.svg' | relative_url }}" alt="Illustration zur strategischen Modernisierung von Identity-Prozessen" loading="eager">
       </div>
     </div>
   </div>
@@ -29,61 +29,41 @@ nav_order: 2
   <section class="section">
     <div class="container">
       <div class="blog-header js-anim" data-anim="animate__fadeInUp" data-once="true">
-        <p class="blog-kicker">Typische Ausgangslagen</p>
-        <h2 class="sec-heading">Wo Identity-Projekte typischerweise entstehen</h2>
-        <p>Die Leistungsseite bündelt jetzt auch die typischen Problemstellungen. So lässt sich schneller einordnen, welcher Einstieg für Ihre IT-Landschaft sinnvoll ist.</p>
+        <p class="blog-kicker">Typische Management-Sicht</p>
+        <h2 class="sec-heading">Die Symptome sind sichtbar. Die eigentliche Ursache bleibt oft unklar.</h2>
+        <p>Viele Unternehmen spüren steigenden Druck bei Sicherheit, Cloud-Anbindung, Audit-Fähigkeit und Nutzerfreundlichkeit. Das Grundproblem liegt aber meist tiefer: in historisch gewachsenen Identity-Prozessen, unklaren Zuständigkeiten und fehlender strategischer Steuerung.</p>
       </div>
 
       <div class="benefits-grid">
         <article class="benefit js-anim" data-anim="animate__fadeInUp" data-once="true">
           <img class="benefit-img" src="{{ '/assets/img/illustrations/home/folders.svg' | relative_url }}" alt="" loading="lazy">
           <div>
-            <h3>Verteilte Logins und Benutzerquellen</h3>
-            <p>Anwendungen verwalten ihre Zugänge separat. Benutzerkonten, Rollen und Authentifizierungswege sind über mehrere Systeme verteilt.</p>
-            <ul class="list">
-              <li>mehr Supportaufwand</li>
-              <li>weniger Transparenz</li>
-              <li>höhere Sicherheitsrisiken</li>
-            </ul>
+            <h3>Zu viele Einzellösungen</h3>
+            <p>Benutzerkonten, Login-Wege und Berechtigungen sind über mehrere Systeme verteilt. Dadurch steigen Abstimmungsaufwand, Fehleranfälligkeit und Betriebskosten.</p>
           </div>
         </article>
 
         <article class="benefit js-anim" data-anim="animate__fadeInUp" data-once="true">
           <img class="benefit-img" src="{{ '/assets/img/illustrations/home/path.svg' | relative_url }}" alt="" loading="lazy">
           <div>
-            <h3>Cloud- und SaaS-Anbindung stockt</h3>
-            <p>Active Directory funktioniert als heutige Benutzerquelle, reicht aber für moderne Portale, SaaS-Anwendungen und APIs allein nicht aus.</p>
-            <ul class="list">
-              <li>fehlende Standards</li>
-              <li>keine zentrale Federation</li>
-              <li>schwierige Integrationspfade</li>
-            </ul>
+            <h3>Digitalisierung stockt an der Zugriffslogik</h3>
+            <p>Neue Anwendungen, Portale, SaaS-Dienste oder APIs sollen eingeführt werden, passen aber nicht sauber zur bestehenden Identity-Struktur.</p>
           </div>
         </article>
 
         <article class="benefit js-anim" data-anim="animate__fadeInUp" data-once="true">
           <img class="benefit-img" src="{{ '/assets/img/illustrations/home/config.svg' | relative_url }}" alt="" loading="lazy">
           <div>
-            <h3>Uneinheitliche MFA und Security</h3>
-            <p>Mehrfaktor-Authentifizierung ist nur für einzelne Systeme eingeführt oder je Anwendung unterschiedlich umgesetzt.</p>
-            <ul class="list">
-              <li>inkonsistente Login-Flows</li>
-              <li>schwierige Durchsetzung von Policies</li>
-              <li>mehr Audit-Aufwand</li>
-            </ul>
+            <h3>Sicherheits- und Auditdruck nimmt zu</h3>
+            <p>Uneinheitliche Verfahren, fehlende Transparenz und Sonderwege machen es schwer, Anforderungen aus Security, Governance und Revision sauber umzusetzen.</p>
           </div>
         </article>
 
         <article class="benefit js-anim" data-anim="animate__fadeInUp" data-once="true">
           <img class="benefit-img" src="{{ '/assets/img/illustrations/home/userlaptop.svg' | relative_url }}" alt="" loading="lazy">
           <div>
-            <h3>Neue Portale, Produkte oder APIs</h3>
-            <p>Fachbereiche und Produktteams brauchen moderne Authentifizierung für interne und externe Nutzer, aber es fehlt eine gemeinsame Identity-Basis.</p>
-            <ul class="list">
-              <li>externe Identitäten</li>
-              <li>Self-Service</li>
-              <li>tokenbasierte Sicherheit</li>
-            </ul>
+            <h3>Entscheidungen bleiben zu technisch</h3>
+            <p>Im Management fehlt oft die Übersetzung von technischer Komplexität in Prioritäten, Risiken, Aufwand und geschäftlichen Nutzen.</p>
           </div>
         </article>
       </div>
@@ -93,37 +73,21 @@ nav_order: 2
   <section class="section benefits-sec">
     <div class="container">
       <div class="blog-header js-anim" data-anim="animate__fadeInUp" data-once="true">
-        <p class="blog-kicker">Leistungsübersicht</p>
-        <h2 class="sec-heading">Vier Bausteine für die Identity-Modernisierung</h2>
-        <p>Die Leistungen sind so aufgebaut, dass sie zu unterschiedlichen Ausgangslagen passen. Manche Vorhaben beginnen mit einer Analyse, andere direkt mit einer Plattform-Implementierung.</p>
+        <p class="blog-kicker">Strategischer Lösungsansatz</p>
+        <h2 class="sec-heading">Vier Wege, um aus technischer Komplexität ein steuerbares Vorhaben zu machen</h2>
+        <p>Die Zusammenarbeit startet dort, wo Ihr Unternehmen aktuell steht: bei fehlender Transparenz, bei einer notwendigen Neuausrichtung oder direkt in der Umsetzung.</p>
       </div>
 
       <div class="benefits-grid">
         <article class="benefit js-anim" data-anim="animate__fadeInUp" data-once="true">
           <img class="benefit-img" src="{{ '/assets/img/illustrations/home/path.svg' | relative_url }}" alt="" loading="lazy">
           <div>
-            <h3>Identity Modernisierung</h3>
-            <p>Für Unternehmen, die ihre gewachsene Authentifizierungslandschaft strukturiert in eine cloudfähige Zielarchitektur überführen wollen.</p>
+            <h3>Assessment und Einordnung</h3>
+            <p>Wenn zunächst Klarheit fehlt, analysieren wir die Ausgangslage, benennen Risiken und schaffen eine belastbare Entscheidungsgrundlage.</p>
             <ul class="list">
-              <li>Zielbild für zentrale Authentifizierung</li>
-              <li>Roadmap für hybride und cloudnahe Landschaften</li>
-              <li>Priorisierung nach Nutzen und Umsetzbarkeit</li>
-            </ul>
-            <div class="contact-direct__actions">
-              <a class="contact-direct__btn contact-direct__btn--primary" href="{% include helpers/internal-href.html path='/identity-modernisierung/' %}">Mehr erfahren</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="benefit js-anim" data-anim="animate__fadeInUp" data-once="true">
-          <img class="benefit-img" src="{{ '/assets/img/illustrations/home/folders.svg' | relative_url }}" alt="" loading="lazy">
-          <div>
-            <h3>Identity Assessment</h3>
-            <p>Für Vorhaben, die zunächst Transparenz über bestehende Systeme, Risiken, Integrationen und die nächsten sinnvollen Schritte benötigen.</p>
-            <ul class="list">
-              <li>Analyse der heutigen Authentifizierungslandschaft</li>
-              <li>Bewertung von SSO, MFA und Integrationsfähigkeit</li>
-              <li>Priorisierte Entscheidungsgrundlage für Folgeprojekte</li>
+              <li>Ist-Zustand und Schwachstellen sichtbar machen</li>
+              <li>Prioritäten für Management und IT abstimmen</li>
+              <li>realistischen Einstieg definieren</li>
             </ul>
             <div class="contact-direct__actions">
               <a class="contact-direct__btn contact-direct__btn--primary" href="{% include helpers/internal-href.html path='/identity-assessment/' %}">Mehr erfahren</a>
@@ -132,14 +96,30 @@ nav_order: 2
         </article>
 
         <article class="benefit js-anim" data-anim="animate__fadeInUp" data-once="true">
+          <img class="benefit-img" src="{{ '/assets/img/illustrations/home/grow.svg' | relative_url }}" alt="" loading="lazy">
+          <div>
+            <h3>Modernisierungsstrategie und Roadmap</h3>
+            <p>Wenn die Richtung grundsätzlich klar ist, strukturieren wir Zielbild, Abhängigkeiten und einen gangbaren Umsetzungsplan.</p>
+            <ul class="list">
+              <li>schrittweise Modernisierung statt Big Bang</li>
+              <li>Priorisierung nach Nutzen, Risiko und Machbarkeit</li>
+              <li>Architektur und Betriebsrealität zusammenbringen</li>
+            </ul>
+            <div class="contact-direct__actions">
+              <a class="contact-direct__btn contact-direct__btn--primary" href="{% include helpers/internal-href.html path='/identity-modernisierung/' %}">Mehr erfahren</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="benefit js-anim" data-anim="animate__fadeInUp" data-once="true">
           <img class="benefit-img" src="{{ '/assets/img/illustrations/home/security.svg' | relative_url }}" alt="" loading="lazy">
           <div>
-            <h3>SSO Plattform</h3>
-            <p>Für interne Anwendungen, Portale und SaaS-Dienste, die zentral authentifiziert und mit konsistenter MFA abgesichert werden sollen.</p>
+            <h3>Interne Zugriffsprozesse vereinheitlichen</h3>
+            <p>Für Mitarbeiterzugänge, interne Anwendungen und hybride Umgebungen schaffen wir konsistente, sichere und wartbare Abläufe.</p>
             <ul class="list">
-              <li>Single Sign-On für Mitarbeitende</li>
-              <li>Anbindung von AD, LDAP und SaaS</li>
-              <li>Zentrale Policies und moderne Login-Standards</li>
+              <li>weniger Reibung im Arbeitsalltag</li>
+              <li>klarere Sicherheitsstandards</li>
+              <li>bessere Anschlussfähigkeit für neue Systeme</li>
             </ul>
             <div class="contact-direct__actions">
               <a class="contact-direct__btn contact-direct__btn--primary" href="{% include helpers/internal-href.html path='/sso-plattform/' %}">Mehr erfahren</a>
@@ -150,12 +130,12 @@ nav_order: 2
         <article class="benefit js-anim" data-anim="animate__fadeInUp" data-once="true">
           <img class="benefit-img" src="{{ '/assets/img/illustrations/home/config.svg' | relative_url }}" alt="" loading="lazy">
           <div>
-            <h3>Customer Identity Plattform</h3>
-            <p>Für Kunden-, Partner- und Entwicklerportale, die externe Nutzer sicher, skalierbar und standardisiert authentifizieren müssen.</p>
+            <h3>Externe Zugänge sauber aufsetzen</h3>
+            <p>Für Kunden, Partner und digitale Services definieren wir sichere, verständliche und skalierbare Zugriffsprozesse.</p>
             <ul class="list">
-              <li>Self-Service und Registrierungsprozesse</li>
-              <li>API-Sicherheit mit Tokens</li>
-              <li>Trennung interner und externer Identitäten</li>
+              <li>saubere Nutzerführung und Self-Service</li>
+              <li>klare Trennung interner und externer Anforderungen</li>
+              <li>solide Grundlage für Portale und digitale Angebote</li>
             </ul>
             <div class="contact-direct__actions">
               <a class="contact-direct__btn contact-direct__btn--primary" href="{% include helpers/internal-href.html path='/customer-identity-plattform/' %}">Mehr erfahren</a>
@@ -174,26 +154,26 @@ nav_order: 2
         </div>
 
         <div class="focus-cols js-anim" data-anim="animate__fadeInRight" data-once="true">
-          <h2 class="sec-heading">Wann welche Leistung sinnvoll ist</h2>
+          <h2 class="sec-heading">Wie die Zusammenarbeit funktioniert</h2>
 
           <div class="focus-col">
-            <h3 class="linkish">Wenn Transparenz fehlt</h3>
-            <p>Dann ist das Assessment der richtige Einstieg. Es schafft ein belastbares Bild über Systeme, Integrationen, Risiken und Prioritäten.</p>
+            <h3 class="linkish">1. Ausgangslage klären</h3>
+            <p>Wir erfassen Ziele, Risiken, Systeme, Nutzergruppen und organisatorische Rahmenbedingungen so, dass technische und geschäftliche Perspektive zusammenkommen.</p>
           </div>
 
           <div class="focus-col">
-            <h3 class="linkish">Wenn interne Anwendungen zentral authentifiziert werden sollen</h3>
-            <p>Dann steht meist eine SSO Plattform im Vordergrund. Ziel ist ein zentraler Identity Provider für Mitarbeiterzugänge, Portale und SaaS.</p>
+            <h3 class="linkish">2. Zielbild definieren</h3>
+            <p>Aus der Analyse entsteht ein verständliches Bild davon, welche Struktur künftig nötig ist und welche Entscheidungen wirklich Priorität haben.</p>
           </div>
 
           <div class="focus-col">
-            <h3 class="linkish">Wenn eine gewachsene Landschaft strategisch modernisiert werden muss</h3>
-            <p>Dann geht es um Identity Modernisierung als übergeordnetes Architekturthema. Die Umsetzung kann später in mehrere Teilprojekte aufgeteilt werden.</p>
+            <h3 class="linkish">3. Umsetzung priorisieren</h3>
+            <p>Wir schneiden den ersten Scope so zu, dass Nutzen, Risiko und Umsetzbarkeit in einem sinnvollen Verhältnis stehen.</p>
           </div>
 
           <div class="focus-col">
-            <h3 class="linkish">Wenn externe Nutzer angebunden werden</h3>
-            <p>Dann ist eine Customer Identity Plattform der passende Baustein. Interne und externe Anforderungen sollten architektonisch sauber getrennt werden.</p>
+            <h3 class="linkish">4. Einführung begleiten</h3>
+            <p>Die Umsetzung wird so geführt, dass Betrieb, Sicherheit, Akzeptanz und Wissenstransfer nicht erst am Ende auftauchen.</p>
           </div>
         </div>
       </div>
@@ -207,16 +187,16 @@ nav_order: 2
       </div>
 
       <div class="process-content js-anim" data-anim="animate__fadeInRight" data-once="true">
-        <h2 class="sec-heading">Was eine moderne Identity-Lösung leisten muss</h2>
-        <p>Eine tragfähige Lösung darf nicht nur einzelne Logins ersetzen. Sie muss Sicherheit, Integrationsfähigkeit und Betriebsrealität gleichzeitig abdecken.</p>
-        <h3>Kernanforderungen</h3>
+        <h2 class="sec-heading">Was Unternehmen am Ende gewinnen</h2>
+        <p>Der Wert entsteht nicht durch ein einzelnes technisches Element, sondern durch einen beherrschbaren, sicheren und anschlussfähigen Gesamtprozess.</p>
+        <h3>Typische Ergebnisse</h3>
         <ul class="list">
-          <li>zentraler Identity Provider statt verteilter Login-Mechanismen</li>
-          <li>Standards wie OpenID Connect, OAuth2 und SAML</li>
-          <li>konsistente MFA und zentrale Zugriffskontrolle</li>
-          <li>saubere Integration von On-Premise, SaaS, Portalen und APIs</li>
+          <li>weniger operative Reibung bei Zugängen, Berechtigungen und Integrationen</li>
+          <li>mehr Transparenz für Security, Governance und Audit</li>
+          <li>klarere Entscheidungsgrundlagen für Management und IT-Leitung</li>
+          <li>bessere Vorbereitung auf Cloud-, Portal- und API-Vorhaben</li>
         </ul>
-        <h5>Das Ziel ist eine Plattform, die heutige Anforderungen trägt und weitere Cloud-Schritte vorbereitet.</h5>
+        <h5>Das Ziel ist nicht ein neues Tool, sondern eine tragfähige Struktur für Wachstum, Sicherheit und Digitalisierung.</h5>
       </div>
     </div>
   </section>
@@ -229,26 +209,21 @@ nav_order: 2
         </div>
 
         <div class="focus-cols js-anim" data-anim="animate__fadeInRight" data-once="true">
-          <h2 class="sec-heading">Typische Lösungsbilder</h2>
+          <h2 class="sec-heading">Warum Entscheider mit kuventa arbeiten</h2>
 
           <div class="focus-col">
-            <h3 class="linkish">Assessment und Roadmap</h3>
-            <p>Wenn die Landschaft unübersichtlich ist, beginnt die Lösung mit einer sauberen Analyse und einer priorisierten Modernisierungslogik.</p>
+            <h3 class="linkish">Strategisch verständlich</h3>
+            <p>Komplexe Themen werden so übersetzt, dass Geschäftsführung, IT-Leitung und Projektverantwortliche fundierte Entscheidungen treffen können.</p>
           </div>
 
           <div class="focus-col">
-            <h3 class="linkish">SSO Plattform für interne Systeme</h3>
-            <p>Wenn Mitarbeitende mehrere Anwendungen nutzen, ist häufig eine zentrale Plattform für Single Sign-On, MFA und Richtlinien der richtige Schritt.</p>
+            <h3 class="linkish">Technisch belastbar</h3>
+            <p>Die Beratung bleibt nicht an der Oberfläche, sondern berücksichtigt Integrationen, Sicherheitsanforderungen, Betriebsrealität und spätere Skalierung.</p>
           </div>
 
           <div class="focus-col">
-            <h3 class="linkish">Customer Identity für externe Nutzer</h3>
-            <p>Wenn Kunden, Partner oder Entwickler sicher auf Portale und APIs zugreifen müssen, braucht es ein separates Lösungsbild für externe Identitäten.</p>
-          </div>
-
-          <div class="focus-col">
-            <h3 class="linkish">Übergreifende Identity Modernisierung</h3>
-            <p>Wenn mehrere Themen gleichzeitig zusammenspielen, wird daraus ein Architekturvorhaben für eine moderne Identity-Plattform.</p>
+            <h3 class="linkish">Pragmatisch umsetzbar</h3>
+            <p>Es geht nicht um Idealbilder, sondern um einen Weg, der in gewachsenen Unternehmenslandschaften tatsächlich funktioniert.</p>
           </div>
         </div>
       </div>
@@ -256,69 +231,16 @@ nav_order: 2
   </section>
 
   <section class="section section-alt">
-    <div class="container process">
-      <div class="process-art js-anim" data-anim="animate__fadeInLeft" data-once="true">
-        <img src="{{ '/assets/img/illustrations/home/process.svg' | relative_url }}" alt="" loading="lazy">
+    <div class="container cta">
+      <div class="cta-img js-anim" data-anim="animate__fadeIn" data-once="true">
+        <img src="{{ '/assets/img/photos/about/dennis.webp' | relative_url }}" alt="" loading="lazy">
       </div>
-
-      <div class="process-content js-anim" data-anim="animate__fadeInRight" data-once="true">
-        <h2 class="sec-heading">Wie die Leistungen zusammenarbeiten</h2>
-        <p>Die Leistungen sind nicht isoliert gedacht. Häufig entsteht aus einem Assessment ein Plattformprojekt, oder ein Modernisierungsvorhaben wird in klar abgrenzbare Umsetzungsbausteine aufgeteilt.</p>
-        <h3>Typische Projektlogik</h3>
-        <ul class="list">
-          <li>Assessment zur Bewertung der Ausgangslage</li>
-          <li>Definition einer Zielarchitektur mit Keycloak</li>
-          <li>Umsetzung einer SSO Plattform oder Customer Identity Plattform</li>
-          <li>Schrittweise Integration weiterer Anwendungen, Portale und APIs</li>
-        </ul>
-        <h5>So bleibt die Architektur konsistent, auch wenn die Umsetzung in mehreren Phasen erfolgt.</h5>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <div class="blog-header js-anim" data-anim="animate__fadeInUp" data-once="true">
-        <p class="blog-kicker">Projektvorgehen</p>
-        <h2 class="sec-heading">Typischer Ablauf eines Mandats</h2>
-        <p>Die Zusammenarbeit ist so angelegt, dass technische Klarheit früh entsteht und der erste Umsetzungsumfang realistisch zugeschnitten wird.</p>
-      </div>
-
-      <div class="process-steps js-anim" data-anim="animate__fadeInUp" data-once="true">
-        <div class="process-step">
-          <div class="step-number">1</div>
-          <div>
-            <p class="edu-title">Ausgangslage erfassen</p>
-            <p>Systeme, Benutzerquellen, Integrationen und Sicherheitsanforderungen werden strukturiert aufgenommen.</p>
-          </div>
-        </div>
-
-        <div class="process-step">
-          <div class="step-number">2</div>
-          <div>
-            <p class="edu-title">Leistungsbaustein festlegen</p>
-            <p>Wir klären, ob Assessment, Modernisierung, interne SSO Plattform oder Customer Identity der richtige Einstieg ist.</p>
-          </div>
-        </div>
-
-        <div class="process-step">
-          <div class="step-number">3</div>
-          <div>
-            <p class="edu-title">Scope priorisieren</p>
-            <p>Der erste Umsetzungsumfang wird entlang von Nutzen, Risiko und technischer Machbarkeit abgegrenzt.</p>
-          </div>
-        </div>
-
-        <div class="process-step">
-          <div class="step-number">4</div>
-          <div>
-            <p class="edu-title">Technisch umsetzen</p>
-            <p>Konfiguration, Integrationen und Einführungslogik werden so vorbereitet, dass die Plattform im Betrieb tragfähig bleibt.</p>
-          </div>
-        </div>
+      <div class="cta-content js-anim" data-anim="animate__fadeInRight" data-once="true">
+        <img src="{{ '/assets/img/icons/handshake.png' | relative_url }}" alt="" loading="lazy">
+        <h2>Lassen Sie uns Ihr Vorhaben kurz einordnen</h2>
+        <p>Ein kurzes Gespräch reicht oft aus, um Risiken, Prioritäten und einen sinnvollen Einstieg sichtbar zu machen. Sie müssen dafür noch kein fertiges Konzept haben.</p>
+        <a class="btn btn-primary" href="{% include helpers/internal-href.html path=shared.booking_link %}">{{ shared.cta_text }}</a>
       </div>
     </div>
   </section>
 </div>
-
-{% include landing/final-cta.html final=site.data.site_pages.leistungen.final_cta shared=shared %}

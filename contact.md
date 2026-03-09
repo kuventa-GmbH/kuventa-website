@@ -7,8 +7,8 @@ nav_order: 5
 <section class="section hero">
   <div class="container">
     <div class="blog-header">
-      <h1 class="hero-title js-anim" data-anim="animate__fadeInLeft" data-once="true">Kontakt</h1>
-      <p class="hero-text js-anim" data-anim="animate__fadeIn" data-once="true">Sie erreichen mich direkt per E-Mail oder Telefon. Wenn ein kurzer Austausch einfacher ist, können Sie alternativ direkt einen Termin buchen.</p>
+      <h1 class="hero-title js-anim" data-anim="animate__fadeInLeft" data-once="true">Lassen Sie uns kurz sprechen</h1>
+      <p class="hero-text js-anim" data-anim="animate__fadeIn" data-once="true">Wenn Sie eine gewachsene Situation einordnen, Risiken bewerten oder einen sinnvollen Einstieg für die nächsten Schritte klären möchten, erreichen Sie mich direkt per E-Mail oder Telefon. Wenn es schneller geht, buchen Sie einfach einen kurzen Termin.</p>
     </div>
 
     <div class="contact-direct contact-direct--hero js-anim" data-anim="animate__fadeInUp" data-once="true">
@@ -36,8 +36,8 @@ nav_order: 5
 <section class="section section-alt contact-booking">
   <div class="container">
     <div class="contact-booking__wrap center js-anim" data-anim="animate__fadeInUp" data-once="true">
-      <h2 class="sec-heading">Termin direkt buchen</h2>
-      <p>Sie können hier direkt einen freien Termin in Microsoft Bookings auswählen.</p>
+      <h2 class="sec-heading">Strategiegespräch direkt vereinbaren</h2>
+      <p>Wählen Sie hier einfach einen passenden Termin. Ein kurzes Erstgespräch reicht, um Ihre Ausgangslage einzuordnen und sinnvolle nächste Schritte zu besprechen.</p>
       <div class="contact-booking__embed">
         <iframe
           src="https://outlook.office.com/bookwithme/user/1536062ad5714a80976ffe478fb68e3c@kuventa.de/meetingtype/0Sv5L6jWt0ekIZy9r6D1Ug2?bookingcode=5cfeb36b-0bba-4165-bdfe-8f636d8a11f7&amp;anonymous&amp;ismsaljsauthenabled&amp;ep=mlink"
