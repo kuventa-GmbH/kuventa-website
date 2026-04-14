@@ -8,14 +8,15 @@ cta_system:
   note: "Sie sprechen direkt mit Dennis Kürschner, nicht mit Vertrieb oder Assistenz."
 
 hero:
-  kicker: "Identity Assessment für IGA im Enterprise und gehobenen Mittelstand"
-  title: "Klarheit für IGA unter NIS2- und Audit-Druck"
-  text: "Für NIS2, SAP-IdM-Ablösung und Governance-Druck erhalten Sie schnell Klarheit über Risiken, Prioritäten, Plattformoptionen und nächste Schritte."
+  kicker: "IGA-Beratung und One-Identity-Expertise für Enterprise und gehobenen Mittelstand"
+  title: "Identity Governance mit technischer Tiefe, klarer Priorisierung und sauberem Umsetzungsweg"
+  text: "kuventa unterstützt Unternehmen dabei, gewachsene IGA-, Rollen- und Berechtigungslandschaften unter NIS2-, Audit- und SAP-IdM-Druck belastbar zu ordnen. Im Schwerpunkt: One Identity, Modernisierung, Assessment und konkrete Umsetzung."
   hide_cta_note: true
   triggers:
+    - "One Identity im Projekt- und Transformationskontext"
     - "NIS2 seit 06.12.2025"
-    - "SAP-IdM-Ablösung"
-    - "Audit- und Governance-Druck"
+    - "SAP-IdM-Ablösung und Rollenchaos"
+    - "Audit-, Governance- und Rezertifizierungsdruck"
   image: "/assets/img/illustrations/home/path.svg"
   image_alt: "Illustration einer modernen Identity-Architektur"
 
@@ -39,27 +40,30 @@ why:
 
 trust:
   heading: "Warum kuventa als erster Gesprächspartner funktioniert"
-  text: "Vertrauen entsteht hier über klare Spezialisierung, persönliche Erreichbarkeit und nennbare Projekterfahrung."
+  text: "Vertrauen entsteht hier über belastbare Delivery-Erfahrung, sichtbare One-Identity-Nähe und direkte Erreichbarkeit ohne Vertriebsfilter."
   items:
     - title: "Direkt mit Dennis Kürschner"
       text: "Sie sprechen mit dem Berater, der die Lage einordnet und die nächsten Schritte später auch fachlich begleiten kann."
+    - title: "One Identity mit Delivery-Perspektive"
+      text: "Nicht nur Architekturfolie, sondern Erfahrung aus Synchronisation, Governance, Rezertifizierung, Web-Frontend, SuccessFactors- und Zielsystem-Kontexten."
+    - title: "Marktzugang im One-Identity-Umfeld"
+      text: "Kontakte zu Beratungshäusern, Herstellerseite und One-Identity-nahen Kundenkontexten helfen dabei, Markt- und Plattformrealität sauber einzuordnen."
     - title: "Hamburg / Norden"
       text: "kuventa ist in Hamburg verankert und arbeitet nah an mittelständischen Unternehmen mit realen Betriebs- und Governance-Fragen."
-    - title: "Fokus auf Identity statt General-IT"
-      text: "IGA, Governance, NIS2-nahe Steuerung und sichere Zugriffslandschaften stehen im Mittelpunkt, nicht ein breites Bauchladen-Angebot."
     - title: "Pragmatisch bis in die Umsetzung"
-      text: "Assessment, Roadmap und technische Umsetzung greifen ineinander, damit Entscheidungen nicht in PowerPoint stecken bleiben."
+      text: "Assessment, Roadmap, Produktidee und technische Umsetzung greifen ineinander, damit Entscheidungen nicht in PowerPoint stecken bleiben."
   references_intro: "Nennbare Projekterfahrung unter anderem in Umfeldern wie"
   references:
     - "dmTECH GmbH"
     - "Aveniq AG"
+    - "Computacenter"
     - "SPIEGEL-Verlag Rudolf Augstein GmbH & Co. KG"
     - "Versicherungsbranche"
   references_note: "Ohne Testimonials oder Erfolgszahlen, solange sie nicht belastbar freigegeben sind."
 
 services:
   heading: "Identity Assessment als sinnvoller Einstieg"
-  text: "Bei Handlungsdruck sollte der erste Schritt zuerst Klarheit schaffen. Danach folgen Zielbild, Roadmap und Umsetzung in passenden Plattformkontexten wie MidPoint oder One Identity."
+  text: "Bei Handlungsdruck sollte der erste Schritt zuerst Klarheit schaffen. Danach folgen Zielbild, Roadmap, Umsetzung und bei Bedarf ein eigener Wissens-Accelerator für One Identity."
   blocks:
     - eyebrow: "Empfohlener erster Schritt"
       featured: true
@@ -87,6 +91,38 @@ services:
       icon: "/assets/img/icons/cap.svg"
       link: "/sso-plattform/"
       link_text: "Zur Umsetzung"
+    - title: "One Identity RAG"
+      points:
+        - "One-Identity-Wissen schneller für Delivery, Enablement und Presales nutzbar machen"
+        - "eigene Projektdokumentation, Herstellerwissen und Kundenlogik in einem Such- und Antwortsystem bündeln"
+        - "Berater und Beratungshäuser schneller in komplexe One-Identity-Kontexte bringen"
+      icon: "/assets/img/icons/train.svg"
+      link: "/one-identity-rag/"
+      link_text: "Zum RAG-Bereich"
+
+rag:
+  kicker: "Neuer Produktbereich"
+  heading: "One Identity RAG für Beratung, Enablement und schnellere Delivery"
+  text: "Neben klassischer Beratung baut kuventa einen spezialisierten Wissens-Accelerator für One Identity auf. Der Bereich richtet sich an Berater, Beratungshäuser und Delivery-Teams, die schneller belastbare Antworten, Projekthintergrund und Umsetzungskontext benötigen."
+  primary:
+    text: "RAG-Landingpage ansehen"
+    link: "/one-identity-rag/"
+  secondary:
+    text: "Beraterprofil ansehen"
+    link: "/beraterprofil/"
+  cards:
+    - title: "Für Berater"
+      text: "Schneller in Zielsysteme, Logiken, Prozesse, Tabellen, Rollenmodelle und Kundenkontexte einsteigen."
+      link: "/rag-fuer-berater/"
+      link_text: "Berater-Use-Case"
+    - title: "Für Beratungshäuser"
+      text: "Onboarding, Delivery-Qualität und Wiederverwendbarkeit von One-Identity-Wissen systematischer aufbauen."
+      link: "/rag-fuer-beratungshaeuser/"
+      link_text: "Für Beratungshäuser"
+    - title: "Für konkrete Einsatzszenarien"
+      text: "Vom Presales-Sparring bis zur produktiven Projektunterstützung: Anwendungsfälle, Grenzen und sinnvolle Einführungslogik."
+      link: "/rag-einsatzszenarien/"
+      link_text: "Einsatzszenarien"
 
 process:
   heading: "So läuft die Zusammenarbeit ab"
