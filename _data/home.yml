@@ -9,8 +9,8 @@ cta_system:
 
 hero:
   kicker: "IGA-Beratung und One-Identity-Expertise für Enterprise und gehobenen Mittelstand"
-  title: "Identity Governance klar einordnen und sauber umsetzen"
-  text: "kuventa hilft bei gewachsenen IGA-, Rollen- und Berechtigungslandschaften. Im Fokus stehen One Identity, NIS2, SAP-IdM-Ablösung und belastbare Umsetzungswege."
+  title: "One Identity und IGA klar einordnen"
+  text: "kuventa hilft bei gewachsenen Rollen-, Berechtigungs- und One-Identity-Landschaften. Im Fokus stehen Assessment, Modernisierung und Umsetzung."
   hide_cta_note: true
   triggers:
     - "One Identity im Projekt- und Transformationskontext"
