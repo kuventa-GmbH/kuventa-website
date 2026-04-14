@@ -1,10 +1,10 @@
 <section class="section{% if include.section.alt %} section-alt{% endif %}">
   <div class="container process">
-    <div class="process-art js-anim" data-anim="animate__fadeInLeft" data-once="true">
+    <div class="process-art js-anim" data-anim="animate__fadeInUp" data-once="true">
       <img src="{{ include.section.image | relative_url }}" alt="" loading="lazy">
     </div>
 
-    <div class="process-content js-anim" data-anim="animate__fadeInRight" data-once="true">
+    <div class="process-content js-anim" data-anim="animate__fadeInUp" data-once="true">
       <h2 class="sec-heading">{{ include.section.heading }}</h2>
       {% if include.section.text %}
         <p>{{ include.section.text }}</p>
@@ -29,7 +29,7 @@
         </ul>
       {% endif %}
       {% if include.section.note %}
-        <h5>{{ include.section.note }}</h5>
+        <p>{{ include.section.note }}</p>
       {% endif %}
     </div>
   </div>

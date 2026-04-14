@@ -1,0 +1,14 @@
+Playwright Site Audit
+Base URL: http://127.0.0.1:4173/kuventa-website/
+Generated: 2026-04-14T14:21:32.536Z
+
+Variant: desktop
+Scanned pages: 18
+Findings (1):
+- [/kuventa-website/identity-assessment/] Failed requests: 2
+
+Variant: mobile
+Scanned pages: 18
+Findings (1):
+- [/kuventa-website/identity-assessment/] Failed requests: 4
+

@@ -1,0 +1,27 @@
+<section class="section section-alt trust-section">
+  <div class="container">
+    <div class="center js-anim" data-anim="animate__fadeInUp" data-once="true">
+      <h2 class="sec-heading">{{ site.data.home.trust.heading }}</h2>
+      <p class="section-intro">{{ site.data.home.trust.text }}</p>
+    </div>
+
+    <div class="trust-grid">
+      {% for item in site.data.home.trust.items %}
+        <article class="trust-card js-anim" data-anim="animate__fadeInUp" data-once="true">
+          <h3>{{ item.title }}</h3>
+          <p>{{ item.text }}</p>
+        </article>
+      {% endfor %}
+    </div>
+
+    <div class="trust-proof js-anim" data-anim="animate__fadeInUp" data-once="true">
+      <p class="trust-proof__eyebrow">{{ site.data.home.trust.references_intro }}</p>
+      <div class="trust-proof__list">
+        {% for item in site.data.home.trust.references %}
+          <span class="trust-proof__item">{{ item }}</span>
+        {% endfor %}
+      </div>
+      <p class="trust-proof__note">{{ site.data.home.trust.references_note }}</p>
+    </div>
+  </div>
+</section>

@@ -1,43 +1,43 @@
 shared:
   booking_link: "/kontakt/"
-  cta_text: "Lassen Sie uns kurz sprechen"
-  cta_note: "Kurz schildern reicht. Ich melde mich persönlich zurück."
+  cta_text: "Ausgangslage kurz besprechen"
+  cta_note: "Kurz schildern reicht. Sie sprechen direkt mit Dennis Kürschner."
 
 identity-modernisierung:
   hero:
-    kicker: "Keycloak Beratung für mittelständische Unternehmen"
-    title: "Moderne Identity-Infrastruktur für cloudfähige Unternehmen"
-    text: "Zentralisieren Sie Authentifizierung, ermöglichen Sie Single Sign-On und bereiten Sie Ihre IT-Landschaft auf Cloud- und API-basiertes Arbeiten vor."
+    kicker: "IGA-Modernisierung für Enterprise und gehobenen Mittelstand"
+    title: "Identity Governance modernisieren und neu ausrichten"
+    text: "Ordnen Sie Rollen, Berechtigungen, Governance und Plattformentscheidungen so, dass NIS2, SAP-IdM-Ablösung und Betrieb realistisch zusammenpassen."
     image: "/assets/img/illustrations/home/grow.svg"
     image_alt: "Illustration zur Modernisierung der Identity-Infrastruktur"
   sections:
     - template: "cards"
-      heading: "Typische Probleme im Mittelstand"
-      intro: "Viele Unternehmen wachsen technisch schneller als ihre Authentifizierungslandschaft. Das erzeugt Reibung in Betrieb, Sicherheit und Cloud-Migration."
+      heading: "Typische Probleme in Enterprise und gehobenem Mittelstand"
+      intro: "Viele Unternehmen wachsen organisatorisch und technisch schneller als ihre IGA-Landschaft. Das erzeugt Reibung in Betrieb, Sicherheit, Revision und Modernisierung."
       items:
-        - title: "Mehrere Logins"
-          text: "Mitarbeitende nutzen für verschiedene Anwendungen unterschiedliche Zugangsdaten und verlieren den Überblick."
+        - title: "Unklare Rollen und Zuständigkeiten"
+          text: "Mitarbeitende, Fachbereiche und IT verlieren den Überblick darüber, wer worueber entscheidet und welche Zugriffe wirklich benoetigt werden."
           icon: "/assets/img/icons/circle.svg"
-        - title: "Legacy-Authentifizierung"
-          text: "Bestehende Systeme sind eng an Active Directory, LDAP oder lokale Benutzerkonten gebunden."
+        - title: "Legacy-Prozesse und SAP-IdM-Druck"
+          text: "Bestehende Systeme, Provisionierung und Berechtigungsmodelle sind historisch gewachsen und lassen sich nur schwer weiterentwickeln."
           icon: "/assets/img/icons/cap.svg"
         - title: "Fragmentierte Benutzerverwaltung"
           text: "Konten, Rollen und Zugriffe werden verteilt gepflegt und nur schwer konsistent gehalten."
           icon: "/assets/img/icons/search.svg"
-        - title: "Uneinheitliche MFA"
-          text: "Mehrfaktor-Authentifizierung ist nur für einzelne Systeme eingeführt oder unterschiedlich umgesetzt."
+        - title: "Uneinheitliche Kontrollen"
+          text: "Rezertifizierung, Freigaben und Governance-Regeln sind nur teilweise eingefuehrt oder unterschiedlich umgesetzt."
           icon: "/assets/img/icons/star.svg"
-        - title: "Mehr Cloud-Services"
-          text: "Neue SaaS- und API-Dienste kommen hinzu, während die Identity-Architektur auf On-Premise-Muster festgelegt bleibt."
+        - title: "Plattformentscheidung steht an"
+          text: "MidPoint, One Identity oder ein anderer Nachfolgepfad sollen eingeordnet werden, ohne vorschnell in einen Tool-Entscheid zu rutschen."
           icon: "/assets/img/icons/creative.svg"
       cta:
         alt: true
-        title: "Identity modernisieren, bevor Komplexität steigt"
+        title: "IGA modernisieren, bevor Komplexitaet steigt"
         text: "In einem kurzen Gespräch ordnen wir Ihre aktuelle Lage ein und zeigen erste Modernisierungsschritte auf."
     - template: "process"
       alt: true
-      heading: "Warum Identity Cloud-Transformation blockiert"
-      text: "Moderne Anwendungen erwarten standardisierte Authentifizierung und einen zentralen Identity Provider."
+      heading: "Warum fehlende Governance Modernisierung blockiert"
+      text: "Moderne Organisationen brauchen nicht nur Standards, sondern eine belastbare Steuerung für Rollen, Berechtigungen, Integrationen und Verantwortlichkeiten."
       paragraph_links:
         - prefix: "Viele Unternehmen beginnen mit einem "
           link_text: "Identity Modernization Assessment"
@@ -46,49 +46,49 @@ identity-modernisierung:
       subheading: "Moderne Zielarchitekturen brauchen"
       image: "/assets/img/illustrations/home/path.svg"
       points:
-        - "OAuth2 für delegierte Autorisierung"
-        - "OpenID Connect für standardisierte Logins"
-        - "tokenbasierte Authentifizierung für APIs und Microservices"
-        - "einen zentralen Identity Provider statt vieler einzelner Login-Mechanismen"
-      note: "Active Directory und lokale Benutzerkonten bleiben wichtige Quellen, sind allein aber selten die cloudfähige Zielarchitektur."
+        - "klare Rollen- und Freigabemodelle"
+        - "Joiner-Mover-Leaver und Rezertifizierung als steuerbare Prozesse"
+        - "integrierte Zielsysteme, HR-Quellen und Verzeichnisdienste"
+        - "ein realistisches Plattformbild fuer MidPoint, One Identity oder vergleichbare Loesungen"
+      note: "Active Directory und lokale Benutzerkonten bleiben wichtige Quellen, sind allein aber selten die tragfaehige IGA-Zielarchitektur."
       cta:
-        title: "Cloudfähigkeit beginnt bei Identity"
-        text: "Wir bewerten, wo Ihre heutige Architektur moderne Standards blockiert und wie Keycloak die Brücke bildet."
+        title: "Modernisierung beginnt bei Governance"
+        text: "Wir bewerten, wo Ihre heutige Architektur und Ihr Betriebsmodell moderne IGA blockieren und welcher Plattformpfad fachlich passt."
     - template: "focus"
-      heading: "Der Identity Platform Ansatz"
-      text: "Eine zentrale Identity Plattform entkoppelt Benutzer und Anwendungen. Dadurch können neue Systeme einfacher integriert und bestehende Login-Prozesse schrittweise modernisiert werden."
+      heading: "Der IGA-Plattformansatz"
+      text: "Eine tragfaehige IGA-Plattform verbindet Governance, Provisionierung und Integrationen. Dadurch koennen neue Systeme sauber angebunden und bestehende Prozesse schrittweise modernisiert werden."
       paragraph_links:
-        - prefix: "Für interne Anwendungen implementieren wir häufig eine "
+        - prefix: "Fuer interne Zugriffslandschaften betrachten wir haeufig eine "
           link_text: "Single Sign-On Plattform"
           link: "/sso-plattform/"
           suffix: "."
-        - prefix: "Für Kundenportale eignet sich eine "
-          link_text: "Customer Identity Plattform"
-          link: "/customer-identity-plattform/"
-          suffix: "."
+        - prefix: "Fuer IGA-Transformationen stehen haeufig "
+          link_text: "MidPoint oder One Identity"
+          link: "/identity-modernisierung/"
+          suffix: " als Plattformkontexte im Raum."
       image: "/assets/img/illustrations/about/user.svg"
       columns:
         - title: "Architekturidee"
           lines:
             - "Benutzer"
             - "&darr;"
-            - "Identity Plattform (Keycloak)"
+            - "IGA Plattform (z. B. MidPoint / One Identity)"
             - "&darr;"
-            - "Anwendungen, APIs, Cloud Services und Legacy Systeme"
+            - "HR, Verzeichnisse, Zielsysteme und Fachanwendungen"
         - title: "Vorteile"
           points:
-            - "Single Sign-On über mehrere Systeme"
-            - "Multi-Faktor-Authentifizierung an zentraler Stelle"
-            - "zentrale Benutzerverwaltung und konsistente Policies"
-            - "sichere API-Authentifizierung mit Tokens"
+            - "mehr Transparenz fuer Rollen und Zugriffe"
+            - "konsistente Governance ueber mehrere Systeme"
+            - "tragfaehige Provisionierungs- und Kontrollprozesse"
+            - "bessere Entscheidungsgrundlagen fuer Audit und NIS2"
       cta:
         alt: true
-        title: "Von Insel-Lösungen zur zentralen Identity Plattform"
-        text: "Wir planen mit Ihnen eine Zielarchitektur, die On-Premise, Cloud und APIs sauber zusammenführt."
+        title: "Von Insel-Loesungen zur tragfaehigen IGA-Plattform"
+        text: "Wir planen mit Ihnen eine Zielarchitektur, die Governance, Betrieb und technische Integration sauber zusammenfuehrt."
     - template: "cards"
       alt: true
       heading: "Unsere Leistungen"
-      intro: "Sie können mit einem Assessment starten oder direkt eine Zielplattform für interne oder externe Nutzer aufbauen."
+      intro: "Sie koennen mit einem Assessment starten oder direkt einen Umsetzungsweg fuer Governance und Plattformaufbau definieren."
       items:
         - title: "Identity Modernization Assessment"
           text: "Strukturierte Analyse Ihrer bestehenden Authentifizierungslandschaft mit Roadmap für die nächsten Schritte."
@@ -96,21 +96,21 @@ identity-modernisierung:
           link: "/identity-assessment/"
           link_text: "Mehr erfahren"
           link_as_button: true
-        - title: "Single Sign-On Plattform"
-          text: "Zentrale Authentifizierung für interne Systeme, SaaS-Anwendungen und APIs auf Basis von Keycloak."
+        - title: "IGA-Plattform und Umsetzung"
+          text: "Umsetzungsbegleitung fuer Governance-, Rollen- und Integrationsbausteine in MidPoint-, One-Identity- oder vergleichbaren Plattformkontexten."
           icon: "/assets/img/icons/cap.svg"
           link: "/sso-plattform/"
           link_text: "Mehr erfahren"
           link_as_button: true
-        - title: "Customer Identity Plattform"
-          text: "Skalierbare Login-Plattform für Kunden-, Partner- und Entwicklerportale."
+        - title: "Governance-Betriebsmodell"
+          text: "Rezertifizierung, Verantwortlichkeiten und Auditfaehigkeit dauerhaft im Alltag verankern."
           icon: "/assets/img/icons/creative.svg"
           link: "/customer-identity-plattform/"
           link_text: "Mehr erfahren"
           link_as_button: true
       cta:
         title: "Der richtige Einstieg hängt von Ihrer Ausgangslage ab"
-        text: "Wir helfen Ihnen, Assessment, SSO-Plattform oder Customer Identity sauber voneinander abzugrenzen."
+        text: "Wir helfen Ihnen, Assessment, Plattformwahl und Betriebsmodell sauber voneinander abzugrenzen."
   final_cta:
     alt: true
     image: "/assets/img/photos/about/dennis.webp"
@@ -122,7 +122,7 @@ identity-assessment:
   hero:
     kicker: "Analyse und Roadmap"
     title: "Identity Modernization Assessment"
-    text: "Eine strukturierte Analyse Ihrer aktuellen Authentifizierungs- und Benutzerverwaltungssysteme mit klarer Roadmap für eine cloudfähige Identity-Plattform."
+    text: "Eine strukturierte Analyse Ihrer aktuellen IGA-, Benutzerverwaltungs- und Berechtigungslandschaft mit klarer Roadmap fuer eine tragfaehige Zielarchitektur."
   sections:
     - template: "cards"
       heading: "Typische Ausgangssituation"
@@ -134,8 +134,8 @@ identity-assessment:
         - title: "Viele Einzellogins"
           text: "Fachanwendungen, Portale und Tools verwalten ihre Zugriffe separat."
           icon: "/assets/img/icons/creative.svg"
-        - title: "Kaum zentrale Authentifizierung"
-          text: "SSO, zentrale Policies und einheitliche Login-Flows fehlen oder sind nur teilweise umgesetzt."
+        - title: "Kaum zentrale Governance"
+          text: "Rezertifizierung, zentrale Policies und einheitliche Freigabelogik fehlen oder sind nur teilweise umgesetzt."
           icon: "/assets/img/icons/search.svg"
         - title: "Steigende Sicherheitsanforderungen"
           text: "MFA, Auditanforderungen und Zugriffstransparenz werden wichtiger."
@@ -150,24 +150,24 @@ identity-assessment:
     - template: "focus"
       alt: true
       heading: "Was wir analysieren"
-      text: "Wir betrachten nicht nur einzelne Anwendungen, sondern die gesamte Authentifizierungsarchitektur mit Blick auf Sicherheit, Standards und Integrationsfähigkeit."
+      text: "Wir betrachten nicht nur einzelne Anwendungen, sondern die gesamte IGA-Architektur mit Blick auf Governance, Sicherheit, Standards und Integrationsfaehigkeit."
       paragraph_links:
-        - prefix: "Aus dem Assessment entstehen häufig konkrete Folgeprojekte wie eine "
+        - prefix: "Aus dem Assessment entstehen haeufig konkrete Folgeprojekte wie eine "
           link_text: "Single Sign-On Plattform"
           link: "/sso-plattform/"
-          suffix: " für interne Anwendungen."
+          suffix: " fuer interne Anwendungen."
       image: "/assets/img/illustrations/home/folders.svg"
       columns:
         - title: "Technischer Ist-Zustand"
           points:
-            - "bestehende Authentifizierungsarchitektur"
-            - "Identity-Quellen wie AD, LDAP oder lokale Konten"
-            - "Login-Mechanismen der Anwendungen"
+            - "bestehende IGA- und Berechtigungsarchitektur"
+            - "Identity-Quellen wie AD, LDAP, HR oder lokale Konten"
+            - "Freigabe-, Rollen- und Anbindungsmuster"
         - title: "Zukunftsfähigkeit"
           points:
-            - "aktuelles Sicherheitsniveau inklusive MFA"
-            - "Integrationsmöglichkeiten für SaaS, APIs und neue Anwendungen"
-            - "Vorbereitung für OAuth2 und OpenID Connect"
+            - "aktuelles Sicherheitsniveau inklusive Kontrollen und MFA"
+            - "Integrationsmoeglichkeiten fuer SaaS, Zielsysteme und neue Anwendungen"
+            - "Eignung fuer MidPoint, One Identity oder andere Plattformpfade"
       cta:
         title: "Assessment statt Bauchgefühl"
         text: "Wir priorisieren die Themen, die für Ihre Cloud- und Sicherheitsstrategie wirklich relevant sind."
@@ -175,13 +175,13 @@ identity-assessment:
       heading: "Ergebnisse des Assessments"
       intro: "Sie erhalten konkrete Ergebnisse, die sich direkt für Architekturentscheidungen und Folgeprojekte nutzen lassen."
       paragraph_links:
-        - prefix: "Für interne Anwendungen implementieren wir häufig eine "
+        - prefix: "Fuer interne Anwendungen implementieren wir haeufig eine "
           link_text: "Single Sign-On Plattform"
           link: "/sso-plattform/"
           suffix: "."
-        - prefix: "Für Kundenportale eignet sich eine "
-          link_text: "Customer Identity Plattform"
-          link: "/customer-identity-plattform/"
+        - prefix: "Fuer groessere IGA-Transformationen entsteht daraus haeufig ein "
+          link_text: "MidPoint- oder One-Identity-Zielbild"
+          link: "/identity-modernisierung/"
           suffix: "."
       items:
         - title: "Architektur-Übersicht"
@@ -190,8 +190,8 @@ identity-assessment:
         - title: "Sicherheitsanalyse"
           text: "Einordnung von Risiken, Schwachstellen und Handlungsfeldern."
           icon: "/assets/img/icons/star.svg"
-        - title: "Zielarchitektur mit Keycloak"
-          text: "Konkretes Zielbild für eine zentrale Identity-Plattform."
+        - title: "Zielarchitektur und Plattformpfad"
+          text: "Konkretes Zielbild fuer Governance, Integrationen und passende Plattformoptionen."
           icon: "/assets/img/icons/cap.svg"
         - title: "Modernisierungs-Roadmap"
           text: "Schrittweise Umsetzungsplanung statt Big-Bang-Migration."
@@ -235,16 +235,16 @@ identity-assessment:
         link: "/sso-plattform/"
         link_text: "Mehr erfahren"
         link_as_button: true
-      - title: "Customer Identity Plattform"
-        text: "Skalierbare Login-Plattform für Kunden-, Partner- und Entwicklerportale."
+      - title: "IGA-Modernisierung"
+        text: "Zielbild, Plattformpfad und priorisierte Modernisierung fuer MidPoint-, One-Identity- oder vergleichbare Vorhaben."
         icon: "/assets/img/icons/creative.svg"
-        link: "/customer-identity-plattform/"
+        link: "/identity-modernisierung/"
         link_text: "Mehr erfahren"
         link_as_button: true
 
 sso-plattform:
   hero:
-    kicker: "Keycloak für interne Systeme"
+    kicker: "Interne Zugriffslandschaften strukturieren"
     title: "Single Sign-On Plattform für interne Systeme"
     text: "Reduzieren Sie Administrationsaufwand und erhöhen Sie Sicherheit durch eine zentrale Authentifizierungsplattform."
   sections:
@@ -271,7 +271,7 @@ sso-plattform:
     - template: "process"
       alt: true
       heading: "Die Lösung"
-      text: "Eine zentrale SSO-Plattform auf Basis von Keycloak verbindet bestehende Identitätsquellen mit internen Anwendungen, SaaS-Tools und APIs."
+      text: "Eine zentrale SSO- und Zugriffsplattform verbindet bestehende Identitaetsquellen mit internen Anwendungen, SaaS-Tools und APIs."
       paragraph_links:
         - prefix: "Viele Unternehmen beginnen mit einem "
           link_text: "Identity Modernization Assessment"
@@ -317,11 +317,11 @@ sso-plattform:
       text: "Viele Projekte starten mit einem klar abgegrenzten Scope und werden anschließend schrittweise erweitert."
       paragraph_links:
         - prefix: "Wenn auch externe Nutzer sicher angebunden werden sollen, ist oft eine "
-          link_text: "Customer Identity Plattform"
-          link: "/customer-identity-plattform/"
-          suffix: " der passende nächste Baustein."
+          link_text: "Identity Governance Modernisierung"
+          link: "/identity-modernisierung/"
+          suffix: " oder ein Governance-Folgeprojekt der passende naechste Baustein."
       steps:
-        - title: "Keycloak Installation"
+        - title: "Plattformbasis aufsetzen"
           text: "Aufbau der technischen Basis in Ihrer Zielumgebung."
         - title: "Active Directory Integration"
           text: "Anbindung der bestehenden Benutzerquelle für interne Nutzer."
@@ -359,7 +359,7 @@ sso-plattform:
 
 customer-identity-plattform:
   hero:
-    kicker: "Keycloak für externe Nutzer"
+    kicker: "Externe Nutzer sauber trennen"
     title: "Login Plattform für Kunden- und Partnerportale"
     text: "Skalierbare Authentifizierung für externe Nutzer wie Kunden, Partner oder Entwickler."
   sections:
@@ -410,7 +410,7 @@ customer-identity-plattform:
         text: "Wir definieren mit Ihnen, welche Funktionen für Ihr Portal heute und mittelfristig benötigt werden."
     - template: "focus"
       heading: "Architektur"
-      text: "Anwendungen authentifizieren Nutzer über Keycloak. Nach erfolgreicher Anmeldung erhalten Benutzer Tokens für den sicheren Zugriff auf Anwendungen und APIs."
+      text: "Anwendungen authentifizieren Nutzer ueber eine zentrale Login-Plattform. Nach erfolgreicher Anmeldung erhalten Benutzer Tokens fuer den sicheren Zugriff auf Anwendungen und APIs."
       paragraph_links:
         - prefix: "Für interne Anwendungen implementieren wir häufig eine "
           link_text: "Single Sign-On Plattform"
@@ -422,7 +422,7 @@ customer-identity-plattform:
           lines:
             - "Benutzer oder Partnerportal"
             - "&darr;"
-            - "Keycloak als zentrale Login Plattform"
+            - "Zentrale Login Plattform"
             - "&darr;"
             - "Tokens für Anwendungen und APIs"
         - title: "Vorteile"

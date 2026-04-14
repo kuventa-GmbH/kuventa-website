@@ -196,7 +196,7 @@ nav_order: 2
           <li>klarere Entscheidungsgrundlagen für Management und IT-Leitung</li>
           <li>bessere Vorbereitung auf Cloud-, Portal- und API-Vorhaben</li>
         </ul>
-        <h5>Das Ziel ist nicht ein neues Tool, sondern eine tragfähige Struktur für Wachstum, Sicherheit und Digitalisierung.</h5>
+        <p>Das Ziel ist nicht ein neues Tool, sondern eine tragfähige Struktur für Wachstum, Sicherheit und Digitalisierung.</p>
       </div>
     </div>
   </section>

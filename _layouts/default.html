@@ -3,12 +3,17 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script>
+      document.documentElement.classList.add("js-enabled");
+    </script>
     <title>{{ page.title | default: site.title }}</title>
     <meta name="description" content="{{ page.description | default: site.description }}" />
+    <link rel="canonical" href="{{ page.url | replace: 'index.html', '' | absolute_url }}" />
     <link rel="stylesheet" href="{% include helpers/internal-href.html path='/assets/fonts/fonts.css' %}" />
     <link rel="stylesheet" href="{% include helpers/internal-href.html path='/assets/css/animate.min.css' %}" />
     <link rel="stylesheet" href="{% include helpers/internal-href.html path='/assets/css/site.css' %}" />
     <link rel="stylesheet" href="{% include helpers/internal-href.html path='/cookie-dough/cookiebanner.style.css' %}" />
+    <link rel="stylesheet" href="{% include helpers/internal-href.html path='/cookie-dough/cookiebanner.override.css' %}" />
   </head>
   <body>
     {% include navbar.html %}

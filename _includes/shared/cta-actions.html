@@ -1,0 +1,13 @@
+<div class="cta-actions">
+  {% if include.cta.primary %}
+    <a class="btn btn-primary" href="{% include helpers/internal-href.html path=include.cta.primary.link %}">{{ include.cta.primary.text }}</a>
+  {% endif %}
+  {% if include.cta.secondary %}
+    <a class="btn btn-secondary cta-actions__secondary" href="{% include helpers/internal-href.html path=include.cta.secondary.link %}">{{ include.cta.secondary.text }}</a>
+  {% endif %}
+</div>
+{% unless include.hide_note %}
+{% if include.cta.note %}
+  <p class="cta-note">{{ include.cta.note }}</p>
+{% endif %}
+{% endunless %}
