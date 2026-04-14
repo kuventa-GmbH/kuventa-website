@@ -9,8 +9,8 @@ cta_system:
 
 hero:
   kicker: "IGA-Beratung und One-Identity-Expertise für Enterprise und gehobenen Mittelstand"
-  title: "Identity Governance mit technischer Tiefe, klarer Priorisierung und sauberem Umsetzungsweg"
-  text: "kuventa unterstützt Unternehmen dabei, gewachsene IGA-, Rollen- und Berechtigungslandschaften unter NIS2-, Audit- und SAP-IdM-Druck belastbar zu ordnen. Im Schwerpunkt: One Identity, Modernisierung, Assessment und konkrete Umsetzung."
+  title: "Identity Governance klar einordnen und sauber umsetzen"
+  text: "kuventa hilft bei gewachsenen IGA-, Rollen- und Berechtigungslandschaften. Im Fokus stehen One Identity, NIS2, SAP-IdM-Ablösung und belastbare Umsetzungswege."
   hide_cta_note: true
   triggers:
     - "One Identity im Projekt- und Transformationskontext"
@@ -63,7 +63,7 @@ trust:
 
 services:
   heading: "Identity Assessment als sinnvoller Einstieg"
-  text: "Bei Handlungsdruck sollte der erste Schritt zuerst Klarheit schaffen. Danach folgen Zielbild, Roadmap, Umsetzung und bei Bedarf ein eigener Wissens-Accelerator für One Identity."
+  text: "Bei Handlungsdruck schafft zuerst ein Assessment Klarheit. Danach folgen Zielbild, Roadmap, Umsetzung und bei Bedarf ein KI-gestützter Wissensbaustein für One Identity."
   blocks:
     - eyebrow: "Empfohlener erster Schritt"
       featured: true
@@ -91,28 +91,28 @@ services:
       icon: "/assets/img/icons/cap.svg"
       link: "/sso-plattform/"
       link_text: "Zur Umsetzung"
-    - title: "One Identity RAG"
+    - title: "One Identity Wissensassistent"
       points:
         - "One-Identity-Wissen schneller für Delivery, Enablement und Presales nutzbar machen"
-        - "eigene Projektdokumentation, Herstellerwissen und Kundenlogik in einem Such- und Antwortsystem bündeln"
-        - "Berater und Beratungshäuser schneller in komplexe One-Identity-Kontexte bringen"
+        - "Dokumentation, Herstellerwissen und Projektkontext in einem Such- und Antwortsystem bündeln"
+        - "Berater und Beratungshäuser schneller in komplexe One-Identity-Themen bringen"
       icon: "/assets/img/icons/train.svg"
       link: "/one-identity-rag/"
       link_text: "Zum RAG-Bereich"
 
 rag:
   kicker: "Neuer Produktbereich"
-  heading: "One Identity RAG für Beratung, Enablement und schnellere Delivery"
-  text: "Neben klassischer Beratung baut kuventa einen spezialisierten Wissens-Accelerator für One Identity auf. Der Bereich richtet sich an Berater, Beratungshäuser und Delivery-Teams, die schneller belastbare Antworten, Projekthintergrund und Umsetzungskontext benötigen."
+  heading: "KI-Wissensassistent für One Identity"
+  text: "kuventa baut ein Such- und Antwortsystem für One Identity auf. Ziel ist, Berater und Beratungshäuser schneller an belastbare Antworten, Dokumentation und Projektkontext zu bringen."
   primary:
-    text: "RAG-Landingpage ansehen"
+    text: "Bereich ansehen"
     link: "/one-identity-rag/"
   secondary:
     text: "Beraterprofil ansehen"
     link: "/beraterprofil/"
   cards:
     - title: "Für Berater"
-      text: "Schneller in Zielsysteme, Logiken, Prozesse, Tabellen, Rollenmodelle und Kundenkontexte einsteigen."
+      text: "Schneller in Zielsysteme, Logiken, Prozesse, Tabellen und Rollenmodelle einsteigen."
       link: "/rag-fuer-berater/"
       link_text: "Berater-Use-Case"
     - title: "Für Beratungshäuser"
@@ -120,7 +120,7 @@ rag:
       link: "/rag-fuer-beratungshaeuser/"
       link_text: "Für Beratungshäuser"
     - title: "Für konkrete Einsatzszenarien"
-      text: "Vom Presales-Sparring bis zur produktiven Projektunterstützung: Anwendungsfälle, Grenzen und sinnvolle Einführungslogik."
+      text: "Vom Presales-Sparring bis zur Projektunterstützung: Anwendungsfälle, Grenzen und sinnvolle Einführungslogik."
       link: "/rag-einsatzszenarien/"
       link_text: "Einsatzszenarien"
 

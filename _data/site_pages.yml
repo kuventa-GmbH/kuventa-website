@@ -377,15 +377,15 @@ beraterprofil:
 
 one-identity-rag:
   hero:
-    kicker: "Produktidee und Wissens-Accelerator"
-    title: "One Identity RAG für schnellere Delivery, Enablement und Presales"
-    text: "kuventa baut einen spezialisierten Wissensbereich auf, der One-Identity-Know-how aus Herstellerwissen, Projekterfahrung, Zielsystemlogik und eigener Dokumentation schneller nutzbar macht. Ziel ist weniger Suchzeit, schnellere Einarbeitung und belastbarere Antworten in realen Projektkontexten."
+    kicker: "Produktidee und KI-Wissensassistent"
+    title: "One Identity Wissen schneller finden und nutzbar machen"
+    text: "Der Bereich bündelt One-Identity-Wissen in einem KI-gestützten Such- und Antwortsystem. Ziel ist weniger Suchzeit und schneller belastbare Antworten für Delivery, Presales und Enablement."
     image: "/assets/img/illustrations/home/process.svg"
     image_alt: "Illustration für strukturiertes One-Identity-Wissen"
   sections:
     - template: "focus"
       heading: "Was der Bereich leisten soll"
-      text: "Der RAG-Bereich ist kein generischer Chatbot. Er ist als fachlich fokussierter One-Identity-Wissens-Accelerator gedacht, der Delivery und Enablement in echten Projekten beschleunigt."
+      text: "Der Bereich ist kein generischer Chatbot. Er ist als fachlich fokussiertes Such- und Antwortsystem für One Identity gedacht."
       image: "/assets/img/illustrations/about/code.svg"
       columns:
         - title: "Wissensbasis"
@@ -406,7 +406,7 @@ one-identity-rag:
     - template: "cards"
       alt: true
       heading: "Für wen der RAG-Bereich gedacht ist"
-      intro: "Der Nutzen ist je nach Zielgruppe unterschiedlich. Darum wird das Angebot in eigene Unterseiten aufgeteilt."
+      intro: "Der Nutzen ist je nach Zielgruppe unterschiedlich. Darum wird der Bereich in eigene Unterseiten aufgeteilt."
       items:
         - title: "Berater"
           text: "Für schnelleren Einstieg in Tabellen, Prozesse, Rollenlogiken, Zielsysteme und projektspezifische Besonderheiten."
@@ -428,7 +428,7 @@ one-identity-rag:
           link_as_button: true
     - template: "steps"
       heading: "Wie der Bereich schrittweise aufgebaut werden kann"
-      text: "Damit aus einer Produktidee ein belastbarer Marktbaustein wird, braucht der Aufbau eine klare Reihenfolge."
+      text: "Damit aus der Produktidee ein belastbarer Baustein wird, braucht der Aufbau eine klare Reihenfolge."
       steps:
         - title: "Wissensquellen priorisieren"
           text: "Zuerst wird entschieden, welche One-Identity-Dokumente, Projekttypen und Kundenkontexte wirklich in den Kernbestand gehören."
@@ -441,15 +441,15 @@ one-identity-rag:
   final_cta:
     image: "/assets/img/illustrations/home/grow.svg"
     icon: "/assets/img/icons/handshake.png"
-    title: "One-Identity-RAG als Produkt oder Pilot besprechen"
-    text: "Wenn Sie One-Identity-Wissen für Beratung, Delivery oder Enablement systematischer nutzbar machen wollen, besprechen wir einen sinnvollen Pilotzuschnitt."
+    title: "One-Identity-Wissensassistent als Pilot besprechen"
+    text: "Wenn Sie One-Identity-Wissen für Beratung, Delivery oder Enablement systematischer nutzbar machen wollen, besprechen wir einen sinnvollen Pilot."
     show_note_below: true
 
 rag-fuer-berater:
   hero:
     kicker: "Unterseite"
-    title: "One Identity RAG für Berater"
-    text: "Für Berater zählt im Projektalltag Geschwindigkeit ohne Qualitätsverlust. Der RAG-Bereich soll helfen, schneller in Tabellen, Zielsysteme, Rollenlogiken, Prozesse und typische Umsetzungsfragen einzusteigen."
+    title: "KI-Wissensassistent für One-Identity-Berater"
+    text: "Für Berater zählt Geschwindigkeit ohne Qualitätsverlust. Der Bereich hilft dabei, schneller in Tabellen, Zielsysteme, Rollenlogiken und typische Umsetzungsfragen einzusteigen."
     image: "/assets/img/illustrations/home/userlaptop.svg"
     image_alt: "Illustration für Berater im Delivery-Kontext"
   sections:
@@ -472,7 +472,7 @@ rag-fuer-berater:
     - template: "process"
       alt: true
       heading: "Sinnvolle Einsatzmuster"
-      text: "Nicht jede Frage eignet sich gleich gut. Am meisten profitiert der Bereich dort, wo Berater schnell Fachkontext und Quellenzugriff brauchen."
+      text: "Nicht jede Frage eignet sich gleich gut. Am meisten hilft der Bereich dort, wo Berater schnell Fachkontext und Quellenzugriff brauchen."
       subheading: "Beispiele"
       image: "/assets/img/illustrations/home/path.svg"
       points:
@@ -485,14 +485,14 @@ rag-fuer-berater:
     image: "/assets/img/photos/about/dennis.webp"
     icon: "/assets/img/icons/handshake.png"
     title: "Berater-Use-Case für einen Pilot prüfen"
-    text: "Wenn Ihr Ziel schnelleres Onboarding oder belastbareres Delivery-Sparring ist, prüfen wir gemeinsam einen kontrollierten Pilot."
+    text: "Wenn Ihr Ziel schnelleres Onboarding oder belastbareres Delivery-Sparring ist, prüfen wir gemeinsam einen Pilot."
     show_note_below: true
 
 rag-fuer-beratungshaeuser:
   hero:
     kicker: "Unterseite"
-    title: "One Identity RAG für Beratungshäuser"
-    text: "Beratungshäuser verlieren Zeit und Marge, wenn One-Identity-Wissen nur in einzelnen Köpfen oder Projekten steckt. Der RAG-Bereich soll Wissen systematischer nutzbar machen und die Lücke zwischen Presales, Onboarding und Delivery verkleinern."
+    title: "KI-Wissensassistent für Beratungshäuser"
+    text: "Beratungshäuser verlieren Zeit und Marge, wenn One-Identity-Wissen nur in einzelnen Köpfen oder Projekten steckt. Der Bereich soll Wissen systematischer nutzbar machen."
     image: "/assets/img/illustrations/home/security.svg"
     image_alt: "Illustration für Beratungshäuser"
   sections:
@@ -536,15 +536,15 @@ rag-fuer-beratungshaeuser:
   final_cta:
     image: "/assets/img/illustrations/home/process.svg"
     icon: "/assets/img/icons/handshake.png"
-    title: "RAG als Enablement- und Delivery-Baustein besprechen"
-    text: "Wenn One-Identity-Wissen in Ihrem Haus systematischer nutzbar werden soll, entwerfen wir einen Pilot mit klaren Grenzen und verwertbarem Ergebnis."
+    title: "Wissensassistent als Enablement-Baustein besprechen"
+    text: "Wenn One-Identity-Wissen in Ihrem Haus systematischer nutzbar werden soll, entwerfen wir einen Pilot mit klaren Grenzen."
     show_note_below: true
 
 rag-einsatzszenarien:
   hero:
     kicker: "Unterseite"
-    title: "Einsatzszenarien für ein One Identity RAG"
-    text: "Der Mehrwert eines One-Identity-RAG entsteht dort, wo wiederkehrende Wissensarbeit Zeit frisst und Kontextwechsel teuer sind. Die Unterseite zeigt, welche Szenarien gut passen und wo Vorsicht nötig ist."
+    title: "Einsatzszenarien für einen One-Identity-Wissensassistenten"
+    text: "Der Mehrwert entsteht dort, wo wiederkehrende Wissensarbeit Zeit frisst und Kontextwechsel teuer sind. Hier sehen Sie, welche Szenarien gut passen und wo Vorsicht nötig ist."
     image: "/assets/img/illustrations/home/config.svg"
     image_alt: "Illustration für Einsatzszenarien"
   sections:
@@ -582,5 +582,5 @@ rag-einsatzszenarien:
     image: "/assets/img/illustrations/home/userengagement.svg"
     icon: "/assets/img/icons/handshake.png"
     title: "Passende Einsatzszenarien priorisieren"
-    text: "Im Gespräch klären wir, ob Presales, Onboarding oder Delivery-Sparring der sinnvollste Startpunkt für einen One-Identity-RAG ist."
+    text: "Im Gespräch klären wir, ob Presales, Onboarding oder Delivery-Sparring der sinnvollste Startpunkt ist."
     show_note_below: true
