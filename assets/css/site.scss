@@ -447,9 +447,10 @@ ul {
 }
 .hero-actions {
   margin-top: 24px;
+  margin-bottom: 28px;
 }
 .hero-actions + .hero-trigger-list {
-  margin-top: 40px;
+  margin-top: 0;
 }
 .hero-trigger-list {
   display: grid;
@@ -1595,9 +1596,10 @@ textarea:focus {
   }
   .hero-actions {
     margin-top: 20px;
+    margin-bottom: 24px;
   }
   .hero-actions + .hero-trigger-list {
-    margin-top: 34px;
+    margin-top: 0;
   }
   .cta-actions {
     gap: 12px;
@@ -1939,9 +1941,10 @@ textarea:focus {
   }
   .hero-actions {
     margin-top: 16px;
+    margin-bottom: 20px;
   }
   .hero-actions + .hero-trigger-list {
-    margin-top: 28px;
+    margin-top: 0;
   }
   .hero-trigger-list {
     grid-template-columns: 1fr;

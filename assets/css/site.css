@@ -466,6 +466,7 @@ ul li:before {
 
 .hero-actions {
   margin-top: 8px;
+  margin-bottom: 28px;
 }
 
 .hero-trigger-list {
@@ -1646,6 +1647,9 @@ textarea:focus {
   .cta-actions {
     gap: 12px;
   }
+  .hero-actions {
+    margin-bottom: 24px;
+  }
   .hero-trigger-list {
     margin-bottom: 24px;
   }
@@ -1962,6 +1966,9 @@ textarea:focus {
     font-size: 18px;
     line-height: 30px;
     margin: 18px 0 20px;
+  }
+  .hero-actions {
+    margin-bottom: 20px;
   }
   .hero-trigger-list {
     flex-direction: row;
