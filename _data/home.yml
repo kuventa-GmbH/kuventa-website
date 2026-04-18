@@ -9,14 +9,15 @@ cta_system:
 
 hero:
   kicker: "IGA-Beratung und One-Identity-Expertise für Enterprise und gehobenen Mittelstand"
-  title: "One Identity und IGA klar einordnen"
-  text: "kuventa hilft bei gewachsenen Rollen-, Berechtigungs- und One-Identity-Landschaften. Im Fokus stehen Assessment, Modernisierung und Umsetzung."
+  title: "Identity-Probleme sauber einordnen. One Identity gezielt modernisieren."
+  text: "kuventa unterstützt Unternehmen dabei, gewachsene Rollen-, Berechtigungs- und One-Identity-Landschaften in eine klare Entscheidungsgrundlage zu übersetzen."
+  support: "Der sinnvolle Einstieg ist meist kein Tool-Pitch, sondern ein kompaktes Assessment mit klaren Prioritäten für Governance, Modernisierung und Umsetzung."
   hide_cta_note: true
   triggers:
-    - "One Identity im Projekt- und Transformationskontext"
-    - "NIS2 seit 06.12.2025"
-    - "SAP-IdM-Ablösung und Rollenchaos"
-    - "Audit-, Governance- und Rezertifizierungsdruck"
+    - "Identity Assessment statt Aktionismus"
+    - "One Identity, Governance und Rollenmodell"
+    - "NIS2-, Audit- und Rezertifizierungsdruck"
+    - "SAP-IdM-Ablösung mit realistischer Roadmap"
   image: "/assets/img/illustrations/home/path.svg"
   image_alt: "Illustration einer modernen Identity-Architektur"
 
@@ -105,21 +106,21 @@ rag:
   heading: "KI-Wissensassistent für One Identity"
   text: "kuventa baut ein Such- und Antwortsystem für One Identity auf. Ziel ist, Berater und Beratungshäuser schneller an belastbare Antworten, Dokumentation und Projektkontext zu bringen."
   primary:
-    text: "Bereich ansehen"
+    text: "RAG-Bereich ansehen"
     link: "/one-identity-rag/"
   secondary:
-    text: "Beraterprofil ansehen"
-    link: "/beraterprofil/"
+    text: "Einsatzszenarien ansehen"
+    link: "/rag-einsatzszenarien/"
   cards:
     - title: "Für Berater"
       text: "Schneller in Zielsysteme, Logiken, Prozesse, Tabellen und Rollenmodelle einsteigen."
       link: "/rag-fuer-berater/"
-      link_text: "Berater-Use-Case"
+      link_text: "Für Berater"
     - title: "Für Beratungshäuser"
       text: "Onboarding, Delivery-Qualität und Wiederverwendbarkeit von One-Identity-Wissen systematischer aufbauen."
       link: "/rag-fuer-beratungshaeuser/"
       link_text: "Für Beratungshäuser"
-    - title: "Für konkrete Einsatzszenarien"
+    - title: "Für Einsatzszenarien"
       text: "Vom Presales-Sparring bis zur Projektunterstützung: Anwendungsfälle, Grenzen und sinnvolle Einführungslogik."
       link: "/rag-einsatzszenarien/"
       link_text: "Einsatzszenarien"

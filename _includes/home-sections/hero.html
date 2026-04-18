@@ -11,17 +11,21 @@
         <h1 class="hero-title js-anim" data-anim="animate__fadeInUp" data-once="true">{{ hero.title }}</h1>
         <p class="hero-text js-anim" data-anim="animate__fadeIn" data-once="true">{{ hero.text }}</p>
 
-        {% if hero.triggers %}
-          <ul class="hero-trigger-list js-anim" data-anim="animate__fadeInUp" data-once="true">
-            {% for item in hero.triggers %}
-              <li>{{ item }}</li>
-            {% endfor %}
-          </ul>
+        {% if hero.support %}
+          <p class="hero-support js-anim" data-anim="animate__fadeIn" data-once="true">{{ hero.support }}</p>
         {% endif %}
 
         <div class="hero-actions js-anim" data-anim="animate__fadeInUp" data-once="true">
           {% include shared/cta-actions.html cta=cta hide_note=hero.hide_cta_note %}
         </div>
+
+        {% if hero.triggers %}
+          <ul class="hero-trigger-list js-anim" data-anim="animate__fadeInUp" data-once="true" aria-label="Relevante Ausgangslagen">
+            {% for item in hero.triggers %}
+              <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
+        {% endif %}
       </div>
 
       <div class="process-art js-anim" data-anim="animate__fadeInUp" data-once="true">
