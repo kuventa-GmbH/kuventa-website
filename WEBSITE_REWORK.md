@@ -1,8 +1,8 @@
 # WEBSITE_REWORK
 
 Stand: 03.04.2026
-Status: Phase 2 vorbereitet, Neupositionierung auf IGA / MidPoint / One Identity gestartet
-Letztes Update: Homepage auf `Identity Assessment` als primaeres Einstiegsangebot ausgerichtet, Trust-/Referenzblock und CTA-System auf der Startseite umgesetzt; naechste Iteration auf IGA-first, NIS2 und Plattformfokus ohne Keycloak festgelegt
+Status: Phase 2 in Umsetzung, Neupositionierung auf IGA / MidPoint / One Identity gestartet
+Letztes Update: Kontaktseite auf Erstgespraech-/Trust-Logik der Homepage umgestellt und `Identity Assessment` als primaere Produktseite inhaltlich auf IGA, Governance, NIS2 und SAP-IdM-Ablösung nachgezogen
 
 Dieses Dokument ist das laufende Arbeitsdokument fuer die Neuausrichtung der kuventa-Website. Weitere Schritte, Entscheidungen, offene Punkte und Fortschrittsupdates werden hier fortgefuehrt.
 
@@ -834,33 +834,34 @@ Wahrscheinliche technische Linie:
 - [x] CTA-System mit Primary CTA `Identity Assessment anfragen` und Secondary CTA `Ausgangslage kurz besprechen` auf der Homepage und in wiederverwendbarer Include-Struktur umgesetzt
 - [x] FAQ-/Einwandsektion fuer das Erstgespraech auf der Homepage ergaenzt
 - [x] Jekyll-Build nach Phase-1-Homepage-Umsetzung erfolgreich
-- [ ] Kontaktseite / CTA-Strecke entlang des neuen Systems angleichen
-- [ ] `Identity Assessment`-Seite als primaere Produktseite in Phase 2 schaerfen
+- [x] Kontaktseite / CTA-Strecke entlang des neuen Systems angleichen
+- [x] `Identity Assessment`-Seite als primaere Produktseite in Phase 2 schaerfen
 - [ ] NIS2- und SAP-IdM-Landingpages anlegen
 - [ ] Blog-/Verlinkungslogik fuer kaufnahe Themen ausbauen
 
 ### 13.1 Aktueller Umsetzungsstand
 
-In der aktuellen Umsetzung wurden auf der Homepage die in Kapitel 9.3 bis 9.5 definierten Phase-1-Bausteine konkret abgebildet:
+In der aktuellen Umsetzung wurden auf der Homepage sowie in den ersten Phase-2-Seiten die in Kapitel 9.3 bis 9.5 definierten Bausteine konkret abgebildet:
 
 - Hero mit klarer Positionierung auf `Identity Assessment`
 - Trigger-Sektion fuer NIS2, SAP-IdM, Audit-/Governance-Druck und gewachsene Identity-Landschaften
 - frueher Trust-/Proof-Block mit Person, Spezialisierung, Arbeitsweise und nennbaren Referenzkontexten
 - Angebotslogik mit `Identity Assessment` als erstem Schritt vor Roadmap und Umsetzung
 - FAQ-/Einwandsektion und Schluss-CTA mit persoenlicher Kontaktlogik
+- Kontaktseite mit direkter Erstgespraech-Positionierung, Einordnungslogik und klarer Erwartung an das Gespraech
+- `Identity Assessment` als Produktseite mit Fokus auf IGA, Governance, Rollen, Plattformpfad und priorisierte naechste Schritte
 
 ### 13.2 Naechster Schritt
 
 Als naechstes folgt gemaess Priorisierung:
 
-1. Kontaktseite / CTA-Strecke auf dieselbe Erwartungslogik bringen
-2. `Identity Assessment`-Seite als primaere Produktseite textlich und strukturell nachziehen
+1. NIS2-Landingpage als kaufnahen Einstieg aufbauen
+2. SAP-IdM-Landingpage als zweiten starken Akquise-Case anlegen
 
 ## 14. Naechster sinnvoller Schritt
 
 Nach der umgesetzten Homepage-Basis ist der naechste operative Schritt im Repository diese Reihenfolge:
 
-1. Kontaktseite / CTA-Strecke auf dieselbe Erwartungslogik bringen
-2. `Identity Assessment` als klares Produkt schaerfen
-3. NIS2- und SAP-IdM-Landingpages anlegen
-4. Blog und interne Verlinkung ausbauen
+1. NIS2-Landingpage als kaufnahen Einstieg aufbauen
+2. SAP-IdM-Landingpage als zweiten starken Akquise-Case anlegen
+3. Blog und interne Verlinkung fuer diese Einstiege ausbauen
