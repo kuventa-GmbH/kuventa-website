@@ -8,16 +8,14 @@ cta_system:
   note: "Sie sprechen direkt mit Dennis Kürschner, nicht mit Vertrieb oder Assistenz."
 
 hero:
-  kicker: "IGA-Beratung und One-Identity-Expertise für Enterprise und gehobenen Mittelstand"
-  title: "Identity-Probleme sauber einordnen. One Identity gezielt modernisieren."
-  text: "kuventa unterstützt Unternehmen dabei, gewachsene Rollen-, Berechtigungs- und One-Identity-Landschaften in eine klare Entscheidungsgrundlage zu übersetzen."
-  support: "Der sinnvolle Einstieg ist meist kein Tool-Pitch, sondern ein kompaktes Assessment mit klaren Prioritäten für Governance, Modernisierung und Umsetzung."
+  kicker: "IGA- und One-Identity-Beratung für Enterprise und gehobenen Mittelstand"
+  title: "Identity-Landschaften ordnen. Risiken senken."
+  text: "Klarheit bei One Identity, Rollen, Berechtigungen und Governance."
   hide_cta_note: true
   triggers:
-    - "Identity Assessment statt Aktionismus"
-    - "One Identity, Governance und Rollenmodell"
-    - "NIS2-, Audit- und Rezertifizierungsdruck"
-    - "SAP-IdM-Ablösung mit realistischer Roadmap"
+    - "Assessment statt Aktionismus"
+    - "NIS2, Audit und SAP-IdM"
+    - "Roadmap vor Tool-Entscheidung"
   image: "/assets/img/illustrations/home/path.svg"
   image_alt: "Illustration einer modernen Identity-Architektur"
 

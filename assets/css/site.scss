@@ -403,14 +403,15 @@ ul {
   align-items: center;
 }
 .hero--home .process-content {
-  max-width: 720px;
+  max-width: 680px;
 }
 .hero--home .process-art {
-  max-width: 320px;
-  flex: 0 0 320px;
+  max-width: 280px;
+  flex: 0 0 280px;
 }
 .hero--home .blog-kicker {
-  margin-bottom: 16px;
+  margin-bottom: 14px;
+  max-width: 34ch;
 }
 .hero-title {
   color: #0c0b20;
@@ -427,39 +428,39 @@ ul {
   margin: 40px 0;
 }
 .hero--home .hero-title {
-  font-size: clamp(42px, 4.6vw, 58px);
-  line-height: 1.02;
-  max-width: 13ch;
+  font-size: clamp(40px, 4.5vw, 56px);
+  line-height: 1.01;
+  max-width: 11ch;
 }
 .hero--home .hero-text {
-  max-width: 640px;
-  font-size: 19px;
-  line-height: 31px;
-  margin: 22px 0 0;
+  max-width: 520px;
+  font-size: 18px;
+  line-height: 29px;
+  margin: 18px 0 0;
 }
 .hero-support {
-  max-width: 600px;
-  margin: 16px 0 0;
+  max-width: 540px;
+  margin: 12px 0 0;
   color: #475467;
-  font-size: 17px;
-  line-height: 28px;
+  font-size: 16px;
+  line-height: 26px;
 }
 .hero-actions {
-  margin-top: 28px;
+  margin-top: 24px;
 }
 .hero-trigger-list {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 12px 18px;
-  margin: 28px 0 0;
-  padding-top: 24px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px 18px;
+  margin: 24px 0 0;
+  padding-top: 20px;
   border-top: 1px solid #d9e6f2;
 }
 .hero-trigger-list li {
   padding: 0 0 0 18px;
   color: #0c0b20;
-  font-size: 15px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 22px;
   font-family: "Satoshi Medium";
   position: relative;
 }
@@ -474,13 +475,13 @@ ul {
   background: #38a0ed;
 }
 .hero--home .hero-trigger-list {
-  gap: 12px 20px;
+  gap: 10px 18px;
   margin-bottom: 0;
 }
 .hero--home .hero-trigger-list li {
   padding-left: 18px;
-  font-size: 15px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 22px;
 }
 
 .benefits-sec {
@@ -1582,18 +1583,23 @@ textarea:focus {
     flex-basis: 300px;
   }
   .hero--home .hero-title {
-    font-size: 42px;
-    max-width: 14ch;
+    font-size: 38px;
+    max-width: 11ch;
   }
   .hero--home .hero-text {
-    font-size: 19px;
-    line-height: 30px;
+    font-size: 17px;
+    line-height: 27px;
+  }
+  .hero-actions {
+    margin-top: 20px;
   }
   .cta-actions {
     gap: 12px;
   }
   .hero-trigger-list {
-    margin-bottom: 24px;
+    grid-template-columns: 1fr;
+    gap: 8px;
+    margin-bottom: 0;
   }
   .cards {
     margin: 20px auto 0;
@@ -1915,23 +1921,26 @@ textarea:focus {
     display: none;
   }
   .hero--home .hero-title {
-    font-size: 30px;
-    line-height: 1.08;
-    max-width: 13ch;
+    font-size: 28px;
+    line-height: 1.06;
+    max-width: 11ch;
   }
   .hero--home .hero-text {
-    font-size: 18px;
-    line-height: 30px;
-    margin: 18px 0 20px;
+    font-size: 16px;
+    line-height: 26px;
+    margin: 16px 0 0;
+  }
+  .hero-actions {
+    margin-top: 16px;
   }
   .hero-trigger-list {
-    flex-direction: row;
-    align-items: flex-start;
+    grid-template-columns: 1fr;
     gap: 8px;
-    margin-bottom: 20px;
+    margin: 20px 0 0;
+    padding-top: 16px;
   }
   .hero--home .hero-trigger-list li {
-    padding: 8px 12px;
+    padding: 0 0 0 16px;
     font-size: 14px;
     line-height: 20px;
   }
