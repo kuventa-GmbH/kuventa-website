@@ -150,10 +150,10 @@ permalink: /datenschutz/
   </p>
 
   <p>
-    Framer B.V.<br>
-    Rozengracht 207 B<br>
-    1016 LZ Amsterdam<br>
-    Niederlande
+    GitHub, Inc.<br>
+    88 Colin P. Kelly Jr. Street<br>
+    San Francisco, CA 94107<br>
+    USA
   </p>
 </section>
 
@@ -184,11 +184,11 @@ permalink: /datenschutz/
   <p>
     kuventa GmbH<br>
     Georgsplatz 1<br>
-    22045 Hamburg
+    20099 Hamburg
   </p>
   <p>
-    Telefon: +4915175032656<br>
-    E-Mail: info@kuventa.de
+    Telefon: +49 151 75 03 26 56<br>
+    E-Mail: dennis.kuerschner@kuventa.de
   </p>
   <p>
     Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam
