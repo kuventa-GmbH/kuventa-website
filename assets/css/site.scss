@@ -448,6 +448,9 @@ ul {
 .hero-actions {
   margin-top: 24px;
 }
+.hero-actions + .hero-trigger-list {
+  margin-top: 40px;
+}
 .hero-trigger-list {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1593,6 +1596,9 @@ textarea:focus {
   .hero-actions {
     margin-top: 20px;
   }
+  .hero-actions + .hero-trigger-list {
+    margin-top: 34px;
+  }
   .cta-actions {
     gap: 12px;
   }
@@ -1933,6 +1939,9 @@ textarea:focus {
   }
   .hero-actions {
     margin-top: 16px;
+  }
+  .hero-actions + .hero-trigger-list {
+    margin-top: 28px;
   }
   .hero-trigger-list {
     grid-template-columns: 1fr;
