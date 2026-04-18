@@ -24,8 +24,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   Spezialisiertes Consulting für Identity Governance, NIS2,
   SAP-IdM-Ablösung sowie die Modernisierung von Berechtigungs- und
   Identity-Landschaften mit MidPoint und One Identity.
-baseurl: "/kuventa-website" # GitHub Pages project repo
-url: "https://kuventa-gmbh.github.io"
+baseurl: ""
+url: "https://kuventa.de"
 twitter_username: jekyllrb
 github_username:  jekyll
 
