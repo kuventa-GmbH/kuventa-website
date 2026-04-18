@@ -339,7 +339,6 @@ Besonders wichtige Seiten fuer die naechste Umsetzungsphase:
 - `index.md`
 - `identity-assessment.html`
 - `identity-modernisierung.html`
-- `sso-plattform.html`
 - `loesungen.html`
 - `contact.md`
 

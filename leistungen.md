@@ -122,7 +122,7 @@ nav_order: 2
               <li>bessere Anschlussfähigkeit für neue Systeme</li>
             </ul>
             <div class="contact-direct__actions">
-              <a class="contact-direct__btn contact-direct__btn--primary" href="{% include helpers/internal-href.html path='/sso-plattform/' %}">Mehr erfahren</a>
+              <a class="contact-direct__btn contact-direct__btn--primary" href="{% include helpers/internal-href.html path='/identity-modernisierung/' %}">Mehr erfahren</a>
             </div>
           </div>
         </article>
@@ -138,7 +138,7 @@ nav_order: 2
               <li>solide Grundlage für Portale und digitale Angebote</li>
             </ul>
             <div class="contact-direct__actions">
-              <a class="contact-direct__btn contact-direct__btn--primary" href="{% include helpers/internal-href.html path='/customer-identity-plattform/' %}">Mehr erfahren</a>
+              <a class="contact-direct__btn contact-direct__btn--primary" href="{% include helpers/internal-href.html path='/kontakt/' %}">Mehr erfahren</a>
             </div>
           </div>
         </article>

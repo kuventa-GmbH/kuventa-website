@@ -37,7 +37,7 @@ leistungen:
             - "Single Sign-On für interne Nutzer"
             - "Anbindung von AD, LDAP und SaaS"
             - "Konsistente MFA und zentrale Policies"
-          link: "/sso-plattform/"
+          link: "/identity-modernisierung/"
           link_text: "Mehr erfahren"
           link_as_button: true
         - title: "Betriebsnahe Governance"
@@ -47,7 +47,7 @@ leistungen:
             - "Self-Service und Registrierungsprozesse"
             - "Tokenbasierte Sicherheit für Anwendungen und APIs"
             - "Skalierbare externe Identitäten"
-          link: "/customer-identity-plattform/"
+          link: "/kontakt/"
           link_text: "Mehr erfahren"
           link_as_button: true
     - template: "focus"
@@ -171,13 +171,13 @@ loesungen:
         - title: "Plattformumsetzung"
           text: "Für Unternehmen, die MidPoint, One Identity oder einen geordneten Nachfolgepfad in die Umsetzung bringen wollen."
           icon: "/assets/img/icons/cap.svg"
-          link: "/sso-plattform/"
+          link: "/identity-modernisierung/"
           link_text: "Mehr erfahren"
           link_as_button: true
         - title: "Governance-Betriebsmodell"
           text: "Für Unternehmen, die IGA nicht nur einführen, sondern dauerhaft im Betrieb verankern wollen."
           icon: "/assets/img/icons/creative.svg"
-          link: "/customer-identity-plattform/"
+          link: "/kontakt/"
           link_text: "Mehr erfahren"
           link_as_button: true
     - template: "focus"

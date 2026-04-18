@@ -60,7 +60,7 @@ identity-modernisierung:
       paragraph_links:
         - prefix: "Fuer interne Zugriffslandschaften betrachten wir haeufig eine "
           link_text: "Single Sign-On Plattform"
-          link: "/sso-plattform/"
+          link: "/identity-modernisierung/"
           suffix: "."
         - prefix: "Fuer IGA-Transformationen stehen haeufig "
           link_text: "MidPoint oder One Identity"
@@ -99,13 +99,13 @@ identity-modernisierung:
         - title: "IGA-Plattform und Umsetzung"
           text: "Umsetzungsbegleitung fuer Governance-, Rollen- und Integrationsbausteine in MidPoint-, One-Identity- oder vergleichbaren Plattformkontexten."
           icon: "/assets/img/icons/cap.svg"
-          link: "/sso-plattform/"
+          link: "/identity-modernisierung/"
           link_text: "Mehr erfahren"
           link_as_button: true
         - title: "Governance-Betriebsmodell"
           text: "Rezertifizierung, Verantwortlichkeiten und Auditfaehigkeit dauerhaft im Alltag verankern."
           icon: "/assets/img/icons/creative.svg"
-          link: "/customer-identity-plattform/"
+          link: "/kontakt/"
           link_text: "Mehr erfahren"
           link_as_button: true
       cta:
@@ -233,245 +233,9 @@ identity-assessment:
         link: "/identity-modernisierung/"
         link_text: "Mehr erfahren"
         link_as_button: true
-      - title: "Single Sign-On Plattform"
-        text: "Zentrale Authentifizierung fuer interne Systeme, SaaS-Tools und APIs als moeglicher Baustein einer geordneten Zielarchitektur."
+      - title: "Umsetzung und Betriebsmodell"
+        text: "Wenn die Ausgangslage klar ist, folgen daraus haeufig priorisierte Umsetzungsschritte und ein tragfaehiges Governance-Betriebsmodell."
         icon: "/assets/img/icons/cap.svg"
-        link: "/sso-plattform/"
-        link_text: "Mehr erfahren"
-        link_as_button: true
-
-sso-plattform:
-  hero:
-    kicker: "Interne Zugriffslandschaften strukturieren"
-    title: "Single Sign-On Plattform für interne Systeme"
-    text: "Reduzieren Sie Administrationsaufwand und erhöhen Sie Sicherheit durch eine zentrale Authentifizierungsplattform."
-  sections:
-    - template: "cards"
-      heading: "Das Problem"
-      intro: "Getrennte Logins sind nicht nur unkomfortabel, sondern auch teuer im Betrieb und riskant für die Sicherheit."
-      items:
-        - title: "Unterschiedliche Logins"
-          text: "Jedes System verwaltet eigene Zugangsdaten und eigene Anmeldeprozesse."
-          icon: "/assets/img/icons/circle.svg"
-        - title: "Passwort-Wiederverwendung"
-          text: "Benutzer vereinfachen ihren Alltag mit unsicheren Passwortmustern."
-          icon: "/assets/img/icons/star.svg"
-        - title: "Hoher Helpdesk-Aufwand"
-          text: "Passwort-Resets und Zugriffsprobleme erzeugen unnötige Supportkosten."
-          icon: "/assets/img/icons/train.svg"
-        - title: "Wenig Transparenz"
-          text: "Zugriffsregeln und Authentifizierungswege sind über mehrere Systeme verteilt."
-          icon: "/assets/img/icons/search.svg"
-      cta:
-        alt: true
-        title: "SSO reduziert Reibung in Betrieb und Support"
-        text: "Wir zeigen, wie eine zentrale Plattform die Zahl der Login-Inseln kontrolliert abbaut."
-    - template: "process"
-      alt: true
-      heading: "Die Lösung"
-      text: "Eine zentrale SSO- und Zugriffsplattform verbindet bestehende Identitaetsquellen mit internen Anwendungen, SaaS-Tools und APIs."
-      paragraph_links:
-        - prefix: "Viele Unternehmen beginnen mit einem "
-          link_text: "Identity Modernization Assessment"
-          link: "/identity-assessment/"
-          suffix: ", bevor sie ihre zentrale Login-Plattform schrittweise einführen."
-      subheading: "Typische Integrationen"
-      image: "/assets/img/illustrations/home/security.svg"
-      points:
-        - "Active Directory als bestehende Benutzerquelle"
-        - "interne Web-Applikationen und Portale"
-        - "SaaS-Tools mit modernen Authentifizierungsstandards"
-        - "interne APIs für tokenbasierte Zugriffe"
-      note: "SAML, OpenID Connect und OAuth2 schaffen die technische Grundlage für eine saubere und zukunftsfähige Integration."
-      cta:
-        title: "Standards statt proprietärer Login-Lösungen"
-        text: "Wir planen die Plattform so, dass bestehende Systeme angebunden und neue Anwendungen schneller integriert werden können."
-    - template: "cards"
-      heading: "Vorteile"
-      intro: "Eine zentrale Plattform liefert operative Entlastung und verbessert gleichzeitig Sicherheit und Steuerbarkeit."
-      items:
-        - title: "Single Sign-On"
-          text: "Weniger Passwörter, weniger Medienbrüche und bessere Nutzerakzeptanz."
-          icon: "/assets/img/icons/bulb.svg"
-        - title: "Multi-Faktor-Authentifizierung"
-          text: "MFA wird zentral eingeführt und konsistent über mehrere Anwendungen durchgesetzt."
-          icon: "/assets/img/icons/star.svg"
-        - title: "Zentrale Zugriffskontrolle"
-          text: "Policies, Sessions und Authentifizierungsflüsse werden an einer Stelle gesteuert."
-          icon: "/assets/img/icons/search.svg"
-        - title: "Einfacheres User Lifecycle Management"
-          text: "Ein- und Austritte lassen sich besser mit bestehenden Benutzerquellen verzahnen."
-          icon: "/assets/img/icons/circle.svg"
-        - title: "Mehr Sicherheitskontrolle"
-          text: "Authentifizierung wird nachvollziehbarer, standardisierter und auditfähiger."
-          icon: "/assets/img/icons/cap.svg"
-      cta:
-        alt: true
-        title: "SSO ist ein Sicherheits- und Betriebsprojekt"
-        text: "Im Erstgespräch bewerten wir, welche Anwendungen sich für einen sinnvollen Einstieg eignen."
-    - template: "steps"
-      alt: true
-      heading: "Typischer Projektumfang"
-      text: "Viele Projekte starten mit einem klar abgegrenzten Scope und werden anschließend schrittweise erweitert."
-      paragraph_links:
-        - prefix: "Wenn auch externe Nutzer sicher angebunden werden sollen, ist oft eine "
-          link_text: "Identity Governance Modernisierung"
-          link: "/identity-modernisierung/"
-          suffix: " oder ein Governance-Folgeprojekt der passende naechste Baustein."
-      steps:
-        - title: "Plattformbasis aufsetzen"
-          text: "Aufbau der technischen Basis in Ihrer Zielumgebung."
-        - title: "Active Directory Integration"
-          text: "Anbindung der bestehenden Benutzerquelle für interne Nutzer."
-        - title: "MFA Einrichtung"
-          text: "Definition und technische Umsetzung passender MFA-Mechanismen."
-        - title: "Integration erster Anwendungen"
-          text: "Anbindung der wichtigsten Systeme für einen kontrollierten Start."
-        - title: "Administrator Schulung"
-          text: "Übergabe von Betriebswissen, Konfiguration und Governance-Grundlagen."
-      cta:
-        title: "Planen Sie den Einstieg mit realistischem Scope"
-        text: "Wir helfen Ihnen, erste Anwendungen, Sicherheitsanforderungen und Betriebsmodell sauber festzulegen."
-  final_cta:
-    image: "/assets/img/illustrations/home/userlaptop.svg"
-    icon: "/assets/img/icons/handshake.png"
-    title: "Lassen Sie uns Ihr Vorhaben kurz besprechen"
-    text: "Schildern Sie kurz die Ausgangslage. Ich melde mich persönlich zurück oder wir finden direkt einen passenden Termin."
-  more_solutions:
-    alt: true
-    heading: "Weitere Lösungen"
-    intro: "Je nach Ausgangslage ist ein vorgelagertes Assessment oder eine Plattform für externe Nutzer der logische Anschluss."
-    items:
-      - title: "Identity Modernization Assessment"
-        text: "Strukturierte Analyse Ihrer bestehenden Authentifizierungslandschaft mit Roadmap für die nächsten Schritte."
-        icon: "/assets/img/icons/search.svg"
-        link: "/identity-assessment/"
-        link_text: "Mehr erfahren"
-        link_as_button: true
-      - title: "Customer Identity Plattform"
-        text: "Login-Plattform für Kunden-, Partner- und Entwicklerportale mit standardisierter Authentifizierung."
-        icon: "/assets/img/icons/creative.svg"
-        link: "/customer-identity-plattform/"
-        link_text: "Mehr erfahren"
-        link_as_button: true
-
-customer-identity-plattform:
-  hero:
-    kicker: "Externe Nutzer sauber trennen"
-    title: "Login Plattform für Kunden- und Partnerportale"
-    text: "Skalierbare Authentifizierung für externe Nutzer wie Kunden, Partner oder Entwickler."
-  sections:
-    - template: "cards"
-      heading: "Typische Anwendungsfälle"
-      intro: "Wenn externe Nutzer sicher und konsistent auf digitale Angebote zugreifen sollen, braucht es eine eigene Identity-Architektur."
-      items:
-        - title: "Kundenportale"
-          text: "Sichere Logins für Self-Service-, Vertrags- oder Serviceportale."
-          icon: "/assets/img/icons/circle.svg"
-        - title: "Partnerplattformen"
-          text: "Kontrollierter Zugriff für externe Partner, Dienstleister oder Reseller."
-          icon: "/assets/img/icons/creative.svg"
-        - title: "SaaS Anwendungen"
-          text: "Mandantenfähige Authentifizierung für Ihre eigenen digitalen Produkte."
-          icon: "/assets/img/icons/cap.svg"
-        - title: "Developer Portale"
-          text: "Registrierung und Zugriff für Entwickler, Dokumentation und API-Nutzung."
-          icon: "/assets/img/icons/search.svg"
-        - title: "API Plattformen"
-          text: "Tokenbasierte Sicherheit für Anwendungen und Integrationen."
-          icon: "/assets/img/icons/star.svg"
-      cta:
-        alt: true
-        title: "Externe Identitäten brauchen ein eigenes Plattformdenken"
-        text: "Wir zeigen, wie sich Kunden-, Partner- und Entwicklerlogins standardisiert aufbauen lassen."
-    - template: "process"
-      alt: true
-      heading: "Plattform Funktionen"
-      text: "Eine Customer Identity Plattform stellt alle wesentlichen Login- und Self-Service-Funktionen zentral bereit."
-      paragraph_links:
-        - prefix: "Viele Unternehmen beginnen mit einem "
-          link_text: "Identity Modernization Assessment"
-          link: "/identity-assessment/"
-          suffix: ", um interne und externe Identity-Anforderungen sinnvoll zu trennen."
-      subheading: "Typische Bausteine"
-      image: "/assets/img/illustrations/home/config.svg"
-      points:
-        - "Registrierung für neue Nutzer"
-        - "Login und Session-Management"
-        - "Passwort Reset und Account-Wiederherstellung"
-        - "Multi-Faktor-Authentifizierung"
-        - "OAuth2 und OpenID Connect"
-        - "API Token Authentifizierung"
-      note: "So entsteht eine Plattform, die Anwendungen entlastet und gleichzeitig ein konsistentes Login-Erlebnis schafft."
-      cta:
-        title: "Zentrale Funktionen statt individueller Login-Implementierungen"
-        text: "Wir definieren mit Ihnen, welche Funktionen für Ihr Portal heute und mittelfristig benötigt werden."
-    - template: "focus"
-      heading: "Architektur"
-      text: "Anwendungen authentifizieren Nutzer ueber eine zentrale Login-Plattform. Nach erfolgreicher Anmeldung erhalten Benutzer Tokens fuer den sicheren Zugriff auf Anwendungen und APIs."
-      paragraph_links:
-        - prefix: "Für interne Anwendungen implementieren wir häufig eine "
-          link_text: "Single Sign-On Plattform"
-          link: "/sso-plattform/"
-          suffix: ", während externe Nutzer über eine eigene Customer Identity Plattform geführt werden."
-      image: "/assets/img/illustrations/home/path.svg"
-      columns:
-        - title: "Authentifizierungsfluss"
-          lines:
-            - "Benutzer oder Partnerportal"
-            - "&darr;"
-            - "Zentrale Login Plattform"
-            - "&darr;"
-            - "Tokens für Anwendungen und APIs"
-        - title: "Vorteile"
-          points:
-            - "standardisierte Authentifizierung für mehrere Anwendungen"
-            - "sichere API-Kommunikation mit Tokens"
-            - "konsistentes Login-Erlebnis über alle Portale"
-      cta:
-        alt: true
-        title: "Eine saubere Architektur vereinfacht Wachstum"
-        text: "Mit einer zentralen Plattform werden neue Portale, Apps und APIs schneller anschlussfähig."
-    - template: "cards"
-      alt: true
-      heading: "Business Vorteile"
-      intro: "Die Plattform ist nicht nur ein Technikthema, sondern ein Beschleuniger für digitale Produkte und externe Services."
-      items:
-        - title: "Skalierbare Authentifizierung"
-          text: "Wachsende Nutzerzahlen und neue Anwendungen lassen sich leichter abbilden."
-          icon: "/assets/img/icons/train.svg"
-        - title: "Höhere Sicherheit"
-          text: "Standards, MFA und zentrale Policies senken das Risiko inkonsistenter Eigenentwicklungen."
-          icon: "/assets/img/icons/star.svg"
-        - title: "Schnellere Entwicklung"
-          text: "Teams können neue Anwendungen bauen, ohne Login-Funktionen jedes Mal neu zu entwickeln."
-          icon: "/assets/img/icons/bulb.svg"
-        - title: "Konsistente Benutzerverwaltung"
-          text: "Nutzerprozesse werden zentralisiert und über Anwendungen hinweg einheitlich gestaltet."
-          icon: "/assets/img/icons/search.svg"
-      cta:
-        title: "Bauen Sie eine tragfähige Basis für externe Nutzer"
-        text: "Im Erstgespräch klären wir Zielgruppen, Integrationen und die passende Plattformarchitektur."
-  final_cta:
-    alt: true
-    image: "/assets/img/illustrations/home/userengagement.svg"
-    icon: "/assets/img/icons/handshake.png"
-    title: "Lassen Sie uns Ihr Vorhaben kurz besprechen"
-    text: "Schildern Sie kurz die Ausgangslage. Ich melde mich persönlich zurück oder wir finden direkt einen passenden Termin."
-  more_solutions:
-    alt: true
-    heading: "Weitere Lösungen"
-    intro: "Für mittelständische IT-Landschaften greifen interne und externe Identity-Lösungen oft ineinander."
-    items:
-      - title: "Identity Modernization Assessment"
-        text: "Analyse der bestehenden Authentifizierungslandschaft mit Roadmap für eine cloudfähige Identity-Architektur."
-        icon: "/assets/img/icons/search.svg"
-        link: "/identity-assessment/"
-        link_text: "Mehr erfahren"
-        link_as_button: true
-      - title: "Single Sign-On Plattform"
-        text: "Zentrale Authentifizierung für interne Systeme mit MFA, Standards und klarer Zugriffskontrolle."
-        icon: "/assets/img/icons/cap.svg"
-        link: "/sso-plattform/"
-        link_text: "Mehr erfahren"
+        link: "/kontakt/"
+        link_text: "Kurz besprechen"
         link_as_button: true

@@ -88,7 +88,7 @@ services:
         - "bestehende Verzeichnisdienste, HR-Quellen und Anwendungen anbinden"
         - "MidPoint- oder One-Identity-Kontexte technisch und organisatorisch tragfähig aufsetzen"
       icon: "/assets/img/icons/cap.svg"
-      link: "/sso-plattform/"
+      link: "/identity-modernisierung/"
       link_text: "Zur Umsetzung"
     - title: "One Identity Wissensassistent"
       points:
