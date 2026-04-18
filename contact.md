@@ -7,8 +7,12 @@ nav_order: 5
 <section class="section hero">
   <div class="container">
     <div class="blog-header">
-      <h1 class="hero-title js-anim" data-anim="animate__fadeInLeft" data-once="true">Lassen Sie uns kurz sprechen</h1>
-      <p class="hero-text js-anim" data-anim="animate__fadeIn" data-once="true">Wenn Sie eine gewachsene Situation einordnen, Risiken bewerten oder einen sinnvollen Einstieg für die nächsten Schritte klären möchten, erreichen Sie mich direkt per E-Mail oder Telefon. Wenn es schneller geht, buchen Sie einfach einen kurzen Termin.</p>
+      <p class="blog-kicker js-anim" data-anim="animate__fadeInUp" data-once="true">Direkter Kontakt ohne Vertriebsschleife</p>
+      <h1 class="hero-title js-anim" data-anim="animate__fadeInLeft" data-once="true">Ausgangslage kurz besprechen</h1>
+      <p class="hero-text js-anim" data-anim="animate__fadeIn" data-once="true">Wenn NIS2, SAP-IdM-Ablösung, Auditdruck oder eine gewachsene Identity-Landschaft gerade Handlungsdruck erzeugen, können wir Ihre Lage in einem kurzen Erstgespräch sauber einordnen. Sie sprechen direkt mit Dennis Kürschner.</p>
+      <div class="hero-actions center js-anim" data-anim="animate__fadeInUp" data-once="true">
+        <a class="btn btn-primary" href="{% include helpers/internal-href.html path='/identity-assessment/' %}">Identity Assessment ansehen</a>
+      </div>
     </div>
 
     <div class="contact-direct contact-direct--hero js-anim" data-anim="animate__fadeInUp" data-once="true">
@@ -33,11 +37,40 @@ nav_order: 5
   </div>
 </section>
 
+<section class="section section-alt why-section">
+  <div class="container center">
+    <h2 class="sec-heading js-anim" data-anim="animate__fadeInUp" data-once="true">Wofür dieses Gespräch gedacht ist</h2>
+    <p class="section-intro js-anim" data-anim="animate__fadeIn" data-once="true">Das Erstgespräch ist kein Sales-Call. Es dient dazu, Handlungsdruck, Ausgangslage und den sinnvollsten Einstieg gemeinsam zu sortieren.</p>
+    <div class="cards">
+      <article class="card js-anim" data-anim="animate__fadeInUp" data-once="true">
+        <img class="card-icon" src="{{ '/assets/img/icons/search.svg' | relative_url }}" alt="" loading="lazy">
+        <h3>Einordnung statt Pitch</h3>
+        <p>Wir klären, ob eher ein Identity Assessment, eine Modernisierungsroadmap oder direkte Umsetzungsunterstützung sinnvoll ist.</p>
+      </article>
+      <article class="card js-anim" data-anim="animate__fadeInUp" data-once="true">
+        <img class="card-icon" src="{{ '/assets/img/icons/star.svg' | relative_url }}" alt="" loading="lazy">
+        <h3>Risiken und Prioritäten</h3>
+        <p>Wir sprechen über Governance, Rollen, Berechtigungen, Plattformfragen und darüber, was aktuell wirklich zuerst zählt.</p>
+      </article>
+      <article class="card js-anim" data-anim="animate__fadeInUp" data-once="true">
+        <img class="card-icon" src="{{ '/assets/img/icons/handshake.png' | relative_url }}" alt="" loading="lazy">
+        <h3>Direkt mit Dennis</h3>
+        <p>Sie landen nicht bei Vertrieb oder Assistenz, sondern direkt bei dem Ansprechpartner, der Ihr Thema fachlich einordnen kann.</p>
+      </article>
+      <article class="card js-anim" data-anim="animate__fadeInUp" data-once="true">
+        <img class="card-icon" src="{{ '/assets/img/icons/train.svg' | relative_url }}" alt="" loading="lazy">
+        <h3>Klare nächste Schritte</h3>
+        <p>Nach dem Gespräch ist greifbarer, welcher Scope, welches Format und welcher nächste Schritt für Ihr Vorhaben vernünftig ist.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
 <section class="section section-alt contact-booking">
   <div class="container">
     <div class="contact-booking__wrap center js-anim" data-anim="animate__fadeInUp" data-once="true">
-      <h2 class="sec-heading">Strategiegespräch direkt vereinbaren</h2>
-      <p>Wählen Sie hier einfach einen passenden Termin. Ein kurzes Erstgespräch reicht, um Ihre Ausgangslage einzuordnen und sinnvolle nächste Schritte zu besprechen.</p>
+      <h2 class="sec-heading">Termin direkt vereinbaren</h2>
+      <p>Wenn ein kurzer Termin einfacher ist als E-Mail oder Telefon, buchen Sie hier direkt einen passenden Slot. Das Gespräch reicht in der Regel, um Ausgangslage, Handlungsdruck und sinnvolle nächste Schritte einzuordnen.</p>
       <div class="contact-booking__embed">
         <iframe
           src="https://outlook.office.com/bookwithme/user/1536062ad5714a80976ffe478fb68e3c@kuventa.de/meetingtype/0Sv5L6jWt0ekIZy9r6D1Ug2?bookingcode=5cfeb36b-0bba-4165-bdfe-8f636d8a11f7&amp;anonymous&amp;ismsaljsauthenabled&amp;ep=mlink"
@@ -47,6 +80,24 @@ nav_order: 5
           title="Microsoft Bookings"
           loading="lazy"></iframe>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container cta">
+    <div class="cta-img js-anim" data-anim="animate__fadeIn" data-once="true">
+      <img src="{{ '/assets/img/photos/about/dennis.webp' | relative_url }}" alt="Dennis Kürschner" loading="lazy">
+    </div>
+    <div class="cta-content js-anim" data-anim="animate__fadeInRight" data-once="true">
+      <img src="{{ '/assets/img/icons/handshake.png' | relative_url }}" alt="" loading="lazy">
+      <h2>Wenn Sie schon wissen, dass ein Assessment sinnvoll ist</h2>
+      <p>Dann können Sie auch direkt auf die Produktseite gehen und prüfen, ob das Identity Assessment zu Ihrer Lage passt.</p>
+      <div class="cta-actions">
+        <a class="btn btn-primary" href="{% include helpers/internal-href.html path='/identity-assessment/' %}">Identity Assessment ansehen</a>
+        <a class="btn btn-secondary cta-actions__secondary" href="{% include helpers/internal-href.html path='/identity-modernisierung/' %}">IGA-Modernisierung ansehen</a>
+      </div>
+      <p class="cta-note">Wenn Sie unsicher sind, reicht trotzdem eine kurze Nachricht oder ein kurzer Termin.</p>
     </div>
   </div>
 </section>
