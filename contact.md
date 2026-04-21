@@ -7,9 +7,9 @@ nav_order: 5
 <section class="section hero">
   <div class="container">
     <div class="blog-header">
-      <p class="blog-kicker js-anim" data-anim="animate__fadeInUp" data-once="true">Direkter Kontakt ohne Vertriebsschleife</p>
-      <h1 class="hero-title js-anim" data-anim="animate__fadeInLeft" data-once="true">Ausgangslage kurz besprechen</h1>
-      <p class="hero-text js-anim" data-anim="animate__fadeIn" data-once="true">Wenn NIS2, SAP-IdM-Ablösung, Auditdruck oder eine gewachsene Identity-Landschaft gerade Handlungsdruck erzeugen, können wir Ihre Lage in einem kurzen Erstgespräch sauber einordnen. Sie sprechen direkt mit Dennis Kürschner.</p>
+      <p class="blog-kicker js-anim" data-anim="animate__fadeInUp" data-once="true">Kontakt zur kuventa GmbH</p>
+      <h1 class="hero-title js-anim" data-anim="animate__fadeInLeft" data-once="true">Mit kuventa sprechen</h1>
+      <p class="hero-text js-anim" data-anim="animate__fadeIn" data-once="true">Wenn NIS2, SAP-IdM-Ablösung, Auditdruck oder eine gewachsene Identity-Landschaft gerade Handlungsdruck erzeugen, ordnet kuventa Ihre Lage in einem kurzen Erstgespräch sauber ein. Dennis Kürschner ist Geschäftsführer und fachlicher Hauptansprechpartner.</p>
       <div class="hero-actions center js-anim" data-anim="animate__fadeInUp" data-once="true">
         <a class="btn btn-primary" href="{% include helpers/internal-href.html path='/identity-assessment/' %}">Identity Assessment ansehen</a>
       </div>
@@ -17,11 +17,11 @@ nav_order: 5
 
     <div class="contact-direct contact-direct--hero js-anim" data-anim="animate__fadeInUp" data-once="true">
       <article class="contact-direct__item">
-        <span class="contact-direct__label">E-Mail</span>
-        <span class="contact-direct__value" id="contact-email-value">dennis.kuerschner@kuventa.de</span>
+        <span class="contact-direct__label">Allgemeine Anfrage</span>
+        <span class="contact-direct__value" id="contact-email-value">info@kuventa.de</span>
         <div class="contact-direct__actions">
-          <button class="contact-direct__btn" type="button" data-copy="dennis.kuerschner@kuventa.de" data-copy-label="E-Mail">Kopieren</button>
-          <a class="contact-direct__btn contact-direct__btn--primary" href="mailto:dennis.kuerschner@kuventa.de">E-Mail senden</a>
+          <button class="contact-direct__btn" type="button" data-copy="info@kuventa.de" data-copy-label="E-Mail">Kopieren</button>
+          <a class="contact-direct__btn contact-direct__btn--primary" href="mailto:info@kuventa.de">E-Mail senden</a>
         </div>
       </article>
       <article class="contact-direct__item">
@@ -40,7 +40,7 @@ nav_order: 5
 <section class="section section-alt why-section">
   <div class="container center">
     <h2 class="sec-heading js-anim" data-anim="animate__fadeInUp" data-once="true">Wofür dieses Gespräch gedacht ist</h2>
-    <p class="section-intro js-anim" data-anim="animate__fadeIn" data-once="true">Das Erstgespräch ist kein Sales-Call. Es dient dazu, Handlungsdruck, Ausgangslage und den sinnvollsten Einstieg gemeinsam zu sortieren.</p>
+    <p class="section-intro js-anim" data-anim="animate__fadeIn" data-once="true">Das Erstgespräch ist kein Sales-Call. Es dient dazu, Handlungsdruck, Ausgangslage und den sinnvollsten Einstieg mit kuventa gemeinsam zu sortieren.</p>
     <div class="cards">
       <article class="card js-anim" data-anim="animate__fadeInUp" data-once="true">
         <img class="card-icon" src="{{ '/assets/img/icons/search.svg' | relative_url }}" alt="" loading="lazy">
@@ -54,8 +54,8 @@ nav_order: 5
       </article>
       <article class="card js-anim" data-anim="animate__fadeInUp" data-once="true">
         <img class="card-icon" src="{{ '/assets/img/icons/handshake.png' | relative_url }}" alt="" loading="lazy">
-        <h3>Direkt mit Dennis</h3>
-        <p>Sie landen nicht bei Vertrieb oder Assistenz, sondern direkt bei dem Ansprechpartner, der Ihr Thema fachlich einordnen kann.</p>
+        <h3>Ansprechpartner im Team</h3>
+        <p>Dennis Kürschner übernimmt als Geschäftsführer die fachliche Einordnung. Janina Kürschner unterstützt als Assistenz bei organisatorischer Abstimmung und Vorbereitung.</p>
       </article>
       <article class="card js-anim" data-anim="animate__fadeInUp" data-once="true">
         <img class="card-icon" src="{{ '/assets/img/icons/train.svg' | relative_url }}" alt="" loading="lazy">

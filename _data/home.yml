@@ -5,7 +5,7 @@ cta_system:
   secondary:
     text: "Ausgangslage kurz besprechen"
     link: "/kontakt/"
-  note: "Sie sprechen direkt mit Dennis Kürschner, nicht mit Vertrieb oder Assistenz."
+  note: "Sie erreichen direkt das kuventa-Team. Fachliche Einordnung und nächste Schritte bleiben seniorig betreut."
 
 hero:
   kicker: "IGA- und One-Identity-Beratung für Enterprise und gehobenen Mittelstand"
@@ -39,10 +39,10 @@ why:
 
 trust:
   heading: "Warum kuventa als erster Gesprächspartner funktioniert"
-  text: "Vertrauen entsteht hier über belastbare Delivery-Erfahrung, sichtbare One-Identity-Nähe und direkte Erreichbarkeit ohne Vertriebsfilter."
+  text: "Vertrauen entsteht hier über belastbare Delivery-Erfahrung, sichtbare One-Identity-Nähe und eine klare kuventa-Verantwortung vom Erstgespräch bis zur Umsetzung."
   items:
-    - title: "Direkt mit Dennis Kürschner"
-      text: "Sie sprechen mit dem Berater, der die Lage einordnet und die nächsten Schritte später auch fachlich begleiten kann."
+    - title: "Klare Verantwortung bei kuventa"
+      text: "Die Anfrage landet nicht in einem anonymen Vertriebstrichter. kuventa ordnet die Lage fachlich ein und übernimmt die weitere Strukturierung."
     - title: "One Identity mit Delivery-Perspektive"
       text: "Nicht nur Architekturfolie, sondern Erfahrung aus Synchronisation, Governance, Rezertifizierung, Web-Frontend, SuccessFactors- und Zielsystem-Kontexten."
     - title: "Marktzugang im One-Identity-Umfeld"
@@ -136,7 +136,7 @@ process:
   image: "/assets/img/illustrations/home/path.svg"
   primary_btn: "Lassen Sie uns kurz sprechen"
   primary_btn_link: "/kontakt/"
-  primary_note: "Kurz schildern reicht. Ich melde mich persönlich zurück."
+  primary_note: "Kurz schildern reicht. kuventa meldet sich mit einer fachlichen Einordnung zurück."
 
 benefits:
   heading: "Welchen Nutzen Unternehmen daraus ziehen"
@@ -203,14 +203,14 @@ contact:
   points:
     - "erste Einordnung von Handlungsdruck und Prioritäten"
     - "Abgleich, ob eher Assessment, Roadmap oder direkte Umsetzung sinnvoll ist"
-    - "direkter Austausch mit Dennis Kürschner"
-  direct_heading: "So erreichen Sie Dennis direkt"
+    - "direkter Austausch mit kuventa"
+  direct_heading: "So erreichen Sie kuventa"
   direct_text: "E-Mail, Telefon und Terminbuchung stehen parallel bereit. Bookings ist eine Option, nicht die einzige Hürde."
   channels:
     - label: "E-Mail"
-      value: "dennis.kuerschner@kuventa.de"
+      value: "info@kuventa.de"
       action_text: "E-Mail senden"
-      action_link: "mailto:dennis.kuerschner@kuventa.de"
+      action_link: "mailto:info@kuventa.de"
     - label: "Telefon"
       value: "+49 151 75 03 26 56"
       action_text: "Anrufen"

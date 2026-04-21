@@ -188,7 +188,7 @@ permalink: /datenschutz/
   </p>
   <p>
     Telefon: +49 151 75 03 26 56<br>
-    E-Mail: dennis.kuerschner@kuventa.de
+    E-Mail: info@kuventa.de
   </p>
   <p>
     Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam
