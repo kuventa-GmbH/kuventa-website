@@ -13,15 +13,5 @@
         </article>
       {% endfor %}
     </div>
-
-    <div class="trust-proof js-anim" data-anim="animate__fadeInUp" data-once="true">
-      <p class="trust-proof__eyebrow">{{ site.data.home.trust.references_intro }}</p>
-      <div class="trust-proof__list">
-        {% for item in site.data.home.trust.references %}
-          <span class="trust-proof__item">{{ item }}</span>
-        {% endfor %}
-      </div>
-      <p class="trust-proof__note">{{ site.data.home.trust.references_note }}</p>
-    </div>
   </div>
 </section>

@@ -51,15 +51,6 @@ trust:
       text: "kuventa ist in Hamburg verankert und arbeitet nah an mittelständischen Unternehmen mit realen Betriebs- und Governance-Fragen."
     - title: "Pragmatisch bis in die Umsetzung"
       text: "Assessment, Roadmap, Produktidee und technische Umsetzung greifen ineinander, damit Entscheidungen nicht in PowerPoint stecken bleiben."
-  references_intro: "Nennbare Projekterfahrung unter anderem in Umfeldern wie"
-  references:
-    - "dmTECH GmbH"
-    - "Aveniq AG"
-    - "Computacenter"
-    - "SPIEGEL-Verlag Rudolf Augstein GmbH & Co. KG"
-    - "Versicherungsbranche"
-  references_note: "Ohne Testimonials oder Erfolgszahlen, solange sie nicht belastbar freigegeben sind."
-
 services:
   heading: "Identity Assessment als sinnvoller Einstieg"
   text: "Bei Handlungsdruck schafft zuerst ein Assessment Klarheit. Danach folgen Zielbild, Roadmap, Umsetzung und bei Bedarf ein KI-gestützter Wissensbaustein für One Identity."
