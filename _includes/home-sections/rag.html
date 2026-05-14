@@ -17,7 +17,7 @@
     <div class="cards cards-3 rag-section__cards">
       {% for card in rag.cards %}
         <article class="card js-anim" data-anim="animate__fadeInUp" data-once="true">
-          <p class="card-eyebrow">One Identity RAG</p>
+          <p class="card-eyebrow">One Identity Copilot</p>
           <h3>{{ card.title }}</h3>
           <p>{{ card.text }}</p>
           <a class="btn btn-secondary" href="{% include helpers/internal-href.html path=card.link %}">{{ card.link_text }}</a>

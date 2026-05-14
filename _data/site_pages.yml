@@ -318,7 +318,7 @@ beraterprofil:
             - "Assessment und Discovery Workshops"
             - "Architekturentscheidungen und Integrationskonzepte"
             - "technische Begleitung bis in die Umsetzung"
-            - "RAG-/Knowledge-Accelerator-Denken für wiederverwendbares Projektwissen"
+            - "Copilot-/Knowledge-Accelerator-Denken für wiederverwendbares Projektwissen"
     - template: "cards"
       alt: true
       heading: "Erfahrung aus komplexen Umgebungen"
@@ -377,15 +377,15 @@ beraterprofil:
 
 one-identity-rag:
   hero:
-    kicker: "Produktidee und KI-Wissensassistent"
-    title: "One Identity Wissen schneller finden und nutzbar machen"
-    text: "Der Bereich bündelt One-Identity-Wissen in einem KI-gestützten Such- und Antwortsystem. Ziel ist weniger Suchzeit und schneller belastbare Antworten für Delivery, Presales und Enablement."
+    kicker: "Produktidee und Identity Copilot"
+    title: "One Identity schneller verstehen und gezielter weiterentwickeln"
+    text: "Der Bereich bündelt One-Identity-Wissen in einem MCP-gestützten Copilot. Ziel sind weniger Suchzeit, schnellere Analyse und belastbarere Antworten für Delivery, Architektur und Enablement."
     image: "/assets/img/illustrations/home/process.svg"
     image_alt: "Illustration für strukturiertes One-Identity-Wissen"
   sections:
     - template: "focus"
       heading: "Was der Bereich leisten soll"
-      text: "Der Bereich ist kein generischer Chatbot. Er ist als fachlich fokussiertes Such- und Antwortsystem für One Identity gedacht."
+      text: "Der Bereich ist kein generischer Chatbot. Er ist als fachlich fokussierter Copilot für One Identity gedacht."
       image: "/assets/img/illustrations/about/code.svg"
       columns:
         - title: "Wissensbasis"
@@ -405,26 +405,26 @@ one-identity-rag:
             - "nur sinnvoll mit sauberer Wissensbasis und klaren Grenzen"
     - template: "cards"
       alt: true
-      heading: "Für wen der RAG-Bereich gedacht ist"
-      intro: "Der Nutzen ist je nach Zielgruppe unterschiedlich. Darum wird der Bereich in eigene Unterseiten aufgeteilt."
+      heading: "Für wen der Copilot gedacht ist"
+      intro: "Der Nutzen ist je nach Zielgruppe unterschiedlich. Im Zentrum stehen Teams, die gewachsene One-Identity-Umgebungen verstehen, erklären oder weiterentwickeln müssen."
       items:
-        - title: "Berater"
+        - title: "Architektur und Delivery"
           text: "Für schnelleren Einstieg in Tabellen, Prozesse, Rollenlogiken, Zielsysteme und projektspezifische Besonderheiten."
           icon: "/assets/img/icons/star.svg"
-          link: "/rag-fuer-berater/"
-          link_text: "Für Berater"
+          link: "/identity-copilot/"
+          link_text: "Mehr erfahren"
           link_as_button: true
-        - title: "Beratungshäuser"
-          text: "Für strukturiertes Enablement, wiederverwendbares Projektwissen und weniger Reibung zwischen Presales, Delivery und Betrieb."
+        - title: "Analyse und Dokumentation"
+          text: "Für strukturiertes Enablement, wiederverwendbares Projektwissen und weniger Reibung zwischen Analyse, Delivery und Betrieb."
           icon: "/assets/img/icons/cap.svg"
-          link: "/rag-fuer-beratungshaeuser/"
-          link_text: "Für Beratungshäuser"
+          link: "/identity-copilot/"
+          link_text: "Mehr erfahren"
           link_as_button: true
-        - title: "Einsatzszenarien"
-          text: "Für konkrete Bilder, wo ein RAG Mehrwert bringt und wo er bewusst nicht eingesetzt werden sollte."
+        - title: "Pilot und Deep Dive"
+          text: "Für konkrete Bilder, wo ein Copilot Mehrwert bringt und wie ein sauber begrenzter Einstieg aussehen kann."
           icon: "/assets/img/icons/creative.svg"
-          link: "/rag-einsatzszenarien/"
-          link_text: "Einsatzszenarien"
+          link: "/kontakt/"
+          link_text: "Pilot besprechen"
           link_as_button: true
     - template: "steps"
       heading: "Wie der Bereich schrittweise aufgebaut werden kann"
@@ -441,15 +441,15 @@ one-identity-rag:
   final_cta:
     image: "/assets/img/illustrations/home/grow.svg"
     icon: "/assets/img/icons/handshake.png"
-    title: "One-Identity-Wissensassistent als Pilot besprechen"
-    text: "Wenn Sie One-Identity-Wissen für Beratung, Delivery oder Enablement systematischer nutzbar machen wollen, besprechen wir einen sinnvollen Pilot."
+    title: "One Identity Copilot als Pilot besprechen"
+    text: "Wenn Sie Analyse, Dokumentation oder Delivery in One Identity systematischer beschleunigen wollen, besprechen wir einen sinnvollen Pilot."
     show_note_below: true
 
 rag-fuer-berater:
   hero:
     kicker: "Unterseite"
-    title: "KI-Wissensassistent für One-Identity-Berater"
-    text: "Für Berater zählt Geschwindigkeit ohne Qualitätsverlust. Der Bereich hilft dabei, schneller in Tabellen, Zielsysteme, Rollenlogiken und typische Umsetzungsfragen einzusteigen."
+    title: "One Identity Copilot für Architektur und Delivery"
+    text: "Für Architektur- und Delivery-Teams zählt Geschwindigkeit ohne Qualitätsverlust. Der Bereich hilft dabei, schneller in Tabellen, Zielsysteme, Rollenlogiken und typische Umsetzungsfragen einzusteigen."
     image: "/assets/img/illustrations/home/userlaptop.svg"
     image_alt: "Illustration für Berater im Delivery-Kontext"
   sections:
@@ -467,7 +467,7 @@ rag-fuer-berater:
           text: "Antworten können auf definierte Quellen zurückgeführt und fachlich eingeordnet werden, statt aus Bauchgefühl zu entstehen."
           icon: "/assets/img/icons/bulb.svg"
         - title: "Besseres Sparring"
-          text: "Der RAG ersetzt keine Seniorität, kann aber die Vorbereitung auf Workshops, Troubleshooting und Delivery deutlich beschleunigen."
+          text: "Der Copilot ersetzt keine Seniorität, kann aber die Vorbereitung auf Workshops, Troubleshooting und Delivery deutlich beschleunigen."
           icon: "/assets/img/icons/circle.svg"
     - template: "process"
       alt: true
@@ -484,15 +484,15 @@ rag-fuer-berater:
   final_cta:
     image: "/assets/img/photos/about/dennis.webp"
     icon: "/assets/img/icons/handshake.png"
-    title: "Berater-Use-Case für einen Pilot prüfen"
+    title: "Architecture- und Delivery-Use-Case für einen Pilot prüfen"
     text: "Wenn Ihr Ziel schnelleres Onboarding oder belastbareres Delivery-Sparring ist, prüfen wir gemeinsam einen Pilot."
     show_note_below: true
 
 rag-fuer-beratungshaeuser:
   hero:
     kicker: "Unterseite"
-    title: "KI-Wissensassistent für Beratungshäuser"
-    text: "Beratungshäuser verlieren Zeit und Marge, wenn One-Identity-Wissen nur in einzelnen Köpfen oder Projekten steckt. Der Bereich soll Wissen systematischer nutzbar machen."
+    title: "One Identity Copilot für Teams und Beratungshäuser"
+    text: "Beratungshäuser und Teams verlieren Zeit und Marge, wenn One-Identity-Wissen nur in einzelnen Köpfen oder Projekten steckt. Der Bereich soll Wissen systematischer nutzbar machen."
     image: "/assets/img/illustrations/home/security.svg"
     image_alt: "Illustration für Beratungshäuser"
   sections:
@@ -519,7 +519,7 @@ rag-fuer-beratungshaeuser:
     - template: "cards"
       alt: true
       heading: "Worauf geachtet werden muss"
-      intro: "Ein Beratungshaus-RAG funktioniert nur, wenn Governance und Wissenstrennung sauber mitgedacht werden."
+      intro: "Ein One Identity Copilot für Beratungshäuser funktioniert nur, wenn Governance und Wissenstrennung sauber mitgedacht werden."
       items:
         - title: "Mandantentrennung"
           text: "Kundenwissen, interne Standards und Herstellerquellen müssen sauber getrennt und freigegeben werden."
@@ -536,14 +536,14 @@ rag-fuer-beratungshaeuser:
   final_cta:
     image: "/assets/img/illustrations/home/process.svg"
     icon: "/assets/img/icons/handshake.png"
-    title: "Wissensassistent als Enablement-Baustein besprechen"
+    title: "Copilot als Enablement-Baustein besprechen"
     text: "Wenn One-Identity-Wissen in Ihrem Haus systematischer nutzbar werden soll, entwerfen wir einen Pilot mit klaren Grenzen."
     show_note_below: true
 
 rag-einsatzszenarien:
   hero:
     kicker: "Unterseite"
-    title: "Einsatzszenarien für einen One-Identity-Wissensassistenten"
+    title: "Einsatzszenarien für den One Identity Copilot"
     text: "Der Mehrwert entsteht dort, wo wiederkehrende Wissensarbeit Zeit frisst und Kontextwechsel teuer sind. Hier sehen Sie, welche Szenarien gut passen und wo Vorsicht nötig ist."
     image: "/assets/img/illustrations/home/config.svg"
     image_alt: "Illustration für Einsatzszenarien"
@@ -567,7 +567,7 @@ rag-einsatzszenarien:
     - template: "cards"
       alt: true
       heading: "Wo bewusst Grenzen gezogen werden sollten"
-      intro: "Gerade im One-Identity-Umfeld entstehen schnell riskante Missverständnisse, wenn RAG mit verbindlicher Architekturentscheidung verwechselt wird."
+      intro: "Gerade im One-Identity-Umfeld entstehen schnell riskante Missverständnisse, wenn ein Copilot mit verbindlicher Architekturentscheidung verwechselt wird."
       items:
         - title: "Keine ungeprüften Produktionsentscheidungen"
           text: "Customizing, Policies, Datenmodelle und Berechtigungslogiken brauchen weiterhin fachliche und technische Prüfung."
@@ -576,7 +576,7 @@ rag-einsatzszenarien:
           text: "Mandanten- und Projektdaten müssen getrennt, freigegeben und nachvollziehbar verwaltet werden."
           icon: "/assets/img/icons/cap.svg"
         - title: "Keine Produktillusion"
-          text: "Ein RAG wird nur dann wertvoll, wenn Wissenspflege, Quellenqualität und operative Nutzung wirklich organisiert sind."
+          text: "Ein Copilot wird nur dann wertvoll, wenn Wissenspflege, Quellenqualität und operative Nutzung wirklich organisiert sind."
           icon: "/assets/img/icons/creative.svg"
   final_cta:
     image: "/assets/img/illustrations/home/userengagement.svg"
