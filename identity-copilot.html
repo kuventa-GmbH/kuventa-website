@@ -1,0 +1,454 @@
+---
+layout: default
+title: Identity Copilot für One Identity
+description: KI-gestützter Copilot für gewachsene One-Identity- und IAM-Umgebungen. Weniger Analyseaufwand, bessere technische Transparenz und schnellere Entscheidungen.
+permalink: /identity-copilot/
+---
+
+<style>
+  .copilot-landing {
+    background:
+      radial-gradient(circle at 20% 0%, rgba(56, 160, 237, 0.18), transparent 32%),
+      radial-gradient(circle at 100% 20%, rgba(12, 11, 32, 0.08), transparent 28%),
+      linear-gradient(180deg, #f6fbff 0%, #ffffff 48%, #eef7ff 100%);
+  }
+
+  .copilot-landing .container {
+    max-width: 1200px;
+  }
+
+  .copilot-hero,
+  .copilot-section {
+    padding: 88px 0;
+  }
+
+  .copilot-hero {
+    padding-top: 96px;
+  }
+
+  .copilot-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.8fr);
+    gap: 28px;
+    align-items: start;
+  }
+
+  .copilot-kicker {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 18px;
+    border-radius: 999px;
+    background: #dff1ff;
+    color: #0c0b20;
+    font-size: 14px;
+    font-family: "Satoshi Bold";
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  .copilot-hero h1,
+  .copilot-section h2 {
+    color: #0c0b20;
+    font-family: "Satoshi Black";
+  }
+
+  .copilot-hero h1 {
+    margin-top: 18px;
+    font-size: clamp(46px, 6vw, 80px);
+    line-height: 0.98;
+    max-width: 11ch;
+  }
+
+  .copilot-hero p,
+  .copilot-section p,
+  .copilot-card p,
+  .copilot-callout p,
+  .copilot-faq p {
+    font-size: 20px;
+    line-height: 1.7;
+    color: #344054;
+  }
+
+  .copilot-hero-copy > p {
+    margin-top: 22px;
+    max-width: 740px;
+  }
+
+  .copilot-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 28px;
+  }
+
+  .copilot-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 24px;
+    border-radius: 16px;
+    text-decoration: none;
+    font-family: "Satoshi Bold";
+    font-size: 16px;
+    transition: 0.2s ease-in-out;
+  }
+
+  .copilot-btn-primary {
+    background: #0c0b20;
+    color: #ffffff;
+    box-shadow: 0 16px 36px rgba(12, 11, 32, 0.18);
+  }
+
+  .copilot-btn-primary:hover {
+    transform: translateY(2px);
+    background: #182449;
+  }
+
+  .copilot-btn-secondary {
+    background: #e6f5ff;
+    color: #0c0b20;
+    border: 1px solid #b5ddfb;
+  }
+
+  .copilot-btn-secondary:hover {
+    transform: translateY(2px);
+    background: #d7efff;
+  }
+
+  .copilot-note {
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #667085;
+  }
+
+  .copilot-callout,
+  .copilot-card,
+  .copilot-proof,
+  .copilot-faq {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(12, 11, 32, 0.08);
+    border-radius: 28px;
+    box-shadow: 0 24px 60px rgba(12, 11, 32, 0.08);
+  }
+
+  .copilot-callout,
+  .copilot-proof {
+    padding: 28px;
+  }
+
+  .copilot-callout strong,
+  .copilot-proof strong,
+  .copilot-faq strong {
+    display: block;
+    margin-bottom: 12px;
+    color: #0c0b20;
+    font-size: 24px;
+    font-family: "Satoshi Bold";
+  }
+
+  .copilot-list {
+    display: grid;
+    gap: 14px;
+    margin-top: 18px;
+  }
+
+  .copilot-list li {
+    padding-left: 0;
+    font-size: 18px;
+    line-height: 1.65;
+    color: #344054;
+  }
+
+  .copilot-list li::before {
+    content: none;
+  }
+
+  .copilot-list span {
+    color: #0c0b20;
+    font-family: "Satoshi Bold";
+  }
+
+  .copilot-section h2 {
+    font-size: clamp(34px, 4vw, 54px);
+    line-height: 1.04;
+    margin-bottom: 16px;
+  }
+
+  .copilot-section-intro {
+    max-width: 840px;
+    margin-bottom: 28px;
+  }
+
+  .copilot-cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+  }
+
+  .copilot-card,
+  .copilot-faq {
+    padding: 28px;
+  }
+
+  .copilot-card h3,
+  .copilot-faq h3 {
+    margin-bottom: 12px;
+    color: #0c0b20;
+    font-size: 26px;
+    line-height: 1.2;
+    font-family: "Satoshi Bold";
+  }
+
+  .copilot-strip {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    margin-top: 24px;
+  }
+
+  .copilot-metric {
+    padding: 24px;
+    border-radius: 24px;
+    background: #0c0b20;
+  }
+
+  .copilot-metric strong {
+    display: block;
+    margin-bottom: 8px;
+    color: #ffffff;
+    font-size: 28px;
+    font-family: "Satoshi Black";
+  }
+
+  .copilot-metric p {
+    color: rgba(255, 255, 255, 0.84);
+    font-size: 17px;
+    line-height: 1.55;
+  }
+
+  .copilot-proof {
+    background: linear-gradient(180deg, #e8f6ff 0%, #f8fcff 100%);
+  }
+
+  .copilot-cta {
+    padding-bottom: 96px;
+  }
+
+  .copilot-cta .copilot-callout {
+    background: linear-gradient(160deg, #0c0b20 0%, #172550 100%);
+    border-color: rgba(255, 255, 255, 0.08);
+  }
+
+  .copilot-cta .copilot-callout strong,
+  .copilot-cta .copilot-callout p,
+  .copilot-cta .copilot-callout li {
+    color: #ffffff;
+  }
+
+  @media (max-width: 960px) {
+    .copilot-grid,
+    .copilot-cards,
+    .copilot-strip {
+      grid-template-columns: 1fr;
+    }
+
+    .copilot-hero,
+    .copilot-section {
+      padding: 72px 0;
+    }
+  }
+</style>
+
+<div class="copilot-landing">
+  <section class="copilot-hero">
+    <div class="container copilot-grid">
+      <div class="copilot-hero-copy">
+        <span class="copilot-kicker">Neue Landingpage für kritische Identity-Umgebungen</span>
+        <h1>Gewachsene One-Identity-Landschaften brauchen keinen netten Chatbot. Sie brauchen einen Copilot.</h1>
+        <p>
+          Der Identity Copilot reduziert Analyseaufwand, macht technische Zusammenhänge schneller erklärbar und
+          bringt mehr Sicherheit in Änderungen an gewachsenen IAM- und One-Identity-Umgebungen.
+        </p>
+        <div class="copilot-actions">
+          <a class="copilot-btn copilot-btn-primary" href="{% include helpers/internal-href.html path='/kontakt/' %}">Pilotgespräch anfragen</a>
+          <a class="copilot-btn copilot-btn-secondary" href="{% include helpers/internal-href.html path='/kontakt/' %}">Tech Deep Dive anfragen</a>
+        </div>
+        <p class="copilot-note">
+          Für Architektur, Delivery, Weiterentwicklung und technische Transparenz in komplexen Identity-Umgebungen.
+        </p>
+      </div>
+      <aside class="copilot-callout">
+        <strong>Was der Copilot konkret leistet</strong>
+        <ul class="copilot-list">
+          <li><span>Access Explanation:</span> Warum hat Person X Zugriff auf System Y und über welche Logik entsteht dieser Zugriff?</li>
+          <li><span>Technische Analyse:</span> Welche Skripte, Objekte und kundenspezifischen Erweiterungen prägen das Verhalten des Systems?</li>
+          <li><span>Dokumentation:</span> Wie lässt sich implizites Expertenwissen in nutzbare technische Übersichten überführen?</li>
+          <li><span>Change Impact:</span> Welche Bereiche sind betroffen, wenn eine neue Anforderung, Erweiterung oder Migration ansteht?</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <section class="copilot-section">
+    <div class="container">
+      <div class="copilot-section-intro">
+        <h2>Das eigentliche Problem ist nicht fehlende Technik. Es ist fehlende technische Transparenz.</h2>
+        <p>
+          Gewachsene Umgebungen sind selten sauber dokumentiert. Wissen steckt in Köpfen. Jede neue Frage und
+          jede Änderung kostet dadurch unnötig Zeit und Risiko.
+        </p>
+      </div>
+      <div class="copilot-cards">
+        <article class="copilot-card">
+          <h3>Langsame Analyse</h3>
+          <p>Technische Fragen werden oft über manuelle Recherche, Rückfragen und Kopfwissen beantwortet. Das kostet Delivery-Zeit und blockiert Experten.</p>
+        </article>
+        <article class="copilot-card">
+          <h3>Wissensinseln</h3>
+          <p>Wenn nur wenige Personen erklären können, wie eine gewachsene Umgebung wirklich funktioniert, wird jede Weiterentwicklung fragil.</p>
+        </article>
+        <article class="copilot-card">
+          <h3>Unsicherheit vor Änderungen</h3>
+          <p>Bei neuen Anforderungen, Refactorings oder Migrationen fehlt oft der schnelle, belastbare Blick auf Abhängigkeiten und Sonderlogik.</p>
+        </article>
+        <article class="copilot-card">
+          <h3>Technische Doku mit Ablaufdatum</h3>
+          <p>Selbst gute Dokumentation altert. Der Copilot hilft, Systemwissen näher an der realen Implementierung zu halten.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="copilot-section">
+    <div class="container copilot-grid">
+      <div>
+        <h2>Der Identity Copilot macht komplexe Systeme wieder lesbar und handhabbar.</h2>
+        <p>
+          Der Copilot bereitet Informationen so auf, dass Architektur, Entwicklung und Delivery schneller verstehen,
+          sauberer erklären und Änderungen besser vorbereiten können.
+        </p>
+        <div class="copilot-strip">
+          <div class="copilot-metric">
+            <strong>Schneller</strong>
+            <p>Weniger Zeitverlust bei Analyse, Einarbeitung und Rückfragen zu gewachsenen Strukturen.</p>
+          </div>
+          <div class="copilot-metric">
+            <strong>Klarer</strong>
+            <p>Technische Zusammenhänge werden nachvollziehbar, kommunizierbar und teamfähiger.</p>
+          </div>
+          <div class="copilot-metric">
+            <strong>Sicherer</strong>
+            <p>Weniger Blindflug bei produktionsnahen Änderungen in kritischen Identity-Landschaften.</p>
+          </div>
+        </div>
+      </div>
+      <aside class="copilot-proof">
+        <strong>Besonders stark in diesen Situationen</strong>
+        <ul class="copilot-list">
+          <li><span>Architektur-Deep Dives</span> in gewachsenen One-Identity-Implementierungen</li>
+          <li><span>Analyse vor Weiterentwicklungen</span> oder größeren Anpassungen</li>
+          <li><span>Technisches Onboarding</span> neuer Teammitglieder in komplexe Kundenlandschaften</li>
+          <li><span>Absicherung von Wissensübergaben</span> bei wechselnden Projektteams</li>
+          <li><span>Vorbereitung von Dokumentation</span> und qualitativer Verbesserung bestehender Implementierungen</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <section class="copilot-section">
+    <div class="container">
+      <div class="copilot-section-intro">
+        <h2>Konkrete Use Cases statt KI-Floskeln</h2>
+        <p>
+          Nicht “KI um der KI willen”, sondern schnelle Antworten auf reale Fragen in komplexen Identity-Umgebungen.
+        </p>
+      </div>
+      <div class="copilot-cards">
+        <article class="copilot-card">
+          <h3>Warum hat Person X Zugriff auf System Y?</h3>
+          <p>Der Copilot zerlegt Rollen, Gruppen, Vererbungen und kundenspezifische Logik in eine erklärbare Zugriffskette.</p>
+        </article>
+        <article class="copilot-card">
+          <h3>Welche kundenspezifischen Erweiterungen existieren in dieser Umgebung?</h3>
+          <p>Relevant für Architektur, Qualitätsverbesserung, Audits und jede Form von Weiterentwicklung in gewachsenen Systemen.</p>
+        </article>
+        <article class="copilot-card">
+          <h3>Welche Skripte und Logiken sind für Verhalten oder Risiko zentral?</h3>
+          <p>Hilfreich für Deep Dives, Refactorings, Wissensaufbau und saubere Vorarbeit vor Changes oder Migrationen.</p>
+        </article>
+        <article class="copilot-card">
+          <h3>Welche Bereiche sind von einer neuen Anforderung betroffen?</h3>
+          <p>Unterstützt bei Impact-Analysen, Umsetzungsplanung und realistischeren Aufwandseinschätzungen.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="copilot-section">
+    <div class="container copilot-grid">
+      <div>
+        <h2>Datenschutz und Sicherheitslogik gehören nicht in die Fußnoten.</h2>
+        <p>
+          Im deutschen und europäischen Umfeld ist der Copilot nur dann sinnvoll, wenn Datenschutz, Datenfluss und
+          technische Schutzmechanismen von Anfang an sauber mitgedacht werden.
+        </p>
+      </div>
+      <aside class="copilot-proof">
+        <strong>Wichtige Schutzmechanismen im Zielbild</strong>
+        <ul class="copilot-list">
+          <li><span>Gezielte Schwärzung kritischer Werte:</span> Sensible Inhalte aus One Identity können vor der Verarbeitung ausgefiltert oder geschwärzt werden.</li>
+          <li><span>Reduzierte Sichtbarkeit für das Modell:</span> Die KI muss nicht alles sehen, um nützlich zu sein. Relevante Informationen lassen sich kontrolliert aufbereiten.</li>
+          <li><span>Kontrollierbare Datenflüsse:</span> Betriebsmodell und Integrationspfad lassen sich an regulatorische und organisatorische Anforderungen anpassen.</li>
+          <li><span>EU-/Datenschutz-Fokus:</span> Die Einsetzbarkeit wird nicht nur technisch, sondern auch unter Datenschutz- und Governance-Gesichtspunkten gedacht.</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <section class="copilot-section">
+    <div class="container">
+      <div class="copilot-section-intro">
+        <h2>So startet der Einstieg sinnvoll</h2>
+        <p>
+          Nicht mit einem Großprojekt, sondern mit einem klaren Pilot: begrenzter Scope, konkrete Fragen,
+          nachvollziehbarer Nutzen.
+        </p>
+      </div>
+      <div class="copilot-cards">
+        <article class="copilot-card">
+          <h3>1. Problemraum festlegen</h3>
+          <p>Zum Beispiel Access Explanation, technische Dokumentation oder Change-Impact in einer konkreten Umgebung.</p>
+        </article>
+        <article class="copilot-card">
+          <h3>2. Daten- und Schutzlogik abstimmen</h3>
+          <p>Festlegen, welche Artefakte genutzt werden, welche Inhalte geschwärzt werden und wie der Datenfluss kontrolliert bleibt.</p>
+        </article>
+        <article class="copilot-card">
+          <h3>3. Pilot fokussiert aufsetzen</h3>
+          <p>Mit begrenztem Scope, relevanten Stakeholdern und klaren Beispielfragen statt zu breitem Erwartungsmanagement.</p>
+        </article>
+        <article class="copilot-card">
+          <h3>4. Entscheidung auf Basis echter Wirkung treffen</h3>
+          <p>Nicht “war nett”, sondern: bringt es technische Klarheit, spart es Analyseaufwand und ist es organisationsseitig tragfähig?</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="copilot-section copilot-cta">
+    <div class="container">
+      <div class="copilot-callout">
+        <strong>Wenn Ihre One-Identity-Umgebung nur mit viel Projektgedächtnis funktioniert, ist das kein stabiler Zustand.</strong>
+        <p>
+          Der Identity Copilot bringt technische Klarheit in gewachsene Systeme und entlastet Teams, die heute zu
+          viel Zeit mit Analyse, Rückfragen und Wissenssuche verlieren.
+        </p>
+        <div class="copilot-actions">
+          <a class="copilot-btn copilot-btn-primary" href="{% include helpers/internal-href.html path='/kontakt/' %}">Pilotgespräch starten</a>
+          <a class="copilot-btn copilot-btn-secondary" href="{% include helpers/internal-href.html path='/kontakt/' %}">Use Cases besprechen</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
