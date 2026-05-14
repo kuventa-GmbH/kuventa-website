@@ -14,13 +14,14 @@ permalink: /identity-copilot/
   }
 
   .copilot-landing .container {
-    max-width: 1180px;
+    max-width: 1440px;
+    padding: 0 16px;
   }
 
   .copilot-hero,
   .copilot-section,
   .copilot-cta {
-    padding: 80px 0;
+    padding: 72px 0;
   }
 
   .copilot-hero {
@@ -30,7 +31,7 @@ permalink: /identity-copilot/
   .copilot-grid {
     display: grid;
     grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.9fr);
-    gap: 28px;
+    gap: 24px;
     align-items: start;
   }
 
@@ -55,9 +56,9 @@ permalink: /identity-copilot/
 
   .copilot-hero h1 {
     margin-top: 18px;
-    font-size: clamp(44px, 6vw, 76px);
-    line-height: 0.98;
-    max-width: 11ch;
+    font-size: clamp(38px, 5vw, 64px);
+    line-height: 1.04;
+    max-width: 13ch;
   }
 
   .copilot-hero p,
@@ -65,7 +66,7 @@ permalink: /identity-copilot/
   .copilot-card p,
   .copilot-callout p {
     font-size: 20px;
-    line-height: 1.65;
+    line-height: 32px;
     color: #344054;
   }
 
@@ -126,14 +127,14 @@ permalink: /identity-copilot/
 
   .copilot-callout,
   .copilot-card {
-    padding: 28px;
+    padding: 24px;
   }
 
   .copilot-callout strong {
     display: block;
     margin-bottom: 12px;
     color: #0c0b20;
-    font-size: 24px;
+    font-size: 22px;
     font-family: "Satoshi Bold";
   }
 
@@ -146,7 +147,7 @@ permalink: /identity-copilot/
   .copilot-list li {
     padding-left: 0;
     font-size: 18px;
-    line-height: 1.55;
+    line-height: 30px;
     color: #344054;
   }
 
@@ -167,19 +168,19 @@ permalink: /identity-copilot/
     display: block;
     width: 100%;
     height: 100%;
-    min-height: 320px;
+    min-height: 220px;
     object-fit: cover;
   }
 
   .copilot-section h2 {
-    font-size: clamp(34px, 4vw, 52px);
-    line-height: 1.04;
+    font-size: clamp(32px, 4vw, 48px);
+    line-height: 1.08;
     margin-bottom: 14px;
   }
 
   .copilot-section-intro {
     max-width: 760px;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
   }
 
   .copilot-cards {
@@ -191,18 +192,9 @@ permalink: /identity-copilot/
   .copilot-card h3 {
     margin-bottom: 12px;
     color: #0c0b20;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 1.2;
     font-family: "Satoshi Bold";
-  }
-
-  .copilot-card-media {
-    width: 100%;
-    height: 180px;
-    border-radius: 20px;
-    object-fit: cover;
-    margin-bottom: 18px;
-    background: #e8f6ff;
   }
 
   .copilot-strip {
@@ -212,7 +204,7 @@ permalink: /identity-copilot/
   }
 
   .copilot-metric {
-    padding: 24px;
+    padding: 22px;
     border-radius: 24px;
     background: #0c0b20;
   }
@@ -252,7 +244,38 @@ permalink: /identity-copilot/
     .copilot-hero,
     .copilot-section,
     .copilot-cta {
-      padding: 68px 0;
+      padding: 52px 0;
+    }
+
+    .copilot-hero h1 {
+      font-size: 34px;
+      line-height: 1.08;
+      max-width: 10ch;
+    }
+
+    .copilot-hero p,
+    .copilot-section p,
+    .copilot-card p,
+    .copilot-callout p {
+      font-size: 18px;
+      line-height: 28px;
+    }
+
+    .copilot-callout,
+    .copilot-card {
+      padding: 20px;
+    }
+
+    .copilot-card h3 {
+      font-size: 20px;
+    }
+
+    .copilot-visual img {
+      min-height: 170px;
+    }
+
+    .copilot-btn {
+      width: 100%;
     }
   }
 </style>
@@ -262,24 +285,21 @@ permalink: /identity-copilot/
     <div class="container copilot-grid">
       <div class="copilot-hero-copy">
         <span class="copilot-kicker">Neue Landingpage für kritische Identity-Umgebungen</span>
-        <h1>Gewachsene One-Identity-Landschaften brauchen keinen netten Chatbot. Sie brauchen einen Copilot.</h1>
+          <h1>Der Copilot für gewachsene One-Identity-Landschaften.</h1>
         <p>
-          Der Identity Copilot reduziert Analyseaufwand, macht technische Zusammenhänge schneller erklärbar und
-          bringt mehr Sicherheit in Änderungen an gewachsenen IAM- und One-Identity-Umgebungen.
+          Weniger Analyseaufwand, klarere technische Zusammenhänge und mehr Sicherheit vor Änderungen.
         </p>
         <div class="copilot-actions">
           <a class="copilot-btn copilot-btn-primary" href="{% include helpers/internal-href.html path='/kontakt/' %}">Pilotgespräch anfragen</a>
-          <a class="copilot-btn copilot-btn-secondary" href="{% include helpers/internal-href.html path='/kontakt/' %}">Tech Deep Dive anfragen</a>
         </div>
       </div>
       <div>
         <aside class="copilot-callout">
           <strong>Was der Copilot konkret leistet</strong>
           <ul class="copilot-list">
-            <li><span>Access Explanation:</span> Zugriffe schnell und nachvollziehbar erklären</li>
-            <li><span>Technische Analyse:</span> Skripte, Objekte und Sonderlogik sichtbar machen</li>
-            <li><span>Dokumentation:</span> Wissen aus der Umgebung sauber verdichten</li>
-            <li><span>Change Impact:</span> betroffene Bereiche vor Änderungen schneller erkennen</li>
+            <li><span>Access Explanation:</span> Zugriffe nachvollziehbar erklären</li>
+            <li><span>Technische Analyse:</span> Sonderlogik sichtbar machen</li>
+            <li><span>Change Impact:</span> betroffene Bereiche früher erkennen</li>
           </ul>
         </aside>
         <div class="copilot-visual" style="margin-top: 20px;">
@@ -297,24 +317,16 @@ permalink: /identity-copilot/
       </div>
       <div class="copilot-cards">
         <article class="copilot-card">
-          <img class="copilot-card-media" src="{% include helpers/internal-href.html path='/assets/img/illustrations/home/folders.svg' %}" alt="Illustration für strukturierte Analyse und Wissensordnung.">
           <h3>Langsame Analyse</h3>
           <p>Zu viele Antworten hängen an Recherche, Rückfragen und Einzelwissen.</p>
         </article>
         <article class="copilot-card">
-          <img class="copilot-card-media" src="{% include helpers/internal-href.html path='/assets/img/illustrations/home/userengagement.svg' %}" alt="Illustration für Zusammenarbeit und geteiltes Wissen.">
           <h3>Wissensinseln</h3>
           <p>Wenn nur wenige Personen das System wirklich verstehen, wird Weiterentwicklung fragil.</p>
         </article>
         <article class="copilot-card">
-          <img class="copilot-card-media" src="{% include helpers/internal-href.html path='/assets/img/illustrations/home/config.svg' %}" alt="Illustration für Konfiguration und technische Änderungen.">
           <h3>Unsicherheit vor Änderungen</h3>
           <p>Vor Änderungen fehlt oft der schnelle Blick auf Abhängigkeiten und Sonderlogik.</p>
-        </article>
-        <article class="copilot-card">
-          <img class="copilot-card-media" src="{% include helpers/internal-href.html path='/assets/img/illustrations/home/process.svg' %}" alt="Illustration für laufende Dokumentation und Prozesse.">
-          <h3>Dokumentation mit Ablaufdatum</h3>
-          <p>Dokumentation altert schnell. Der Copilot hält Wissen näher an der realen Implementierung.</p>
         </article>
       </div>
     </div>
@@ -351,24 +363,16 @@ permalink: /identity-copilot/
       </div>
       <div class="copilot-cards">
         <article class="copilot-card">
-          <img class="copilot-card-media" src="{% include helpers/internal-href.html path='/assets/img/blog/closeup-of-hands-holding-a-digital-keycard-and-a-t.png' %}" alt="Bild für Zugriffsprüfung und Berechtigungsanalyse.">
           <h3>Warum hat Person X Zugriff auf System Y?</h3>
           <p>Rollen, Gruppen, Vererbungen und Logik werden als Zugriffskette aufbereitet.</p>
         </article>
         <article class="copilot-card">
-          <img class="copilot-card-media" src="{% include helpers/internal-href.html path='/assets/img/blog/business-meeting-in-a-modern-office-diverse-team-s.png' %}" alt="Team im technischen Austausch über Architektur und Änderungen.">
           <h3>Welche kundenspezifischen Erweiterungen existieren?</h3>
           <p>Relevant für Architektur, Audits und jede Form von Weiterentwicklung.</p>
         </article>
         <article class="copilot-card">
-          <img class="copilot-card-media" src="{% include helpers/internal-href.html path='/assets/img/blog/professional-reviewing-documents-and-laptop-in-an.png' %}" alt="Person analysiert technische Unterlagen am Arbeitsplatz.">
-          <h3>Welche Skripte und Logiken sind zentral?</h3>
-          <p>Hilfreich für Deep Dives, Refactorings und saubere Vorarbeit vor Changes.</p>
-        </article>
-        <article class="copilot-card">
-          <img class="copilot-card-media" src="{% include helpers/internal-href.html path='/assets/img/illustrations/home/path.svg' %}" alt="Illustration für Auswirkungen und betroffene Bereiche bei Änderungen.">
-          <h3>Welche Bereiche sind betroffen?</h3>
-          <p>Unterstützt bei Impact-Analyse und realistischerer Umsetzungsplanung.</p>
+          <h3>Welche Skripte, Logiken und Bereiche sind betroffen?</h3>
+          <p>Hilfreich für Deep Dives, Impact-Analyse und saubere Vorarbeit vor Changes.</p>
         </article>
       </div>
     </div>
@@ -386,7 +390,6 @@ permalink: /identity-copilot/
           <li><span>Gezielte Schwärzung:</span> Kritische Werte aus One Identity können vor der Verarbeitung ausgefiltert werden.</li>
           <li><span>Reduzierte Sichtbarkeit:</span> Die KI muss nicht alles sehen, um nützlich zu sein.</li>
           <li><span>Kontrollierbare Datenflüsse:</span> Betriebsmodell und Integrationspfad bleiben steuerbar.</li>
-          <li><span>EU-Fokus:</span> Einsetzbarkeit wird auch unter Datenschutz- und Governance-Gesichtspunkten gedacht.</li>
         </ul>
       </aside>
     </div>
@@ -395,7 +398,7 @@ permalink: /identity-copilot/
   <section class="copilot-cta">
     <div class="container">
       <div class="copilot-callout">
-        <strong>Wenn Ihre One-Identity-Umgebung nur mit viel Projektgedächtnis funktioniert, ist das kein stabiler Zustand.</strong>
+        <strong>Wenn Ihre One-Identity-Umgebung nur über Projektgedächtnis funktioniert, ist das kein stabiler Zustand.</strong>
         <p>Der Identity Copilot bringt technische Klarheit in gewachsene Systeme und entlastet Teams, die heute zu viel Zeit mit Analyse, Rückfragen und Wissenssuche verlieren.</p>
         <div class="copilot-actions">
           <a class="copilot-btn copilot-btn-primary" href="{% include helpers/internal-href.html path='/kontakt/' %}">Pilotgespräch starten</a>
