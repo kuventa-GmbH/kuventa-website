@@ -4,7 +4,6 @@ title: Start
 meta_title: "kuventa: Engineering für One Identity Manager | Hamburg"
 description: "OneIM-Modulentwicklung, Troubleshooting und Expertenverstärkung. Plus kubo: der KI-Assistent, der deine OneIM-Umgebung versteht. On-Prem, read-only."
 permalink: /
-nav_order: 1
 ---
 
 <section class="hero">
