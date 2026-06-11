@@ -2,7 +2,7 @@
 layout: default
 title: Start
 meta_title: "kuventa: Engineering für One Identity Manager | Hamburg"
-description: "OneIM-Modulentwicklung, Troubleshooting und Expertenverstärkung. Plus kubo: der KI-Assistent, der deine OneIM-Umgebung versteht. On-Prem, read-only."
+description: "OneIM-Modulentwicklung, Troubleshooting und Expertenverstärkung. Plus kubo: der MCP-Server, der deine OneIM-Umgebung versteht. On-Prem, read-only."
 permalink: /
 ---
 
@@ -11,10 +11,10 @@ permalink: /
     <div>
       <span class="eyebrow js-anim" data-anim="animate__fadeInDown" data-once="true">Engineering für One Identity Manager</span>
       <h1 class="js-anim" data-anim="animate__fadeInLeft" data-once="true">Beratung, die Wissen hinterlässt. <span class="accent">Software, die es abrufbar macht.</span></h1>
-      <p class="lede js-anim" data-anim="animate__fadeIn" data-once="true">kuventa entwickelt komplette Module in One Identity Manager, wo andere konfigurieren. Und baut kubo: den KI-Assistenten, der deine OneIM-Umgebung erklärt. On-prem, read-only, mit Quellenangabe.</p>
+      <p class="lede js-anim" data-anim="animate__fadeIn" data-once="true">kuventa entwickelt komplette Module in One Identity Manager, wo andere konfigurieren. Und baut kubo: den MCP-Server, der deine OneIM-Umgebung erklärt. On-prem, read-only, mit Quellenangabe.</p>
       <div class="actions js-anim" data-anim="animate__fadeInUp" data-once="true">
         <a class="btn btn-primary" href="{% include helpers/internal-href.html path='/kubo/' %}" data-goatcounter-click="feature/mcp">kubo ansehen</a>
-        <a class="btn btn-cta-secondary" href="{% include helpers/internal-href.html path='/kontakt/' %}" data-goatcounter-click="navigation/contact">Projekt besprechen</a>
+        <a class="btn btn-cta-secondary" href="{% include helpers/internal-href.html path='/kontakt/' %}" data-goatcounter-click="navigation/contact">Termin wählen</a>
       </div>
       <p class="hero-note js-anim" data-anim="animate__fadeIn" data-once="true">Im Einsatz bei Enterprise- und KRITIS-Kunden in Deutschland und der Schweiz.</p>
     </div>
@@ -135,11 +135,6 @@ permalink: /
         <h3>Werkzeuge statt nur Stunden</h3>
         <p>Aus der Projektarbeit entstehen wiederverwendbare Tools, allen voran kubo, das täglich in echten Kundenumgebungen mitarbeitet.</p>
       </div>
-    </div>
-    <div class="proof js-anim" data-anim="animate__fadeInUp" data-once="true" style="margin-top: 40px;">
-      <span class="eyebrow-dark">Bewusste Grenze</span>
-      <h3>kuventa ist keine Projektleitungs- oder Strategie-Boutique.</h3>
-      <p class="note">Wer Lenkungsausschüsse moderieren lassen will, ist hier falsch. Wer ein technisches Problem gelöst haben will, richtig.</p>
     </div>
   </div>
 </section>

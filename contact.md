@@ -69,13 +69,13 @@ permalink: /kontakt/
     </div>
     <div class="booking-embed js-anim" data-anim="animate__fadeInUp" data-once="true">
       <iframe
-        src="https://outlook.office.com/bookwithme/user/1536062ad5714a80976ffe478fb68e3c@kuventa.de/meetingtype/0Sv5L6jWt0ekIZy9r6D1Ug2?bookingcode=5cfeb36b-0bba-4165-bdfe-8f636d8a11f7&amp;anonymous&amp;ismsaljsauthenabled&amp;ep=mlink"
+        src="https://outlook.office.com/bookwithme/user/1536062ad5714a80976ffe478fb68e3c@kuventa.de/meetingtype/0Sv5L6jWt0ekIZy9r6D1Ug2?bookingcode=e023efd7-4c37-4f5d-9df7-70b93848086a&amp;anonymous&amp;ismsaljsauthenabled&amp;ep=mLinkFromTile"
         width="100%"
         height="760"
         title="Microsoft Bookings"
         loading="lazy"></iframe>
     </div>
-    <p class="embed-note">Der Termin-Kalender wird von Microsoft Bookings bereitgestellt. Mit dem Laden stellt dein Browser eine Verbindung zu Microsoft her; dabei können Cookies gesetzt werden. Lieber ohne Einbettung? <a href="https://outlook.office.com/bookwithme/user/1536062ad5714a80976ffe478fb68e3c@kuventa.de/meetingtype/0Sv5L6jWt0ekIZy9r6D1Ug2?bookingcode=5cfeb36b-0bba-4165-bdfe-8f636d8a11f7&amp;anonymous&amp;ismsaljsauthenabled&amp;ep=mlink" target="_blank" rel="noopener" data-goatcounter-click="conversion/book-call">In neuem Tab öffnen</a></p>
+    <p class="embed-note">Der Termin-Kalender wird von Microsoft Bookings bereitgestellt. Mit dem Laden stellt dein Browser eine Verbindung zu Microsoft her; dabei können Cookies gesetzt werden. Lieber ohne Einbettung? <a href="https://outlook.office.com/bookwithme/user/1536062ad5714a80976ffe478fb68e3c@kuventa.de/meetingtype/0Sv5L6jWt0ekIZy9r6D1Ug2?bookingcode=e023efd7-4c37-4f5d-9df7-70b93848086a&amp;anonymous&amp;ismsaljsauthenabled&amp;ep=mLinkFromTile" target="_blank" rel="noopener" data-goatcounter-click="conversion/book-call">In neuem Tab öffnen</a></p>
   </div>
 </section>
 
