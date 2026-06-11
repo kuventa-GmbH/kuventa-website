@@ -6,9 +6,10 @@
     <script>
       document.documentElement.classList.add("js-enabled");
     </script>
-    <title>{{ page.title | default: site.title }}</title>
+    <title>{{ page.meta_title | default: page.title | default: site.title }}</title>
     <meta name="description" content="{{ page.description | default: site.description }}" />
     <link rel="canonical" href="{{ page.url | replace: 'index.html', '' | absolute_url }}" />
+    <link rel="icon" type="image/png" href="{% include helpers/internal-href.html path='/assets/img/brand/logo.png' %}" />
     <link rel="stylesheet" href="{% include helpers/internal-href.html path='/assets/fonts/fonts.css' %}" />
     <link rel="stylesheet" href="{% include helpers/internal-href.html path='/assets/css/animate.min.css' %}" />
     <link rel="stylesheet" href="{% include helpers/internal-href.html path='/assets/css/site.css' %}" />
@@ -28,5 +29,12 @@
         cookieBanner.init();
       });
     </script>
+    {% if jekyll.environment == "production" %}
+    <script
+        data-goatcounter="https://analytics.kuventa.de/count"
+        async
+        src="https://analytics.kuventa.de/count.js">
+    </script>
+    {% endif %}
   </body>
 </html>

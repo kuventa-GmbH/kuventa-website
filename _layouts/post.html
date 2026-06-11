@@ -5,9 +5,9 @@ layout: default
 <article class="blog-post section">
   <div class="container">
     <nav class="breadcrumb js-anim" data-anim="animate__fadeIn" data-once="true" aria-label="Breadcrumb">
-      <a href="{% include helpers/internal-href.html path='/' %}">Home</a>
+      <a href="{% include helpers/internal-href.html path='/' %}">Start</a>
       <span>/</span>
-      <a href="{% include helpers/internal-href.html path='/blog/' %}">Insights</a>
+      <a href="{% include helpers/internal-href.html path='/blog/' %}">Wissen</a>
       <span>/</span>
       <span aria-current="page">{{ page.title }}</span>
     </nav>
@@ -20,13 +20,13 @@ layout: default
     </figure>
 
     <header class="blog-post-header js-anim" data-anim="animate__fadeInUp" data-once="true">
-      <p class="blog-kicker">Wissensbeitrag</p>
+      <p class="blog-kicker">Wissen</p>
       <p class="blog-date">{{ page.date | date: "%d.%m.%Y" }}</p>
-      <h1 class="sec-heading">{{ page.title }}</h1>
+      <h1>{{ page.title }}</h1>
     </header>
     <div class="blog-post-content">
       {{ content }}
     </div>
-    <a class="btn btn-secondary" href="{% include helpers/internal-href.html path='/blog/' %}">Zurück zu Insights</a>
+    <a class="btn btn-secondary" href="{% include helpers/internal-href.html path='/blog/' %}">Zurück zu Wissen</a>
   </div>
 </article>

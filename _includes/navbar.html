@@ -1,19 +1,17 @@
 <header class="site-header">
   <div class="nav-wrap">
-    <a class="brand js-anim" data-anim="animate__fadeInDown" data-once="true"  href="{% include helpers/internal-href.html path='/' %}">
-      <!-- If you have SVG/PNG logo  -->
+    <a class="brand" href="{% include helpers/internal-href.html path='/' %}">
       <img class="brand-logo" src="{{ '/assets/img/brand/logo.png' | relative_url }}" alt="{{ site.title }}">
-      <!-- <span class="brand-text">{{ site.title }}</span> -->
     </a>
 
-    <button class="nav-toggle" type="button" aria-label="Open menu"
+    <button class="nav-toggle" type="button" aria-label="Menü öffnen"
             aria-controls="primary-nav" aria-expanded="false" id="navToggle">
       <span></span>
       <span></span>
       <span></span>
     </button>
 
-    <nav class="nav-links js-anim" id="primary-nav" data-anim="animate__fadeInDown" data-once="true"  aria-label="Primary">
+    <nav class="nav-links" id="primary-nav" aria-label="Primary">
       {% assign nav_pages = site.pages | where_exp: "p", "p.nav_order" | sort: "nav_order" %}
       {% for p in nav_pages %}
         {% assign is_active = false %}
@@ -31,6 +29,7 @@
           {{ p.title }}
         </a>
       {% endfor %}
+      <a class="btn btn-primary nav-cta" href="{% include helpers/internal-href.html path='/kontakt/' %}" data-goatcounter-click="navigation/contact">Erstgespräch</a>
     </nav>
   </div>
 </header>

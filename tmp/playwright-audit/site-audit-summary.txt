@@ -1,14 +1,29 @@
 Playwright Site Audit
-Base URL: http://127.0.0.1:4173/kuventa-website/
-Generated: 2026-04-14T14:21:32.536Z
+Base URL: http://127.0.0.1:4173
+Generated: 2026-06-11T16:21:45.309Z
 
 Variant: desktop
-Scanned pages: 18
-Findings (1):
-- [/kuventa-website/identity-assessment/] Failed requests: 2
+Scanned pages: 16
+Findings (5):
+- [/leistungen/] Heading jump from h1 to h3
+- [/impressum/] Failed requests: 1
+- [/assets/files/cv.pdf] Navigation error: page.goto: Download is starting
+Call log:
+[2m  - navigating to "http://127.0.0.1:4173/assets/files/cv.pdf", waiting until "domcontentloaded"[22m
+
+- [/assets/files/cv.pdf] HTTP status null
+- [/assets/files/cv.pdf] Failed requests: 1
 
 Variant: mobile
-Scanned pages: 18
-Findings (1):
-- [/kuventa-website/identity-assessment/] Failed requests: 4
+Scanned pages: 16
+Findings (6):
+- [/leistungen/] Heading jump from h1 to h3
+- [/kontakt/] Console errors: 2
+- [/impressum/] Failed requests: 4
+- [/assets/files/cv.pdf] Navigation error: page.goto: Download is starting
+Call log:
+[2m  - navigating to "http://127.0.0.1:4173/assets/files/cv.pdf", waiting until "domcontentloaded"[22m
+
+- [/assets/files/cv.pdf] HTTP status null
+- [/assets/files/cv.pdf] Failed requests: 1
 

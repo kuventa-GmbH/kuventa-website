@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex" />
+    <title>Weiterleitung | kuventa</title>
+    {% assign target = page.redirect_to %}
+    {% if target contains '://' %}
+      {% assign target_url = target %}
+    {% else %}
+      {% assign target_url = target | absolute_url %}
+    {% endif %}
+    <link rel="canonical" href="{{ target_url }}" />
+    <meta http-equiv="refresh" content="0; url={{ target_url }}" />
+    <script>window.location.replace("{{ target_url }}");</script>
+  </head>
+  <body>
+    <p>Diese Seite ist umgezogen: <a href="{{ target_url }}">{{ target_url }}</a></p>
+  </body>
+</html>

@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-04-14T14:21:32.536Z",
-  "baseUrl": "http://127.0.0.1:4173/kuventa-website/",
+  "generatedAt": "2026-06-11T16:21:45.309Z",
+  "baseUrl": "http://127.0.0.1:4173",
   "reports": [
     {
       "variant": "desktop",
-      "baseUrl": "http://127.0.0.1:4173/kuventa-website/",
-      "scannedPages": 18,
+      "baseUrl": "http://127.0.0.1:4173",
+      "scannedPages": 16,
       "pages": [
         {
-          "path": "/kuventa-website/",
-          "url": "http://127.0.0.1:4173/kuventa-website/",
+          "path": "/",
+          "url": "http://127.0.0.1:4173/",
           "status": 200,
           "ok": true,
           "navError": null,
@@ -31,8 +31,8 @@
           }
         },
         {
-          "path": "/kuventa-website/leistungen/",
-          "url": "http://127.0.0.1:4173/kuventa-website/leistungen/",
+          "path": "/kubo/",
+          "url": "http://127.0.0.1:4173/kubo/",
           "status": 200,
           "ok": true,
           "navError": null,
@@ -54,8 +54,33 @@
           }
         },
         {
-          "path": "/kuventa-website/ueber-uns/",
-          "url": "http://127.0.0.1:4173/kuventa-website/ueber-uns/",
+          "path": "/leistungen/",
+          "url": "http://127.0.0.1:4173/leistungen/",
+          "status": 200,
+          "ok": true,
+          "navError": null,
+          "consoleErrors": [],
+          "pageErrors": [],
+          "failedRequests": [],
+          "checks": {
+            "titleMissing": false,
+            "metaDescriptionMissing": false,
+            "langMissing": false,
+            "canonicalMissing": false,
+            "h1Count": 1,
+            "headingIssues": [
+              "Heading jump from h1 to h3"
+            ],
+            "missingAltImages": [],
+            "mainCount": 1,
+            "hasOverflowX": false,
+            "encodingArtifacts": [],
+            "placeholderText": []
+          }
+        },
+        {
+          "path": "/referenzen/",
+          "url": "http://127.0.0.1:4173/referenzen/",
           "status": 200,
           "ok": true,
           "navError": null,
@@ -77,8 +102,8 @@
           }
         },
         {
-          "path": "/kuventa-website/blog/",
-          "url": "http://127.0.0.1:4173/kuventa-website/blog/",
+          "path": "/blog/",
+          "url": "http://127.0.0.1:4173/blog/",
           "status": 200,
           "ok": true,
           "navError": null,
@@ -100,8 +125,8 @@
           }
         },
         {
-          "path": "/kuventa-website/kontakt/",
-          "url": "http://127.0.0.1:4173/kuventa-website/kontakt/",
+          "path": "/ueber-uns/",
+          "url": "http://127.0.0.1:4173/ueber-uns/",
           "status": 200,
           "ok": true,
           "navError": null,
@@ -123,8 +148,31 @@
           }
         },
         {
-          "path": "/kuventa-website/identity-assessment/",
-          "url": "http://127.0.0.1:4173/kuventa-website/identity-assessment/",
+          "path": "/kontakt/",
+          "url": "http://127.0.0.1:4173/kontakt/",
+          "status": 200,
+          "ok": true,
+          "navError": null,
+          "consoleErrors": [],
+          "pageErrors": [],
+          "failedRequests": [],
+          "checks": {
+            "titleMissing": false,
+            "metaDescriptionMissing": false,
+            "langMissing": false,
+            "canonicalMissing": false,
+            "h1Count": 1,
+            "headingIssues": [],
+            "missingAltImages": [],
+            "mainCount": 1,
+            "hasOverflowX": false,
+            "encodingArtifacts": [],
+            "placeholderText": []
+          }
+        },
+        {
+          "path": "/impressum/",
+          "url": "http://127.0.0.1:4173/impressum/",
           "status": 200,
           "ok": true,
           "navError": null,
@@ -132,12 +180,7 @@
           "pageErrors": [],
           "failedRequests": [
             {
-              "url": "https://outlook.office.com/bookwithme/user/1536062ad5714a80976ffe478fb68e3c@kuventa.de/meetingtype/0Sv5L6jWt0ekIZy9r6D1Ug2?bookingcode=5cfeb36b-0bba-4165-bdfe-8f636d8a11f7&anonymous&ismsaljsauthenabled&ep=mlink",
-              "method": "GET",
-              "failure": "net::ERR_ABORTED"
-            },
-            {
-              "url": "https://maps.gstatic.com/maps-api-v3/embed/js/64/8b/init_embed.js",
+              "url": "https://bookings.cloud.microsoft/bookwithme/user/1536062ad5714a80976ffe478fb68e3c@kuventa.de/meetingtype/0Sv5L6jWt0ekIZy9r6D1Ug2?bookingcode=5cfeb36b-0bba-4165-bdfe-8f636d8a11f7&anonymous&ismsaljsauthenabled&ep=mlink",
               "method": "GET",
               "failure": "net::ERR_ABORTED"
             }
@@ -157,8 +200,8 @@
           }
         },
         {
-          "path": "/kuventa-website/identity-modernisierung/",
-          "url": "http://127.0.0.1:4173/kuventa-website/identity-modernisierung/",
+          "path": "/datenschutz/",
+          "url": "http://127.0.0.1:4173/datenschutz/",
           "status": 200,
           "ok": true,
           "navError": null,
@@ -180,8 +223,8 @@
           }
         },
         {
-          "path": "/kuventa-website/sso-plattform/",
-          "url": "http://127.0.0.1:4173/kuventa-website/sso-plattform/",
+          "path": "/blog/zugriffsrechte-sind-chefsache/",
+          "url": "http://127.0.0.1:4173/blog/zugriffsrechte-sind-chefsache/",
           "status": 200,
           "ok": true,
           "navError": null,
@@ -203,8 +246,8 @@
           }
         },
         {
-          "path": "/kuventa-website/beraterprofil/",
-          "url": "http://127.0.0.1:4173/kuventa-website/beraterprofil/",
+          "path": "/blog/warum-die-einfuehrung-von-iga-mehr-ist-als-ein-it-projekt/",
+          "url": "http://127.0.0.1:4173/blog/warum-die-einfuehrung-von-iga-mehr-ist-als-ein-it-projekt/",
           "status": 200,
           "ok": true,
           "navError": null,
@@ -226,8 +269,8 @@
           }
         },
         {
-          "path": "/kuventa-website/customer-identity-plattform/",
-          "url": "http://127.0.0.1:4173/kuventa-website/customer-identity-plattform/",
+          "path": "/blog/nach-dem-start-ist-vor-der-arbeit/",
+          "url": "http://127.0.0.1:4173/blog/nach-dem-start-ist-vor-der-arbeit/",
           "status": 200,
           "ok": true,
           "navError": null,
@@ -249,8 +292,8 @@
           }
         },
         {
-          "path": "/kuventa-website/impressum/",
-          "url": "http://127.0.0.1:4173/kuventa-website/impressum/",
+          "path": "/blog/iga-braucht-saubere-rollen/",
+          "url": "http://127.0.0.1:4173/blog/iga-braucht-saubere-rollen/",
           "status": 200,
           "ok": true,
           "navError": null,
@@ -272,8 +315,8 @@
           }
         },
         {
-          "path": "/kuventa-website/datenschutz/",
-          "url": "http://127.0.0.1:4173/kuventa-website/datenschutz/",
+          "path": "/blog/die-haeufigsten-fehler-in-identity-governance-and-administration-projekten/",
+          "url": "http://127.0.0.1:4173/blog/die-haeufigsten-fehler-in-identity-governance-and-administration-projekten/",
           "status": 200,
           "ok": true,
           "navError": null,
@@ -295,8 +338,8 @@
           }
         },
         {
-          "path": "/kuventa-website/blog/zugriffsrechte-sind-chefsache/",
-          "url": "http://127.0.0.1:4173/kuventa-website/blog/zugriffsrechte-sind-chefsache/",
+          "path": "/blog/audit-ohne-stress-dank-identity-governance/",
+          "url": "http://127.0.0.1:4173/blog/audit-ohne-stress-dank-identity-governance/",
           "status": 200,
           "ok": true,
           "navError": null,
@@ -318,131 +361,33 @@
           }
         },
         {
-          "path": "/kuventa-website/blog/warum-die-einfuehrung-von-iga-mehr-ist-als-ein-it-projekt/",
-          "url": "http://127.0.0.1:4173/kuventa-website/blog/warum-die-einfuehrung-von-iga-mehr-ist-als-ein-it-projekt/",
-          "status": 200,
-          "ok": true,
-          "navError": null,
+          "path": "/assets/files/cv.pdf",
+          "url": "http://127.0.0.1:4173/assets/files/cv.pdf",
+          "status": null,
+          "ok": false,
+          "navError": "page.goto: Download is starting\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:4173/assets/files/cv.pdf\", waiting until \"domcontentloaded\"\u001b[22m\n",
           "consoleErrors": [],
           "pageErrors": [],
-          "failedRequests": [],
-          "checks": {
-            "titleMissing": false,
-            "metaDescriptionMissing": false,
-            "langMissing": false,
-            "canonicalMissing": false,
-            "h1Count": 1,
-            "headingIssues": [],
-            "missingAltImages": [],
-            "mainCount": 1,
-            "hasOverflowX": false,
-            "encodingArtifacts": [],
-            "placeholderText": []
-          }
-        },
-        {
-          "path": "/kuventa-website/blog/nach-dem-start-ist-vor-der-arbeit/",
-          "url": "http://127.0.0.1:4173/kuventa-website/blog/nach-dem-start-ist-vor-der-arbeit/",
-          "status": 200,
-          "ok": true,
-          "navError": null,
-          "consoleErrors": [],
-          "pageErrors": [],
-          "failedRequests": [],
-          "checks": {
-            "titleMissing": false,
-            "metaDescriptionMissing": false,
-            "langMissing": false,
-            "canonicalMissing": false,
-            "h1Count": 1,
-            "headingIssues": [],
-            "missingAltImages": [],
-            "mainCount": 1,
-            "hasOverflowX": false,
-            "encodingArtifacts": [],
-            "placeholderText": []
-          }
-        },
-        {
-          "path": "/kuventa-website/blog/iga-braucht-saubere-rollen/",
-          "url": "http://127.0.0.1:4173/kuventa-website/blog/iga-braucht-saubere-rollen/",
-          "status": 200,
-          "ok": true,
-          "navError": null,
-          "consoleErrors": [],
-          "pageErrors": [],
-          "failedRequests": [],
-          "checks": {
-            "titleMissing": false,
-            "metaDescriptionMissing": false,
-            "langMissing": false,
-            "canonicalMissing": false,
-            "h1Count": 1,
-            "headingIssues": [],
-            "missingAltImages": [],
-            "mainCount": 1,
-            "hasOverflowX": false,
-            "encodingArtifacts": [],
-            "placeholderText": []
-          }
-        },
-        {
-          "path": "/kuventa-website/blog/die-haeufigsten-fehler-in-identity-governance-and-administration-projekten/",
-          "url": "http://127.0.0.1:4173/kuventa-website/blog/die-haeufigsten-fehler-in-identity-governance-and-administration-projekten/",
-          "status": 200,
-          "ok": true,
-          "navError": null,
-          "consoleErrors": [],
-          "pageErrors": [],
-          "failedRequests": [],
-          "checks": {
-            "titleMissing": false,
-            "metaDescriptionMissing": false,
-            "langMissing": false,
-            "canonicalMissing": false,
-            "h1Count": 1,
-            "headingIssues": [],
-            "missingAltImages": [],
-            "mainCount": 1,
-            "hasOverflowX": false,
-            "encodingArtifacts": [],
-            "placeholderText": []
-          }
-        },
-        {
-          "path": "/kuventa-website/blog/audit-ohne-stress-dank-identity-governance/",
-          "url": "http://127.0.0.1:4173/kuventa-website/blog/audit-ohne-stress-dank-identity-governance/",
-          "status": 200,
-          "ok": true,
-          "navError": null,
-          "consoleErrors": [],
-          "pageErrors": [],
-          "failedRequests": [],
-          "checks": {
-            "titleMissing": false,
-            "metaDescriptionMissing": false,
-            "langMissing": false,
-            "canonicalMissing": false,
-            "h1Count": 1,
-            "headingIssues": [],
-            "missingAltImages": [],
-            "mainCount": 1,
-            "hasOverflowX": false,
-            "encodingArtifacts": [],
-            "placeholderText": []
-          }
+          "failedRequests": [
+            {
+              "url": "http://127.0.0.1:4173/assets/files/cv.pdf",
+              "method": "GET",
+              "failure": "net::ERR_ABORTED"
+            }
+          ],
+          "checks": null
         }
       ],
       "brokenInternalLinks": []
     },
     {
       "variant": "mobile",
-      "baseUrl": "http://127.0.0.1:4173/kuventa-website/",
-      "scannedPages": 18,
+      "baseUrl": "http://127.0.0.1:4173",
+      "scannedPages": 16,
       "pages": [
         {
-          "path": "/kuventa-website/",
-          "url": "http://127.0.0.1:4173/kuventa-website/",
+          "path": "/",
+          "url": "http://127.0.0.1:4173/",
           "status": 200,
           "ok": true,
           "navError": null,
@@ -464,8 +409,8 @@
           }
         },
         {
-          "path": "/kuventa-website/leistungen/",
-          "url": "http://127.0.0.1:4173/kuventa-website/leistungen/",
+          "path": "/kubo/",
+          "url": "http://127.0.0.1:4173/kubo/",
           "status": 200,
           "ok": true,
           "navError": null,
@@ -487,8 +432,33 @@
           }
         },
         {
-          "path": "/kuventa-website/ueber-uns/",
-          "url": "http://127.0.0.1:4173/kuventa-website/ueber-uns/",
+          "path": "/leistungen/",
+          "url": "http://127.0.0.1:4173/leistungen/",
+          "status": 200,
+          "ok": true,
+          "navError": null,
+          "consoleErrors": [],
+          "pageErrors": [],
+          "failedRequests": [],
+          "checks": {
+            "titleMissing": false,
+            "metaDescriptionMissing": false,
+            "langMissing": false,
+            "canonicalMissing": false,
+            "h1Count": 1,
+            "headingIssues": [
+              "Heading jump from h1 to h3"
+            ],
+            "missingAltImages": [],
+            "mainCount": 1,
+            "hasOverflowX": false,
+            "encodingArtifacts": [],
+            "placeholderText": []
+          }
+        },
+        {
+          "path": "/referenzen/",
+          "url": "http://127.0.0.1:4173/referenzen/",
           "status": 200,
           "ok": true,
           "navError": null,
@@ -510,8 +480,8 @@
           }
         },
         {
-          "path": "/kuventa-website/blog/",
-          "url": "http://127.0.0.1:4173/kuventa-website/blog/",
+          "path": "/blog/",
+          "url": "http://127.0.0.1:4173/blog/",
           "status": 200,
           "ok": true,
           "navError": null,
@@ -533,8 +503,8 @@
           }
         },
         {
-          "path": "/kuventa-website/kontakt/",
-          "url": "http://127.0.0.1:4173/kuventa-website/kontakt/",
+          "path": "/ueber-uns/",
+          "url": "http://127.0.0.1:4173/ueber-uns/",
           "status": 200,
           "ok": true,
           "navError": null,
@@ -556,8 +526,34 @@
           }
         },
         {
-          "path": "/kuventa-website/identity-assessment/",
-          "url": "http://127.0.0.1:4173/kuventa-website/identity-assessment/",
+          "path": "/kontakt/",
+          "url": "http://127.0.0.1:4173/kontakt/",
+          "status": 200,
+          "ok": true,
+          "navError": null,
+          "consoleErrors": [
+            "Framing 'https://outlook.office.com/' violates the following report-only Content Security Policy directive: \"frame-ancestors 'self' teams.cloud.microsoft outlook.cloud.microsoft m365.cloud.microsoft *.office.com outlook.office365.com teams.microsoft.com\". The violation has been logged, but no further action has been taken.\n",
+            "The Content Security Policy directive 'upgrade-insecure-requests' is ignored when delivered in a report-only policy."
+          ],
+          "pageErrors": [],
+          "failedRequests": [],
+          "checks": {
+            "titleMissing": false,
+            "metaDescriptionMissing": false,
+            "langMissing": false,
+            "canonicalMissing": false,
+            "h1Count": 1,
+            "headingIssues": [],
+            "missingAltImages": [],
+            "mainCount": 1,
+            "hasOverflowX": false,
+            "encodingArtifacts": [],
+            "placeholderText": []
+          }
+        },
+        {
+          "path": "/impressum/",
+          "url": "http://127.0.0.1:4173/impressum/",
           "status": 200,
           "ok": true,
           "navError": null,
@@ -565,23 +561,23 @@
           "pageErrors": [],
           "failedRequests": [
             {
-              "url": "https://outlook.office.com/bookwithme/user/1536062ad5714a80976ffe478fb68e3c@kuventa.de/meetingtype/0Sv5L6jWt0ekIZy9r6D1Ug2?bookingcode=5cfeb36b-0bba-4165-bdfe-8f636d8a11f7&anonymous&ismsaljsauthenabled&ep=mlink",
+              "url": "https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.bookings.runtime.ab7d1435.js",
               "method": "GET",
               "failure": "net::ERR_ABORTED"
             },
             {
-              "url": "https://maps.gstatic.com/maps-api-v3/embed/js/64/8b/init_embed.js",
+              "url": "https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.bookwithmeindex.8bcc7629.js",
               "method": "GET",
               "failure": "net::ERR_ABORTED"
             },
             {
-              "url": "https://maps.googleapis.com/maps-api-v3/api/js/64/8b/geometry.js",
+              "url": "https://res.public.onecdn.static.microsoft/assets/framework/microsoft.svg",
               "method": "GET",
               "failure": "net::ERR_ABORTED"
             },
             {
-              "url": "https://maps.googleapis.com/maps-api-v3/api/js/64/8b/main.js",
-              "method": "GET",
+              "url": "https://csp.microsoft.com/report/Office365-BookWithMe-PROD",
+              "method": "POST",
               "failure": "net::ERR_ABORTED"
             }
           ],
@@ -600,8 +596,8 @@
           }
         },
         {
-          "path": "/kuventa-website/identity-modernisierung/",
-          "url": "http://127.0.0.1:4173/kuventa-website/identity-modernisierung/",
+          "path": "/datenschutz/",
+          "url": "http://127.0.0.1:4173/datenschutz/",
           "status": 200,
           "ok": true,
           "navError": null,
@@ -623,8 +619,8 @@
           }
         },
         {
-          "path": "/kuventa-website/sso-plattform/",
-          "url": "http://127.0.0.1:4173/kuventa-website/sso-plattform/",
+          "path": "/blog/zugriffsrechte-sind-chefsache/",
+          "url": "http://127.0.0.1:4173/blog/zugriffsrechte-sind-chefsache/",
           "status": 200,
           "ok": true,
           "navError": null,
@@ -646,8 +642,8 @@
           }
         },
         {
-          "path": "/kuventa-website/beraterprofil/",
-          "url": "http://127.0.0.1:4173/kuventa-website/beraterprofil/",
+          "path": "/blog/warum-die-einfuehrung-von-iga-mehr-ist-als-ein-it-projekt/",
+          "url": "http://127.0.0.1:4173/blog/warum-die-einfuehrung-von-iga-mehr-ist-als-ein-it-projekt/",
           "status": 200,
           "ok": true,
           "navError": null,
@@ -669,8 +665,8 @@
           }
         },
         {
-          "path": "/kuventa-website/customer-identity-plattform/",
-          "url": "http://127.0.0.1:4173/kuventa-website/customer-identity-plattform/",
+          "path": "/blog/nach-dem-start-ist-vor-der-arbeit/",
+          "url": "http://127.0.0.1:4173/blog/nach-dem-start-ist-vor-der-arbeit/",
           "status": 200,
           "ok": true,
           "navError": null,
@@ -692,8 +688,8 @@
           }
         },
         {
-          "path": "/kuventa-website/impressum/",
-          "url": "http://127.0.0.1:4173/kuventa-website/impressum/",
+          "path": "/blog/iga-braucht-saubere-rollen/",
+          "url": "http://127.0.0.1:4173/blog/iga-braucht-saubere-rollen/",
           "status": 200,
           "ok": true,
           "navError": null,
@@ -715,8 +711,8 @@
           }
         },
         {
-          "path": "/kuventa-website/datenschutz/",
-          "url": "http://127.0.0.1:4173/kuventa-website/datenschutz/",
+          "path": "/blog/die-haeufigsten-fehler-in-identity-governance-and-administration-projekten/",
+          "url": "http://127.0.0.1:4173/blog/die-haeufigsten-fehler-in-identity-governance-and-administration-projekten/",
           "status": 200,
           "ok": true,
           "navError": null,
@@ -738,8 +734,8 @@
           }
         },
         {
-          "path": "/kuventa-website/blog/zugriffsrechte-sind-chefsache/",
-          "url": "http://127.0.0.1:4173/kuventa-website/blog/zugriffsrechte-sind-chefsache/",
+          "path": "/blog/audit-ohne-stress-dank-identity-governance/",
+          "url": "http://127.0.0.1:4173/blog/audit-ohne-stress-dank-identity-governance/",
           "status": 200,
           "ok": true,
           "navError": null,
@@ -761,119 +757,21 @@
           }
         },
         {
-          "path": "/kuventa-website/blog/warum-die-einfuehrung-von-iga-mehr-ist-als-ein-it-projekt/",
-          "url": "http://127.0.0.1:4173/kuventa-website/blog/warum-die-einfuehrung-von-iga-mehr-ist-als-ein-it-projekt/",
-          "status": 200,
-          "ok": true,
-          "navError": null,
+          "path": "/assets/files/cv.pdf",
+          "url": "http://127.0.0.1:4173/assets/files/cv.pdf",
+          "status": null,
+          "ok": false,
+          "navError": "page.goto: Download is starting\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:4173/assets/files/cv.pdf\", waiting until \"domcontentloaded\"\u001b[22m\n",
           "consoleErrors": [],
           "pageErrors": [],
-          "failedRequests": [],
-          "checks": {
-            "titleMissing": false,
-            "metaDescriptionMissing": false,
-            "langMissing": false,
-            "canonicalMissing": false,
-            "h1Count": 1,
-            "headingIssues": [],
-            "missingAltImages": [],
-            "mainCount": 1,
-            "hasOverflowX": false,
-            "encodingArtifacts": [],
-            "placeholderText": []
-          }
-        },
-        {
-          "path": "/kuventa-website/blog/nach-dem-start-ist-vor-der-arbeit/",
-          "url": "http://127.0.0.1:4173/kuventa-website/blog/nach-dem-start-ist-vor-der-arbeit/",
-          "status": 200,
-          "ok": true,
-          "navError": null,
-          "consoleErrors": [],
-          "pageErrors": [],
-          "failedRequests": [],
-          "checks": {
-            "titleMissing": false,
-            "metaDescriptionMissing": false,
-            "langMissing": false,
-            "canonicalMissing": false,
-            "h1Count": 1,
-            "headingIssues": [],
-            "missingAltImages": [],
-            "mainCount": 1,
-            "hasOverflowX": false,
-            "encodingArtifacts": [],
-            "placeholderText": []
-          }
-        },
-        {
-          "path": "/kuventa-website/blog/iga-braucht-saubere-rollen/",
-          "url": "http://127.0.0.1:4173/kuventa-website/blog/iga-braucht-saubere-rollen/",
-          "status": 200,
-          "ok": true,
-          "navError": null,
-          "consoleErrors": [],
-          "pageErrors": [],
-          "failedRequests": [],
-          "checks": {
-            "titleMissing": false,
-            "metaDescriptionMissing": false,
-            "langMissing": false,
-            "canonicalMissing": false,
-            "h1Count": 1,
-            "headingIssues": [],
-            "missingAltImages": [],
-            "mainCount": 1,
-            "hasOverflowX": false,
-            "encodingArtifacts": [],
-            "placeholderText": []
-          }
-        },
-        {
-          "path": "/kuventa-website/blog/die-haeufigsten-fehler-in-identity-governance-and-administration-projekten/",
-          "url": "http://127.0.0.1:4173/kuventa-website/blog/die-haeufigsten-fehler-in-identity-governance-and-administration-projekten/",
-          "status": 200,
-          "ok": true,
-          "navError": null,
-          "consoleErrors": [],
-          "pageErrors": [],
-          "failedRequests": [],
-          "checks": {
-            "titleMissing": false,
-            "metaDescriptionMissing": false,
-            "langMissing": false,
-            "canonicalMissing": false,
-            "h1Count": 1,
-            "headingIssues": [],
-            "missingAltImages": [],
-            "mainCount": 1,
-            "hasOverflowX": false,
-            "encodingArtifacts": [],
-            "placeholderText": []
-          }
-        },
-        {
-          "path": "/kuventa-website/blog/audit-ohne-stress-dank-identity-governance/",
-          "url": "http://127.0.0.1:4173/kuventa-website/blog/audit-ohne-stress-dank-identity-governance/",
-          "status": 200,
-          "ok": true,
-          "navError": null,
-          "consoleErrors": [],
-          "pageErrors": [],
-          "failedRequests": [],
-          "checks": {
-            "titleMissing": false,
-            "metaDescriptionMissing": false,
-            "langMissing": false,
-            "canonicalMissing": false,
-            "h1Count": 1,
-            "headingIssues": [],
-            "missingAltImages": [],
-            "mainCount": 1,
-            "hasOverflowX": false,
-            "encodingArtifacts": [],
-            "placeholderText": []
-          }
+          "failedRequests": [
+            {
+              "url": "http://127.0.0.1:4173/assets/files/cv.pdf",
+              "method": "GET",
+              "failure": "net::ERR_ABORTED"
+            }
+          ],
+          "checks": null
         }
       ],
       "brokenInternalLinks": []

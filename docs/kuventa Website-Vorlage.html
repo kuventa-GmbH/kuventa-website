@@ -1,0 +1,1768 @@
+<!doctype html>
+<!--
+  ============================================================================
+  kuventa — WEBSITE-VORLAGE / DESIGN SYSTEM  (v2.0)
+  ============================================================================
+  ZWECK: Diese Datei ist die verbindliche Bau-Vorlage für die kuventa-Website.
+  Ein Entwickler/Agent kann hier 1:1 Tokens, Komponenten-Klassen und
+  Beispiel-Markup entnehmen.
+
+  SO BENUTZEN:
+  1. SCHRIFTEN: die beiden <link>-Tags unten (Satoshi via Fontshare,
+     JetBrains Mono via Google Fonts) in jede Seite übernehmen.
+  2. TOKENS: der komplette :root{ --... }-Block im <style> ist die
+     Single Source of Truth (Farben, Radien, Schatten, Schrift). Unverändert
+     übernehmen. Eigene Werte NICHT erfinden — nur diese Variablen nutzen.
+  3. KOMPONENTEN: alle Klassen (.btn, .btn-primary, .contact-direct, .nav,
+     .footer, .trigger, .specimen-card, .mock …) sind im <style> definiert.
+     Markup-Beispiele stehen im <body>, nach Abschnitt gegliedert (01–07).
+  4. ANWENDUNGSBEISPIELE: Abschnitt "07 · In Anwendung" zeigt fertige
+     Seiten-Ausschnitte (Hero, Kontaktblock, Footer) als Referenz-Layout.
+
+  HINWEISE:
+  - Markenfarbe = --blue (#38a0ed). Flächen = --sky-*-Skala. Text = --ink/--text.
+  - Responsiv: ab max-width 980px brechen die .g-2/.g-3/.g-4-Grids auf 1 Spalte.
+  - Kontakt-Karten (.contact-direct) sind <div>, die Buttons darin sind <a>
+    (mailto:/tel:). NIEMALS die Karte selbst zu <a> machen — verschachtelte
+    Links sind ungültiges HTML und zerstören das Layout.
+  ============================================================================
+-->
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>kuventa — Design System / Website-Vorlage</title>
+<link rel="preconnect" href="https://api.fontshare.com" />
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700&display=swap" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" />
+<style>
+  /* ============================================================
+     TOKENS — extracted 1:1 from kuventa.de live stylesheet
+     ============================================================ */
+  :root {
+    /* brand */
+    --blue: #38a0ed;
+    --blue-hover: #2f87c9;
+    --blue-deep: #0f4f83;
+    --blue-light: #a9d8ff;
+
+    /* surface — light blue scale */
+    --sky-50:  #f7fcff;
+    --sky-100: #f2f9ff;
+    --sky-150: #f3faff;
+    --sky-200: #e8f5ff;
+    --sky-250: #eaf6ff;
+    --sky-300: #d6edff;
+    --sky-400: #d7ecfb;
+    --sky-500: #c7e5ff;
+    --sky-600: #b9def9;
+    --sky-700: #8dcbf7;
+
+    /* card outlines */
+    --card-line:        #e6f3fc;
+    --card-line-strong: #d9ecfb;
+    --card-line-hover:  #b4daf8;
+
+    /* ink + text */
+    --ink:    #0c0b20;
+    --text:   #333333;
+    --muted:  #757575;
+    --line:   rgba(12, 11, 32, 0.15);
+    --white:  #ffffff;
+
+    /* effects */
+    --shadow-btn:
+      rgba(0,0,0,.07) 0 .706592px .706592px -.625px,
+      rgba(0,0,0,.07) 0 1.80656px 1.80656px -1.25px,
+      rgba(0,0,0,.07) 0 3.62176px 3.62176px -1.875px,
+      rgba(0,0,0,.06) 0 6.8656px 6.8656px -2.5px,
+      rgba(0,0,0,.05) 0 13.6468px 13.6468px -3.125px,
+      rgba(0,0,0,.03) 0 30px 30px -3.75px;
+    --shadow-card-soft:    0 12px 28px rgba(56,160,237,.08);
+    --shadow-card:         0 12px 30px rgba(56,160,237,.08);
+    --shadow-card-strong:  0 16px 34px rgba(56,160,237,.12);
+    --shadow-card-hover:   0 18px 34px rgba(56,160,237,.18);
+    --shadow-pill:         0 10px 24px rgba(56,160,237,.08);
+
+    /* radii */
+    --r-8: 8px;
+    --r-10: 10px;
+    --r-12: 12px;
+    --r-14: 14px;
+    --r-16: 16px;
+    --r-18: 18px;
+    --r-20: 20px;
+    --r-24: 24px;
+    --r-pill: 999px;
+
+    /* type */
+    --sans: "Satoshi", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+    --mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--white);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* ============ LAYOUT ============ */
+  .page { max-width: 1280px; margin: 0 auto; padding: 56px 32px 120px; }
+  .section { padding: 64px 0; border-top: 1px solid var(--line); }
+  .section:first-of-type { border-top: 0; padding-top: 24px; }
+  .section-head {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 48px;
+    margin-bottom: 48px;
+    align-items: baseline;
+  }
+  .section-head .meta {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    padding-top: 10px;
+  }
+  .section-head .meta .num { color: var(--ink); font-weight: 500; margin-right: 12px; }
+  .section-head h2 {
+    font-family: var(--sans);
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.15;
+    letter-spacing: -.01em;
+    color: var(--ink);
+    margin: 0 0 12px;
+    text-wrap: balance;
+  }
+  .section-head h2 .accent { color: var(--blue); }
+  .section-head p {
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--text);
+    max-width: 64ch;
+    margin: 0;
+    text-wrap: pretty;
+  }
+
+  .grid { display: grid; gap: 24px; }
+  .g-2 { grid-template-columns: repeat(2, 1fr); }
+  .g-3 { grid-template-columns: repeat(3, 1fr); }
+  .g-4 { grid-template-columns: repeat(4, 1fr); }
+  .g-6 { grid-template-columns: repeat(6, 1fr); }
+  @media (max-width: 980px) {
+    .section-head { grid-template-columns: 1fr; gap: 16px; }
+    .g-2, .g-3, .g-4, .g-6 { grid-template-columns: 1fr; }
+    .page { padding: 32px 20px 80px; }
+  }
+
+  .stack-12 { display: flex; flex-direction: column; gap: 12px; }
+  .stack-16 { display: flex; flex-direction: column; gap: 16px; }
+  .stack-24 { display: flex; flex-direction: column; gap: 24px; }
+  .stack-40 { display: flex; flex-direction: column; gap: 40px; }
+  .row { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+
+  .label {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .eyebrow {
+    font-family: var(--sans);
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--blue-deep);
+  }
+
+  /* ============ COVER ============ */
+  .cover {
+    border-radius: var(--r-24);
+    overflow: hidden;
+    background: linear-gradient(180deg, #ffffff 0%, var(--sky-100) 47%, #ffffff 100%);
+    border: 1px solid var(--card-line);
+    box-shadow: var(--shadow-card-soft);
+    padding: 64px 56px;
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 48px;
+    align-items: end;
+    min-height: 520px;
+    position: relative;
+  }
+  .cover .corner {
+    position: absolute; top: 24px; right: 32px;
+    font-family: var(--mono); font-size: 11px; letter-spacing: .08em;
+    text-transform: uppercase; color: var(--muted); text-align: right;
+  }
+  .cover .lockup { display: flex; align-items: center; gap: 14px; margin-bottom: 32px; }
+  .cover h1 {
+    font-family: var(--sans); font-weight: 700;
+    font-size: clamp(56px, 6.8vw, 88px);
+    line-height: 1.04; letter-spacing: -.02em;
+    color: var(--ink); margin: 0 0 24px; text-wrap: balance;
+  }
+  .cover h1 .accent { color: var(--blue); }
+  .cover .lede {
+    font-size: 22px; line-height: 36px; color: var(--text);
+    max-width: 38ch; margin: 0 0 40px; text-wrap: pretty;
+  }
+  .cover .meta-grid {
+    border-top: 1px solid var(--line);
+    padding-top: 24px;
+    display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px;
+    font-size: 14px;
+  }
+  .cover .meta-grid dt {
+    font-family: var(--mono); font-size: 10.5px;
+    letter-spacing: .1em; text-transform: uppercase;
+    color: var(--muted); margin-bottom: 6px;
+  }
+  .cover .meta-grid dd { margin: 0; color: var(--ink); font-weight: 500; }
+  .cover .specimen {
+    align-self: stretch; border-left: 1px solid var(--line);
+    padding-left: 40px;
+    display: flex; flex-direction: column; justify-content: space-between; gap: 32px;
+  }
+  .specimen .stack {
+    font-family: var(--sans); font-weight: 700;
+    font-size: 92px; line-height: .92; letter-spacing: -.04em; color: var(--ink);
+  }
+  .specimen .stack .accent { color: var(--blue); }
+  .specimen .stack span { display: block; }
+  .specimen .stack .label-line {
+    font-size: 28px; font-weight: 500; letter-spacing: 0; color: var(--text);
+    margin-top: 16px; line-height: 1.2;
+  }
+  .specimen .palette-row { display: flex; gap: 6px; }
+  .specimen .palette-row span {
+    width: 40px; height: 40px; border-radius: 8px;
+    border: 1px solid rgba(12,11,32,.05);
+  }
+  @media (max-width: 980px) {
+    .cover { grid-template-columns: 1fr; padding: 40px 28px; }
+    .cover .specimen { border-left: 0; border-top: 1px solid var(--line); padding: 32px 0 0; }
+    .specimen .stack { font-size: 56px; }
+  }
+
+  /* ============ LOGO ============ */
+  .logo-mark {
+    width: 40px; height: 40px;
+    border-radius: var(--r-10);
+    background: var(--blue);
+    color: var(--white);
+    display: inline-flex; align-items: center; justify-content: center;
+    font-family: var(--sans); font-weight: 700; font-size: 22px;
+    line-height: 1;
+    box-shadow: 0 6px 14px rgba(56,160,237,.28);
+  }
+  .logo-mark.lg { width: 64px; height: 64px; font-size: 34px; border-radius: 16px; }
+  .logo-mark.sm { width: 24px; height: 24px; font-size: 13px; border-radius: 6px; }
+  .logo-wordmark {
+    font-family: var(--sans); font-weight: 700;
+    font-size: 28px; letter-spacing: -.02em;
+    color: var(--ink); line-height: 1;
+  }
+
+  /* ============ FOUNDATION CARDS ============ */
+  .principle {
+    background: var(--white);
+    border: 1px solid var(--card-line);
+    border-radius: var(--r-20);
+    box-shadow: var(--shadow-card-soft);
+    padding: 32px;
+    display: flex; flex-direction: column; gap: 16px;
+  }
+  .principle .n {
+    width: 36px; height: 36px;
+    border-radius: var(--r-10);
+    background: var(--sky-200);
+    color: var(--blue-deep);
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 700; font-size: 14px;
+  }
+  .principle h3 {
+    font-family: var(--sans); font-weight: 700;
+    font-size: 22px; line-height: 1.25; color: var(--ink); margin: 0;
+  }
+  .principle p {
+    font-size: 18px; line-height: 30px; color: var(--text); margin: 0;
+    font-weight: 300;
+  }
+
+  /* ============ COLOR ============ */
+  .swatch {
+    border: 1px solid var(--card-line);
+    border-radius: var(--r-16);
+    overflow: hidden;
+    background: var(--white);
+    box-shadow: var(--shadow-card-soft);
+  }
+  .swatch .chip {
+    aspect-ratio: 16 / 10;
+    padding: 16px;
+    display: flex; flex-direction: column; justify-content: space-between;
+  }
+  .swatch .chip .name {
+    font-family: var(--sans); font-weight: 700;
+    font-size: 13px; letter-spacing: .04em;
+  }
+  .swatch .chip .hex {
+    font-family: var(--mono); font-size: 12px;
+  }
+  .swatch .meta {
+    padding: 14px 16px; border-top: 1px solid var(--card-line);
+    font-size: 13px; line-height: 20px; color: var(--text);
+  }
+  .swatch .meta b { display: block; color: var(--ink); margin-bottom: 2px; font-weight: 700; }
+
+  .ramp {
+    display: grid; grid-template-columns: repeat(7, 1fr);
+    border-radius: var(--r-16);
+    overflow: hidden;
+    border: 1px solid var(--card-line);
+  }
+  .ramp > div {
+    aspect-ratio: 1.1 / 1;
+    padding: 12px;
+    display: flex; flex-direction: column; justify-content: space-between;
+    font-family: var(--mono); font-size: 10.5px;
+  }
+  .ramp .step {
+    letter-spacing: .08em; text-transform: uppercase; font-weight: 500;
+  }
+
+  .text-tone {
+    display: grid; grid-template-columns: 32px 160px 1fr 120px;
+    gap: 16px; align-items: center;
+    padding: 12px 0; border-top: 1px solid var(--card-line);
+  }
+  .text-tone:first-child { border-top: 0; }
+  .text-tone .swatch-sm { width: 32px; height: 32px; border-radius: 8px; border: 1px solid var(--card-line); }
+  .text-tone .name { font-weight: 700; font-size: 14px; color: var(--ink); }
+  .text-tone .hex { font-family: var(--mono); font-size: 12px; color: var(--muted); }
+  .text-tone .use { font-size: 13px; color: var(--text); text-align: right; }
+
+  /* ============ TYPE ============ */
+  .type-row {
+    display: grid;
+    grid-template-columns: 160px 1fr 220px;
+    align-items: baseline;
+    gap: 32px;
+    padding: 28px 0;
+    border-top: 1px solid var(--card-line);
+  }
+  .type-row:first-child { border-top: 0; }
+  .type-row .role {
+    font-family: var(--mono); font-size: 11px; letter-spacing: .08em;
+    text-transform: uppercase; color: var(--muted);
+  }
+  .type-row .role b {
+    display: block; color: var(--ink); font-family: var(--sans);
+    font-weight: 700; font-size: 13px; letter-spacing: 0; text-transform: none; margin-bottom: 4px;
+  }
+  .type-row .specs {
+    font-family: var(--mono); font-size: 11.5px; color: var(--muted);
+    line-height: 1.7; text-align: right;
+  }
+  .type-row .specs span { display: block; }
+
+  .type-display { font-family: var(--sans); font-weight: 700; font-size: 70px; line-height: 1.1; letter-spacing: -.02em; }
+  .type-display .accent { color: var(--blue); }
+  .type-h1 { font-family: var(--sans); font-weight: 700; font-size: 50px; line-height: 65px; letter-spacing: -.015em; }
+  .type-h2 { font-family: var(--sans); font-weight: 700; font-size: 40px; line-height: 1.3; letter-spacing: -.01em; }
+  .type-h3 { font-family: var(--sans); font-weight: 700; font-size: 30px; line-height: 40px; color: var(--blue); }
+  .type-h4 { font-family: var(--sans); font-weight: 700; font-size: 25px; line-height: 32px; color: var(--ink); }
+  .type-h5 { font-family: var(--sans); font-weight: 500; font-size: 24px; line-height: 34px; color: var(--text); }
+  .type-body { font-family: var(--sans); font-weight: 400; font-size: 22px; line-height: 36px; color: var(--text); }
+  .type-body-l { font-family: var(--sans); font-weight: 300; font-size: 20px; line-height: 32px; color: var(--text); }
+  .type-small { font-family: var(--sans); font-weight: 400; font-size: 16px; line-height: 26px; color: var(--text); }
+  .type-mono { font-family: var(--mono); font-size: 11px; letter-spacing: .04em; color: var(--muted); }
+
+  .specimen-card {
+    background: var(--white);
+    border: 1px solid var(--card-line);
+    border-radius: var(--r-20);
+    box-shadow: var(--shadow-card-soft);
+    padding: 32px;
+  }
+  .specimen-card .big {
+    font-family: var(--sans); font-weight: 700;
+    font-size: 120px; line-height: .9; letter-spacing: -.03em;
+    color: var(--ink); margin-bottom: 24px;
+  }
+  .specimen-card .big.italic { font-style: italic; }
+  .specimen-card .weights {
+    font-family: var(--mono); font-size: 11px; color: var(--muted);
+    border-top: 1px solid var(--card-line); padding-top: 16px;
+    line-height: 1.9;
+  }
+  .specimen-card .weights b {
+    display: inline-block; min-width: 90px; color: var(--ink);
+    font-family: var(--sans); font-weight: 700;
+  }
+
+  /* ============ SPACING / RADII / SHADOW ============ */
+  .scale-row { display: flex; align-items: center; gap: 16px; padding: 10px 0; border-top: 1px solid var(--card-line); }
+  .scale-row:first-child { border-top: 0; }
+  .scale-row .token { font-family: var(--mono); font-size: 12px; color: var(--ink); width: 100px; font-weight: 500; }
+  .scale-row .px { font-family: var(--mono); font-size: 11.5px; color: var(--muted); width: 60px; text-align: right; }
+  .scale-row .bar { height: 14px; background: var(--blue); border-radius: 4px; flex-shrink: 0; }
+  .scale-row .note { font-size: 13px; color: var(--text); margin-left: auto; }
+
+  .radius-card {
+    border: 1px solid var(--card-line);
+    border-radius: var(--r-16);
+    padding: 20px;
+    background: var(--white);
+    box-shadow: var(--shadow-card-soft);
+    display: flex; flex-direction: column; gap: 12px;
+  }
+  .radius-card .demo {
+    aspect-ratio: 16 / 9;
+    background: var(--sky-200);
+    border: 1px solid var(--sky-500);
+  }
+  .radius-card .name { font-family: var(--sans); font-weight: 700; font-size: 13px; color: var(--ink); }
+  .radius-card .val { font-family: var(--mono); font-size: 11.5px; color: var(--muted); }
+
+  .shadow-card {
+    border-radius: var(--r-20);
+    padding: 24px;
+    background: var(--white);
+    border: 1px solid var(--card-line);
+    display: flex; flex-direction: column; gap: 8px;
+    min-height: 160px; justify-content: flex-end;
+  }
+  .shadow-card .title { font-family: var(--sans); font-weight: 700; font-size: 14px; color: var(--ink); }
+  .shadow-card .val { font-family: var(--mono); font-size: 11px; color: var(--muted); }
+
+  /* ============ COMPONENTS ============ */
+  .demo-card {
+    background: var(--white);
+    border: 1px solid var(--card-line);
+    border-radius: var(--r-20);
+    box-shadow: var(--shadow-card-soft);
+    padding: 32px;
+  }
+  .demo-card .demo-head {
+    display: grid; grid-template-columns: 200px 1fr; gap: 32px; align-items: start;
+    margin-bottom: 24px;
+  }
+  .demo-card .demo-head .label { display: block; margin-bottom: 8px; }
+  .demo-card .demo-head p { font-size: 14px; line-height: 22px; color: var(--text); margin: 0; }
+
+  /* Buttons — from real CSS */
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+    padding: 9px 18px;
+    border-radius: var(--r-8);
+    text-decoration: none;
+    font-family: var(--sans); font-weight: 500; font-size: 16px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    line-height: 1.3;
+    box-shadow: var(--shadow-btn);
+  }
+  .btn-primary { background: var(--blue); color: var(--white); }
+  .btn-primary:hover { background: var(--blue-hover); transform: translateY(2px); }
+  .btn-secondary {
+    background: var(--sky-200); color: var(--ink);
+    padding: 16px;
+    border-radius: var(--r-16);
+    box-shadow: none;
+  }
+  .btn-secondary:hover { background: var(--sky-300); transform: translateY(2px); }
+  .btn-cta-secondary {
+    background: var(--white); border: 1px solid var(--sky-600); color: var(--ink);
+    box-shadow: none; padding: 9px 18px; border-radius: var(--r-8);
+  }
+  .btn-cta-secondary:hover { background: #f5fbff; border-color: var(--sky-700); }
+  .btn-ghost {
+    background: transparent; color: var(--text); border: 1px solid var(--line);
+    box-shadow: none;
+  }
+  .btn-ghost:hover { border-color: var(--blue); color: var(--blue); }
+
+  .btn-direct {
+    display: inline-flex; align-items: center; justify-content: center;
+    height: 40px; padding: 0 14px;
+    border-radius: var(--r-10);
+    border: 1px solid var(--card-line-hover); background: var(--white);
+    color: var(--ink); text-decoration: none;
+    font-family: var(--sans); font-weight: 500; font-size: 15px;
+    white-space: nowrap;
+    cursor: pointer; transition: .18s ease;
+  }
+  .btn-direct:hover { border-color: var(--sky-700); background: #f5fbff; }
+  .btn-direct.is-primary { background: var(--blue); border-color: var(--blue); color: var(--white); }
+  .btn-direct.is-primary:hover { background: var(--blue-hover); border-color: var(--blue-hover); }
+
+  /* Trigger pills */
+  .trigger {
+    padding: 10px 16px;
+    border-radius: var(--r-pill);
+    border: 1px solid var(--sky-400);
+    background: var(--white);
+    box-shadow: var(--shadow-pill);
+    color: var(--ink);
+    font-size: 16px; line-height: 24px;
+    font-family: var(--sans); font-weight: 500;
+  }
+
+  /* Badges */
+  .badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    height: 30px; padding: 0 12px;
+    border-radius: var(--r-pill);
+    background: var(--white);
+    border: 1px solid rgba(56,160,237,.26);
+    font-size: 12px; letter-spacing: .06em; text-transform: uppercase;
+    color: var(--blue-deep);
+    font-family: var(--sans); font-weight: 700;
+  }
+  .badge.blue { background: var(--blue); color: var(--white); border-color: var(--blue); }
+  .badge.dark { background: var(--ink); color: var(--white); border-color: var(--ink); }
+  .badge.soft { background: var(--sky-200); border-color: var(--sky-500); }
+
+  /* Form */
+  .field { display: flex; flex-direction: column; gap: 8px; }
+  .field label {
+    font-size: 14px; font-weight: 700; color: var(--ink);
+  }
+  .field .hint { font-size: 13px; color: var(--muted); }
+  .input, .textarea, .select {
+    appearance: none; -webkit-appearance: none;
+    background: var(--white); color: var(--ink);
+    border: 1px solid var(--line);
+    border-radius: var(--r-10);
+    padding: 12px 14px;
+    font-family: var(--sans); font-size: 16px; line-height: 1.4;
+    transition: border-color .15s, box-shadow .15s;
+    width: 100%;
+  }
+  .input:focus, .textarea:focus, .select:focus {
+    outline: none;
+    border-color: rgba(47,126,247,.45);
+    box-shadow: 0 0 0 3px rgba(56,160,237,.12);
+  }
+  .input::placeholder { color: var(--muted); }
+  .textarea { min-height: 96px; resize: vertical; }
+  .select { background-image: linear-gradient(45deg, transparent 50%, var(--text) 50%), linear-gradient(135deg, var(--text) 50%, transparent 50%); background-position: calc(100% - 18px) 50%, calc(100% - 13px) 50%; background-size: 5px 5px, 5px 5px; background-repeat: no-repeat; padding-right: 36px; }
+  .checkbox { display: inline-flex; align-items: center; gap: 10px; font-size: 14px; cursor: pointer; }
+  .checkbox input {
+    appearance: none; width: 18px; height: 18px;
+    border: 1px solid var(--line); border-radius: 4px; background: var(--white);
+    cursor: pointer; position: relative;
+  }
+  .checkbox input:checked { background: var(--blue); border-color: var(--blue); }
+  .checkbox input:checked::after {
+    content: ""; position: absolute; left: 5px; top: 1px;
+    width: 6px; height: 10px;
+    border: solid var(--white); border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+
+  /* "Why" cards / feature cards — from real CSS */
+  .feature {
+    text-align: left;
+    padding: 28px;
+    border-radius: var(--r-20);
+    border: 1px solid var(--card-line);
+    background: var(--white);
+    box-shadow: var(--shadow-card-soft);
+    display: flex; flex-direction: column; gap: 16px;
+    transition: .2s ease;
+  }
+  .feature:hover { border-color: var(--card-line-hover); box-shadow: var(--shadow-card-hover); }
+  .feature .icon {
+    width: 40px; height: 40px;
+    border-radius: var(--r-10);
+    background: var(--sky-200);
+    color: var(--blue-deep);
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 700; font-size: 18px; line-height: 1;
+  }
+  .feature h4 {
+    font-family: var(--sans); font-weight: 700;
+    font-size: 20px; line-height: 32px;
+    color: var(--ink); margin: 0;
+  }
+  .feature p {
+    font-family: var(--sans); font-weight: 300;
+    font-size: 18px; line-height: 30px;
+    color: var(--text); margin: 0;
+  }
+
+  /* Services card variant */
+  .service {
+    display: flex; flex-direction: column;
+    text-align: left;
+    padding: 28px;
+    border-radius: var(--r-20);
+    border: 1px solid var(--card-line-strong);
+    background: var(--white);
+    box-shadow: var(--shadow-card);
+  }
+  .service.featured {
+    border-color: var(--sky-700);
+    background: linear-gradient(180deg, #ffffff 0%, var(--sky-150) 100%);
+  }
+  .service .card-eyebrow {
+    margin: 0 0 12px; color: var(--blue-deep);
+    font-size: 12px; letter-spacing: .08em; text-transform: uppercase;
+    font-family: var(--sans); font-weight: 700;
+  }
+  .service .icon {
+    width: 40px; height: 40px; margin: 0 0 20px;
+    border-radius: var(--r-10);
+    background: var(--sky-200); color: var(--blue-deep);
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 700; font-size: 18px;
+  }
+  .service h4 {
+    font-family: var(--sans); font-weight: 700;
+    font-size: 22px; line-height: 32px; color: var(--ink); margin: 0 0 12px;
+  }
+  .service ul {
+    list-style: none; padding: 0; margin: 0 0 24px;
+    flex: 1 1 auto;
+  }
+  .service ul li {
+    position: relative;
+    text-align: left;
+    padding-inline-start: 28px;
+    font-family: var(--sans); font-weight: 300;
+    font-size: 18px; line-height: 30px; color: var(--text);
+    margin-bottom: 4px;
+  }
+  .service ul li:before {
+    content: "•";
+    position: absolute; inset-inline-start: 0;
+  }
+
+  /* FAQ accordion — from real CSS */
+  .faq {
+    padding: 24px 28px;
+    border-radius: var(--r-18);
+    border: 1px solid var(--card-line-strong);
+    background: var(--white);
+    box-shadow: var(--shadow-card-soft);
+  }
+  .faq summary {
+    display: flex; justify-content: space-between; gap: 16px;
+    cursor: pointer; list-style: none;
+    color: var(--ink); font-family: var(--sans); font-weight: 700;
+    font-size: 22px; line-height: 32px;
+  }
+  .faq summary::-webkit-details-marker { display: none; }
+  .faq summary:after {
+    content: "+"; flex: 0 0 auto;
+    color: var(--blue); font-size: 32px; line-height: 1;
+  }
+  .faq[open] summary:after { content: "−"; }
+  .faq p {
+    margin: 16px 0 0;
+    font-size: 18px; line-height: 30px; color: var(--text);
+  }
+
+  /* Navigation */
+  .nav {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 20px 28px;
+    background: var(--white);
+    border: 1px solid var(--line); /* in-use: only bottom border on real site */
+    border-radius: var(--r-16);
+  }
+  .nav-links { display: flex; gap: 40px; align-items: center; }
+  .nav-links a {
+    color: var(--text); text-decoration: none;
+    font-size: 18px; font-family: var(--sans); font-weight: 700;
+    padding: 6px 2px;
+    transition: color .16s ease;
+  }
+  .nav-links a:hover, .nav-links a.is-active { color: var(--blue); }
+
+  /* Dark proof block */
+  .proof {
+    padding: 32px;
+    border-radius: var(--r-24);
+    background: var(--ink);
+    color: var(--white);
+  }
+  .proof .eyebrow-dark {
+    color: var(--blue-light);
+    font-size: 13px; letter-spacing: .08em; text-transform: uppercase;
+    font-family: var(--sans); font-weight: 700;
+  }
+  .proof h3 {
+    font-family: var(--sans); font-weight: 700;
+    font-size: 26px; line-height: 36px; color: var(--white);
+    margin: 8px 0 16px; max-width: 28ch;
+  }
+  .proof .list { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 16px; }
+  .proof .item {
+    display: inline-flex; align-items: center;
+    padding: 10px 14px; border-radius: var(--r-pill);
+    background: rgba(255,255,255,.08); color: var(--white);
+    font-size: 15px; font-family: var(--sans); font-weight: 500;
+  }
+  .proof .note {
+    margin-top: 20px; color: rgba(255,255,255,.76);
+    max-width: 60ch; font-size: 16px; line-height: 26px;
+  }
+
+  /* Contact-direct (gradient card) */
+  .contact-direct {
+    display: flex; flex-direction: column;
+    text-decoration: none;
+    background: linear-gradient(160deg, var(--sky-50) 0%, var(--sky-250) 100%);
+    border: 1px solid var(--sky-500);
+    border-radius: var(--r-20);
+    padding: 22px 24px 24px;
+    box-shadow:
+      0 1px 1px rgba(12,11,32,.04),
+      0 12px 28px rgba(56,160,237,.12);
+    transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+    position: relative; overflow: hidden;
+    min-height: 190px;
+  }
+  .contact-direct:hover {
+    border-color: var(--sky-700);
+    transform: translateY(-2px);
+    box-shadow:
+      0 2px 2px rgba(12,11,32,.06),
+      0 18px 34px rgba(56,160,237,.18);
+  }
+  .contact-direct:before {
+    content: ""; position: absolute;
+    top: -52px; right: -52px;
+    width: 140px; height: 140px;
+    border-radius: 50%;
+    background: rgba(56,160,237,.12);
+    pointer-events: none;
+  }
+  .contact-direct .cd-head {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 12px; margin-bottom: 18px;
+    position: relative; z-index: 2;
+  }
+  .contact-direct .cd-icon {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 38px; height: 38px; flex: none;
+    border-radius: 11px;
+    background: var(--white);
+    border: 1px solid rgba(56,160,237,.26);
+    color: var(--blue); font-size: 17px; line-height: 1;
+    box-shadow: 0 2px 6px rgba(56,160,237,.14);
+  }
+  .contact-direct .label-pill {
+    display: inline-flex; align-items: center;
+    height: 28px; padding: 0 13px;
+    border-radius: var(--r-pill);
+    background: var(--white);
+    border: 1px solid rgba(56,160,237,.26);
+    font-size: 11px; letter-spacing: .08em; text-transform: uppercase;
+    white-space: nowrap;
+    color: var(--blue-deep); font-family: var(--sans); font-weight: 700;
+  }
+  .contact-direct .value {
+    display: block; font-family: var(--sans); font-weight: 700;
+    font-size: 25px; line-height: 1.2; letter-spacing: -.012em; color: var(--ink);
+    overflow-wrap: anywhere;
+    position: relative; z-index: 2;
+  }
+  .contact-direct .value .sub {
+    display: block; margin-top: 5px;
+    font-size: 14px; font-weight: 500; letter-spacing: 0;
+    color: var(--text);
+  }
+  .contact-direct .actions {
+    display: flex; gap: 10px; margin-top: auto; padding-top: 20px; flex-wrap: wrap;
+    position: relative; z-index: 2;
+  }
+
+  /* In-use mocks */
+  .mock {
+    border: 1px solid var(--line);
+    border-radius: var(--r-20);
+    overflow: hidden;
+    background: var(--white);
+  }
+  .mock-bar {
+    display: flex; gap: 6px; padding: 12px 16px;
+    border-bottom: 1px solid var(--line);
+    background: var(--sky-50);
+  }
+  .mock-bar .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--card-line-strong); }
+  .mock-bar .url { font-family: var(--mono); font-size: 11px; color: var(--muted); margin-left: auto; }
+
+  .hero {
+    padding: 80px 56px 60px;
+    background: linear-gradient(180deg, #ffffff 0%, var(--sky-100) 47%, #ffffff 100%);
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 56px;
+    align-items: end;
+    border-bottom: 2px solid var(--line);
+  }
+  .hero h1 {
+    font-family: var(--sans); font-weight: 700;
+    font-size: 70px; line-height: 1.1;
+    color: var(--ink); margin: 0 0 24px;
+    letter-spacing: -.015em;
+  }
+  .hero h1 .accent { color: var(--blue); }
+  .hero p {
+    font-size: 22px; line-height: 36px; color: var(--text);
+    margin: 0 0 32px; max-width: 38ch;
+  }
+  .hero .pills { display: flex; flex-wrap: wrap; gap: 12px; margin: 0 0 32px; }
+  .hero .actions { display: flex; gap: 16px; flex-wrap: wrap; }
+  .hero .aside-illu {
+    aspect-ratio: 1 / 1;
+    border-radius: var(--r-24);
+    background:
+      radial-gradient(circle at 30% 30%, rgba(56,160,237,.18), transparent 60%),
+      radial-gradient(circle at 75% 75%, rgba(56,160,237,.12), transparent 60%),
+      var(--sky-100);
+    border: 1px solid var(--sky-500);
+    display: flex; align-items: center; justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero .aside-illu .placeholder {
+    font-family: var(--mono); font-size: 11px;
+    color: var(--blue-deep);
+    letter-spacing: .08em; text-transform: uppercase;
+  }
+  .hero .aside-illu svg { width: 70%; height: auto; opacity: .9; }
+
+  /* footer */
+  .footer {
+    background: var(--white); padding: 56px 32px 32px;
+    border-top: 2px solid var(--line);
+  }
+  .footer-top {
+    display: flex; justify-content: space-between; align-items: flex-start; gap: 40px;
+    margin-bottom: 56px;
+  }
+  .footer-brand { display: flex; align-items: center; gap: 12px; }
+  .footer-address { margin-top: 16px; font-size: 18px; line-height: 30px; color: var(--text); }
+  .footer-contact { margin-top: 20px; display: grid; gap: 12px; }
+  .footer-contact-item { display: flex; align-items: center; gap: 12px; color: var(--text); font-size: 18px; text-decoration: none; }
+  .footer-contact-item .icon-square {
+    width: 28px; height: 28px; border-radius: 6px;
+    background: var(--sky-200); color: var(--blue-deep);
+    display: flex; align-items: center; justify-content: center; font-size: 14px;
+  }
+  .footer-nav { display: flex; flex-direction: column; gap: 8px; text-align: right; }
+  .footer-nav a { font-size: 18px; text-decoration: none; color: var(--text); line-height: 30px; }
+  .footer-nav a:hover { text-decoration: underline; }
+  .footer-bottom {
+    display: flex; justify-content: space-between; align-items: center;
+    padding-top: 24px; border-top: 1px solid var(--line);
+    gap: 24px;
+  }
+  .footer-legal { display: flex; gap: 24px; }
+  .footer-legal a { font-size: 15px; text-decoration: none; color: var(--text); }
+  .footer-copy { font-size: 14px; color: var(--muted); }
+
+  /* page footer */
+  .doc-foot {
+    margin-top: 80px; padding: 32px 0;
+    border-top: 1px solid var(--line);
+    display: flex; justify-content: space-between; align-items: center;
+    font-family: var(--mono); font-size: 11px; letter-spacing: .08em;
+    text-transform: uppercase; color: var(--muted);
+  }
+</style>
+</head>
+<body>
+<main class="page">
+
+  <!-- ============================== COVER ============================== -->
+  <section class="cover">
+    <div class="corner">
+      kuventa GmbH<br />
+      Hamburg · Georgsplatz 1<br />
+      Design&nbsp;System · v2.0 · 2026
+    </div>
+
+    <div>
+      <div class="lockup">
+        <span class="logo-mark lg">k</span>
+        <span class="logo-wordmark" style="font-size: 40px;">kuventa</span>
+      </div>
+      <h1>Identity-Landschaften <span class="accent">ordnen.</span></h1>
+      <p class="lede">Das Design-Vokabular für eine seniorige Beratungs-Boutique. Klar, ruhig, freundlich. Satoshi auf Weiß, ein Azur-Blau als Markenton.</p>
+      <dl class="meta-grid">
+        <div><dt>Disziplin</dt><dd>IGA · One Identity · NIS2</dd></div>
+        <div><dt>Region</dt><dd>Hamburg / Norden</dd></div>
+        <div><dt>Tonfall</dt><dd>Sachlich, freundlich, klar</dd></div>
+      </dl>
+    </div>
+
+    <div class="specimen">
+      <div class="stack">
+        <span>Aa Bb</span>
+        <span class="accent">Cc Dd</span>
+        <span class="label-line">Satoshi · 300 / 400 / 500 / 700</span>
+      </div>
+      <div class="palette-row">
+        <span style="background: var(--blue);"></span>
+        <span style="background: var(--ink);"></span>
+        <span style="background: var(--sky-200); border-color: var(--sky-500);"></span>
+        <span style="background: var(--sky-500);"></span>
+        <span style="background: var(--blue-deep);"></span>
+        <span style="background: var(--white); border-color: var(--line);"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== FOUNDATIONS ============================== -->
+  <section class="section">
+    <div class="section-head">
+      <div class="meta"><span class="num">01</span>Foundations</div>
+      <div>
+        <h2>Boutique statt <span class="accent">Großberatung.</span></h2>
+        <p>Drei Prinzipien tragen das Visuelle: ruhige Weite statt Werbe-Druck, weiche blaue Tönungen statt harter Flächen, klare Hierarchien für Fach-Inhalte (NIS2, IGA, One Identity).</p>
+      </div>
+    </div>
+
+    <div class="grid g-3">
+      <div class="principle">
+        <span class="n">01</span>
+        <h3>Klarheit vor Aktionismus</h3>
+        <p>Erst einordnen, dann entscheiden. Großzügiger Weißraum, ein bis zwei Hierarchien pro Bildschirm — kein visuelles Drängen.</p>
+      </div>
+      <div class="principle">
+        <span class="n">02</span>
+        <h3>Freundlich seriös</h3>
+        <p>Helle Blautöne, runde Karten und weiche Schatten halten die Marke nahbar. Das Schwarz-Navy <code style="font-family: var(--mono); font-size: 13px; background: var(--sky-100); padding: 2px 6px; border-radius: 4px;">#0c0b20</code> erdet die Komposition.</p>
+      </div>
+      <div class="principle">
+        <span class="n">03</span>
+        <h3>Fach hörbar machen</h3>
+        <p>Begriffe wie Rezertifizierung, IGA, NIS2 brauchen Platz. Satoshi Bold setzt Pointierung, Satoshi Light trägt erklärendes Volumen.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== LOGO ============================== -->
+  <section class="section">
+    <div class="section-head">
+      <div class="meta"><span class="num">02</span>Logo · Wortmarke</div>
+      <div>
+        <h2>Eine ruhige <span class="accent">Marke.</span></h2>
+        <p>Wortmarke „kuventa" in Satoshi Bold. Die Bildmarke ist ein „k" auf Azur-Blau mit weichem Schatten — entspricht dem Tonfall der Karten auf der Seite.</p>
+      </div>
+    </div>
+
+    <div class="grid g-2">
+      <div class="demo-card" style="background: var(--sky-50); display: flex; flex-direction: column; gap: 32px;">
+        <span class="label">Primärlockup · auf Weiß / Sky</span>
+        <div style="padding: 32px 0; display: flex; align-items: center; gap: 18px;">
+          <span class="logo-mark lg">k</span>
+          <span class="logo-wordmark" style="font-size: 48px;">kuventa</span>
+        </div>
+        <div class="stack-16">
+          <div class="row">
+            <span class="logo-mark sm">k</span>
+            <span class="logo-wordmark" style="font-size: 18px;">kuventa</span>
+            <span class="label" style="margin-left: 16px;">24&nbsp;px · favicon, app icon</span>
+          </div>
+          <div class="row">
+            <span class="logo-mark">k</span>
+            <span class="logo-wordmark" style="font-size: 28px;">kuventa</span>
+            <span class="label" style="margin-left: 16px;">40&nbsp;px · navigation</span>
+          </div>
+          <div class="row">
+            <span class="logo-mark lg">k</span>
+            <span class="logo-wordmark" style="font-size: 40px;">kuventa</span>
+            <span class="label" style="margin-left: 16px;">64&nbsp;px · footer, cover</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="demo-card" style="background: var(--ink); color: var(--white); display: flex; flex-direction: column; gap: 32px;">
+        <span class="label" style="color: rgba(255,255,255,.55);">Invertiert · auf Ink</span>
+        <div style="padding: 32px 0; display: flex; align-items: center; gap: 18px;">
+          <span class="logo-mark lg" style="background: var(--white); color: var(--blue);">k</span>
+          <span class="logo-wordmark" style="font-size: 48px; color: var(--white);">kuventa</span>
+        </div>
+        <div class="type-mono" style="color: rgba(255,255,255,.55); line-height: 1.9;">
+          Schutzraum: Höhe des „k"-Quadrats rundum<br />
+          Minimalhöhe Bildmarke: 24&nbsp;px digital · 8&nbsp;mm print<br />
+          Wortmarke immer in Satoshi Bold, niemals umtypen
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== COLOR ============================== -->
+  <section class="section">
+    <div class="section-head">
+      <div class="meta"><span class="num">03</span>Farbsystem</div>
+      <div>
+        <h2>Azur-Blau auf <span class="accent">Weiß.</span></h2>
+        <p>Eine einzige Markenfarbe — <code style="font-family: var(--mono); font-size: 13px; background: var(--sky-100); padding: 2px 6px; border-radius: 4px;">#38a0ed</code> — getragen von einer feinen Skala heller Blautöne für Karten, Pills und Hintergründe. Schwarz-Navy als Anker für Text und das eine dunkle „Proof"-Modul.</p>
+      </div>
+    </div>
+
+    <div class="stack-40">
+      <div>
+        <span class="label" style="display: block; margin-bottom: 16px;">Brand · Primärpalette</span>
+        <div class="grid g-4">
+          <div class="swatch">
+            <div class="chip" style="background: var(--blue); color: var(--white);">
+              <span class="name">Blue · 500</span>
+              <span class="hex">#38a0ed</span>
+            </div>
+            <div class="meta"><b>Primär</b>Buttons, Links, Akzente, Logo, FAQ-Indikatoren.</div>
+          </div>
+          <div class="swatch">
+            <div class="chip" style="background: var(--blue-hover); color: var(--white);">
+              <span class="name">Blue · 600</span>
+              <span class="hex">#2f87c9</span>
+            </div>
+            <div class="meta"><b>Hover</b>Aktiv-Status für Primär-Buttons.</div>
+          </div>
+          <div class="swatch">
+            <div class="chip" style="background: var(--blue-deep); color: var(--white);">
+              <span class="name">Blue · 800</span>
+              <span class="hex">#0f4f83</span>
+            </div>
+            <div class="meta"><b>Eyebrow</b>Card-Eyebrows, Label-Pills auf Hell.</div>
+          </div>
+          <div class="swatch">
+            <div class="chip" style="background: var(--ink); color: var(--white);">
+              <span class="name">Ink · 950</span>
+              <span class="hex">#0c0b20</span>
+            </div>
+            <div class="meta"><b>Anker</b>Headlines, dunkles Proof-Modul, Bildoverlay.</div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <span class="label" style="display: block; margin-bottom: 16px;">Sky · Hintergründe &amp; Karten-Outlines</span>
+        <div class="ramp">
+          <div style="background: var(--sky-50); color: var(--ink);"><span class="step">Sky 50</span><span class="hex" style="font-family: var(--mono);">#f7fcff</span></div>
+          <div style="background: var(--sky-100); color: var(--ink);"><span class="step">Sky 100</span><span class="hex" style="font-family: var(--mono);">#f2f9ff</span></div>
+          <div style="background: var(--sky-200); color: var(--ink);"><span class="step">Sky 200</span><span class="hex" style="font-family: var(--mono);">#e8f5ff</span></div>
+          <div style="background: var(--sky-300); color: var(--ink);"><span class="step">Sky 300</span><span class="hex" style="font-family: var(--mono);">#d6edff</span></div>
+          <div style="background: var(--sky-500); color: var(--ink);"><span class="step">Sky 500</span><span class="hex" style="font-family: var(--mono);">#c7e5ff</span></div>
+          <div style="background: var(--sky-600); color: var(--white);"><span class="step">Sky 600</span><span class="hex" style="font-family: var(--mono);">#b9def9</span></div>
+          <div style="background: var(--sky-700); color: var(--white);"><span class="step">Sky 700</span><span class="hex" style="font-family: var(--mono);">#8dcbf7</span></div>
+        </div>
+        <p style="font-size: 13px; color: var(--muted); margin: 12px 0 0;">
+          <b style="color: var(--ink);">Verwendung:</b>
+          Sky&nbsp;50/100 für Sektions-Hintergründe und Hero-Gradients · Sky&nbsp;200 für sekundäre Buttons und Icon-Hintergründe · Sky&nbsp;300 für Button-Hover · Sky&nbsp;500–700 für Karten-Outlines im aktiven Zustand.
+        </p>
+      </div>
+
+      <div class="grid g-2">
+        <div>
+          <span class="label" style="display: block; margin-bottom: 16px;">Text-Hierarchie</span>
+          <div class="demo-card stack-12">
+            <div class="text-tone">
+              <span class="swatch-sm" style="background: var(--ink);"></span>
+              <span class="name">Ink</span>
+              <span class="hex">#0c0b20</span>
+              <span class="use">Headlines, Logo</span>
+            </div>
+            <div class="text-tone">
+              <span class="swatch-sm" style="background: var(--text);"></span>
+              <span class="name">Text</span>
+              <span class="hex">#333333</span>
+              <span class="use">Fließtext</span>
+            </div>
+            <div class="text-tone">
+              <span class="swatch-sm" style="background: var(--muted);"></span>
+              <span class="name">Muted</span>
+              <span class="hex">#757575</span>
+              <span class="use">Datum, Sekundär</span>
+            </div>
+            <div class="text-tone">
+              <span class="swatch-sm" style="background: var(--line);"></span>
+              <span class="name">Line</span>
+              <span class="hex">rgba(12,11,32,.15)</span>
+              <span class="use">Trenner, Rahmen</span>
+            </div>
+            <div class="text-tone">
+              <span class="swatch-sm" style="background: var(--blue);"></span>
+              <span class="name">Blue · Action</span>
+              <span class="hex">#38a0ed</span>
+              <span class="use">Links, Akzente</span>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <span class="label" style="display: block; margin-bottom: 16px;">Gradients</span>
+          <div class="stack-16">
+            <div style="border-radius: var(--r-16); border: 1px solid var(--card-line); overflow: hidden;">
+              <div style="height: 80px; background: linear-gradient(180deg, #ffffff 0%, var(--sky-100) 47%, #ffffff 100%);"></div>
+              <div style="padding: 14px 16px; background: var(--white); border-top: 1px solid var(--card-line);">
+                <b style="font-size: 14px; color: var(--ink);">Hero-Gradient</b>
+                <div class="type-mono" style="margin-top: 4px;">white → sky-100 → white</div>
+              </div>
+            </div>
+            <div style="border-radius: var(--r-16); border: 1px solid var(--card-line); overflow: hidden;">
+              <div style="height: 80px; background: linear-gradient(160deg, var(--sky-50) 0%, var(--sky-250) 100%);"></div>
+              <div style="padding: 14px 16px; background: var(--white); border-top: 1px solid var(--card-line);">
+                <b style="font-size: 14px; color: var(--ink);">Contact-Direct Gradient</b>
+                <div class="type-mono" style="margin-top: 4px;">sky-50 → sky-250 · 160°</div>
+              </div>
+            </div>
+            <div style="border-radius: var(--r-16); border: 1px solid var(--card-line); overflow: hidden;">
+              <div style="height: 80px; background: linear-gradient(180deg, #ffffff 0%, var(--sky-150) 100%);"></div>
+              <div style="padding: 14px 16px; background: var(--white); border-top: 1px solid var(--card-line);">
+                <b style="font-size: 14px; color: var(--ink);">Featured-Card Gradient</b>
+                <div class="type-mono" style="margin-top: 4px;">white → sky-150</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== TYPE ============================== -->
+  <section class="section">
+    <div class="section-head">
+      <div class="meta"><span class="num">04</span>Typografie</div>
+      <div>
+        <h2>Eine Schrift, vier <span class="accent">Schnitte.</span></h2>
+        <p>Satoshi trägt das gesamte System — Bold für Hierarchie, Medium für UI, Regular für Fließtext, Light für erklärende Listen und Karten-Bodys. JetBrains Mono dient nur als Hilfsschrift im Design System für Tokens.</p>
+      </div>
+    </div>
+
+    <div>
+      <div class="type-row">
+        <div class="role"><b>Hero / Display</b>Startseite</div>
+        <div class="type-display">Identität <span class="accent">ordnen.</span></div>
+        <div class="specs"><span>Satoshi · Bold 700</span><span>70&nbsp;px / 1.10</span><span>tracking −0.015em</span></div>
+      </div>
+      <div class="type-row">
+        <div class="role"><b>About H1</b>Über uns</div>
+        <div class="type-h1">Vertrauen entsteht hier durch Substanz.</div>
+        <div class="specs"><span>Satoshi · Bold 700</span><span>50&nbsp;px / 65&nbsp;px</span></div>
+      </div>
+      <div class="type-row">
+        <div class="role"><b>Section</b>Sec-Heading</div>
+        <div class="type-h2">Wann Unternehmen mit kuventa sprechen.</div>
+        <div class="specs"><span>Satoshi · Bold 700</span><span>40&nbsp;px / 1.30</span></div>
+      </div>
+      <div class="type-row">
+        <div class="role"><b>Sub-Headline</b>Process-Akzent</div>
+        <div class="type-h3">Roadmap und Zielbild</div>
+        <div class="specs"><span>Satoshi · Bold 700</span><span>30&nbsp;px / 40&nbsp;px</span><span>color · #38a0ed</span></div>
+      </div>
+      <div class="type-row">
+        <div class="role"><b>H4 / Card</b>Karten, FAQ</div>
+        <div class="type-h4">SAP Identity Management muss ersetzt werden</div>
+        <div class="specs"><span>Satoshi · Bold 700</span><span>25&nbsp;px / 32&nbsp;px</span></div>
+      </div>
+      <div class="type-row">
+        <div class="role"><b>H5 / Sub-lead</b>Process-Subkopie</div>
+        <div class="type-h5">Bei Handlungsdruck schafft zuerst ein Assessment Klarheit.</div>
+        <div class="specs"><span>Satoshi · Medium 500</span><span>24&nbsp;px / 34&nbsp;px</span></div>
+      </div>
+      <div class="type-row">
+        <div class="role"><b>Body</b>Fließtext, Hero</div>
+        <div class="type-body">Klarheit bei One Identity, Rollen, Berechtigungen und Governance — vor der nächsten Tool-Entscheidung.</div>
+        <div class="specs"><span>Satoshi · Regular 400</span><span>22&nbsp;px / 36&nbsp;px</span><span>color · #333</span></div>
+      </div>
+      <div class="type-row">
+        <div class="role"><b>Body Light</b>Karten-Body, Listen</div>
+        <div class="type-body-l">Wenn SAP IdM ausläuft, braucht es vor Tool-Entscheidungen ein realistisches Bild der heutigen IGA-, Rollen- und Berechtigungslandschaft.</div>
+        <div class="specs"><span>Satoshi · Light 300</span><span>20&nbsp;px / 32&nbsp;px</span></div>
+      </div>
+      <div class="type-row">
+        <div class="role"><b>Small / Note</b>Hint, Disclaimer</div>
+        <div class="type-small">Wir antworten innerhalb von zwei Werktagen — Sales-Call ist nicht der Default.</div>
+        <div class="specs"><span>Satoshi · Regular 400</span><span>16&nbsp;px / 26&nbsp;px</span></div>
+      </div>
+      <div class="type-row">
+        <div class="role"><b>Eyebrow</b>Card-Kicker</div>
+        <div><span class="eyebrow">Empfohlener erster Schritt</span></div>
+        <div class="specs"><span>Satoshi · Bold 700</span><span>13&nbsp;px · uppercase</span><span>tracking +0.08em</span></div>
+      </div>
+    </div>
+
+    <div class="grid g-3" style="margin-top: 40px;">
+      <div class="specimen-card">
+        <span class="label">Bold · 700</span>
+        <div class="big">Aa</div>
+        <div class="weights">
+          <div><b>Hero</b>70 / 50 / 40&nbsp;px</div>
+          <div><b>Subhead</b>30 / 25&nbsp;px</div>
+          <div><b>Eyebrow</b>13&nbsp;px caps</div>
+        </div>
+      </div>
+      <div class="specimen-card">
+        <span class="label">Medium · 500</span>
+        <div class="big" style="font-weight: 500;">Aa</div>
+        <div class="weights">
+          <div><b>UI</b>Buttons, Pills</div>
+          <div><b>Sub-lead</b>H5 · 24&nbsp;px</div>
+          <div><b>Nav</b>18&nbsp;px → Bold</div>
+        </div>
+      </div>
+      <div class="specimen-card">
+        <span class="label">Light · 300</span>
+        <div class="big" style="font-weight: 300;">Aa</div>
+        <div class="weights">
+          <div><b>Service</b>Listen-Items</div>
+          <div><b>Karten</b>Body · 20&nbsp;px</div>
+          <div><b>Erkl.</b>Lange Absätze</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== SPACING / RADII / SHADOW ============================== -->
+  <section class="section">
+    <div class="section-head">
+      <div class="meta"><span class="num">05</span>Raum · Form</div>
+      <div>
+        <h2>Großzügig, weich, <span class="accent">gerundet.</span></h2>
+        <p>Sektionen mit 80&nbsp;px Atem, Karten mit 28&nbsp;px Innen-Padding. Radien aus der Skala 8–24&nbsp;px. Schatten konsequent in Blau-getönt — die Marke ist auch in der Tiefe blau.</p>
+      </div>
+    </div>
+
+    <div class="grid g-2">
+      <div class="demo-card">
+        <span class="label" style="display: block; margin-bottom: 16px;">Spacing &amp; Container</span>
+        <div class="scale-row"><span class="token">space-2</span><span class="bar" style="width: 8px;"></span><span class="px">8&nbsp;px</span><span class="note">Icon, Inline-Gap</span></div>
+        <div class="scale-row"><span class="token">space-3</span><span class="bar" style="width: 12px;"></span><span class="px">12&nbsp;px</span><span class="note">Pill-Gap, Trigger</span></div>
+        <div class="scale-row"><span class="token">space-4</span><span class="bar" style="width: 16px;"></span><span class="px">16&nbsp;px</span><span class="note">Listen, Inner-Padding</span></div>
+        <div class="scale-row"><span class="token">space-6</span><span class="bar" style="width: 24px;"></span><span class="px">24&nbsp;px</span><span class="note">Karten-Gap</span></div>
+        <div class="scale-row"><span class="token">space-7</span><span class="bar" style="width: 28px;"></span><span class="px">28&nbsp;px</span><span class="note">Karten-Innen</span></div>
+        <div class="scale-row"><span class="token">space-8</span><span class="bar" style="width: 32px;"></span><span class="px">32&nbsp;px</span><span class="note">Tabs, Innen-XL</span></div>
+        <div class="scale-row"><span class="token">space-10</span><span class="bar" style="width: 40px;"></span><span class="px">40&nbsp;px</span><span class="note">Hero-Vertikal</span></div>
+        <div class="scale-row"><span class="token">space-14</span><span class="bar" style="width: 56px;"></span><span class="px">56&nbsp;px</span><span class="note">Sub-Block</span></div>
+        <div class="scale-row"><span class="token">space-20</span><span class="bar" style="width: 80px;"></span><span class="px">80&nbsp;px</span><span class="note">Sektion außen</span></div>
+        <div class="scale-row"><span class="token">space-30</span><span class="bar" style="width: 120px;"></span><span class="px">120&nbsp;px</span><span class="note">Kontakt-Page</span></div>
+        <div class="scale-row" style="border-top: 1px dashed var(--card-line); padding-top: 16px; margin-top: 8px;">
+          <span class="token">container</span>
+          <span class="px" style="width: auto;">max 1440&nbsp;px</span>
+          <span class="note">Außenpadding 16&nbsp;px · zentriert</span>
+        </div>
+      </div>
+
+      <div class="stack-24">
+        <div>
+          <span class="label" style="display: block; margin-bottom: 16px;">Radius-Skala</span>
+          <div class="grid" style="grid-template-columns: repeat(4, 1fr); gap: 12px;">
+            <div class="radius-card"><div class="demo" style="border-radius: var(--r-8);"></div><span class="name">r-8</span><span class="val">8&nbsp;px · Buttons primär</span></div>
+            <div class="radius-card"><div class="demo" style="border-radius: var(--r-10);"></div><span class="name">r-10</span><span class="val">10&nbsp;px · Inputs, Icons</span></div>
+            <div class="radius-card"><div class="demo" style="border-radius: var(--r-12);"></div><span class="name">r-12</span><span class="val">12&nbsp;px · Edu-Karten</span></div>
+            <div class="radius-card"><div class="demo" style="border-radius: var(--r-14);"></div><span class="name">r-14</span><span class="val">14&nbsp;px · Process-Step</span></div>
+            <div class="radius-card"><div class="demo" style="border-radius: var(--r-16);"></div><span class="name">r-16</span><span class="val">16&nbsp;px · Button sek.</span></div>
+            <div class="radius-card"><div class="demo" style="border-radius: var(--r-18);"></div><span class="name">r-18</span><span class="val">18&nbsp;px · FAQ</span></div>
+            <div class="radius-card"><div class="demo" style="border-radius: var(--r-20);"></div><span class="name">r-20</span><span class="val">20&nbsp;px · Karten</span></div>
+            <div class="radius-card"><div class="demo" style="border-radius: var(--r-pill);"></div><span class="name">pill</span><span class="val">999&nbsp;px · Tags</span></div>
+          </div>
+        </div>
+
+        <div>
+          <span class="label" style="display: block; margin-bottom: 16px;">Schatten — alle blau getönt</span>
+          <div class="grid g-3" style="gap: 12px;">
+            <div class="shadow-card" style="box-shadow: var(--shadow-pill);">
+              <span class="title">shadow-pill</span>
+              <span class="val">0 10 24 · rgba(56,160,237,.08)</span>
+              <span class="val">Trigger-Pills</span>
+            </div>
+            <div class="shadow-card" style="box-shadow: var(--shadow-card);">
+              <span class="title">shadow-card</span>
+              <span class="val">0 12 30 · rgba(56,160,237,.08)</span>
+              <span class="val">Default-Karten</span>
+            </div>
+            <div class="shadow-card" style="box-shadow: var(--shadow-card-hover);">
+              <span class="title">shadow-hover</span>
+              <span class="val">0 18 34 · rgba(56,160,237,.18)</span>
+              <span class="val">Aktive Karten</span>
+            </div>
+            <div class="shadow-card" style="box-shadow: var(--shadow-btn);">
+              <span class="title">shadow-btn</span>
+              <span class="val">6-layer · 0 → 30&nbsp;px</span>
+              <span class="val">Primär-Button</span>
+            </div>
+            <div class="shadow-card" style="box-shadow: var(--shadow-card-strong);">
+              <span class="title">shadow-strong</span>
+              <span class="val">0 16 34 · rgba(56,160,237,.12)</span>
+              <span class="val">Contact-Widget</span>
+            </div>
+            <div class="shadow-card" style="box-shadow: 0 14px 30px rgba(0,0,0,.08);">
+              <span class="title">shadow-neutral</span>
+              <span class="val">0 14 30 · rgba(0,0,0,.08)</span>
+              <span class="val">Booking-Embed</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== COMPONENTS ============================== -->
+  <section class="section">
+    <div class="section-head">
+      <div class="meta"><span class="num">06</span>Komponenten</div>
+      <div>
+        <h2>Kleiner Katalog, <span class="accent">konsequent.</span></h2>
+        <p>Buttons, Pills, Karten, FAQ, Form, Navigation, ein dunkles Proof-Modul und der Kontakt-Direct-Block. Reicht für Start, Leistungen, Über uns, Insights und Kontakt.</p>
+      </div>
+    </div>
+
+    <div class="stack-40">
+      <!-- BUTTONS -->
+      <div class="demo-card">
+        <div class="demo-head">
+          <div>
+            <span class="label">Buttons</span>
+            <p style="margin-top: 6px;">Primär für die eine wichtige Aktion. Sekundär (Sky 200) für ruhige Alternativen. Ghost für tertiäre Optionen. Hover hebt sanft um 2 px ab.</p>
+          </div>
+          <div></div>
+        </div>
+        <div class="stack-24">
+          <div class="row">
+            <a class="btn btn-primary">Identity Assessment anfragen</a>
+            <a class="btn btn-secondary">Ausgangslage besprechen</a>
+            <a class="btn btn-cta-secondary">Mehr Insights</a>
+            <a class="btn btn-ghost">Tertiär</a>
+          </div>
+          <div class="row" style="padding-top: 8px; border-top: 1px dashed var(--card-line);">
+            <a class="btn-direct">E-Mail kopieren</a>
+            <a class="btn-direct is-primary">Anrufen</a>
+            <span class="label" style="margin-left: 16px;">Kontakt-Direct · 40&nbsp;px Höhe, kein Schatten</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- TRIGGER PILLS -->
+      <div class="demo-card">
+        <div class="demo-head">
+          <div>
+            <span class="label">Trigger-Pills</span>
+            <p style="margin-top: 6px;">Im Hero verwendet, um Kontext-Trigger ("NIS2", "SAP IdM Ablösung") schnell sichtbar zu machen. Weiße Fläche, blaue Outline, weicher Schatten.</p>
+          </div>
+          <div></div>
+        </div>
+        <div class="row">
+          <span class="trigger">Assessment statt Aktionismus</span>
+          <span class="trigger">NIS2, Audit und SAP-IdM</span>
+          <span class="trigger">Roadmap vor Tool-Entscheidung</span>
+          <span class="trigger">Hamburg · Norden</span>
+        </div>
+      </div>
+
+      <!-- BADGES -->
+      <div class="demo-card">
+        <div class="demo-head">
+          <div>
+            <span class="label">Badges &amp; Labels</span>
+            <p style="margin-top: 6px;">Card-Eyebrows, Status-Marker, Themenfeld. Die Pill-Form mit Outline ist die ruhigste Variante — die solid-blue für Hervorhebungen.</p>
+          </div>
+          <div></div>
+        </div>
+        <div class="row">
+          <span class="badge">Empfohlener erster Schritt</span>
+          <span class="badge soft">One Identity</span>
+          <span class="badge blue">Neuer Produktbereich</span>
+          <span class="badge dark">NIS2 · 06.12.2025</span>
+        </div>
+      </div>
+
+      <!-- FORM -->
+      <div class="demo-card">
+        <div class="demo-head">
+          <div>
+            <span class="label">Form-Elemente</span>
+            <p style="margin-top: 6px;">Inputs mit Line-Border. Fokus-Ring in Blau-12% mit verstärktem Border. Buttons rechts unten, Datenschutz-Hinweis links.</p>
+          </div>
+          <div></div>
+        </div>
+        <div class="grid g-2" style="gap: 16px;">
+          <div class="field">
+            <label>Name</label>
+            <input class="input" placeholder="Vor- und Nachname" />
+          </div>
+          <div class="field">
+            <label>Unternehmen</label>
+            <input class="input" value="Beispiel AG" />
+          </div>
+          <div class="field">
+            <label>Geschäftliche E-Mail</label>
+            <input class="input" type="email" placeholder="name@unternehmen.de" />
+            <span class="hint">Wir antworten innerhalb von zwei Werktagen.</span>
+          </div>
+          <div class="field">
+            <label>Handlungsdruck</label>
+            <select class="select">
+              <option>NIS2-Compliance</option>
+              <option>SAP IdM Ablösung</option>
+              <option>Audit-Vorbereitung</option>
+              <option>Governance / Rezertifizierung</option>
+            </select>
+          </div>
+          <div class="field" style="grid-column: 1 / -1;">
+            <label>Kurze Ausgangslage</label>
+            <textarea class="textarea" placeholder="Worum geht es — in zwei, drei Sätzen?"></textarea>
+          </div>
+          <div style="grid-column: 1 / -1; display: flex; justify-content: space-between; align-items: center;">
+            <label class="checkbox"><input type="checkbox" checked />Datenschutzhinweis akzeptiert</label>
+            <a class="btn btn-primary">Erstgespräch anfragen</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- FEATURE CARDS -->
+      <div>
+        <span class="label" style="display: block; margin-bottom: 16px;">Feature-Karten · Trigger-Grid (Start, "Wann Unternehmen…")</span>
+        <div class="grid g-2">
+          <div class="feature">
+            <div class="icon">!</div>
+            <h4>NIS2 ist bereits Realität</h4>
+            <p>Seit dem 06.12.2025 müssen betroffene Unternehmen Identity-, Zugriffs- und Governance-Themen belastbar einordnen und steuern können.</p>
+          </div>
+          <div class="feature">
+            <div class="icon">↻</div>
+            <h4>SAP Identity Management muss ersetzt werden</h4>
+            <p>Wenn SAP IdM ausläuft, braucht es vor Tool- oder Migrationsentscheidungen zuerst ein realistisches Bild der heutigen IGA-, Rollen- und Berechtigungslandschaft.</p>
+          </div>
+          <div class="feature">
+            <div class="icon">✓</div>
+            <h4>Audit- und Governance-Druck steigt</h4>
+            <p>Rezertifizierung, Berechtigungstransparenz, Verantwortlichkeiten und NIS2-nahe Kontrollen sind oft nicht sauber dokumentiert.</p>
+          </div>
+          <div class="feature">
+            <div class="icon">○</div>
+            <h4>Niemand hat mehr das Gesamtbild</h4>
+            <p>Benutzerquellen, Rollen, Berechtigungen, Joiner-Mover-Leaver-Prozesse und Integrationen verteilen sich über viele Systeme.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- SERVICE CARDS -->
+      <div>
+        <span class="label" style="display: block; margin-bottom: 16px;">Service-Karten · Leistungen-Grid mit „Featured"-Variante</span>
+        <div class="grid g-3">
+          <div class="service featured">
+            <p class="card-eyebrow">Empfohlener erster Schritt</p>
+            <div class="icon">★</div>
+            <h4>Identity Assessment</h4>
+            <ul>
+              <li>Ausgangslage technisch und organisatorisch einordnen</li>
+              <li>Risiken, Reibung und Handlungsdruck sichtbar machen</li>
+              <li>priorisierte Empfehlungen und nächste Schritte ableiten</li>
+            </ul>
+            <a class="btn btn-secondary">Identity Assessment ansehen</a>
+          </div>
+          <div class="service">
+            <p class="card-eyebrow">02 · Strategie</p>
+            <div class="icon">→</div>
+            <h4>Roadmap und Zielbild</h4>
+            <ul>
+              <li>Zielbild für Governance, Architektur und Betrieb</li>
+              <li>Modernisierung nach Nutzen, Risiko und NIS2-Relevanz</li>
+              <li>gemeinsame Entscheidungsbasis für Management und IT</li>
+            </ul>
+            <a class="btn btn-secondary">Zur Modernisierung</a>
+          </div>
+          <div class="service">
+            <p class="card-eyebrow">03 · Delivery</p>
+            <div class="icon">⌐</div>
+            <h4>IGA-Umsetzung und Plattformaufbau</h4>
+            <ul>
+              <li>Governance-, Rollen- und Integrationsbausteine einführen</li>
+              <li>Verzeichnisdienste, HR-Quellen, Anwendungen anbinden</li>
+              <li>MidPoint- oder One-Identity-Kontext tragfähig aufsetzen</li>
+            </ul>
+            <a class="btn btn-secondary">Zur Umsetzung</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ -->
+      <div>
+        <span class="label" style="display: block; margin-bottom: 16px;">FAQ · Accordion</span>
+        <div class="stack-16">
+          <details class="faq" open>
+            <summary>Für wen ist das Identity Assessment gedacht?</summary>
+            <p>Für Enterprise-Kunden und den gehobenen Mittelstand, die unter NIS2-, Audit-, Governance- oder SAP-IdM-Druck stehen und vor Investitionen zuerst eine belastbare Einordnung brauchen.</p>
+          </details>
+          <details class="faq">
+            <summary>Wann ist das Assessment der richtige erste Schritt?</summary>
+            <p>Wenn die Ausgangslage unklar ist, mehrere Systeme und Verantwortlichkeiten ineinandergreifen oder Entscheidungen nicht auf Bauchgefühl basieren sollen.</p>
+          </details>
+          <details class="faq">
+            <summary>Was passiert im Erstgespräch?</summary>
+            <p>Wir ordnen Handlungsdruck, Zielbild und aktuelle Risiken ein und prüfen, ob eher ein Identity Assessment, eine Roadmap oder direkte Umsetzungsunterstützung sinnvoll ist.</p>
+          </details>
+        </div>
+      </div>
+
+      <!-- DARK PROOF -->
+      <div>
+        <span class="label" style="display: block; margin-bottom: 16px;">Dark Proof · Vertrauensanker</span>
+        <div class="proof">
+          <span class="eyebrow-dark">Marktzugang &amp; Erfahrung</span>
+          <h3>One-Identity-Nähe, Delivery-Perspektive, klare Verantwortung bei kuventa.</h3>
+          <div class="list">
+            <span class="item">Synchronisation</span>
+            <span class="item">Governance</span>
+            <span class="item">Rezertifizierung</span>
+            <span class="item">Web-Frontend</span>
+            <span class="item">SuccessFactors</span>
+            <span class="item">Zielsystem-Integration</span>
+            <span class="item">MidPoint</span>
+          </div>
+          <p class="note">Vertrauen entsteht hier nicht durch Logo-Wand, sondern durch belastbare Delivery-Erfahrung und eine klare kuventa-Verantwortung vom Erstgespräch bis zur Umsetzung.</p>
+        </div>
+      </div>
+
+      <!-- CONTACT DIRECT -->
+      <div>
+        <span class="label" style="display: block; margin-bottom: 16px;">Kontakt-Direct · Gradient-Karten</span>
+        <div class="grid g-3">
+          <div class="contact-direct">
+            <div class="cd-head">
+              <span class="cd-icon">@</span>
+              <span class="label-pill">E-Mail</span>
+            </div>
+            <span class="value"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f29b9c949db2998784979c8693dc9697">[email&#160;protected]</a></span>
+            <div class="actions">
+              <a class="btn-direct is-primary" href="/cdn-cgi/l/email-protection#731a1d151c33180605161d07125d1716">E-Mail senden</a>
+              <a class="btn-direct" href="#">Kopieren</a>
+            </div>
+          </div>
+          <div class="contact-direct">
+            <div class="cd-head">
+              <span class="cd-icon">☎</span>
+              <span class="label-pill">Telefon</span>
+            </div>
+            <span class="value">+49 151 75 03 26 56</span>
+            <div class="actions">
+              <a class="btn-direct is-primary" href="tel:+4915175032656">Anrufen</a>
+              <a class="btn-direct" href="#">Kopieren</a>
+            </div>
+          </div>
+          <div class="contact-direct">
+            <div class="cd-head">
+              <span class="cd-icon">◷</span>
+              <span class="label-pill">Termin</span>
+            </div>
+            <span class="value">MS Bookings<span class="sub">Online-Kalender</span></span>
+            <div class="actions">
+              <a class="btn-direct is-primary" href="#">Termin wählen</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- NAV -->
+      <div>
+        <span class="label" style="display: block; margin-bottom: 16px;">Navigation · Header</span>
+        <div class="nav">
+          <div style="display: flex; align-items: center; gap: 12px;">
+            <span class="logo-mark">k</span>
+            <span class="logo-wordmark" style="font-size: 24px;">kuventa</span>
+          </div>
+          <nav class="nav-links">
+            <a href="#" class="is-active">Start</a>
+            <a href="#">Leistungen</a>
+            <a href="#">Über uns</a>
+            <a href="#">Insights</a>
+            <a href="#">Kontakt</a>
+          </nav>
+          <a class="btn btn-primary">Erstgespräch</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================== IN USE ============================== -->
+  <section class="section">
+    <div class="section-head">
+      <div class="meta"><span class="num">07</span>In Anwendung</div>
+      <div>
+        <h2>Wie die Seite <span class="accent">klingt.</span></h2>
+        <p>Zwei Anwendungs-Ausschnitte: der Startseiten-Hero mit Trigger-Pills, und der Kontakt-Block mit den drei Direct-Karten. Bewusst nicht überfrachtet — ein bis zwei Aussagen pro Bildschirm.</p>
+      </div>
+    </div>
+
+    <div class="stack-40">
+
+      <!-- HERO MOCK -->
+      <div class="mock">
+        <div class="mock-bar">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <span class="url">kuventa.de</span>
+        </div>
+        <div style="padding: 20px 28px; border-bottom: 2px solid var(--line); display: flex; align-items: center; justify-content: space-between; background: var(--white);">
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <span class="logo-mark">k</span>
+            <span class="logo-wordmark" style="font-size: 22px;">kuventa</span>
+          </div>
+          <nav class="nav-links" style="gap: 32px;">
+            <a href="#" class="is-active">Start</a>
+            <a href="#">Leistungen</a>
+            <a href="#">Über uns</a>
+            <a href="#">Insights</a>
+            <a href="#">Kontakt</a>
+          </nav>
+          <a class="btn btn-primary">Erstgespräch</a>
+        </div>
+
+        <div class="hero">
+          <div>
+            <span class="eyebrow" style="display: block; margin-bottom: 18px;">IGA- und One-Identity-Beratung · Enterprise &amp; gehobener Mittelstand</span>
+            <h1>Identity-Landschaften <span class="accent">ordnen.</span><br />Risiken senken.</h1>
+            <p>Klarheit bei One Identity, Rollen, Berechtigungen und Governance — vor der nächsten Tool-Entscheidung.</p>
+            <ul class="pills" style="list-style: none; padding: 0; margin: 0 0 32px;">
+              <li class="trigger">Assessment statt Aktionismus</li>
+              <li class="trigger">NIS2, Audit und SAP-IdM</li>
+              <li class="trigger">Roadmap vor Tool-Entscheidung</li>
+            </ul>
+            <div class="actions">
+              <a class="btn btn-primary">Identity Assessment anfragen</a>
+              <a class="btn btn-cta-secondary">Ausgangslage besprechen</a>
+            </div>
+          </div>
+          <div class="aside-illu">
+            <!-- placeholder illustration -->
+            <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="100" cy="100" r="78" stroke="#38a0ed" stroke-width="1.5" stroke-dasharray="4 5" opacity=".5"/>
+              <circle cx="100" cy="100" r="54" stroke="#38a0ed" stroke-width="1.5" opacity=".7"/>
+              <circle cx="100" cy="100" r="30" fill="#38a0ed" opacity=".15"/>
+              <circle cx="100" cy="100" r="8" fill="#38a0ed"/>
+              <circle cx="22" cy="100" r="6" fill="#0f4f83"/>
+              <circle cx="178" cy="100" r="6" fill="#0f4f83"/>
+              <circle cx="100" cy="22" r="6" fill="#0f4f83"/>
+              <circle cx="100" cy="178" r="6" fill="#0f4f83"/>
+              <circle cx="155" cy="45" r="4" fill="#8dcbf7"/>
+              <circle cx="45" cy="155" r="4" fill="#8dcbf7"/>
+              <line x1="22" y1="100" x2="100" y2="100" stroke="#38a0ed" stroke-width="1" opacity=".4"/>
+              <line x1="100" y1="22" x2="100" y2="100" stroke="#38a0ed" stroke-width="1" opacity=".4"/>
+              <line x1="100" y1="100" x2="178" y2="100" stroke="#38a0ed" stroke-width="1" opacity=".4"/>
+              <line x1="100" y1="100" x2="100" y2="178" stroke="#38a0ed" stroke-width="1" opacity=".4"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONTACT MOCK -->
+      <div class="mock">
+        <div class="mock-bar">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <span class="url">kuventa.de / kontakt</span>
+        </div>
+        <div style="padding: 80px 56px; background: var(--white);">
+          <div style="text-align: center; max-width: 760px; margin: 0 auto 48px;">
+            <span class="eyebrow" style="display: block; margin-bottom: 16px;">Kontakt</span>
+            <h2 style="font-family: var(--sans); font-weight: 700; font-size: 50px; line-height: 1.2; letter-spacing: -.015em; margin: 0 0 20px; color: var(--ink);">Ausgangslage in einem kurzen <span style="color: var(--blue);">Erstgespräch</span> einordnen.</h2>
+            <p style="font-size: 22px; line-height: 36px; color: var(--text); margin: 0;">Kein Sales-Call. Eine erste fachliche Einordnung von Handlungsdruck, Zielbild und sinnvollem nächstem Schritt.</p>
+          </div>
+
+          <div class="grid g-3" style="max-width: 1040px; margin: 0 auto 48px;">
+            <div class="contact-direct">
+              <div class="cd-head">
+                <span class="cd-icon">@</span>
+                <span class="label-pill">E-Mail</span>
+              </div>
+              <span class="value"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c9a0a7afa689a2bcbfaca7bda8e7adac">[email&#160;protected]</a></span>
+              <div class="actions">
+                <a class="btn-direct is-primary" href="/cdn-cgi/l/email-protection#b7ded9d1d8f7dcc2c1d2d9c3d699d3d2">E-Mail senden</a>
+                <a class="btn-direct" href="#">Kopieren</a>
+              </div>
+            </div>
+            <div class="contact-direct">
+              <div class="cd-head">
+                <span class="cd-icon">☎</span>
+                <span class="label-pill">Telefon</span>
+              </div>
+              <span class="value">+49 151 75 03 26 56</span>
+              <div class="actions">
+                <a class="btn-direct is-primary" href="tel:+4915175032656">Anrufen</a>
+                <a class="btn-direct" href="#">Kopieren</a>
+              </div>
+            </div>
+            <div class="contact-direct">
+              <div class="cd-head">
+                <span class="cd-icon">◷</span>
+                <span class="label-pill">Termin</span>
+              </div>
+              <span class="value">Microsoft Bookings<span class="sub">Online-Kalender</span></span>
+              <div class="actions">
+                <a class="btn-direct is-primary" href="#">Termin wählen</a>
+              </div>
+            </div>
+          </div>
+
+          <div style="text-align: center; font-size: 16px; line-height: 26px; color: var(--text); max-width: 60ch; margin: 0 auto;">
+            Sie erreichen direkt das kuventa-Team. Fachliche Einordnung und nächste Schritte bleiben seniorig betreut.
+          </div>
+        </div>
+
+        <!-- footer in mock -->
+        <div class="footer" style="border-radius: 0; padding-top: 56px;">
+          <div class="footer-top">
+            <div>
+              <div class="footer-brand">
+                <span class="logo-mark">k</span>
+                <span class="logo-wordmark" style="font-size: 22px;">kuventa</span>
+              </div>
+              <div class="footer-address">Georgsplatz 1<br />20099 Hamburg</div>
+              <div class="footer-contact">
+                <a class="footer-contact-item" href="/cdn-cgi/l/email-protection#533a3d353c13382625363d27327d3736"><span class="icon-square">@</span><span class="__cf_email__" data-cfemail="6d04030b022d06181b0803190c430908">[email&#160;protected]</span></a>
+                <a class="footer-contact-item" href="tel:+4915175032656"><span class="icon-square">☎</span>+49 151 75 03 26 56</a>
+              </div>
+            </div>
+            <nav class="footer-nav">
+              <a href="#" class="is-active">Start</a>
+              <a href="#">Leistungen</a>
+              <a href="#">Über uns</a>
+              <a href="#">Beraterprofil</a>
+              <a href="#">Insights</a>
+              <a href="#">Kontakt</a>
+            </nav>
+          </div>
+          <div class="footer-bottom">
+            <div class="footer-legal">
+              <a href="#">Impressum</a>
+              <a href="#">Datenschutzerklärung</a>
+            </div>
+            <div class="footer-copy">©&nbsp;2026 kuventa GmbH · All rights reserved</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================== DOC FOOT ============================== -->
+  <div class="doc-foot">
+    <span>kuventa GmbH · Design System v2.0</span>
+    <span>Satoshi · JetBrains Mono (Tokens)</span>
+    <span>Hamburg · 2026</span>
+  </div>
+
+</main>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>
