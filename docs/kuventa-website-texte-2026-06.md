@@ -256,7 +256,7 @@ Projektleitung und PMO · IAM-Strategieberatung ohne Technikbezug · Greenfield-
 
 **Ausgangslage:** Ein Schweizer IT-Dienstleister betreibt auf OneIM-Basis ein eigenes Provider-IAM für KRITIS-Kunden. Das interne Team: zu wenig Leute, teils zu wenig Erfahrung — und das gesamte Architekturwissen bei einer einzigen Person.
 
-**Beitrag:** Maßgeschneiderte Customizings und Modulentwicklung am Provider-IAM, Strukturierung der intern aufgelaufenen Themen, Aufbau einer tragfähigen technischen Basis. Mitarbeit unter der Flagge des Kunden für dessen Endkunden.
+**Beitrag:** Maßgeschneiderte Customizings und Modulentwicklung am Provider-IAM, Strukturierung der intern aufgelaufenen Themen, Weiterentwicklung der vom Kunden entworfenen technischen Basis. Mitarbeit unter der Flagge des Kunden für dessen Endkunden.
 
 **Ergebnis:** Kundenwünsche werden umgesetzt statt vertagt, das Vertragsvolumen ist stemmbar, das Wissensmonopol wird Schritt für Schritt abgebaut.
 
