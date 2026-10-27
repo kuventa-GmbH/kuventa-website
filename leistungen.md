@@ -2,7 +2,7 @@
 layout: default
 title: Leistungen
 meta_title: "Leistungen: OneIM-Entwicklung, Troubleshooting, Verstärkung | kuventa"
-description: Modulentwicklung in One Identity Manager, Performance- und Prozess-Troubleshooting, Expertenverstärkung für IAM-Teams, Health Check und Schulung.
+description: Modulentwicklung in One Identity Manager, Performance- und Prozess-Troubleshooting, Expertenverstärkung für IAM-Teams, Projekt-Sanierung und Schulung. Einstieg über den kubo-Pilot.
 permalink: /leistungen/
 nav_order: 3
 ---
@@ -17,7 +17,7 @@ nav_order: 3
 
 <section class="section">
   <div class="container">
-    <h2 class="sr-only">Die sechs Leistungen im Überblick</h2>
+    <h2 class="sr-only">Leistungen und Einstieg im Überblick</h2>
     <div class="grid g-2">
       <div class="service js-anim" data-anim="animate__fadeInUp" data-once="true">
         <p class="card-eyebrow">Leistung 1</p>
@@ -54,16 +54,16 @@ nav_order: 3
       </div>
 
       <div class="service featured js-anim" data-anim="animate__fadeInUp" data-once="true">
-        <p class="card-eyebrow">Leistung 4 · Festpreis</p>
+        <p class="card-eyebrow">Einstieg · Festpreis</p>
         <div class="icon">★</div>
-        <h3>OneIM Health Check</h3>
-        <p class="service-claim">Wenn du wissen willst, wo du wirklich stehst.</p>
-        <p>Strukturierte Analyse deiner OneIM-Umgebung: Customizings und ihre Risiken, Performance, Datenqualität, Doku-Lücken, Audit-relevante Befunde. kubo-gestützt erstellt, von mir persönlich bewertet und priorisiert. Idealer Einstieg vor Upgrades, Audits oder größeren Vorhaben und der schnellste Weg herauszufinden, ob sich mehr Zusammenarbeit lohnt.</p>
-        <p class="service-result"><b>Festpreis ab 8.000&nbsp;€</b>, Umfang nach Umgebungsgröße. Ergebnis: Report mit priorisierten Maßnahmen, kein Folienfriedhof.</p>
+        <h3>kubo-Pilot</h3>
+        <p class="service-claim">Wenn du erst sehen willst, was in deiner Umgebung steckt.</p>
+        <p>30 Tage kubo in deiner OneIM-Umgebung, an deinen echten Fragen: hängende Prozesse, Herkunft von Rechten, undokumentierte Customizings. Mit vorab vereinbarten Erfolgskriterien und einer ehrlichen Bilanz am Ende. Der schnellste Weg herauszufinden, ob sich mehr Zusammenarbeit lohnt.</p>
+        <p class="service-result"><b>Festpreis ab 4.900&nbsp;€.</b> <a href="{% include helpers/internal-href.html path='/kubo/' %}" data-goatcounter-click="feature/mcp">Details zum Piloten →</a></p>
       </div>
 
       <div class="service js-anim" data-anim="animate__fadeInUp" data-once="true">
-        <p class="card-eyebrow">Leistung 5</p>
+        <p class="card-eyebrow">Leistung 4</p>
         <div class="icon">↻</div>
         <h3>Projekt-Sanierung</h3>
         <p class="service-claim">Wenn der große Implementierer teuer gescheitert ist.</p>
@@ -72,7 +72,7 @@ nav_order: 3
       </div>
 
       <div class="service js-anim" data-anim="animate__fadeInUp" data-once="true">
-        <p class="card-eyebrow">Leistung 6</p>
+        <p class="card-eyebrow">Leistung 5</p>
         <div class="icon">✎</div>
         <h3>Schulung &amp; Enablement</h3>
         <p class="service-claim">Wenn das Wissen auf mehr Schultern gehört.</p>

@@ -95,11 +95,11 @@ permalink: /kontakt/
       </details>
       <details class="faq">
         <summary>Geht Beauftragung auch über unseren Rahmenvertragspartner?</summary>
-        <p>Ja, gängige Praxis. Beratung läuft oft über Vermittler oder Rahmenvertragspartner. kubo-Lizenzen und Festpreis-Pakete bekommst du direkt bei mir.</p>
+        <p>Ja, gängige Praxis. Beratung läuft oft über Vermittler oder Rahmenvertragspartner. kubo-Lizenzen und den kubo-Pilot bekommst du direkt bei mir.</p>
       </details>
       <details class="faq">
         <summary>Wie schnell ist Kapazität verfügbar?</summary>
-        <p>Ehrliche Antwort: Ich bin eine Person, und meine Auslastung ist hoch. Festpreis-Pakete (Health Check, kubo-Pilot) lassen sich meist kurzfristig einplanen, größere Engagements brauchen Vorlauf. Genau deshalb lohnt das frühe Gespräch.</p>
+        <p>Ehrliche Antwort: Ich bin eine Person, und meine Auslastung ist hoch. Der kubo-Pilot lässt sich meist kurzfristig einplanen, größere Engagements brauchen Vorlauf. Genau deshalb lohnt das frühe Gespräch.</p>
       </details>
       <details class="faq">
         <summary>Was soll ich ins Erstgespräch mitbringen?</summary>
