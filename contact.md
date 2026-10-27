@@ -2,15 +2,19 @@
 layout: default
 title: Kontakt
 meta_title: "Kontakt | kuventa, OneIM-Engineering aus Hamburg"
-description: "Direkter Draht zu Dennis Kürschner: Termin buchen, E-Mail schreiben oder anrufen. Erste fachliche Einordnung in 30 Minuten, kostenlos."
+description: "Direkter Draht zu mir, Dennis Kürschner: Termin buchen, E-Mail schreiben oder anrufen. Erste fachliche Einordnung in 30 Minuten, kostenlos."
 permalink: /kontakt/
 ---
 
 <section class="page-hero">
   <div class="container">
     <span class="eyebrow js-anim" data-anim="animate__fadeInDown" data-once="true">Kontakt</span>
-    <h1 class="js-anim" data-anim="animate__fadeInLeft" data-once="true">Schildere kurz deinen Fall. Du bekommst eine <span class="accent">ehrliche Einschätzung.</span></h1>
-    <p class="lede js-anim" data-anim="animate__fadeIn" data-once="true">Kein Kontaktformular-Labyrinth, kein Rückruf vom Vertrieb. Du erreichst direkt Dennis.</p>
+    <h1 class="js-anim" data-anim="animate__fadeInLeft" data-once="true">Schildere mir kurz deinen Fall. Du bekommst eine <span class="accent">ehrliche Einschätzung.</span></h1>
+    <p class="lede js-anim" data-anim="animate__fadeIn" data-once="true">Kein Kontaktformular-Labyrinth, kein Rückruf vom Vertrieb. Egal welchen Weg du wählst: Am anderen Ende bin ich.</p>
+    <div class="person js-anim" data-anim="animate__fadeInUp" data-once="true" style="max-width: 560px; margin: 32px auto 0;">
+      <img src="{{ '/assets/img/photos/about/dennis-avatar.jpg' | relative_url }}" alt="" width="84" height="84">
+      <p><b>Dennis Kürschner</b><br>Gründer der kuventa GmbH. Ich lese jede Mail selbst und antworte persönlich.</p>
+    </div>
   </div>
 </section>
 
@@ -32,7 +36,7 @@ permalink: /kontakt/
           <span class="cd-icon">@</span>
           <span class="label-pill">E-Mail</span>
         </div>
-        <span class="value">info@kuventa.de<span class="sub">Beschreib in drei Sätzen, was klemmt. Antwort kommt persönlich und mit konkretem Vorschlag.</span></span>
+        <span class="value">info@kuventa.de<span class="sub">Beschreib in drei Sätzen, was klemmt. Ich antworte persönlich und mit konkretem Vorschlag.</span></span>
         <div class="cd-actions">
           <a class="btn-direct is-primary" href="mailto:info@kuventa.de" data-goatcounter-click="conversion/contact">E-Mail senden</a>
           <button class="btn-direct" type="button" data-copy="info@kuventa.de" data-copy-label="E-Mail">Kopieren</button>
@@ -43,7 +47,7 @@ permalink: /kontakt/
           <span class="cd-icon">☎</span>
           <span class="label-pill">Telefon</span>
         </div>
-        <span class="value">+49 151 75 03 26 56<span class="sub">Direkter Draht, keine Hotline, kein Callcenter.</span></span>
+        <span class="value">+49 151 75 03 26 56<span class="sub">Direkt mein Handy. Keine Hotline, kein Callcenter.</span></span>
         <div class="cd-actions">
           <a class="btn-direct is-primary" href="tel:+4915175032656">Anrufen</a>
           <button class="btn-direct" type="button" data-copy="+49 151 75 03 26 56" data-copy-label="Telefonnummer">Kopieren</button>
@@ -57,7 +61,7 @@ permalink: /kontakt/
   <div class="container">
     <div class="section-head js-anim" data-anim="animate__fadeInUp" data-once="true">
       <h2>Was im Erstgespräch <span class="accent">passiert.</span></h2>
-      <p class="intro">Wir ordnen deinen Fall ein: Ist es ein Troubleshooting-Thema, ein Entwicklungsthema, ein Fall für kubo, oder nichts davon? Wenn kuventa nicht der richtige Partner ist, sagen wir das und empfehlen bei Bedarf jemanden.</p>
+      <p class="intro">Erst höre ich zu: Wie ist deine Umgebung gewachsen, was brennt gerade am meisten? Dann ordnen wir gemeinsam ein: Troubleshooting, Entwicklung, ein Fall für kubo, oder nichts davon. Und ich stelle dir eine Frage, die viele überrascht: Woran würdest du in drei Monaten merken, dass es sich gelohnt hat? Wenn ich nicht der richtige Partner bin, sage ich dir das und empfehle bei Bedarf jemanden.</p>
     </div>
   </div>
 </section>
@@ -86,16 +90,24 @@ permalink: /kontakt/
     </div>
     <div class="js-anim" data-anim="animate__fadeInUp" data-once="true">
       <details class="faq" open>
-        <summary>Arbeitet kuventa remote oder vor Ort?</summary>
-        <p>Primär remote, vor Ort nach Bedarf. Kunden sitzen in ganz Deutschland und der Schweiz.</p>
+        <summary>Arbeitest du remote oder vor Ort?</summary>
+        <p>Primär remote, vor Ort nach Bedarf. Meine Kunden sitzen in ganz Deutschland und der Schweiz, und für Kickoffs und Workshops komme ich gern vorbei.</p>
       </details>
       <details class="faq">
         <summary>Geht Beauftragung auch über unseren Rahmenvertragspartner?</summary>
-        <p>Ja, gängige Praxis. Beratung läuft oft über Vermittler oder Rahmenvertragspartner. kubo-Lizenzen und Festpreis-Pakete kannst du direkt bei kuventa beziehen.</p>
+        <p>Ja, gängige Praxis. Beratung läuft oft über Vermittler oder Rahmenvertragspartner. kubo-Lizenzen und Festpreis-Pakete bekommst du direkt bei mir.</p>
       </details>
       <details class="faq">
         <summary>Wie schnell ist Kapazität verfügbar?</summary>
-        <p>Ehrliche Antwort: Die Auslastung ist hoch. Festpreis-Pakete (Health Check, kubo-Pilot) lassen sich meist kurzfristig einplanen, größere Engagements brauchen Vorlauf. Genau deshalb lohnt das frühe Gespräch.</p>
+        <p>Ehrliche Antwort: Ich bin eine Person, und meine Auslastung ist hoch. Festpreis-Pakete (Health Check, kubo-Pilot) lassen sich meist kurzfristig einplanen, größere Engagements brauchen Vorlauf. Genau deshalb lohnt das frühe Gespräch.</p>
+      </details>
+      <details class="faq">
+        <summary>Was soll ich ins Erstgespräch mitbringen?</summary>
+        <p>Einen konkreten Fall und, wenn du hast, eine Vorstellung davon, was sich messbar ändern soll. Folien, Lastenhefte oder Architekturdiagramme brauchst du nicht. Die Fragen dazu stelle ich.</p>
+      </details>
+      <details class="faq">
+        <summary>Was passiert, wenn du krank oder im Urlaub bist?</summary>
+        <p>Berechtigte Frage bei einem Ein-Personen-Unternehmen. Genau deshalb dokumentiere ich alles, was ich baue, und übergebe Wissen laufend an dein Team, statt es bei mir zu horten. Und kubo läuft in deiner Umgebung, unabhängig davon, ob ich gerade erreichbar bin.</p>
       </details>
     </div>
   </div>

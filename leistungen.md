@@ -11,7 +11,7 @@ nav_order: 3
   <div class="container">
     <span class="eyebrow js-anim" data-anim="animate__fadeInDown" data-once="true">Leistungen</span>
     <h1 class="js-anim" data-anim="animate__fadeInLeft" data-once="true">Technische Tiefe, <span class="accent">wo dein Team sie braucht.</span></h1>
-    <p class="lede js-anim" data-anim="animate__fadeIn" data-once="true">Jede Leistung folgt demselben Prinzip: Problem lösen, Wissen übergeben, abrufbar hinterlassen. Keine Abhängigkeit vom Externen als Geschäftsmodell.</p>
+    <p class="lede js-anim" data-anim="animate__fadeIn" data-once="true">Jede Leistung folgt demselben Prinzip: Problem lösen, Wissen übergeben, abrufbar hinterlassen. Keine Abhängigkeit von mir als Geschäftsmodell.</p>
   </div>
 </section>
 
@@ -24,7 +24,7 @@ nav_order: 3
         <div class="icon">⌗</div>
         <h3>OneIM Custom-Entwicklung &amp; Modulbau</h3>
         <p class="service-claim">Wenn der Standard nicht reicht.</p>
-        <p>Eigene Module, eigene Prozesse, eigene Logik. Direkt in One Identity Manager entwickelt, nicht drumherum gebastelt. Von der API-Anbindung über kundenspezifische Workflows bis zum kompletten Funktionsbereich, den es im Standard nicht gibt.</p>
+        <p>Eigene Module, eigene Prozesse, eigene Logik. Ich entwickle direkt in One Identity Manager, statt drumherum zu basteln. Von der API-Anbindung über kundenspezifische Workflows bis zum kompletten Funktionsbereich, den es im Standard nicht gibt.</p>
         <ul>
           <li>kundeneigenes Provider-IAM auf OneIM-Basis</li>
           <li>Speziallogik für Joiner-Mover-Leaver</li>
@@ -39,8 +39,8 @@ nav_order: 3
         <div class="icon">+</div>
         <h3>Expertenverstärkung für dein IAM-Team</h3>
         <p class="service-claim">Wenn Erfahrung fehlt. Oder schlicht Hände.</p>
-        <p>Erfahrene OneIM-Entwickler sind am Markt kaum zu bekommen. kuventa verstärkt dein Team dort, wo es klemmt: Implementierung, Customizing, Strukturierung der aufgelaufenen Themen, Sparring für die eigenen Leute.</p>
-        <p>Der Unterschied zur Arbeitnehmerüberlassung: Du bekommst keinen Platzhalter, sondern Seniorität mit Wissenstransfer. Ziel ist immer, dass dein Team nachher mehr kann als vorher.</p>
+        <p>Erfahrene OneIM-Entwickler sind am Markt kaum zu bekommen. Ich verstärke dein Team dort, wo es klemmt: Implementierung, Customizing, Strukturierung der aufgelaufenen Themen, Sparring für die eigenen Leute.</p>
+        <p>Der Unterschied zur Arbeitnehmerüberlassung: Du bekommst keinen Platzhalter, sondern mich, mit Wissenstransfer als festem Teil der Arbeit. Mein Ziel ist immer, dass dein Team nachher mehr kann als vorher.</p>
         <p class="service-result"><b>Ergebnis:</b> Backlog schrumpft, Team lernt, Wissensmonopole werden abgebaut statt verstärkt.</p>
       </div>
 
@@ -49,7 +49,7 @@ nav_order: 3
         <div class="icon">→</div>
         <h3>Troubleshooting &amp; Performance</h3>
         <p class="service-claim">Wenn niemand mehr weiß, warum es hängt.</p>
-        <p>Hängende Jobs, langsame Synchronisation, Prozesse, die „irgendwo“ stecken, Rechte, die nicht ankommen. kuventa traversiert die Kausalkette (Job, Step, Script, SQL, Lock) bis zur Ursache. Mit kubo als Werkzeug geht das schneller, als du es von klassischer Fehlersuche kennst.</p>
+        <p>Hängende Jobs, langsame Synchronisation, Prozesse, die „irgendwo“ stecken, Rechte, die nicht ankommen. Ich gehe die Kausalkette (Job, Step, Script, SQL, Lock) bis zur Ursache durch. Mit kubo als Werkzeug geht das schneller, als du es von klassischer Fehlersuche kennst.</p>
         <p class="service-result"><b>Ergebnis:</b> Ursache gefunden, behoben, dokumentiert. Und dein Betrieb weiß beim nächsten Mal, wo er suchen muss.</p>
       </div>
 
@@ -58,7 +58,7 @@ nav_order: 3
         <div class="icon">★</div>
         <h3>OneIM Health Check</h3>
         <p class="service-claim">Wenn du wissen willst, wo du wirklich stehst.</p>
-        <p>Strukturierte Analyse deiner OneIM-Umgebung: Customizings und ihre Risiken, Performance, Datenqualität, Doku-Lücken, Audit-relevante Befunde. kubo-gestützt erstellt, von Dennis bewertet und priorisiert. Idealer Einstieg vor Upgrades, Audits oder größeren Vorhaben und der schnellste Weg herauszufinden, ob sich mehr Zusammenarbeit lohnt.</p>
+        <p>Strukturierte Analyse deiner OneIM-Umgebung: Customizings und ihre Risiken, Performance, Datenqualität, Doku-Lücken, Audit-relevante Befunde. kubo-gestützt erstellt, von mir persönlich bewertet und priorisiert. Idealer Einstieg vor Upgrades, Audits oder größeren Vorhaben und der schnellste Weg herauszufinden, ob sich mehr Zusammenarbeit lohnt.</p>
         <p class="service-result"><b>Festpreis ab 8.000&nbsp;€</b>, Umfang nach Umgebungsgröße. Ergebnis: Report mit priorisierten Maßnahmen, kein Folienfriedhof.</p>
       </div>
 
@@ -67,7 +67,7 @@ nav_order: 3
         <div class="icon">↻</div>
         <h3>Projekt-Sanierung</h3>
         <p class="service-claim">Wenn der große Implementierer teuer gescheitert ist.</p>
-        <p>Halb fertige Einführung, gerissene Timeline, Budget verbrannt, Go-Live in Gefahr? kuventa übernimmt, ordnet das Vorhandene, fixt das Fehlende und bringt das Projekt über die Linie, inklusive Schulung und Go-Live-Begleitung.</p>
+        <p>Halb fertige Einführung, gerissene Timeline, Budget verbrannt, Go-Live in Gefahr? Ich übernehme, ordne das Vorhandene, fixe das Fehlende und bringe das Projekt über die Linie, inklusive Schulung und Go-Live-Begleitung.</p>
         <p class="service-result"><b>Ergebnis:</b> ein lauffähiges IAM statt eines Abbruchs. Ehrliche Voraussetzung: ein realistisches Restbudget. Das klären wir im ersten Gespräch.</p>
       </div>
 
@@ -87,13 +87,13 @@ nav_order: 3
   <div class="container">
     <div class="proof js-anim" data-anim="animate__fadeInUp" data-once="true">
       <span class="eyebrow-dark">Bewusste Grenze</span>
-      <h3>Was kuventa bewusst nicht anbietet.</h3>
+      <h3>Was ich bewusst nicht anbiete.</h3>
       <div class="list">
         <span class="item">Projektleitung und PMO</span>
         <span class="item">IAM-Strategieberatung ohne Technikbezug</span>
         <span class="item">Greenfield-Großprojekte als Generalunternehmer</span>
       </div>
-      <p class="note">Dafür gibt es gute Implementierungshäuser, bei Bedarf mit Empfehlung.</p>
+      <p class="note">Dafür gibt es gute Implementierungshäuser. Ich nenne dir gern eins, das passt.</p>
     </div>
   </div>
 </section>
@@ -102,7 +102,7 @@ nav_order: 3
   <div class="container">
     <div class="cta-block js-anim" data-anim="animate__fadeInUp" data-once="true">
       <h2>Unklar, welche Leistung passt?</h2>
-      <p>30 Minuten reichen meist für eine Einordnung.</p>
+      <p>30 Minuten reichen meist für eine Einordnung. Bring mit, woran du in drei Monaten merken willst, dass es sich gelohnt hat.</p>
       <div class="actions">
         <a class="btn btn-primary" href="{% include helpers/internal-href.html path='/kontakt/' %}" data-goatcounter-click="conversion/book-call">Termin wählen</a>
         <a class="btn btn-cta-secondary" href="mailto:info@kuventa.de" data-goatcounter-click="conversion/contact">E-Mail schreiben</a>

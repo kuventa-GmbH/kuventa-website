@@ -27,7 +27,7 @@ Dann `http://127.0.0.1:4000/` öffnen.
 - `_posts/` — Wissen-Beiträge (URL-Schema `/blog/...` beibehalten, Nav-Label „Wissen“)
 
 ## Seiten
-Start `/` · kubo `/kubo/` · Leistungen `/leistungen/` · Referenzen `/referenzen/` (anonymisiert bis Freigabe) · Wissen `/blog/` · Über kuventa `/ueber-uns/` · Kontakt `/kontakt/`
+Start `/` · kubo `/kubo/` · Leistungen `/leistungen/` · Referenzen `/referenzen/` (anonymisiert bis Freigabe) · Wissen `/blog/` · Über mich `/ueber-uns/` · Kontakt `/kontakt/`
 
 ## Neue Seite anlegen
 ```yaml
@@ -45,7 +45,7 @@ CTAs tragen `data-goatcounter-click` nach dem Standard aus `docs/goatcounter-ana
 (`conversion/book-call`, `conversion/contact`, `navigation/demo`, `feature/mcp`, …).
 
 ## Offene Punkte vor Go-Live (aus den Text-Vorgaben)
-1. Schriftliche Referenz-Freigaben (dmTECH, Aveniq, SPIEGEL) — dann Referenzen-Seite auf echte Namen umstellen
+1. Schriftliche Referenz-Freigaben: dmTECH ✓ (liegt vor, ebenso Golf House, BDO, Computacenter), Aveniq und SPIEGEL offen — dann Referenzen-Seite auf echte Namen umstellen
 2. Kundenzitate einholen (je 2 Sätze: Problem → warum kuventa → Ergebnis)
 3. Beraterprofil-PDF (`assets/files/cv.pdf`) aktuell halten — `/beraterprofil/` leitet darauf um
 4. Preisangaben synchron halten mit copilot.kuventa.de (Pilot 4.900/12.500 €, ab 2.000 €/Monat)

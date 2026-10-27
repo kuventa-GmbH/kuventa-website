@@ -7,3 +7,4 @@ vendor
 node_modules
 tmp
 .DS_Store
+.playwright-mcp
