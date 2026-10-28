@@ -28,3 +28,7 @@ exclude:
   - docs/
   - scripts/
   - README.md
+  - CLAUDE.md
+  - assets/fonts/example.html
+  - cookie-dough/index.html
+  - assets/files/README.md

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Nach dem Start ist vor der Arbeit"
+description: "Nach dem Go-Live verliert IGA oft den Fokus und die Excel-Listen kehren zurück. Was nach dem Start passieren muss, damit Identity Governance wirkt."
 permalink: /blog/nach-dem-start-ist-vor-der-arbeit/
 hero_image: /assets/img/blog/small-team-35-people-in-a-modern-office-discussing.png
 hero_alt: "Team arbeitet gemeinsam an laufenden IGA-Prozessen"

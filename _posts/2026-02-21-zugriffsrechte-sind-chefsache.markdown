@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Zugriffsrechte sind Chefsache: Warum Identity Governance mehr als IT ist"
+description: "Accounts ausgeschiedener Mitarbeiter mit vollen Rechten: Warum Zugriffsrechte ein unternehmerisches Risiko sind und Identity Governance Chefsache ist."
 permalink: /blog/zugriffsrechte-sind-chefsache/
 hero_image: /assets/img/blog/closeup-of-hands-holding-a-digital-keycard-and-a-t.png
 hero_alt: "Mitarbeiter nutzt Zugangskarte als Symbol für gesteuerte Zugriffsrechte"

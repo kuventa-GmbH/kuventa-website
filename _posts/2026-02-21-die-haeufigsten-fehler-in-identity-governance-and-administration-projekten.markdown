@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Die häufigsten Fehler in Identity Governance & Administration-Projekten"
+description: "Woran Identity-Governance-Projekte immer wieder scheitern, unabhängig von Branche und Größe, und wie du die typischen Fehler von Anfang an vermeidest."
 permalink: /blog/die-haeufigsten-fehler-in-identity-governance-and-administration-projekten/
 hero_image: /assets/img/blog/businessmeeting-in-einem-konferenzraum-zwei-bis-dr2.png
 hero_alt: "Workshop zu typischen Fehlern in IGA-Projekten"

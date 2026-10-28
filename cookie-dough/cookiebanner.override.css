@@ -1,3 +1,9 @@
+/* Site-Schrift statt Poppins von Google (Spec 2026-10-28-technisches-seo) */
+#cookieBanner,
+#cookieBanner * {
+  font-family: var(--sans);
+}
+
 @media only screen and (max-width: 600px) {
   #cookieBanner {
     padding: 16px 16px 14px;

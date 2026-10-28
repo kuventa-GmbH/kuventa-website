@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Warum die Einführung von IGA mehr ist als ein IT-Projekt"
+description: "Eine IGA-Software wirkt nur so gut wie ihr Zielbild. Warum Rollen, Verantwortung und Prozesse vor der Tool-Auswahl geklärt sein müssen."
 permalink: /blog/warum-die-einfuehrung-von-iga-mehr-ist-als-ein-it-projekt/
 hero_image: /assets/img/blog/business-meeting-in-a-modern-office-diverse-team-s1.png
 hero_alt: "Team plant Einführung einer IGA-Lösung im Meeting"

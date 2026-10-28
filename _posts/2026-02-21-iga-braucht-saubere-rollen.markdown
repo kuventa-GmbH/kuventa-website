@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "IGA braucht saubere Rollen: Warum Governance ohne Fundament scheitert"
+description: "„Power User“, „Admin Light“: Warum gewachsene Rollen jedes IGA-Projekt ausbremsen und weshalb Governance ein sauberes Rollenfundament braucht."
 permalink: /blog/iga-braucht-saubere-rollen/
 hero_image: /assets/img/blog/two-business-colleagues-looking-at-a-laptop-screen.png
 hero_alt: "Kollegen besprechen Rollen und Zugriffsrechte am Laptop"
