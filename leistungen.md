@@ -2,7 +2,7 @@
 layout: default
 title: Leistungen
 meta_title: "Leistungen: OneIM-Entwicklung, Troubleshooting, Verstärkung | kuventa"
-description: Modulentwicklung in One Identity Manager, Performance- und Prozess-Troubleshooting, Expertenverstärkung für IAM-Teams, Projekt-Sanierung und Schulung. Einstieg über den kubo-Pilot.
+description: "Modulentwicklung, Troubleshooting und Teamverstärkung für One Identity Manager. Mit Wissenstransfer statt Abhängigkeit. Einstieg über den kubo-Pilot."
 permalink: /leistungen/
 nav_order: 3
 ---
@@ -26,7 +26,7 @@ nav_order: 3
         <p class="service-claim">Wenn der Standard nicht reicht.</p>
         <p>Eigene Module, eigene Prozesse, eigene Logik. Ich entwickle direkt in One Identity Manager, statt drumherum zu basteln. Von der API-Anbindung über kundenspezifische Workflows bis zum kompletten Funktionsbereich, den es im Standard nicht gibt.</p>
         <ul>
-          <li>kundeneigenes Provider-IAM auf OneIM-Basis</li>
+          <li>Attestierung und Rezertifizierung von Berechtigungen</li>
           <li>Speziallogik für Joiner-Mover-Leaver</li>
           <li>Integrationen, die der Standard-Konnektor nicht hergibt</li>
           <li>modulare Erweiterungen, die Upgrades überleben</li>

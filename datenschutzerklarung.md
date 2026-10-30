@@ -3,6 +3,8 @@ layout: default
 title: Datenschutzerklärung
 description: "Datenschutzerklärung der kuventa GmbH: welche Daten diese Website verarbeitet und welche Rechte du hast."
 permalink: /datenschutz/
+robots: "noindex, follow"
+sitemap: false
 ---
 
 <div class="legal-wrap datenschutz-content" id="top">

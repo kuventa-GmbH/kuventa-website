@@ -2,7 +2,7 @@
 layout: default
 title: Start
 meta_title: "Dennis Kürschner | kuventa: Engineering für One Identity Manager"
-description: "Ich bin Dennis Kürschner: Softwareentwickler, OneIM-Engineer, Gründer von kuventa und Entwickler von kubo. Modulentwicklung, Troubleshooting, Teamverstärkung. On-Prem, read-only, aus Hamburg."
+description: "Ich bin Dennis Kürschner, OneIM-Engineer aus Hamburg. Ich entwickle Module in One Identity Manager, löse Betriebsprobleme und baue kubo."
 permalink: /
 ---
 

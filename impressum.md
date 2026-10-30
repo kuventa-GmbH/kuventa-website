@@ -3,6 +3,8 @@ layout: default
 title: Impressum
 description: "Impressum der kuventa GmbH, Georgsplatz 1, 20099 Hamburg. Geschäftsführer Dennis Kürschner."
 permalink: /impressum/
+robots: "noindex, follow"
+sitemap: false
 ---
 
 <div class="legal-page">

@@ -35,7 +35,7 @@
           "@id": {{ org_id | jsonify }},
           "name": "kuventa GmbH",
           "url": {{ '/' | absolute_url | jsonify }},
-          "logo": {{ '/assets/img/brand/logo.png' | absolute_url | jsonify }},
+          "logo": {{ '/assets/img/brand/favicons/logo4_favicon.png' | absolute_url | jsonify }},
           "image": {{ '/assets/img/og/kuventa-og.jpg' | absolute_url | jsonify }},
           "description": {{ site.description | strip_newlines | strip | jsonify }},
           "email": "info@kuventa.de",
@@ -51,6 +51,17 @@
           "knowsAbout": ["One Identity Manager", "Identity & Access Management", "Identity Governance"],
           "founder": { "@type": "Person", "@id": {{ person_id | jsonify }}, "name": "Dennis Kürschner" }
         }
+        {%- if page.url == '/' %},
+        {
+          "@type": "WebSite",
+          "@id": {{ '/#website' | absolute_url | jsonify }},
+          "name": "kuventa",
+          "alternateName": "kuventa GmbH",
+          "url": {{ '/' | absolute_url | jsonify }},
+          "inLanguage": "de-DE",
+          "publisher": { "@id": {{ org_id | jsonify }} }
+        }
+        {%- endif %}
         {%- if page.url == '/ueber-uns/' %},
         {
           "@type": "Person",

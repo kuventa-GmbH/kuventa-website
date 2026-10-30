@@ -2,7 +2,7 @@
 layout: default
 title: Kontakt
 meta_title: "Kontakt | kuventa, OneIM-Engineering aus Hamburg"
-description: "Direkter Draht zu mir, Dennis Kürschner: Termin buchen, E-Mail schreiben oder anrufen. Erste fachliche Einordnung in 30 Minuten, kostenlos."
+description: "Direkter Draht zu mir statt zum Vertrieb: Termin buchen, mailen oder anrufen. Erste fachliche Einordnung deines OneIM-Themas in 30 Minuten, kostenlos."
 permalink: /kontakt/
 ---
 
